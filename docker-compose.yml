@@ -11,7 +11,6 @@ services:
       - NODE_ENV=production
       - DOMAIN=bsli.a2.lab512.org
       - DOMAINS=bsli.a2.lab512.org,cms.bsli.a2.lab512.org,www.bsli.space,www.bsli.space
-      - IPX_DOMAINS=bsli.a2.lab512.org,cms.bsli.a2.lab512.org,www.bsli.space,www.bsli.space
       - ENABLE_IMAGE_OPTIMIZATION=true
       - PORT=80
     restart: unless-stopped

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T04:32:00.475Z";
+      export const lastPublished = "2026-01-30T04:38:29.046Z";
 
       export const siteName = undefined;
 
@@ -727,8 +727,8 @@ className={`w-html-embed`} />
 </RemixForm>
 </div>
 <div
-className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt`}>
-{CMS_Members?.ok ? CMS_Members?.data?.data : [{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]},{"Major":"Loading...","Email":"Loading...","LinkedInURL":"https://example.com","Name":"Loading...","headshot":null,"role_id":[{"title":"Loading..."}]}]?.map?.((collectionItem: any, index: number) =>
+className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt c4kegym`}>
+{CMS_Members?.data?.data?.map?.((collectionItem: any, index: number) =>
 <Fragment key={index}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y cwsyufx czfw4y0`}>

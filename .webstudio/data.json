@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "30423173-92c5-4240-aba7-98239d2bf336",
+    "id": "127d2c3c-182d-46d2-96e8-ed23e3b0a1d6",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 2183,
-    "createdAt": "2026-01-30T04:32:00.475+00:00",
-    "updatedAt": "2026-01-30T04:32:00.475+00:00",
+    "version": 2192,
+    "createdAt": "2026-01-30T04:38:29.046+00:00",
+    "updatedAt": "2026-01-30T04:38:29.046+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -36295,6 +36295,21 @@
             "value": 75
           }
         }
+      ],
+      [
+        "jRKCpUz_4x1bl94MIKNpU:tAFRweP7yGMMQI5CmE4yb:backgroundColor:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "jRKCpUz_4x1bl94MIKNpU",
+          "property": "backgroundColor",
+          "value": {
+            "type": "rgb",
+            "r": 180,
+            "g": 171,
+            "b": 171,
+            "alpha": 1
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -50751,26 +50766,6 @@
         }
       ],
       [
-        "bYLHqShTy9lAYxejmqLSa",
-        {
-          "id": "bYLHqShTy9lAYxejmqLSa",
-          "instanceId": "1Dx3Fi938-tU-uN3Fmiso",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  /* 1. The Container */\n  .custom-checkbox {\n    display: inline-flex;\n    align-items: center;\n    cursor: pointer;\n    font-family: sans-serif;\n  }\n\n  /* 2. Hide the default browser checkbox */\n  .custom-checkbox input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n  }\n\n  /* 3. Define the SVG styles */\n  .icon-unchecked, .icon-checked {\n    width: 24px;\n    height: 24px;\n    margin-right: 8px; /* Space between icon and text */\n    transition: all 0.2s ease;\n  }\n\n  /* Default state: Show unchecked, hide checked */\n  .icon-checked {\n    display: none;\n    fill: #007bff; /* Blue color for checked */\n  }\n  .icon-unchecked {\n    display: block;\n    fill: #ccc; /* Gray color for unchecked */\n  }\n\n  /* 4. CHECKED State: Swap the icons */\n  /* When input is checked, find the sibling SVG with class .icon-unchecked and hide it */\n  .custom-checkbox input:checked ~ .icon-unchecked {\n    display: none;\n  }\n  /* When input is checked, find the sibling SVG with class .icon-checked and show it */\n  .custom-checkbox input:checked ~ .icon-checked {\n    display: block;\n  }\n</style>\n\n<label class=\"custom-checkbox\">\n  <input type=\"checkbox\" id=\"myCheckbox\">\n  \n  <svg class=\"icon-unchecked\" viewBox=\"0 0 24 24\">\n    <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\"></path>\n  </svg>\n\n  <svg class=\"icon-checked\" viewBox=\"0 0 24 24\">\n    <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\n  </svg>\n  \n  <span>Enable Auto-Submit</span>\n</label>"
-        }
-      ],
-      [
-        "YlAXtjELkZVQPs-Gk7bX5",
-        {
-          "id": "YlAXtjELkZVQPs-Gk7bX5",
-          "instanceId": "1Dx3Fi938-tU-uN3Fmiso",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      [
         "Qsj6VxLa-6eqUwB7DWTpH",
         {
           "id": "Qsj6VxLa-6eqUwB7DWTpH",
@@ -50827,7 +50822,7 @@
           "instanceId": "Z4-BK83kpJdOMNAH9HSJb",
           "name": "data",
           "type": "expression",
-          "value": "$ws$dataSource$kzWvH7etMD9YVP3QUKLID.ok ? $ws$dataSource$kzWvH7etMD9YVP3QUKLID.data.data : [{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]},{\"Major\":\"Loading...\",\"Email\":\"Loading...\",\"LinkedInURL\":\"https://example.com\",\"Name\":\"Loading...\",\"headshot\":null,\"role_id\":[{\"title\":\"Loading...\"}]}]"
+          "value": "$ws$dataSource$kzWvH7etMD9YVP3QUKLID.data.data"
         }
       ],
       [
@@ -65881,10 +65876,6 @@
             {
               "type": "id",
               "value": "UN4iAEdJ27m6Ns27U4ESE"
-            },
-            {
-              "type": "id",
-              "value": "1Dx3Fi938-tU-uN3Fmiso"
             }
           ]
         }
@@ -66572,15 +66563,6 @@
           "id": "-zfdiu7121S1TXumd6qv4",
           "component": "ws:element",
           "tag": "option",
-          "children": []
-        }
-      ],
-      [
-        "1Dx3Fi938-tU-uN3Fmiso",
-        {
-          "type": "instance",
-          "id": "1Dx3Fi938-tU-uN3Fmiso",
-          "component": "HtmlEmbed",
           "children": []
         }
       ],
