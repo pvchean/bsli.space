@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T00:32:47.707Z";
+      export const lastPublished = "2026-01-30T01:53:08.710Z";
 
       export const siteName = undefined;
 
@@ -598,7 +598,7 @@ className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
 </h1>
 </div>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x c1p22wyd`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x c1p22wyd c13kj1ir`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1flzvby c2jpees c1bctvrt`}>
 <p
@@ -643,7 +643,7 @@ className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm
 </Link_1>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q`}>
 <Image
 src={"https://www.bsli.space/_astro/Hana%20Winchester.DZzDsTGn_11DkYN.webp"}
 className={`w-image`} />
@@ -728,7 +728,6 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem?.image}`}
-optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>

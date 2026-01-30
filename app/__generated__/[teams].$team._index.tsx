@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T00:32:47.707Z";
+      export const lastPublished = "2026-01-30T01:53:08.710Z";
 
       export const siteName = undefined;
 
@@ -744,6 +744,7 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 className={`w-element`}>
 <Image
 src={"https://www.bsli.space/_astro/overview.bjhnM8Ju_Tc1lS.webp"}
+loading={"eager"}
 className={`w-image c13v84m3 c89byf`} />
 </div>
 </div>
@@ -809,7 +810,7 @@ className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Fragment key={index_5}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_6?.["directus_files_id"]}`}
-optimize={false}
+loading={"eager"}
 className={`w-image c89byf c1j4r0zr c13v84m3`} />
 </Fragment>
 )}
@@ -847,7 +848,6 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
-optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>
