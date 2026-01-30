@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "127d2c3c-182d-46d2-96e8-ed23e3b0a1d6",
+    "id": "c74e49f1-faef-48bd-8e7a-6b253710e67e",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 2192,
-    "createdAt": "2026-01-30T04:38:29.046+00:00",
-    "updatedAt": "2026-01-30T04:38:29.046+00:00",
+    "version": 2210,
+    "createdAt": "2026-01-30T04:43:25.96+00:00",
+    "updatedAt": "2026-01-30T04:43:25.96+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -36293,21 +36293,6 @@
             "type": "unit",
             "unit": "lvw",
             "value": 75
-          }
-        }
-      ],
-      [
-        "jRKCpUz_4x1bl94MIKNpU:tAFRweP7yGMMQI5CmE4yb:backgroundColor:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "jRKCpUz_4x1bl94MIKNpU",
-          "property": "backgroundColor",
-          "value": {
-            "type": "rgb",
-            "r": 180,
-            "g": 171,
-            "b": 171,
-            "alpha": 1
           }
         }
       ]
