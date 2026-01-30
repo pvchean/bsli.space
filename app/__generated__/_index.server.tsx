@@ -65,9 +65,9 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
-    description: undefined,
-    excludePageFromSearch: undefined,
+    title: "Buckeye Space Launch Initiative",
+    description: "Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.",
+    excludePageFromSearch: false,
     language: undefined,
     socialImageAssetName: undefined,
     socialImageUrl: undefined,

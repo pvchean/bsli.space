@@ -1,20 +1,26 @@
 {
   "build": {
-    "id": "03bd4137-17d2-4d56-98bf-5a8ae3e90191",
+    "id": "92ccf480-e045-4ceb-82d3-2865db0d951d",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 2166,
-    "createdAt": "2026-01-30T01:53:08.71+00:00",
-    "updatedAt": "2026-01-30T01:53:08.71+00:00",
+    "version": 2178,
+    "createdAt": "2026-01-30T04:16:54.442+00:00",
+    "updatedAt": "2026-01-30T04:16:54.442+00:00",
     "pages": {
+      "meta": {
+        "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
+      },
       "homePage": {
         "id": "HrVe4aYHhV_bPti5G88S7",
         "name": "Home",
-        "title": "\"Home\"",
+        "title": "\"Buckeye Space Launch Initiative\"",
         "history": [
           ""
         ],
         "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
-        "meta": {},
+        "meta": {
+          "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
+          "excludePageFromSearch": "false"
+        },
         "path": ""
       },
       "pages": [
@@ -68074,24 +68080,30 @@
   "page": {
     "id": "HrVe4aYHhV_bPti5G88S7",
     "name": "Home",
-    "title": "\"Home\"",
+    "title": "\"Buckeye Space Launch Initiative\"",
     "history": [
       ""
     ],
     "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
-    "meta": {},
+    "meta": {
+      "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
+      "excludePageFromSearch": "false"
+    },
     "path": ""
   },
   "pages": [
     {
       "id": "HrVe4aYHhV_bPti5G88S7",
       "name": "Home",
-      "title": "\"Home\"",
+      "title": "\"Buckeye Space Launch Initiative\"",
       "history": [
         ""
       ],
       "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
-      "meta": {},
+      "meta": {
+        "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
+        "excludePageFromSearch": "false"
+      },
       "path": ""
     },
     {
@@ -68307,6 +68319,19 @@
             "max": 125
           }
         }
+      }
+    },
+    {
+      "id": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3",
+      "name": "bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp",
+      "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
+      "size": 18010,
+      "type": "image",
+      "format": "webp",
+      "createdAt": "2026-01-30T03:44:21.517+00:00",
+      "meta": {
+        "width": 640,
+        "height": 480
       }
     },
     {
