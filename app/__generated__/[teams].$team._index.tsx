@@ -4,10 +4,9 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Heading as Heading, Paragraph as Paragraph, Button as Button, Text as Text } from "@webstudio-is/sdk-components-react";
-import { AnimateChildren as AnimateChildren } from "@webstudio-is/sdk-components-animation";
-import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
+import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
@@ -29,18 +28,16 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
         []
 
       
-            
-
-            export const CustomCode = () => {
-              return (<></>);
-            }
-          
 
       const Page = (_props: { system: any; }) => {
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let CMS_Team = useResource("CMS_Team_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let CMS_Subteams = useResource("CMS_Subteams_1")
+let CMS_Overview = useResource("CMS_Overview_1")
+let CMS_Leadership = useResource("CMS_Leadership_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
 let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
 let CurrentDate = useResource("CurrentDate_1")
@@ -591,626 +588,44 @@ className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb
 </div>
 </Fragment_1>
 </Slot>
-<section
-className={`w-element chlecrf cbn0s32 cnbmf4z`}>
 <div
-className={`w-element c1lynjaq cptfpme c16qquiv`}>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
+<div
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x c13d86jv c13kj1ir c16nciq0`}>
+<div
+className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 ctmlqlh`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy crypqid ca9pm0 c4vnhzq c3eev2k c8kgf22 c1lst088 cj9d1p7 c1oo58rr`}>
-{"buckeye space launch initiative"}
+className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c8kgf22 ccq64u2`}>
+{CMS_Team?.data?.data?.[0]?.["display_name"]}
 </h1>
-<div
-className={`w-element c3eev2k cd0iqme c13ntf11`}>
-{"at "}
-<span
-className={`w-element c145f7eq cjl8er8`}>
-{"The Ohio State University"}
-</span>
+<MarkdownEmbed
+code={CMS_Team?.data?.data?.[0]?.["purpose_paragraph"]}
+className={`w-markdown-embed`}>
+</MarkdownEmbed>
 </div>
-</div>
-</section>
-<Box
-tag={"section"}
-className={`w-box chlecrf c1lufqxe cnbmf4z c19ubv75 c4g1j3m cs5nzqp`}>
-<Box
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cwr14mb cs5nzqp c7dprmh c16nciq0 cmzqacz cb6mw6t c1xq1124`}>
-<Box
-className={`w-box c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c14b9ffx cafamdi cb6mw6t cmzqacz`}>
-<Box
-className={`w-box c14b9ffx cafamdi c1fsvg17 cp0jmbs c2jpees c1bctvrt`}>
-<Heading
-tag={"h1"}
-className={`w-heading cbwi5wk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq chbpnm4 ctzyqaf ccq64u2 c1akm3sr`}>
-{"What is BSLI?"}
-</Heading>
-<Paragraph
-className={`w-paragraph ckhpfcg c14ukcfr c4vnhzq ctzyqaf cei00iu`}>
-<span
-className={`w-element c6zneyq c145f7eq`}>
-{"BSLI"}
-</span>
-{" is a student-run organization that participates in various programs, such as the Nasa Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."}
-</Paragraph>
-</Box>
-<Box
-className={`w-box c1fsvg17 c1flzvby c1san6ol c1l7q0iu c1i3l1kc cnn2qey`}>
-<Link
-href={"/#get-involved"}
-className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4 c1h713vd c1xp90k5 c1nx0jgv cabeifa c16mnhwc`}>
-{"Get Involved!"}
-</Link>
-<Link
-className={`w-link c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1r92k6l cib2qxx chdqs4z c11ytquf c1c2cfj4 c16mnhwc`}>
-{"Sponsor Us!"}
-</Link>
-</Box>
-</Box>
-<Box
-className={`w-box c199z4bu cjdezyc`}>
 <Image
-src={"https://www.bsli.space/_astro/BSLI-Added-payload-both-teams.8t3mDXr7_Z1KqeT2.webp"}
-className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5`} />
-</Box>
-</Box>
-</Box>
-<section
-id={"our-teams"}
-className={`w-element chlecrf c1lufqxe cnbmf4z`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u cwxng9o cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2 c16xs1d3`}>
-{"Our Teams"}
-</h1>
-<p
-className={`w-element c3eev2k c1ddz7he ckhpfcg`}>
-{"All BSLI project teams meet in the "}
-<b
-className={`w-element`}>
-{"College of Engineering Makerspace"}
-</b>
-{", located in "}
-<b
-className={`w-element`}>
-{"Bolz Hall"}
-</b>
-{"."}
-{""}
-<br />
-{""}
-{"Meeting times can be found below, underneath each team description."}
-</p>
-</div>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x cafamdi cxu6jij c131me5s cdgow9j`}>
-<div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
-<div
-className={`w-element`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-nasa.hYJZ9o52_2vaKJF.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wu8pi6 cpomkwe c956szp c1c2pt5o c1jtrzlm cjywo3c c1jfa76v c7jpbvn`}>
-{"NASA Student Launch Initiative (NASA)"}
-</h3>
-<p
-className={`w-element`}>
-{"NASA SLI is a research-based, competitive, experiential exploration project striving to provide relevant research through payload components to support the development of NASA’s Space Launch System (SLS) program."}
-</p>
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
+optimize={false}
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c13v84m3 c1j4r0zr`} />
 </div>
 </div>
 <div
-className={`w-element`}>
-<div
-className={`w-element cb6mw6t cmzqacz c13kj1ir chbkywm c131me5s cdgow9j cp0jmbs c1fsvg17 c1960772 c12fj73u c1tuc0c3`}>
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wi860h c1wu8pi6 c1iwa1os`}>
-{"Meeting Times"}
-</h3>
-<p
-className={`w-element`}>
-{"Tuesdays: 6-8 pm"}
-{""}
-<br />
-{""}
-{"Sundays: 3-5 pm"}
-</p>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element c1fsvg17 c1wu8pi6`}>
-<h3
-className={`w-element c1wi860h ca9pm0 crypqid`}>
-{"Meeting Location"}
-</h3>
-<Link_1
-className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
-<svg
-width={"800px"}
-height={"800px"}
-viewBox={"0 0 32 32"}
-fill={"none"}
-xmlns={"http://www.w3.org/2000/svg"}
-className={`w-element cp1e7em c1ubqwr9`}>
-<path
-d={"M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z"}
-fill={"white"}
-className={`w-element`} />
-<path
-fillRule={"evenodd"}
-clipRule={"evenodd"}
-d={"M24 12.8116L23.9999 12.8541C23.9998 12.872 23.9996 12.8899 23.9994 12.9078C23.9998 12.9287 24 12.9498 24 12.971C24 16.3073 21.4007 19.2604 19.6614 21.2367C19.1567 21.8101 18.7244 22.3013 18.449 22.6957C17.4694 24.0986 16.9524 25.6184 16.8163 26.2029C16.8163 26.6431 16.4509 27 16 27C15.5491 27 15.1837 26.6431 15.1837 26.2029C15.0476 25.6184 14.5306 24.0986 13.551 22.6957C13.2756 22.3013 12.8433 21.8101 12.3386 21.2367C10.5993 19.2604 8 16.3073 8 12.971C8 12.9498 8.0002 12.9287 8.0006 12.9078C8.0002 12.8758 8 12.8437 8 12.8116C8 8.49736 11.5817 5 16 5C20.4183 5 24 8.49736 24 12.8116ZM16 15.6812C17.7132 15.6812 19.102 14.325 19.102 12.6522C19.102 10.9793 17.7132 9.62319 16 9.62319C14.2868 9.62319 12.898 10.9793 12.898 12.6522C12.898 14.325 14.2868 15.6812 16 15.6812Z"}
-fill={"#34A851"}
-className={`w-element`} />
-<path
-d={"M23.1054 9.21856C22.1258 7.37546 20.4161 5.96177 18.3504 5.34277L13.7559 10.5615C14.3208 9.98352 15.1174 9.62346 16.0002 9.62346C17.7134 9.62346 19.1022 10.9796 19.1022 12.6524C19.1022 13.3349 18.8711 13.9646 18.4811 14.4711L23.1054 9.21856Z"}
-fill={"#4285F5"}
-className={`w-element`} />
-<path
-d={"M12.4311 21.3425C12.4004 21.3076 12.3695 21.2725 12.3383 21.2371C11.1918 19.9344 9.67162 18.2073 8.76855 16.2257L13.5439 10.8018C13.1387 11.3136 12.8976 11.9556 12.8976 12.6526C12.8976 14.3254 14.2865 15.6816 15.9997 15.6816C16.8675 15.6816 17.6521 15.3336 18.2151 14.7727L12.4311 21.3425Z"}
-fill={"#F9BB0E"}
-className={`w-element`} />
-<path
-d={"M9.89288 7.76562C8.71207 9.12685 8 10.8881 8 12.8117C8 12.8438 8.0002 12.8759 8.0006 12.9079C8.0002 12.9288 8 12.9499 8 12.9711C8 14.1082 8.30196 15.2009 8.76889 16.2254L13.5362 10.8106L9.89288 7.76562Z"}
-fill={"#E74335"}
-className={`w-element`} />
-<path
-d={"M18.3499 5.34254C17.6068 5.11988 16.8176 5 15.9997 5C13.5514 5 11.36 6.07387 9.89258 7.76553L13.5359 10.8105L13.5438 10.8015C13.6101 10.7178 13.6807 10.6375 13.7554 10.5611L18.3499 5.34254Z"}
-fill={"#1A73E6"}
-className={`w-element`} />
-</svg>
-</Link_1>
-</div>
-<p
-className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
-</p>
-</div>
-</div>
-<div
-className={`w-element c123613w`}>
-<Link
-href={"/teams/Nasa"}
-className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
-{"Learn more about NASA"}
-</Link>
-</div>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
-<div
-className={`w-element`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-irec.D2cHhfY__Znu9zU.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wu8pi6 cpomkwe cqdk6hy c956szp c1c2pt5o c1jtrzlm cjywo3c c1jfa76v c7jpbvn`}>
-{"International Rocket Engineering Competition (IREC)"}
-</h3>
-<p
-className={`w-element`}>
-{"This team competes at the International Rocket Engineering Competition, hosted annually in Texas. BSLI competes in the 30k Student Research and Developed (SRAD) category."}
-</p>
-</div>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element cb6mw6t cmzqacz c13kj1ir chbkywm c131me5s cdgow9j cp0jmbs c1fsvg17 c1960772 c12fj73u c1tuc0c3`}>
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wi860h c1wu8pi6 c1iwa1os`}>
-{"Meeting Times"}
-</h3>
-<p
-className={`w-element`}>
-{"Wednesdays: 7-9 pm"}
-{""}
-<br />
-{""}
-{"Sundays: 1-3 pm"}
-</p>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element c1fsvg17 c1wu8pi6`}>
-<h3
-className={`w-element c1wi860h ca9pm0 crypqid`}>
-{"Meeting Location"}
-</h3>
-<Link_1
-className={`w-element cp1e7em c1ubqwr9`}>
-<svg
-width={"800px"}
-height={"800px"}
-viewBox={"0 0 32 32"}
-fill={"none"}
-xmlns={"http://www.w3.org/2000/svg"}
-className={`w-element cp1e7em c1ubqwr9`}>
-<path
-d={"M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z"}
-fill={"white"}
-className={`w-element`} />
-<path
-fillRule={"evenodd"}
-clipRule={"evenodd"}
-d={"M24 12.8116L23.9999 12.8541C23.9998 12.872 23.9996 12.8899 23.9994 12.9078C23.9998 12.9287 24 12.9498 24 12.971C24 16.3073 21.4007 19.2604 19.6614 21.2367C19.1567 21.8101 18.7244 22.3013 18.449 22.6957C17.4694 24.0986 16.9524 25.6184 16.8163 26.2029C16.8163 26.6431 16.4509 27 16 27C15.5491 27 15.1837 26.6431 15.1837 26.2029C15.0476 25.6184 14.5306 24.0986 13.551 22.6957C13.2756 22.3013 12.8433 21.8101 12.3386 21.2367C10.5993 19.2604 8 16.3073 8 12.971C8 12.9498 8.0002 12.9287 8.0006 12.9078C8.0002 12.8758 8 12.8437 8 12.8116C8 8.49736 11.5817 5 16 5C20.4183 5 24 8.49736 24 12.8116ZM16 15.6812C17.7132 15.6812 19.102 14.325 19.102 12.6522C19.102 10.9793 17.7132 9.62319 16 9.62319C14.2868 9.62319 12.898 10.9793 12.898 12.6522C12.898 14.325 14.2868 15.6812 16 15.6812Z"}
-fill={"#34A851"}
-className={`w-element`} />
-<path
-d={"M23.1054 9.21856C22.1258 7.37546 20.4161 5.96177 18.3504 5.34277L13.7559 10.5615C14.3208 9.98352 15.1174 9.62346 16.0002 9.62346C17.7134 9.62346 19.1022 10.9796 19.1022 12.6524C19.1022 13.3349 18.8711 13.9646 18.4811 14.4711L23.1054 9.21856Z"}
-fill={"#4285F5"}
-className={`w-element`} />
-<path
-d={"M12.4311 21.3425C12.4004 21.3076 12.3695 21.2725 12.3383 21.2371C11.1918 19.9344 9.67162 18.2073 8.76855 16.2257L13.5439 10.8018C13.1387 11.3136 12.8976 11.9556 12.8976 12.6526C12.8976 14.3254 14.2865 15.6816 15.9997 15.6816C16.8675 15.6816 17.6521 15.3336 18.2151 14.7727L12.4311 21.3425Z"}
-fill={"#F9BB0E"}
-className={`w-element`} />
-<path
-d={"M9.89288 7.76562C8.71207 9.12685 8 10.8881 8 12.8117C8 12.8438 8.0002 12.8759 8.0006 12.9079C8.0002 12.9288 8 12.9499 8 12.9711C8 14.1082 8.30196 15.2009 8.76889 16.2254L13.5362 10.8106L9.89288 7.76562Z"}
-fill={"#E74335"}
-className={`w-element`} />
-<path
-d={"M18.3499 5.34254C17.6068 5.11988 16.8176 5 15.9997 5C13.5514 5 11.36 6.07387 9.89258 7.76553L13.5359 10.8105L13.5438 10.8015C13.6101 10.7178 13.6807 10.6375 13.7554 10.5611L18.3499 5.34254Z"}
-fill={"#1A73E6"}
-className={`w-element`} />
-</svg>
-</Link_1>
-</div>
-<p
-className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
-</p>
-</div>
-</div>
-<div
-className={`w-element c123613w`}>
-<Link
-href={"/teams/Irec"}
-className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
-{"Learn more about IREC"}
-</Link>
-</div>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
-<div
-className={`w-element`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wu8pi6 cpomkwe cqdk6hy c956szp c1c2pt5o c1jtrzlm cjywo3c c1jfa76v c7jpbvn`}>
-{"Liquid Engine Project (Liquids)"}
-</h3>
-<p
-className={`w-element`}>
-{"BSLI Liquids team focuses on liquid bipropellant rocket engine development. Current development includes working towards test firing an LR-101, and further refining our 1st custom engine."}
-</p>
-</div>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element cb6mw6t cmzqacz c13kj1ir chbkywm c131me5s cdgow9j cp0jmbs c1fsvg17 c1960772 c12fj73u c1tuc0c3`}>
-<div
-className={`w-element`}>
-<h3
-className={`w-element c1wi860h c1wu8pi6 c1iwa1os`}>
-{"Meeting Times"}
-</h3>
-<p
-className={`w-element`}>
-{"Thursdays: 6 pm"}
-{""}
-<br />
-{""}
-{"Sundays: 4 pm"}
-</p>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element c1fsvg17 c1wu8pi6`}>
-<h3
-className={`w-element c1wi860h ca9pm0 crypqid`}>
-{"Meeting Location"}
-</h3>
-<Link_1
-className={`w-element cp1e7em c1ubqwr9`}>
-<svg
-width={"800px"}
-height={"800px"}
-viewBox={"0 0 32 32"}
-fill={"none"}
-xmlns={"http://www.w3.org/2000/svg"}
-className={`w-element cp1e7em c1ubqwr9`}>
-<path
-d={"M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z"}
-fill={"white"}
-className={`w-element`} />
-<path
-fillRule={"evenodd"}
-clipRule={"evenodd"}
-d={"M24 12.8116L23.9999 12.8541C23.9998 12.872 23.9996 12.8899 23.9994 12.9078C23.9998 12.9287 24 12.9498 24 12.971C24 16.3073 21.4007 19.2604 19.6614 21.2367C19.1567 21.8101 18.7244 22.3013 18.449 22.6957C17.4694 24.0986 16.9524 25.6184 16.8163 26.2029C16.8163 26.6431 16.4509 27 16 27C15.5491 27 15.1837 26.6431 15.1837 26.2029C15.0476 25.6184 14.5306 24.0986 13.551 22.6957C13.2756 22.3013 12.8433 21.8101 12.3386 21.2367C10.5993 19.2604 8 16.3073 8 12.971C8 12.9498 8.0002 12.9287 8.0006 12.9078C8.0002 12.8758 8 12.8437 8 12.8116C8 8.49736 11.5817 5 16 5C20.4183 5 24 8.49736 24 12.8116ZM16 15.6812C17.7132 15.6812 19.102 14.325 19.102 12.6522C19.102 10.9793 17.7132 9.62319 16 9.62319C14.2868 9.62319 12.898 10.9793 12.898 12.6522C12.898 14.325 14.2868 15.6812 16 15.6812Z"}
-fill={"#34A851"}
-className={`w-element`} />
-<path
-d={"M23.1054 9.21856C22.1258 7.37546 20.4161 5.96177 18.3504 5.34277L13.7559 10.5615C14.3208 9.98352 15.1174 9.62346 16.0002 9.62346C17.7134 9.62346 19.1022 10.9796 19.1022 12.6524C19.1022 13.3349 18.8711 13.9646 18.4811 14.4711L23.1054 9.21856Z"}
-fill={"#4285F5"}
-className={`w-element`} />
-<path
-d={"M12.4311 21.3425C12.4004 21.3076 12.3695 21.2725 12.3383 21.2371C11.1918 19.9344 9.67162 18.2073 8.76855 16.2257L13.5439 10.8018C13.1387 11.3136 12.8976 11.9556 12.8976 12.6526C12.8976 14.3254 14.2865 15.6816 15.9997 15.6816C16.8675 15.6816 17.6521 15.3336 18.2151 14.7727L12.4311 21.3425Z"}
-fill={"#F9BB0E"}
-className={`w-element`} />
-<path
-d={"M9.89288 7.76562C8.71207 9.12685 8 10.8881 8 12.8117C8 12.8438 8.0002 12.8759 8.0006 12.9079C8.0002 12.9288 8 12.9499 8 12.9711C8 14.1082 8.30196 15.2009 8.76889 16.2254L13.5362 10.8106L9.89288 7.76562Z"}
-fill={"#E74335"}
-className={`w-element`} />
-<path
-d={"M18.3499 5.34254C17.6068 5.11988 16.8176 5 15.9997 5C13.5514 5 11.36 6.07387 9.89258 7.76553L13.5359 10.8105L13.5438 10.8015C13.6101 10.7178 13.6807 10.6375 13.7554 10.5611L18.3499 5.34254Z"}
-fill={"#1A73E6"}
-className={`w-element`} />
-</svg>
-</Link_1>
-</div>
-<p
-className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
-</p>
-</div>
-</div>
-<div
-className={`w-element c123613w`}>
-<Link
-href={"/teams/Liquids"}
-className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
-{"Learn more about Liquids"}
-</Link>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div
-id={"get-involved"}
 className={`w-element c11cvd9l c1lufqxe c1czb951`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cqmqoqg c13kj1ir c16nciq0 c2nedal`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x cjr76fi c13kj1ir c16nciq0`}>
 <div
-className={`w-element`}>
-<h1
-className={`w-element c97u9uk cr340of c16tluoy c3g43wk cv2z80y c4vnhzq ccq64u2`}>
-{"Get Involved 🚀"}
-</h1>
-<AnimateChildren
-action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-in-out","fill":"backwards","duration":{"type":"var","value":"duration-default"},"rangeStart":["contain",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["contain",{"type":"unit","value":50,"unit":"%"}]}},{"name":"New Animation","description":"Create a new animation.","keyframes":[{"offset":0,"styles":{}}],"timing":{"easing":"linear","fill":"both","rangeStart":["cover",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["cover",{"type":"unit","value":100,"unit":"%"}]}}],"isPinned":true}}>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1lngkeo`}>
-<HtmlEmbed
-code={"<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"1.75\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0\" />\n  <path d=\"M21 21l-6 -6\" />\n</svg>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c18u1s1s ccacsqv c1j4r0zr`} />
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 1:"}
-</b>
-{" "}
-<Link_1
-href={"/"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
-{"Find your Project Team."}
-</Link_1>
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"Look into our teams! Across NASA, IREC, and Liquids, there is a place for you in BSLI."}
-</p>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1lngkeo`}>
-<HtmlEmbed
-code={"<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"1.75\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3\" />\n  <path d=\"M16 3v4\" />\n  <path d=\"M8 3v4\" />\n  <path d=\"M4 11h10\" />\n  <path d=\"M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0\" />\n  <path d=\"M18 16.5v1.5l.5 .5\" />\n</svg>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c18u1s1s ccacsqv c1j4r0zr`} />
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 2:"}
-</b>
-{" Check if the team meets when you're available."}
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"Meeting times can be found in the "}
-<Link_1
-href={"#our-teams"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
-{"\"Our Teams\""}
-</Link_1>
-{" section above."}
-</p>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1gla3s9`}>
-<HtmlEmbed
-code={"<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"28\"\n  height=\"28\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"1.25\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M12 12v-6a2 2 0 0 1 4 0v6m0 -2a2 2 0 1 1 2 2h-6\" />\n  <path d=\"M12 12h6a2 2 0 0 1 0 4h-6m2 0a2 2 0 1 1 -2 2v-6\" />\n  <path d=\"M12 12v6a2 2 0 0 1 -4 0v-6m0 2a2 2 0 1 1 -2 -2h6\" />\n  <path d=\"M12 12h-6a2 2 0 0 1 0 -4h6m-2 0a2 2 0 1 1 2 -2v6\" />\n</svg>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c18u1s1s ccacsqv c1j4r0zr`} />
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 3:"}
-</b>
-{" Join our Slack."}
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"Join a community of engineers by "}
-<Link_1
-href={Social_Link}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
-{"clicking this link"}
-</Link_1>
-</p>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1lngkeo`}>
-<HtmlEmbed
-code={"<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"1.5\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M18 8a3 3 0 0 1 0 6\" />\n  <path d=\"M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5\" />\n  <path d=\"M12 8h0l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8\" />\n</svg>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c18u1s1s ccacsqv c1j4r0zr`} />
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 4:"}
-</b>
-{" Introduce yourself!"}
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"Introduce yourself in our slack channel! Tell us about you, what made you interested in BSLI, and ways you think you can contribute!"}
-</p>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1lngkeo`}>
-<HtmlEmbed
-code={"<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"1.75\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0\" />\n  <path d=\"M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1\" />\n  <path d=\"M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0\" />\n  <path d=\"M17 10h2a2 2 0 0 1 2 2v1\" />\n  <path d=\"M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0\" />\n  <path d=\"M3 13v-1a2 2 0 0 1 2 -2h2\" />\n</svg>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c18u1s1s ccacsqv c1j4r0zr`} />
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 5:"}
-</b>
-{" Talk to Us!"}
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"Show up to any meeting. Talk to some people in each project team and check out the vibe. Feel free to join any subteam you want!"}
-</p>
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby`}>
-<div
-className={`w-element cxtccy4 c131eeke c93cdln c193pfi8 cgdae59 c19ns4s8 c1fsvg17 c1fzb25u c1wvwf6y c1flzvby c14o45vb c14xugwl c1lngkeo`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9z\"></path>\n  <path d=\"M5 21v-7\"></path>\n</svg>"}
-className={`w-html-embed`} />
-</div>
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1uyzo1i ct7e8mf c1ai6njl c6zneyq`}>
-<b
-className={`w-element`}>
-{"Step 6:"}
-</b>
-{" Consider joining a leadership position!"}
-</p>
-<p
-className={`w-element cgvk1iq`}>
-{"If you enjoy being part of BSLI, check out the variety of leadership positions available on the "}
-<Link_1
-href={"/leadership"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
-{"Leadership"}
-</Link_1>
-{" page."}
-</p>
-</div>
-</div>
-</AnimateChildren>
-</div>
-<div
-className={`w-element c1fzb25u c1wvwf6y c1j4r0zr cjdezyc c199z4bu`}>
+className={`w-element c1flzvby cafamdi`}>
 <Image
-src={"https://www.bsli.space/_astro/DSC4344.CG1689RL_1I7n9U.webp"}
-className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c1j4r0zr cjdezyc c2o370s c1tdkztw cakx71b c19l2s1w chet79q`} />
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
+optimize={false}
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c1j4r0zr c13v84m3`} />
+</div>
+<div
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cafamdi ctmlqlh`}>
+<MarkdownEmbed
+code={CMS_Team?.data?.data?.[0]?.["goals_paragraph"]}
+className={`w-markdown-embed`}>
+</MarkdownEmbed>
 </div>
 </div>
 </div>
@@ -1218,22 +633,192 @@ className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c1j4r0zr cjdezyc 
 className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs cafamdi cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c89byf c1flzvby cwsyufx czfw4y0`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
-{"Ready to build some 🚀Rockets?"}
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c3eev2k`}>
+{"Meet the teams"}
 </h1>
+<Tabs
+value={"0"}
+className={`w-tabs`}>
+<TabsList
+className={`w-tabs-list c1fsvg17 c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt ch2sjzq cnn2qey c1yx70ji c1psuk3c cg2oqaz ckkkp6t`}>
+<TabsTrigger
+data-ws-index="0"
+className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+{"Overview"}
+</TabsTrigger>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_1: any, index_1: number) =>
+<Fragment key={index_1}>
+<TabsTrigger
+data-ws-index="1"
+value={`${collectionItem_1?.name}`}
+className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+{collectionItem_1?.name}
+</TabsTrigger>
+</Fragment>
+)}
+</TabsList>
+<TabsContent
+data-ws-index="0"
+className={`w-tab-content csrzh74 c1lynjaq c16qquiv cptfpme cqlnok c1e3dx33`}>
 <div
-className={`w-element c1fsvg17 c2jpees c1bctvrt`}>
+className={`w-element c2jpees c1bctvrt c13d86jv ca9k1ea c13kj1ir c16nciq0`}>
+<div
+className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
+<div
+className={`w-element`}>
+<div
+className={`w-element`}>
+<h1
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq ccq64u2`}>
+{"ILIAD"}
+</h1>
+<p
+className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
+{"IREC 2022-2023"}
+</p>
+</div>
+<div
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo7`}>
+{CMS_Overview?.data?.data?.[0]?.parameters?.map?.((collectionItem_2: any, index_2: number) =>
+<Fragment key={index_2}>
+<div
+className={`w-element c1fsvg17 c1412oo6`}>
+<h2
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j csbbxse`}>
+{collectionItem_2?.parameter}
+</h2>
+<div
+className={`w-element`}>
+<p
+className={`w-element c1ni26wq`}>
+{collectionItem_2?.["primary_value"]}
+</p>
+{(collectionItem_2?.["secondary_value"] != null && collectionItem_2?.["secondary_value"] !== '') &&
+<p
+className={`w-element c1jt1fo7 c1ni26wq`}>
+{` / ${collectionItem_2?.["secondary_value"]}`}
+</p>
+}
+</div>
+</div>
+</Fragment>
+)}
+</div>
+</div>
+<div
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7`}>
+{CMS_Leadership?.data?.data?.[0]?.roles?.map?.((collectionItem_3: any, index_3: number) =>
+<Fragment key={index_3}>
+<div
+className={`w-element c1fsvg17 c1412oo6 c1f38foq`}>
+<h2
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j`}>
+{collectionItem_3?.title}
+</h2>
+<div
+className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
+<p
+className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
+{collectionItem_3?.["member_id"]?.Name}
+</p>
 <Link_1
-href={Social_Link}
-target={"_blank"}
-className={`w-element cl4qqj9 c1jmf9np c1i6hdg9 c1eartro c1jfo4di c15ziikq c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf cdr374f c3eev2k ckmcig3 cib2qxx chdqs4z c1p3t04y c1s6wxtp`}>
-{"Join our Slack"}
+href={`mailto:${collectionItem_3?.["member_id"]?.Email}`}
+className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
+{collectionItem_3?.["member_id"]?.Email}
 </Link_1>
+{(collectionItem_3?.["member_id"]?.LinkedInURL != null && collectionItem_3?.["member_id"]?.LinkedInURL !== '') &&
+<Link_1
+href={collectionItem_3?.["member_id"]?.LinkedInURL}
+className={`w-element c1xkkw6h c1jt1fo7`}>
+{"LinkedIn"}
+</Link_1>
+}
 </div>
 </div>
+</Fragment>
+)}
+</div>
+</div>
+<div
+className={`w-element`}>
+<Image
+src={"https://www.bsli.space/_astro/overview.bjhnM8Ju_Tc1lS.webp"}
+className={`w-image c13v84m3 c89byf`} />
+</div>
+</div>
+</TabsContent>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_4: any, index_6: number) =>
+<Fragment key={index_6}>
+<TabsContent
+data-ws-index="1"
+value={collectionItem_4?.name}
+className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
+<div
+className={`w-element cmr7w05 c1bctvrt cqmqoqg ca9k1ea c7dprmh c16nciq0`}>
+<div
+className={`w-element ct7e8mf czxzndo`}>
+<div
+className={`w-element cakfvvb`}>
+<h1
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c145f7eq`}>
+{collectionItem_4?.name}
+</h1>
+</div>
+<div
+className={`w-element`}>
+{collectionItem_4?.["long_description"]}
+</div>
+<div
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7`}>
+{collectionItem_4?.roles?.map?.((collectionItem_5: any, index_4: number) =>
+<Fragment key={index_4}>
+<div
+className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
+<h2
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j`}>
+{collectionItem_5?.title}
+</h2>
+<div
+className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
+<p
+className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
+{collectionItem_5?.["member_id"]?.Name}
+</p>
+<Link_1
+href={`mailto:${collectionItem_5?.["member_id"]?.Email}`}
+className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
+{collectionItem_5?.["member_id"]?.Email}
+</Link_1>
+{(collectionItem_5?.["member_id"]?.LinkedInURL != null && collectionItem_5?.["member_id"]?.LinkedInURL !== '') &&
+<Link_1
+href={collectionItem_5?.["member_id"]?.LinkedInURL}
+className={`w-element c1xkkw6h c1jt1fo7`}>
+{"LinkedIn"}
+</Link_1>
+}
+</div>
+</div>
+</Fragment>
+)}
+</div>
+</div>
+<div
+className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
+{collectionItem_4?.images?.map?.((collectionItem_6: any, index_5: number) =>
+<Fragment key={index_5}>
+<Image
+src={`${CMS_Asset_URL}${collectionItem_6?.["directus_files_id"]}`}
+optimize={false}
+className={`w-image c89byf c1j4r0zr c13v84m3`} />
+</Fragment>
+)}
+</div>
+</div>
+</TabsContent>
+</Fragment>
+)}
+</Tabs>
 </div>
 </div>
 <Slot>
@@ -1252,16 +837,16 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem: any, index: number) =>
-<Fragment key={index}>
+{[1,2,3]?.map?.((collectionItem_8: any, index_8: number) =>
+<Fragment key={index_8}>
+{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_7: any, index_7: number) =>
+<Fragment key={index_7}>
 <Link_1
-href={collectionItem?.["Sponsor_Website_URL"]}
+href={collectionItem_7?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem?.image}`}
+src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
 optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
@@ -1277,14 +862,14 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
+{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_10: any, index_10: number) =>
+<Fragment key={index_10}>
 <Link_1
-href={collectionItem_3?.["Sponsor_Website_URL"]}
+href={collectionItem_10?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_3?.image}`}
+src={`${collectionItem_10?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>

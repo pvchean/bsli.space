@@ -65,13 +65,13 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
+    title: "Page not found",
     description: undefined,
-    excludePageFromSearch: undefined,
+    excludePageFromSearch: false,
     language: undefined,
     socialImageAssetName: undefined,
     socialImageUrl: undefined,
-    status: undefined,
+    status: 404,
     redirect: undefined,
     custom: [
     ],
@@ -81,6 +81,8 @@ export const getResources = (_props: { system: System }) => {
 
       type Params = Record<string, string | undefined>;
 export const getRemixParams = ({ ...params }: Params): Params => {
+  params[0] = params["*"]
+  delete params["*"]
   return params
 }
 

@@ -65,14 +65,14 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
-    description: undefined,
-    excludePageFromSearch: undefined,
-    language: undefined,
+    title: "Untitled",
+    description: "",
+    excludePageFromSearch: true,
+    language: "",
     socialImageAssetName: undefined,
-    socialImageUrl: undefined,
+    socialImageUrl: "",
     status: undefined,
-    redirect: undefined,
+    redirect: "",
     custom: [
     ],
   };

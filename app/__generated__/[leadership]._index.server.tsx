@@ -45,11 +45,22 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CMS_Leadership_1: ResourceRequest = {
+    name: "CMS_Leadership",
+    url: "https://cms.bsli.a2.lab512.org/flows/trigger/2b6fe35f-5288-4dd9-aec8-ad93d8b2152d",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+      { name: "Cache-Control", value: "max-age=86400" },
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_3", CMS_Sponsors_External_3],
     ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
+    ["CMS_Leadership_1", CMS_Leadership_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -65,14 +76,14 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
-    description: undefined,
-    excludePageFromSearch: undefined,
-    language: undefined,
+    title: "Untitled",
+    description: "",
+    excludePageFromSearch: true,
+    language: "",
     socialImageAssetName: undefined,
-    socialImageUrl: undefined,
+    socialImageUrl: "",
     status: undefined,
-    redirect: undefined,
+    redirect: "",
     custom: [
     ],
   };

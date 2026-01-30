@@ -6,6 +6,7 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.a2.lab512.org/items/"
+  const system = _props.system
   const CMS_Sponsors_External_3: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
@@ -45,11 +46,26 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CMS_Members_1: ResourceRequest = {
+    name: "CMS_Members",
+    url: `${CMS_Item_URL}BSLI_Members`,
+    searchParams: [
+      { name: "fields", value: "*.*" },
+      { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.membersSearchScope}"}},{"${system?.search?.membersSearchType}":{"${system?.search?.membersSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.membersSearch == '' ? true : system?.search?.membersSearch}"}}]}`
+ },
+      { name: "sort", value: `${system?.search?.membersSearchOrder == "on" ? '-' : ''}${system?.search?.membersSortType}` },
+    ],
+    method: "get",
+    headers: [
+      { name: "Cache-Control", value: "max-age=3600" },
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_3", CMS_Sponsors_External_3],
     ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
+    ["CMS_Members_1", CMS_Members_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -65,14 +81,14 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
-    description: undefined,
-    excludePageFromSearch: undefined,
-    language: undefined,
+    title: "Untitled",
+    description: "",
+    excludePageFromSearch: true,
+    language: "",
     socialImageAssetName: undefined,
-    socialImageUrl: undefined,
+    socialImageUrl: "",
     status: undefined,
-    redirect: undefined,
+    redirect: "",
     custom: [
     ],
   };
