@@ -1,12 +1,12 @@
 version: "3.9"
 
 services:
-  com-qnpturbines:
-    container_name: bsli_website
+  bsli-website:
+    container_name: bsli-website
     build:
       context: .
       dockerfile: Dockerfile
-    image: bsli_website:latest
+    image: bsli-website:latest
     environment:
       - NODE_ENV=production
       - DOMAIN=bsli.a2.lab512.org
