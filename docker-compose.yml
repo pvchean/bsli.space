@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  bsli-website:
+    container_name: bsli-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bsli-website:latest
+    environment:
+      - NODE_ENV=production
+      - DOMAIN=bsli.a2.lab512.org
+      - DOMAINS=bsli.a2.lab512.org,cms.bsli.a2.lab512.org
+      - ENABLE_IMAGE_OPTIMIZATION=true
+      - PORT=80
+    restart: unless-stopped
+    networks:
+      bsli-frontend:
+        ipv4_address: 172.21.0.2
+
+networks:
+  bsli-frontend:
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
