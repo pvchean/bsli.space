@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "7b271235-59ba-4ed7-94ee-95eb68c12a56",
+    "id": "30423173-92c5-4240-aba7-98239d2bf336",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 2179,
-    "createdAt": "2026-01-30T04:25:42.649+00:00",
-    "updatedAt": "2026-01-30T04:25:42.649+00:00",
+    "version": 2183,
+    "createdAt": "2026-01-30T04:32:00.475+00:00",
+    "updatedAt": "2026-01-30T04:32:00.475+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -50851,16 +50851,6 @@
         }
       ],
       [
-        "_z2I0dlnecr2qX3D7D_hC",
-        {
-          "id": "_z2I0dlnecr2qX3D7D_hC",
-          "instanceId": "BBHzGzSjgHNTDgXrBUf7b",
-          "name": "clientOnly",
-          "type": "string",
-          "value": "true"
-        }
-      ],
-      [
         "fDYoJAT_C4JrD_y-IZV6D",
         {
           "id": "fDYoJAT_C4JrD_y-IZV6D",
@@ -50908,16 +50898,6 @@
           "name": "autofocus",
           "type": "boolean",
           "value": true
-        }
-      ],
-      [
-        "10KXj88kB6pHN_g7AvNlJ",
-        {
-          "id": "10KXj88kB6pHN_g7AvNlJ",
-          "instanceId": "jrbtyrL1sdybqIH-R0SO4",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": false
         }
       ],
       [
@@ -50978,16 +50958,6 @@
           "name": "value",
           "type": "expression",
           "value": "$ws$system.search.membersSearch"
-        }
-      ],
-      [
-        "s0tnqEZP38jmt7eBqgugS",
-        {
-          "id": "s0tnqEZP38jmt7eBqgugS",
-          "instanceId": "BBHzGzSjgHNTDgXrBUf7b",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": false
         }
       ],
       [
@@ -66018,14 +65988,6 @@
           "children": [
             {
               "type": "id",
-              "value": "jrbtyrL1sdybqIH-R0SO4"
-            },
-            {
-              "type": "id",
-              "value": "BBHzGzSjgHNTDgXrBUf7b"
-            },
-            {
-              "type": "id",
               "value": "JEJbEuEBgbcLWuZBSGJ2h"
             },
             {
@@ -66416,22 +66378,6 @@
         }
       ],
       [
-        "BBHzGzSjgHNTDgXrBUf7b",
-        {
-          "type": "instance",
-          "id": "BBHzGzSjgHNTDgXrBUf7b",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "search parameters debug",
-          "children": [
-            {
-              "type": "expression",
-              "value": "`${$ws$system.search}`"
-            }
-          ]
-        }
-      ],
-      [
         "pna5a4-BhkDiR5ST40GFU",
         {
           "type": "instance",
@@ -66671,22 +66617,6 @@
           "id": "c3dgCjagQdfEj2lnxIuyU",
           "component": "Input",
           "children": []
-        }
-      ],
-      [
-        "jrbtyrL1sdybqIH-R0SO4",
-        {
-          "type": "instance",
-          "id": "jrbtyrL1sdybqIH-R0SO4",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "query filter backup",
-          "children": [
-            {
-              "type": "text",
-              "value": "`{\"_and\":[{\"status\":{\"_in\":\"${system.search.membersSearchScope}\"}},{\"${system.search.membersSearchType}\":{\"${system.search.membersSearch == '' ? \"_nnull\" : \"_icontains\"}\":\"${system.search.membersSearch == '' ? true : system.search.membersSearch}\"}}]}`\n"
-            }
-          ]
         }
       ],
       [
