@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T04:43:25.960Z";
+      export const lastPublished = "2026-01-31T21:10:20.377Z";
 
       export const siteName = undefined;
 
@@ -633,8 +633,9 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaa
 <div
 className={`w-element`}>
 <Image
-src={collectionItem_2?.["BSLI_Members_id"]?.headshot || "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}
-className={`w-image c1wu8pi6 c89byf cpkvuvm c13v84m3`} />
+src={"https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}
+optimize={false}
+className={`w-image c1kp5vo3 c89byf c13v84m3 c159iha6`} />
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 {collectionItem_2?.Name}

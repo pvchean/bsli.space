@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T04:43:25.960Z";
+      export const lastPublished = "2026-01-31T21:10:20.377Z";
 
       export const siteName = undefined;
 
@@ -34,8 +34,8 @@ const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
-let CMS_Members = useResource("CMS_Members_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let CMS_Members = useResource("CMS_Members_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
 let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
 let CurrentDate = useResource("CurrentDate_1")
@@ -735,15 +735,16 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaa
 <div
 className={`w-element`}>
 <Image
-src={collectionItem?.["BSLI_Members_id"]?.headshot || "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}
-className={`w-image c1kp5vo3 c89byf`} />
+src={"https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}
+optimize={false}
+className={`w-image c1kp5vo3 c89byf c13v84m3 c159iha6`} />
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 {collectionItem?.Name}
 </div>
 <div
 className={`w-element cr340of`}>
-{collectionItem?.["role_id"]?.[0]?.title}
+{`${collectionItem?.["role_id"]?.length != 0 ? collectionItem?.["role_id"]?.[0]?.title : ' '}`}
 </div>
 </div>
 <p

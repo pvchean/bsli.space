@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-30T04:43:25.960Z";
+      export const lastPublished = "2026-01-31T21:10:20.377Z";
 
       export const siteName = undefined;
 
@@ -646,7 +646,8 @@ className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q`}>
 <Image
 src={"https://www.bsli.space/_astro/Hana%20Winchester.DZzDsTGn_11DkYN.webp"}
-className={`w-image`} />
+optimize={false}
+className={`w-image c1kp5vo3 c89byf c13v84m3 c159iha6`} />
 <div
 className={`w-element`}>
 <div
