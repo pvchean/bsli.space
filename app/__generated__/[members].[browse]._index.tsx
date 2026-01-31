@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-31T21:10:20.377Z";
+      export const lastPublished = "2026-01-31T22:37:58.850Z";
 
       export const siteName = undefined;
 
@@ -735,7 +735,7 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaa
 <div
 className={`w-element`}>
 <Image
-src={"https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}
+src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
 optimize={false}
 className={`w-image c1kp5vo3 c89byf c13v84m3 c159iha6`} />
 <div
@@ -744,7 +744,7 @@ className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 </div>
 <div
 className={`w-element cr340of`}>
-{`${collectionItem?.["role_id"]?.length != 0 ? collectionItem?.["role_id"]?.[0]?.title : ' '}`}
+{collectionItem?.["role_id"]?.[0]?.title || ' '}
 </div>
 </div>
 <p
@@ -819,6 +819,7 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_1?.image}`}
+optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>

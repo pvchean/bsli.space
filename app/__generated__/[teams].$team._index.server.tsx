@@ -100,6 +100,27 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CMS_Team_Project_1: ResourceRequest = {
+    name: "CMS_Team_Project",
+    url: `${CMS_Item_URL}BSLI_Projects`,
+    searchParams: [
+      { name: "fields", value: "*,team.*.*" },
+      { name: "filter", value: `{"team": {"Team_Name":{"_eq": "${system?.params?.team}"}}}` },
+      { name: "sort", value: "-start" },
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const now: ResourceRequest = {
+    name: "now",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_3", CMS_Sponsors_External_3],
     ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
@@ -109,6 +130,8 @@ export const getResources = (_props: { system: System }) => {
     ["CMS_Team_1", CMS_Team_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
+    ["CMS_Team_Project_1", CMS_Team_Project_1],
+    ["now", now],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

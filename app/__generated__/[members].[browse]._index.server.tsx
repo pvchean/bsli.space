@@ -60,12 +60,22 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=3600" },
     ],
   }
+  const now: ResourceRequest = {
+    name: "now",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_3", CMS_Sponsors_External_3],
     ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
     ["CMS_Members_1", CMS_Members_1],
+    ["now", now],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

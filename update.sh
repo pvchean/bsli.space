@@ -3,6 +3,10 @@
 # Go to repo directory (important if run from elsewhere)
 cd "$(dirname "$0")" || exit 1
 
+webstudio sync
+
+webstudio build --template docker
+
 # Check if there are changes
 if [[ -z $(git status --porcelain) ]]; then
   echo "No changes to commit."

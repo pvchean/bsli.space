@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-31T21:10:20.377Z";
+      export const lastPublished = "2026-01-31T22:37:58.850Z";
 
       export const siteName = undefined;
 
@@ -30,12 +30,14 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
       
 
       const Page = (_props: { system: any; }) => {
+const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Team = useResource("CMS_Team_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
 let CMS_Subteams = useResource("CMS_Subteams_1")
+let CMS_Team_Project = useResource("CMS_Team_Project_1")
 let CMS_Overview = useResource("CMS_Overview_1")
 let CMS_Leadership = useResource("CMS_Leadership_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
@@ -591,7 +593,7 @@ className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb
 <div
 className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x c13d86jv c13kj1ir c16nciq0`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x c13d86jv c13kj1ir c16nciq0`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 ctmlqlh`}>
 <h1
@@ -606,7 +608,7 @@ className={`w-markdown-embed`}>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
 optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c13v84m3 c1j4r0zr`} />
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c1j4r0zr c89byf c13v84m3 ctsnyh5 ca966ma`} />
 </div>
 </div>
 <div
@@ -670,12 +672,12 @@ className={`w-element`}>
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq ccq64u2`}>
-{"ILIAD"}
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq csbbxse ccq64u2`}>
+{CMS_Team_Project?.data?.data?.[0]?.name}
 </h1>
 <p
 className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
-{"IREC 2022-2023"}
+{`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Now"}`}
 </p>
 </div>
 <div
@@ -741,11 +743,12 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 </div>
 </div>
 <div
-className={`w-element`}>
+className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={"https://www.bsli.space/_astro/overview.bjhnM8Ju_Tc1lS.webp"}
+src={CMS_Asset_URL + CMS_Team_Project?.data?.data?.[0]?.["overview_image"]}
 loading={"eager"}
-className={`w-image c13v84m3 c89byf`} />
+optimize={false}
+className={`w-image c1j4r0zr c1x7x2z2`} />
 </div>
 </div>
 </TabsContent>
@@ -848,6 +851,7 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
+optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>
