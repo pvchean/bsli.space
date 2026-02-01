@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "ae70571c-a197-45f6-984e-3f7afbbedf19",
+    "id": "af7ff430-2c15-4b52-86eb-69fa0dbebd72",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 3424,
-    "createdAt": "2026-02-01T20:54:11.034+00:00",
-    "updatedAt": "2026-02-01T20:54:11.034+00:00",
+    "version": 3443,
+    "createdAt": "2026-02-01T21:11:34.155+00:00",
+    "updatedAt": "2026-02-01T21:11:34.155+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -57710,13 +57710,23 @@
         }
       ],
       [
-        "-8GysgWy3-b4DmQfsePcN",
+        "OiaYyapJZ0vpEukZfTOSu",
         {
-          "id": "-8GysgWy3-b4DmQfsePcN",
-          "instanceId": "QumXbnJgQDNrF-rFr2KRk",
+          "id": "OiaYyapJZ0vpEukZfTOSu",
+          "instanceId": "f-68nydqKNAqRGP8AEJP0",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    document.querySelectorAll('.rocket-link').forEach(btn => {\n      const rocket = btn.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      let frame, stop;\n\n      btn.addEventListener('mouseenter', () => {\n        clearTimeout(stop);\n        if (!frame) loop();\n      });\n\n      btn.addEventListener('mouseleave', () => {\n        stop = setTimeout(() => {\n          cancelAnimationFrame(frame);\n          frame = null;\n        }, 50);\n      });\n\n      function loop() {\n        for (let i = 0; i < 3; i++) spawn(rocket);\n        frame = requestAnimationFrame(loop);\n      }\n    });\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; \n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      // Initial Physics State\n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      // Single animation loop closure\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`;\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"
+          "value": "<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    // We attach listeners to the document to handle elements added dynamically (Webstudio hydration)\n    document.addEventListener('mouseover', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target._isSmoking) return; // Prevent double triggers\n      \n      const rocket = target.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      clearTimeout(target._stopTimeout);\n      target._isSmoking = true;\n      loop(rocket, target);\n    });\n\n    document.addEventListener('mouseout', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target.contains(e.relatedTarget)) return; \n      target._isSmoking = false;\n      cancelAnimationFrame(target._animFrame);\n    });\n\n    function loop(rocket, container) {\n      if (!container._isSmoking) return;\n      for (let i = 0; i < 3; i++) spawn(rocket);\n      container._animFrame = requestAnimationFrame(() => loop(rocket, container));\n    }\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      if (rect.width === 0) return; // invisible element check\n\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; // +135deg to find tail\n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`; // Growth effect\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"
+        }
+      ],
+      [
+        "n6OONe1mlKidQi1ycTZBg",
+        {
+          "id": "n6OONe1mlKidQi1ycTZBg",
+          "instanceId": "f-68nydqKNAqRGP8AEJP0",
+          "name": "clientOnly",
+          "type": "boolean",
+          "value": true
         }
       ]
     ],
@@ -61661,6 +61671,10 @@
           "children": [
             {
               "type": "id",
+              "value": "f-68nydqKNAqRGP8AEJP0"
+            },
+            {
+              "type": "id",
               "value": "1SBHsSqMDfJmBjyrznrK3"
             }
           ]
@@ -61674,10 +61688,6 @@
           "component": "Box",
           "label": "CTAs",
           "children": [
-            {
-              "type": "id",
-              "value": "QumXbnJgQDNrF-rFr2KRk"
-            },
             {
               "type": "id",
               "value": "Y3QGMr5pFEMsAoeaxsRmn"
@@ -74653,10 +74663,10 @@
         }
       ],
       [
-        "QumXbnJgQDNrF-rFr2KRk",
+        "f-68nydqKNAqRGP8AEJP0",
         {
           "type": "instance",
-          "id": "QumXbnJgQDNrF-rFr2KRk",
+          "id": "f-68nydqKNAqRGP8AEJP0",
           "component": "HtmlEmbed",
           "children": []
         }
