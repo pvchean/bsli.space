@@ -29,7 +29,7 @@ git commit -m "Auto sync: $VERSION"
 git tag -a "$VERSION" -m "Automated release $VERSION"
 
 # Push code and tags
-git push origin main
+git push origin master
 git push origin "$VERSION"
 
 echo "Sync complete. Pushed version $VERSION"
