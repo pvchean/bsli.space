@@ -46,25 +46,31 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const CMS_Members_1: ResourceRequest = {
-    name: "CMS_Members",
-    url: `${CMS_Item_URL}BSLI_Members`,
-    searchParams: [
-      { name: "fields", value: "*,role_id.*" },
-      { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.membersSearchScope}"}},{"${system?.search?.membersSearchType}":{"${system?.search?.membersSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.membersSearch == '' ? true : system?.search?.membersSearch}"}}]}`
- },
-      { name: "sort", value: `${system?.search?.membersSearchOrder == "on" ? '-' : ''}${system?.search?.membersSortType}` },
-      { name: "deep", value: "{\"role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
-    ],
-    method: "get",
-    headers: [
-      { name: "Cache-Control", value: "max-age=3600" },
-    ],
-  }
   const now: ResourceRequest = {
     name: "now",
     url: "/$resources/current-date",
     searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const CMS_Member_2: ResourceRequest = {
+    name: "CMS_Member",
+    url: CMS_Item_URL + "BSLI_Members",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const CMS_Member_1: ResourceRequest = {
+    name: "CMS_Member",
+    url: CMS_Item_URL + "BSLI_Members",
+    searchParams: [
+      { name: "fields", value: "*,role_id.*.*" },
+      { name: "filter[osu_ndn][_eq]", value: system?.params?.ndn },
+      { name: "deep[role_id][_sort]", value: "end,start" },
     ],
     method: "get",
     headers: [
@@ -75,8 +81,9 @@ export const getResources = (_props: { system: System }) => {
     ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
-    ["CMS_Members_1", CMS_Members_1],
     ["now", now],
+    ["CMS_Member_2", CMS_Member_2],
+    ["CMS_Member_1", CMS_Member_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

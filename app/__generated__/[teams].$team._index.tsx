@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-31T22:37:58.850Z";
+      export const lastPublished = "2026-02-01T20:43:58.677Z";
 
       export const siteName = undefined;
 
@@ -60,7 +60,7 @@ className={`w-html-embed`} />
 <Slot>
 <Fragment_1>
 <div
-className={`w-element c1ha922v caaf2sz ctceiha c1517000 c3as5a5 c1h7pdcy`}>
+className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g caf9fuo`}>
@@ -196,7 +196,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"BSLI Teams"}
 </Heading>
 </Box>
@@ -263,12 +263,6 @@ href={"/leadership"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
-<Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
 tag={"span"}
@@ -287,12 +281,6 @@ href={Active_Members_URL}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
-<Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
 tag={"span"}
@@ -310,12 +298,6 @@ className={`w-text c1jt1fo7`}>
 href={Former_Members_URL}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
-<Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -339,7 +321,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"The BSLI Family"}
 </Heading>
 </Box>
@@ -347,7 +329,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and past engineers"}
+{"A repository of all of our wonderful current and former engineers"}
 </Paragraph>
 </Box>
 </Link>
@@ -390,16 +372,19 @@ className={`w-box c1w29cqu camp34b`}>
 <Slot>
 <Fragment_1>
 <Box
-className={`w-box c10wrjl3`}>
+className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
+<HtmlEmbed
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    document.querySelectorAll('.rocket-link').forEach(btn => {\n      const rocket = btn.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      let frame, stop;\n\n      btn.addEventListener('mouseenter', () => {\n        clearTimeout(stop);\n        if (!frame) loop();\n      });\n\n      btn.addEventListener('mouseleave', () => {\n        stop = setTimeout(() => {\n          cancelAnimationFrame(frame);\n          frame = null;\n        }, 50);\n      });\n\n      function loop() {\n        for (let i = 0; i < 3; i++) spawn(rocket);\n        frame = requestAnimationFrame(loop);\n      }\n    });\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; \n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      // Initial Physics State\n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      // Single animation loop closure\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`;\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb`}>
+className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
@@ -565,16 +550,19 @@ className={`w-box co74p4k cmv1zps c1bkp8hc`}>
 <Slot>
 <Fragment_1>
 <Box
-className={`w-box c10wrjl3`}>
+className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
+<HtmlEmbed
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    document.querySelectorAll('.rocket-link').forEach(btn => {\n      const rocket = btn.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      let frame, stop;\n\n      btn.addEventListener('mouseenter', () => {\n        clearTimeout(stop);\n        if (!frame) loop();\n      });\n\n      btn.addEventListener('mouseleave', () => {\n        stop = setTimeout(() => {\n          cancelAnimationFrame(frame);\n          frame = null;\n        }, 50);\n      });\n\n      function loop() {\n        for (let i = 0; i < 3; i++) spawn(rocket);\n        frame = requestAnimationFrame(loop);\n      }\n    });\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; \n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      // Initial Physics State\n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      // Single animation loop closure\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`;\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb`}>
+className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
@@ -605,10 +593,30 @@ code={CMS_Team?.data?.data?.[0]?.["purpose_paragraph"]}
 className={`w-markdown-embed`}>
 </MarkdownEmbed>
 </div>
+<Dialog>
+<DialogTrigger>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
 optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c1j4r0zr c89byf c13v84m3 ctsnyh5 ca966ma`} />
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c1j4r0zr c89byf c13v84m3 ctsnyh5 ca966ma`} />
+</DialogTrigger>
+<DialogOverlay
+className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
+<DialogContent
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+<Image
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
+optimize={false}
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+<DialogClose
+className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
+className={`w-html-embed`} />
+</DialogClose>
+</DialogContent>
+</DialogOverlay>
+</Dialog>
 </div>
 </div>
 <div
@@ -617,10 +625,30 @@ className={`w-element c11cvd9l c1lufqxe c1czb951`}>
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x cjr76fi c13kj1ir c16nciq0`}>
 <div
 className={`w-element c1flzvby cafamdi`}>
+<Dialog>
+<DialogTrigger>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
 optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c1j4r0zr c13v84m3`} />
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3`} />
+</DialogTrigger>
+<DialogOverlay
+className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
+<DialogContent
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+<Image
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
+optimize={false}
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+<DialogClose
+className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
+className={`w-html-embed`} />
+</DialogClose>
+</DialogContent>
+</DialogOverlay>
+</Dialog>
 </div>
 <div
 className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cafamdi ctmlqlh`}>
@@ -649,13 +677,13 @@ data-ws-index="0"
 className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
 {"Overview"}
 </TabsTrigger>
-{CMS_Subteams?.data?.data?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
+{CMS_Subteams?.data?.data?.map?.((collectionItem: any, index: number) =>
+<Fragment key={index}>
 <TabsTrigger
 data-ws-index="1"
-value={`${collectionItem_1?.name}`}
+value={`${collectionItem?.name}`}
 className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
-{collectionItem_1?.name}
+{collectionItem?.name}
 </TabsTrigger>
 </Fragment>
 )}
@@ -677,29 +705,29 @@ className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq csbbxse
 </h1>
 <p
 className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
-{`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Now"}`}
+{`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Present"}`}
 </p>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo7`}>
-{CMS_Overview?.data?.data?.[0]?.parameters?.map?.((collectionItem_2: any, index_2: number) =>
-<Fragment key={index_2}>
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo7 clojc2s`}>
+{CMS_Overview?.data?.data?.[0]?.parameters?.map?.((collectionItem_1: any, index_1: number) =>
+<Fragment key={index_1}>
 <div
 className={`w-element c1fsvg17 c1412oo6`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j csbbxse`}>
-{collectionItem_2?.parameter}
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k csbbxse`}>
+{collectionItem_1?.parameter}
 </h2>
 <div
 className={`w-element`}>
 <p
 className={`w-element c1ni26wq`}>
-{collectionItem_2?.["primary_value"]}
+{collectionItem_1?.["primary_value"]}
 </p>
-{(collectionItem_2?.["secondary_value"] != null && collectionItem_2?.["secondary_value"] !== '') &&
+{(collectionItem_1?.["secondary_value"] != null && collectionItem_1?.["secondary_value"] !== '') &&
 <p
 className={`w-element c1jt1fo7 c1ni26wq`}>
-{` / ${collectionItem_2?.["secondary_value"]}`}
+{` / ${collectionItem_1?.["secondary_value"]}`}
 </p>
 }
 </div>
@@ -709,29 +737,29 @@ className={`w-element c1jt1fo7 c1ni26wq`}>
 </div>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7`}>
-{CMS_Leadership?.data?.data?.[0]?.roles?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7 c1emur3c c1bclcky c1drr1d0`}>
+{CMS_Leadership?.data?.data?.[0]?.roles?.map?.((collectionItem_2: any, index_2: number) =>
+<Fragment key={index_2}>
 <div
-className={`w-element c1fsvg17 c1412oo6 c1f38foq`}>
+className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j`}>
-{collectionItem_3?.title}
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c5azhl4 c1r0hodc c1785g20`}>
+{collectionItem_2?.title}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
 <p
-className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
-{collectionItem_3?.["member_id"]?.Name}
+className={`w-element c1iebxzq cjl8er8 c145f7eq c5azhl4 c1r0hodc c1fg96d4 cah9upb`}>
+{collectionItem_2?.["member_id"]?.Name}
 </p>
 <Link_1
-href={`mailto:${collectionItem_3?.["member_id"]?.Email}`}
+href={`mailto:${collectionItem_2?.["member_id"]?.Email}`}
 className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
-{collectionItem_3?.["member_id"]?.Email}
+{collectionItem_2?.["member_id"]?.Email}
 </Link_1>
-{(collectionItem_3?.["member_id"]?.LinkedInURL != null && collectionItem_3?.["member_id"]?.LinkedInURL !== '') &&
+{(collectionItem_2?.["member_id"]?.LinkedInURL != null && collectionItem_2?.["member_id"]?.LinkedInURL !== '') &&
 <Link_1
-href={collectionItem_3?.["member_id"]?.LinkedInURL}
+href={collectionItem_2?.["member_id"]?.LinkedInURL}
 className={`w-element c1xkkw6h c1jt1fo7`}>
 {"LinkedIn"}
 </Link_1>
@@ -748,55 +776,58 @@ className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 src={CMS_Asset_URL + CMS_Team_Project?.data?.data?.[0]?.["overview_image"]}
 loading={"eager"}
 optimize={false}
-className={`w-image c1j4r0zr c1x7x2z2`} />
+className={`w-image c1j4r0zr cjebrku`} />
 </div>
 </div>
 </TabsContent>
-{CMS_Subteams?.data?.data?.map?.((collectionItem_4: any, index_6: number) =>
-<Fragment key={index_6}>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_3: any, index_5: number) =>
+<Fragment key={index_5}>
 <TabsContent
 data-ws-index="1"
-value={collectionItem_4?.name}
+value={collectionItem_3?.name}
 className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
 <div
 className={`w-element cmr7w05 c1bctvrt cqmqoqg ca9k1ea c7dprmh c16nciq0`}>
 <div
-className={`w-element ct7e8mf czxzndo`}>
+className={`w-element ct7e8mf czxzndo c1fsvg17 cp0jmbs c1412oo6`}>
+<div
+className={`w-element`}>
 <div
 className={`w-element cakfvvb`}>
 <h1
 className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c145f7eq`}>
-{collectionItem_4?.name}
+{collectionItem_3?.name}
 </h1>
 </div>
 <div
 className={`w-element`}>
-{collectionItem_4?.["long_description"]}
+{collectionItem_3?.["long_description"]}
+</div>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7`}>
-{collectionItem_4?.roles?.map?.((collectionItem_5: any, index_4: number) =>
-<Fragment key={index_4}>
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7 c4csrei`}>
+{collectionItem_3?.roles?.map?.((collectionItem_4: any, index_3: number) =>
+<Fragment key={index_3}>
 <div
 className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j`}>
-{collectionItem_5?.title}
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+{collectionItem_4?.title}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
 <p
 className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
-{collectionItem_5?.["member_id"]?.Name}
+{collectionItem_4?.["member_id"]?.Name}
 </p>
 <Link_1
-href={`mailto:${collectionItem_5?.["member_id"]?.Email}`}
+href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
 className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
-{collectionItem_5?.["member_id"]?.Email}
+{collectionItem_4?.["member_id"]?.Email}
 </Link_1>
-{(collectionItem_5?.["member_id"]?.LinkedInURL != null && collectionItem_5?.["member_id"]?.LinkedInURL !== '') &&
+{(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&
 <Link_1
-href={collectionItem_5?.["member_id"]?.LinkedInURL}
+href={collectionItem_4?.["member_id"]?.LinkedInURL}
 className={`w-element c1xkkw6h c1jt1fo7`}>
 {"LinkedIn"}
 </Link_1>
@@ -809,12 +840,13 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 </div>
 <div
 className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
-{collectionItem_4?.images?.map?.((collectionItem_6: any, index_5: number) =>
-<Fragment key={index_5}>
+{collectionItem_3?.images?.map?.((collectionItem_5: any, index_4: number) =>
+<Fragment key={index_4}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_6?.["directus_files_id"]}`}
+src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]}`}
 loading={"eager"}
-className={`w-image c89byf c1j4r0zr c13v84m3`} />
+optimize={false}
+className={`w-image c89byf c1j4r0zr c13v84m3 c1tsavcz`} />
 </Fragment>
 )}
 </div>
@@ -822,6 +854,24 @@ className={`w-image c89byf c1j4r0zr c13v84m3`} />
 </TabsContent>
 </Fragment>
 )}
+<TabsList
+className={`w-tabs-list c1xd87pa c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt cnn2qey c146g9k6 coq06vt c1psuk3c c1ickg77 ckkkp6t c16nciq0`}>
+<TabsTrigger
+data-ws-index="2"
+className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+{"Overview"}
+</TabsTrigger>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_6: any, index_6: number) =>
+<Fragment key={index_6}>
+<TabsTrigger
+data-ws-index="3"
+value={`${collectionItem_6?.name}`}
+className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+{collectionItem_6?.name}
+</TabsTrigger>
+</Fragment>
+)}
+</TabsList>
 </Tabs>
 </div>
 </div>
@@ -953,10 +1003,6 @@ className={`w-html-embed cwxng9o`} />
 </div>
 </Slot>
 </div>
-<p
-className={`w-element c89byf c3eev2k`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
-</p>
 <div
 className={`w-element c1fsvg17 c2jpees c1bctvrt c1i5lp6y c1jt1fo7 c1412oo6 crr88tp c13kj1ir c191262q`}>
 <p
@@ -980,6 +1026,10 @@ className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz c1jt1fo7`}>
 {")"}
 </p>
 </div>
+<p
+className={`w-element c89byf c3eev2k c1wi860h`}>
+{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+</p>
 </div>
 </div>
 </Fragment_1>

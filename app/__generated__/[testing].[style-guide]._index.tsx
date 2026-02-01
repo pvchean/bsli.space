@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-31T22:37:58.850Z";
+      export const lastPublished = "2026-02-01T20:43:58.677Z";
 
       export const siteName = undefined;
 
@@ -149,7 +149,7 @@ className={`w-text-1 c18rwu55 c9enewt c162yw8a cut6zwa c1vn25wx c1voizkc c3z33ta
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"Foreground"}
 </Heading>
 <Box
@@ -202,7 +202,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 c2
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"Background"}
 </Heading>
 <Box
@@ -246,7 +246,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 cc
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"Other"}
 </Heading>
 <Box
@@ -340,7 +340,7 @@ className={`w-heading cbwi5wk cr340of c1iwa1os cbewb4j`}>
 {"you can edit"}
 </Heading>
 <Heading
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"Heading 3 text "}
 {""}
 <br />

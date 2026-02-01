@@ -4,7 +4,7 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Time as Time, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
 import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
@@ -33,7 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
-let CMS_Leadership = useResource("CMS_Leadership_1")
+let CMS_Member = useResource("CMS_Member_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
 let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
@@ -41,7 +41,7 @@ let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
 <div
-className={`w-element`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
@@ -574,73 +574,36 @@ className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf cbn0s32 cnbmf4z`}>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z c1fsvg17 cp0jmbs c2jpees c1bctvrt`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1mynah0 c18jhn4e c1flzvby c1fhcu5x`}>
-<h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`}>
-{"BSLI Leadership Team"}
-</h1>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
-{CMS_Leadership?.data?.map?.((collectionItem: any, index: number) =>
-<Fragment key={index}>
-{(collectionItem?.members?.length != 0) &&
-<Link_1
-href={`#${collectionItem?.["Team_Name"]}`}
-className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c1r92k6l cib2qxx chdqs4z`}>
-{collectionItem?.["Team_Name"]}
-</Link_1>
-}
-</Fragment>
-)}
-</div>
-</div>
-</div>
-<HtmlEmbed
-code={"<style>\n/* Target every even item */\n.list-section:nth-child(even) {\n  background-color: var(--background-primary);\n}\n\n/* Target every odd item */\n.list-section:nth-child(odd) {\n  background-color: var(--background-secondary);\n}\n</style>"}
-className={`w-html-embed`} />
-{CMS_Leadership?.data?.map?.((collectionItem_1: any, index_2: number) =>
-<Fragment key={index_2}>
-{(collectionItem_1?.members?.length != 0) &&
-<div
-id={collectionItem_1?.["Team_Name"]}
-className={`w-element cugth94 c1lufqxe cnbmf4z ${"list-section"}`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<h1
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k c145f7eq`}>
-{collectionItem_1?.["display_name"]}
-</h1>
-<div
-className={`w-element c1fsvg17 c2jpees c1bctvrt cnn2qey c1flzvby cafamdi`}>
-{collectionItem_1?.members?.map?.((collectionItem_2: any, index_1: number) =>
-<Fragment key={index_1}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 cgve8lt`}>
-<div
-className={`w-element`}>
+className={`w-element c2jpees c1bctvrt cwr14mb ca9k1ea c13kj1ir c16nciq0`}>
 <Image
-src={`${collectionItem_2?.headshot != null ? CMS_Asset_URL + collectionItem_2?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
-optimize={true}
+src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
+optimize={false}
 className={`w-image c89byf c13v84m3 c159iha6`} />
 <div
-className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
-{collectionItem_2?.Name}
-</div>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
 <div
-className={`w-element cr340of`}>
-{collectionItem_2?.roles?.[0]?.title || ' '}
-</div>
-</div>
-<p
 className={`w-element`}>
-{collectionItem_2?.Major || ' '}
+<h1
+className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h`}>
+{CMS_Member?.data?.data?.[0]?.Name}
+</h1>
+<p
+className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
+{CMS_Member?.data?.data?.[0]?.Major}
 </p>
+<p
+className={`w-element c1tuc0c3`}>
+{CMS_Member?.data?.data?.[0]?.["short_introduction"]}
+</p>
+</div>
 <div
 className={`w-element c1jt1fo7`}>
 <Link_1
-href={`mailto:${collectionItem_2?.Email}`}
+href={`mailto:${CMS_Member?.data?.data?.[0]?.Email}`}
 className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
 <Slot>
 <Fragment_1>
@@ -654,12 +617,12 @@ className={`w-html-embed`} />
 </Slot>
 <p
 className={`w-element crr88tp c56gnia`}>
-{collectionItem_2?.Email}
+{CMS_Member?.data?.data?.[0]?.Email}
 </p>
 </Link_1>
-{(collectionItem_2?.LinkedInURL != null && collectionItem_2?.LinkedInURL !== '') &&
+{(CMS_Member?.data?.data?.[0]?.LinkedInURL != null && CMS_Member?.data?.data?.[0]?.LinkedInURL !== '') &&
 <Link_1
-href={collectionItem_2?.LinkedInURL}
+href={CMS_Member?.data?.data?.[0]?.LinkedInURL}
 className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
 <Slot>
 <HtmlEmbed
@@ -674,14 +637,67 @@ className={`w-element`}>
 }
 </div>
 </div>
-</Fragment>
-)}
 </div>
 </div>
+<div
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol`}>
+<div
+className={`w-element cwr14mb c1lynjaq`}>
+<h1
+className={`w-element cbewb4j c1iwa1os cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
+{"Roles at BSLI"}
+</h1>
+<div
+className={`w-element c1fsvg17 cpcsebf cp1jzw6 c5do7do`}>
+{CMS_Member?.data?.data?.[0]?.["role_id"]?.map?.((collectionItem: any, index: number) =>
+<Fragment key={index}>
+<div
+className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
+<div
+className={`w-element cjl8er8 c1lst088`}>
+{`${collectionItem?.team?.["Team_Name"]}: ${collectionItem?.title}`}
+</div>
+<div
+className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
+<Time
+dateTime={collectionItem?.start}
+dateStyle={"medium"}
+format={"MM, YYYY"}
+className={`w-time`} />
+<div
+className={`w-element`}>
+{" - "}
+</div>
+{(collectionItem?.end != null) &&
+<Time
+dateTime={collectionItem?.end}
+dateStyle={"medium"}
+format={"MM, YYYY"}
+className={`w-time`} />
+}
+{(collectionItem?.end == null) &&
+<div
+className={`w-element`}>
+{"Present"}
 </div>
 }
+</div>
+</div>
 </Fragment>
 )}
+</div>
+</div>
+</div>
+<div
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol`}>
+<MarkdownEmbed
+code={CMS_Member?.data?.data?.[0]?.["about_me"]}
+className={`w-markdown-embed`}>
+</MarkdownEmbed>
+</div>
+</div>
+<div
+className={`w-element c11cvd9l c1lufqxe cnbmf4z c1fsvg17 cp0jmbs c2jpees c1bctvrt`} />
 <Slot>
 <Fragment_1>
 <div
@@ -698,16 +714,16 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_4: any, index_4: number) =>
-<Fragment key={index_4}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
+{[1,2,3]?.map?.((collectionItem_2: any, index_2: number) =>
+<Fragment key={index_2}>
+{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_1: any, index_1: number) =>
+<Fragment key={index_1}>
 <Link_1
-href={collectionItem_3?.["Sponsor_Website_URL"]}
+href={collectionItem_1?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_3?.image}`}
+src={`${CMS_Asset_URL}${collectionItem_1?.image}`}
 optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
@@ -723,14 +739,14 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_6: any, index_6: number) =>
-<Fragment key={index_6}>
+{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_4: any, index_4: number) =>
+<Fragment key={index_4}>
 <Link_1
-href={collectionItem_6?.["Sponsor_Website_URL"]}
+href={collectionItem_4?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_6?.image}`}
+src={`${collectionItem_4?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>

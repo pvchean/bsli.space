@@ -46,7 +46,7 @@ export const getResources = (_props: { system: System }) => {
     name: "CMS_Overview",
     url: `${CMS_Item_URL}BSLI_Projects?fields=*`,
     searchParams: [
-      { name: "filter[team][BSLI_Teams_id][Team_Name][_eq]", value: system?.params?.team },
+      { name: "filter[team][Team_Name][_eq]", value: system?.params?.team },
       { name: "sort", value: "-start" },
       { name: "limit", value: "1" },
     ],

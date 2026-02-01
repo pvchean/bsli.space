@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-01-31T22:37:58.850Z";
+      export const lastPublished = "2026-02-01T20:43:58.677Z";
 
       export const siteName = undefined;
 
@@ -56,7 +56,7 @@ className={`w-html-embed`} />
 <Slot>
 <Fragment_1>
 <div
-className={`w-element c1ha922v caaf2sz ctceiha c1517000 c3as5a5 c1h7pdcy`}>
+className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g caf9fuo`}>
@@ -192,7 +192,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"BSLI Teams"}
 </Heading>
 </Box>
@@ -259,12 +259,6 @@ href={"/leadership"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
-<Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
 tag={"span"}
@@ -283,12 +277,6 @@ href={Active_Members_URL}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
-<Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
 tag={"span"}
@@ -306,12 +294,6 @@ className={`w-text c1jt1fo7`}>
 href={Former_Members_URL}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
-<Box
-className={`w-box ctmc8oc c1pqpmx cjud7nn cgcsuzi c6tuzht cspx408 c3air8l c1mq7p96 cho9p8j`}>
-<HtmlEmbed
-code={"<svg data-slot=\"icon\" width=\"100%\" height=\"100%\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n  <path clip-rule=\"evenodd\" fill-rule=\"evenodd\" d=\"M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z\"></path>\n</svg>"}
-className={`w-html-embed cjud7nn`} />
-</Box>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -335,7 +317,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"The BSLI Family"}
 </Heading>
 </Box>
@@ -343,7 +325,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and past engineers"}
+{"A repository of all of our wonderful current and former engineers"}
 </Paragraph>
 </Box>
 </Link>
@@ -386,16 +368,19 @@ className={`w-box c1w29cqu camp34b`}>
 <Slot>
 <Fragment_1>
 <Box
-className={`w-box c10wrjl3`}>
+className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
+<HtmlEmbed
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    document.querySelectorAll('.rocket-link').forEach(btn => {\n      const rocket = btn.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      let frame, stop;\n\n      btn.addEventListener('mouseenter', () => {\n        clearTimeout(stop);\n        if (!frame) loop();\n      });\n\n      btn.addEventListener('mouseleave', () => {\n        stop = setTimeout(() => {\n          cancelAnimationFrame(frame);\n          frame = null;\n        }, 50);\n      });\n\n      function loop() {\n        for (let i = 0; i < 3; i++) spawn(rocket);\n        frame = requestAnimationFrame(loop);\n      }\n    });\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; \n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      // Initial Physics State\n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      // Single animation loop closure\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`;\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb`}>
+className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
@@ -561,16 +546,19 @@ className={`w-box co74p4k cmv1zps c1bkp8hc`}>
 <Slot>
 <Fragment_1>
 <Box
-className={`w-box c10wrjl3`}>
+className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
+<HtmlEmbed
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    document.querySelectorAll('.rocket-link').forEach(btn => {\n      const rocket = btn.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      let frame, stop;\n\n      btn.addEventListener('mouseenter', () => {\n        clearTimeout(stop);\n        if (!frame) loop();\n      });\n\n      btn.addEventListener('mouseleave', () => {\n        stop = setTimeout(() => {\n          cancelAnimationFrame(frame);\n          frame = null;\n        }, 50);\n      });\n\n      function loop() {\n        for (let i = 0; i < 3; i++) spawn(rocket);\n        frame = requestAnimationFrame(loop);\n      }\n    });\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; \n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      // Initial Physics State\n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      // Single animation loop closure\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`;\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb`}>
+className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
@@ -632,7 +620,7 @@ className={`w-html-embed cs5nzqp`} />
 <div
 className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1qwcq2w`}>
 <div
-className={`w-element c1fsvg17 c1flzvby cm1zr1v c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb25u c1wvwf6y c13l961t`}>
+className={`w-element c1fsvg17 c1flzvby c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb25u c1wvwf6y c1oubvo3 c13l961t`}>
 {"Search by: "}
 </div>
 <Select
@@ -646,6 +634,10 @@ className={`w-element`} />
 <option
 label={"Major"}
 value={"Major"}
+className={`w-element`} />
+<option
+label={"Email"}
+value={"Email"}
 className={`w-element`} />
 <option
 label={".#"}
@@ -673,7 +665,7 @@ className={`w-element`} />
 <div
 className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cjdezyc cuc9pay c1d1qz07`}>
 <div
-className={`w-element c1fsvg17 c1flzvby cm1zr1v c1fzb25u c1wvwf6y c13l961t`}>
+className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
 {"Sort by: "}
 </div>
 <Select
@@ -730,14 +722,16 @@ className={`w-html-embed`} />
 className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt`}>
 {CMS_Members?.data?.data?.map?.((collectionItem: any, index: number) =>
 <Fragment key={index}>
+<Link_1
+href={"/members/members/" + collectionItem?.["osu_ndn"]}
+className={`w-element cj20esf ch72vge c1xkkw6h c956szp c9ffb6f`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y cwsyufx czfw4y0`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x`}>
 <div
 className={`w-element`}>
 <Image
 src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
-optimize={false}
-className={`w-image c1kp5vo3 c89byf c13v84m3 c159iha6`} />
+className={`w-image c89byf c13v84m3 c159iha6`} />
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 {collectionItem?.Name}
@@ -753,9 +747,8 @@ className={`w-element`}>
 </p>
 <div
 className={`w-element c1jt1fo7`}>
-<Link_1
-href={`mailto:${collectionItem?.Email}`}
-className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
+<div
+className={`w-element c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
 <Fragment_1>
 <div
@@ -770,11 +763,10 @@ className={`w-html-embed`} />
 className={`w-element crr88tp c56gnia`}>
 {collectionItem?.Email}
 </p>
-</Link_1>
+</div>
 {(collectionItem?.LinkedInURL != null && collectionItem?.LinkedInURL !== '') &&
-<Link_1
-href={collectionItem?.LinkedInURL}
-className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
+<div
+className={`w-element c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" width=\"1.4em\" height=\"1.4em\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 11v5\" /><path d=\"M8 8v.01\" /><path d=\"M12 16v-5\" /><path d=\"M16 16v-3a2 2 0 1 0 -4 0\" /><path d=\"M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10\" /></svg>"}
@@ -784,12 +776,34 @@ className={`w-html-embed cwxng9o`} />
 className={`w-element`}>
 {"LinkedIn"}
 </p>
-</Link_1>
+</div>
 }
 </div>
+<div
+className={`w-element c3eev2k chr8ff9 ctcwxwa c17m8aj7 cbujl1o c10agvjj chyxmce cuvhotc c1hzukz1 c15slgr1 c3air8l c1mq7p96 c1jt1fo7 c1h2ixpn cqajdup`}>
+{"> Learn more about me <"}
 </div>
+</div>
+</Link_1>
 </Fragment>
 )}
+{(CMS_Members?.data?.data?.length == 0) &&
+<div
+className={`w-element c140xxeu`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+{"No member found"}
+</h1>
+<p
+className={`w-element c3eev2k`}>
+{"None of the BSLI members in our database"}
+{""}
+<br />
+{""}
+{"fit your search parameters"}
+</p>
+</div>
+}
 </div>
 </div>
 </div>
@@ -921,10 +935,6 @@ className={`w-html-embed cwxng9o`} />
 </div>
 </Slot>
 </div>
-<p
-className={`w-element c89byf c3eev2k`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
-</p>
 <div
 className={`w-element c1fsvg17 c2jpees c1bctvrt c1i5lp6y c1jt1fo7 c1412oo6 crr88tp c13kj1ir c191262q`}>
 <p
@@ -948,6 +958,10 @@ className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz c1jt1fo7`}>
 {")"}
 </p>
 </div>
+<p
+className={`w-element c89byf c3eev2k c1wi860h`}>
+{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+</p>
 </div>
 </div>
 </Fragment_1>
