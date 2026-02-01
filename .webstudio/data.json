@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "73d03c7b-acb2-458a-ad57-a32eaff9cf56",
+    "id": "ae70571c-a197-45f6-984e-3f7afbbedf19",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 3395,
-    "createdAt": "2026-02-01T20:43:58.677+00:00",
-    "updatedAt": "2026-02-01T20:43:58.677+00:00",
+    "version": 3424,
+    "createdAt": "2026-02-01T20:54:11.034+00:00",
+    "updatedAt": "2026-02-01T20:54:11.034+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -16215,7 +16215,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 4
+            "value": 6
           },
           "listed": true
         }
@@ -16315,8 +16315,8 @@
             "value": [
               {
                 "type": "unit",
-                "unit": "ms",
-                "value": 500
+                "unit": "s",
+                "value": 2
               }
             ]
           }
@@ -16333,7 +16333,7 @@
             "value": [
               {
                 "type": "var",
-                "value": "ease-out-4"
+                "value": "ease-out-5"
               }
             ]
           }
@@ -16465,7 +16465,7 @@
           "value": {
             "type": "unit",
             "unit": "deg",
-            "value": -30
+            "value": -15
           },
           "listed": true
         }
@@ -42106,6 +42106,67 @@
             "value": "pointer"
           },
           "listed": true
+        }
+      ],
+      [
+        "qklesgeAQU0MsMbPyYDFq:tAFRweP7yGMMQI5CmE4yb:borderTopLeftRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "qklesgeAQU0MsMbPyYDFq",
+          "property": "borderTopLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-1"
+          }
+        }
+      ],
+      [
+        "qklesgeAQU0MsMbPyYDFq:tAFRweP7yGMMQI5CmE4yb:borderTopRightRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "qklesgeAQU0MsMbPyYDFq",
+          "property": "borderTopRightRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-1"
+          }
+        }
+      ],
+      [
+        "qklesgeAQU0MsMbPyYDFq:tAFRweP7yGMMQI5CmE4yb:borderBottomLeftRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "qklesgeAQU0MsMbPyYDFq",
+          "property": "borderBottomLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-1"
+          }
+        }
+      ],
+      [
+        "qklesgeAQU0MsMbPyYDFq:tAFRweP7yGMMQI5CmE4yb:borderBottomRightRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "qklesgeAQU0MsMbPyYDFq",
+          "property": "borderBottomRightRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-1"
+          }
+        }
+      ],
+      [
+        "qklesgeAQU0MsMbPyYDFq:tAFRweP7yGMMQI5CmE4yb:marginBottom:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "qklesgeAQU0MsMbPyYDFq",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 0.2
+          }
         }
       ]
     ],

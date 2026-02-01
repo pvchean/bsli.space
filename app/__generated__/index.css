@@ -1417,14 +1417,14 @@
   .c1oq5ean:hover {
     translate: 0px 2px 0px
   }
-  .cfibmfk:hover {
-    --rocket-move: 4px
+  .c1gcvc6e:hover {
+    --rocket-move: 6px
   }
   .ccc53j5:hover {
     --rocket-move-inv: -20px
   }
-  .c6i7bmd:hover {
-    --rocket-rot: -30deg
+  .c10hpooi:hover {
+    --rocket-rot: -15deg
   }
   .cjl8er8 {
     font-weight: 600
@@ -1474,11 +1474,11 @@
   .c508zfy {
     translate: var(--rocket-move) var(--rocket-move-inv) 0px
   }
-  .cosi8l5 {
-    transition-duration: 500ms
+  .c1a8buj6 {
+    transition-duration: 2s
   }
-  .c1b15gz3 {
-    transition-timing-function: var(--ease-out-4)
+  .c1xqxr2h {
+    transition-timing-function: var(--ease-out-5)
   }
   .c1mo5vyb {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(var(--rocket-rot))
@@ -2178,6 +2178,21 @@
   .c159iha6 {
     aspect-ratio: 6/5
   }
+  .chr8ff9 {
+    border-top-left-radius: var(--radius-1)
+  }
+  .ctcwxwa {
+    border-top-right-radius: var(--radius-1)
+  }
+  .c17m8aj7 {
+    border-bottom-left-radius: var(--radius-1)
+  }
+  .cbujl1o {
+    border-bottom-right-radius: var(--radius-1)
+  }
+  .c1c491r3 {
+    margin-bottom: 0.2em
+  }
   .c1a8npj4 {
     border-bottom-style: solid
   }
@@ -2342,18 +2357,6 @@
   }
   .csgp7p3 {
     padding-left: var(--spacing-default, clamp(1.5rem,3vw,2rem))
-  }
-  .chr8ff9 {
-    border-top-left-radius: var(--radius-1)
-  }
-  .ctcwxwa {
-    border-top-right-radius: var(--radius-1)
-  }
-  .c17m8aj7 {
-    border-bottom-left-radius: var(--radius-1)
-  }
-  .cbujl1o {
-    border-bottom-right-radius: var(--radius-1)
   }
   .c10agvjj {
     padding-top: var(--gap-xs)

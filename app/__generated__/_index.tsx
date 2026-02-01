@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-01T20:43:58.677Z";
+      export const lastPublished = "2026-02-01T20:54:11.034Z";
 
       export const siteName = undefined;
 
@@ -379,13 +379,13 @@ code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events
 className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
+className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
@@ -557,13 +557,13 @@ code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events
 className={`w-html-embed`} />
 <Link
 href={Social_Link}
-className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean cfibmfk ccc53j5 c6i7bmd c12g0c4a ${"rocket-link"}`}>
+className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
 className={`w-element`}>
 {"Join Us "}
 </span>
 <p
-className={`w-element c508zfy cuvhotc cosi8l5 c1b15gz3 c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
+className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vyb ${"rocket-icon"}`}>
 {"🚀"}
 </p>
 </Link>
