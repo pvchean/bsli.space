@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-01T21:11:34.155Z";
+      export const lastPublished = "2026-02-02T01:32:43.654Z";
 
       export const siteName = undefined;
 
@@ -595,7 +595,7 @@ className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h
 </h1>
 <p
 className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
-{CMS_Member?.data?.data?.[0]?.Major}
+{`${CMS_Member?.data?.data?.[0]?.Major || ' '} ${CMS_Member?.data?.data?.[0]?.["osu_year"] || ' '}`}
 </p>
 <p
 className={`w-element c1tuc0c3`}>

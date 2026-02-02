@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "af7ff430-2c15-4b52-86eb-69fa0dbebd72",
+    "id": "ab031aaa-9b04-42b4-8981-030d9696cb14",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 3443,
-    "createdAt": "2026-02-01T21:11:34.155+00:00",
-    "updatedAt": "2026-02-01T21:11:34.155+00:00",
+    "version": 3470,
+    "createdAt": "2026-02-02T01:32:43.654+00:00",
+    "updatedAt": "2026-02-02T01:32:43.654+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -96,8 +96,8 @@
           "title": "\"Untitled\"",
           "history": [
             "/teams/Irec",
-            "/teams/Liquids",
             "/teams/Nasa",
+            "/teams/Liquids",
             "/teams/nasa",
             "/teams/example",
             "/teams/irec",
@@ -55464,16 +55464,6 @@
         }
       ],
       [
-        "rj08KkzeQBVSaTlEBb7F6",
-        {
-          "id": "rj08KkzeQBVSaTlEBb7F6",
-          "instanceId": "Yqpd-qmBEw2LjspQc1SXs",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
         "8qLEyXtULOdEjEz9zIcfh",
         {
           "id": "8qLEyXtULOdEjEz9zIcfh",
@@ -57725,6 +57715,16 @@
           "id": "n6OONe1mlKidQi1ycTZBg",
           "instanceId": "f-68nydqKNAqRGP8AEJP0",
           "name": "clientOnly",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "RfuCpxksGOOb2KihJzp0c",
+        {
+          "id": "RfuCpxksGOOb2KihJzp0c",
+          "instanceId": "JclcncTAWduu2G_-oEW0e",
+          "name": "data-ws-show",
           "type": "boolean",
           "value": true
         }
@@ -70282,7 +70282,7 @@
             },
             {
               "type": "id",
-              "value": "Yqpd-qmBEw2LjspQc1SXs"
+              "value": "JclcncTAWduu2G_-oEW0e"
             },
             {
               "type": "id",
@@ -70459,22 +70459,6 @@
             {
               "type": "text",
               "value": "LinkedIn"
-            }
-          ]
-        }
-      ],
-      [
-        "Yqpd-qmBEw2LjspQc1SXs",
-        {
-          "type": "instance",
-          "id": "Yqpd-qmBEw2LjspQc1SXs",
-          "component": "ws:element",
-          "tag": "p",
-          "label": "Major",
-          "children": [
-            {
-              "type": "expression",
-              "value": "$ws$dataSource$I95eABtylDsVhxBLUGdo8.Major || ' '"
             }
           ]
         }
@@ -73084,7 +73068,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$Sp9jfhbnfh3APYM452zFI.Major || ' '"
+              "value": "`${$ws$dataSource$Sp9jfhbnfh3APYM452zFI.Major || ' '} ${$ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"osu_year\"] || ' '}`"
             }
           ]
         }
@@ -73734,7 +73718,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].Major"
+              "value": "`${$ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].Major || ' '} ${$ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0][\"osu_year\"] || ' '}`"
             }
           ]
         }
@@ -74670,6 +74654,22 @@
           "component": "HtmlEmbed",
           "children": []
         }
+      ],
+      [
+        "JclcncTAWduu2G_-oEW0e",
+        {
+          "type": "instance",
+          "id": "JclcncTAWduu2G_-oEW0e",
+          "component": "ws:element",
+          "tag": "p",
+          "label": "Major",
+          "children": [
+            {
+              "type": "expression",
+              "value": "`${$ws$dataSource$I95eABtylDsVhxBLUGdo8.Major || ' '} ${$ws$dataSource$I95eABtylDsVhxBLUGdo8[\"osu_year\"] || ' '}`"
+            }
+          ]
+        }
       ]
     ],
     "deployment": {
@@ -74782,8 +74782,8 @@
       "title": "\"Untitled\"",
       "history": [
         "/teams/Irec",
-        "/teams/Liquids",
         "/teams/Nasa",
+        "/teams/Liquids",
         "/teams/nasa",
         "/teams/example",
         "/teams/irec",

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-01T21:11:34.155Z";
+      export const lastPublished = "2026-02-02T01:32:43.654Z";
 
       export const siteName = undefined;
 
@@ -745,7 +745,7 @@ className={`w-element cr340of`}>
 </div>
 <p
 className={`w-element`}>
-{collectionItem?.Major || ' '}
+{`${collectionItem?.Major || ' '} ${collectionItem?.["osu_year"] || ' '}`}
 </p>
 <div
 className={`w-element c1jt1fo7`}>
