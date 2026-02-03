@@ -4,8 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
-import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Link as Link_1, Body as Body, Form as Form, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
@@ -22,7 +22,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        ["AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf"]
+        []
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -33,6 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let [formState, set$formState] = useVariableState<any>("initial")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
 let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
@@ -575,157 +576,83 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf c1lufqxe cnbmf4z`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cwdzeb2`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1mynah0 c18jhn4e c1flzvby c1fhcu5x`}>
-<div
-className={`w-element`}>
-<h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
-{"Let's Connect!"}
-</h1>
-<p
-className={`w-element`}>
-{"Want to reach out to us? Have questions, comments, or concerns?! Get in touch with us in the following ways:"}
-</p>
-</div>
-</div>
-</div>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby cafamdi`}>
 <h1
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
-{"Join our Slack"}
-</h1>
-<Link_1
-href={"https://linktr.ee/buckeye_sli"}
-className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro`}>
-{"https://linktr.ee/buckeye_sli"}
-</Link_1>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby cafamdi`}>
-<h1
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
-{"General Inquiries"}
-</h1>
-<p
-className={`w-element c1uyzo1i`}>
-{"Email us at:"}
-</p>
-<Link_1
-href={"mailto:eng-buckeyesli@osu.edu"}
-className={`w-element c5elor3 cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1fsvg17 cxkx6pe c1jggrh7 c1r92k6l cib2qxx chdqs4z`}>
-<Slot>
-<Fragment_1>
-<div
-className={`w-element cw4wfcb c1mrxjnq`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1.4em\" height=\"1.4em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"></path>\n  <path d=\"M3 7l9 6l9 -6\"></path>\n</svg>"}
-className={`w-html-embed`} />
-</div>
-</Fragment_1>
-</Slot>
-<span
 className={`w-element`}>
-{"eng-buckeyesli@osu.edu"}
-</span>
-</Link_1>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby cafamdi`}>
-<h1
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
-{"Leadership/Project Inquiries"}
+{"Member Registration Form"}
 </h1>
-<p
+<Form
+onStateChange={(state: any) => {
+formState = state
+set$formState(formState)
+}}
+className={`w-webhook-form`}>
+{(formState === 'initial' || formState === 'error') &&
+<div
 className={`w-element`}>
-{"Find the right person on our "}
-<Link_1
-href={"/leadership"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
-{"Leadership"}
-</Link_1>
-{" page."}
-</p>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby cafamdi`}>
-<h1
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
-{"Social Media"}
-</h1>
-<p
+<label
+className={`w-element cwxng9o`}>
+{"Name"}
+</label>
+<Input
+name={"name"}
+className={`w-element cwxng9o`} />
+<label
+className={`w-element cwxng9o`}>
+{"Email"}
+</label>
+<Input
+name={"email"}
+className={`w-element cwxng9o`} />
+<button
 className={`w-element`}>
-{"Check out one of our social media pages!"}
-</p>
-<Slot>
+{"Submit"}
+</button>
+<Select
+className={`w-element cwxng9o`}>
+<option
+label={"Please choose an option"}
+value={""}
+className={`w-element`} />
+<option
+label={"Option A"}
+value={"a"}
+className={`w-element`} />
+<option
+label={"Option B"}
+value={"b"}
+className={`w-element`} />
+<option
+label={"Option C"}
+value={"c"}
+className={`w-element`} />
+</Select>
+</div>
+}
+{(formState === 'success') &&
 <div
-className={`w-element c1fsvg17`}>
-<Link_1
-href={"https://www.linkedin.com/company/the-buckeye-space-launch-initiative"}
-target={"_blank"}
-className={`w-element clk9q2j c11k4s38 cc74oq0 c1b4x081 cuvhotc c176bk4h cpyozji c3air8l c1mq7p96 c1jt1fo7 cj20esf c16huols cdw8mzm c1f3dy5b`}>
+className={`w-element`}>
+{"Thank you for getting in touch!"}
+</div>
+}
+{(formState === 'error') &&
 <div
-className={`w-element c1mrxjnq cw4wfcb c1flzvby cafamdi`}>
-<Slot>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" width=\"1.4em\" height=\"1.4em\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 11v5\" /><path d=\"M8 8v.01\" /><path d=\"M12 16v-5\" /><path d=\"M16 16v-3a2 2 0 1 0 -4 0\" /><path d=\"M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</Slot>
+className={`w-element`}>
+{"Sorry, something went wrong."}
 </div>
-</Link_1>
-<Link_1
-href={"https://www.facebook.com/spacelaunchinitiative/"}
-target={"_blank"}
-className={`w-element clk9q2j c11k4s38 cc74oq0 c1b4x081 cuvhotc c176bk4h cpyozji c3air8l c1mq7p96 c1jt1fo7 cj20esf c16huols cdw8mzm c1f3dy5b`}>
-<div
-className={`w-element c1mrxjnq cw4wfcb c1flzvby cafamdi`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\"  viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</div>
-</Link_1>
-<Link_1
-href={"https://www.youtube.com/@buckeyesli1865/videos"}
-target={"_blank"}
-className={`w-element clk9q2j c11k4s38 cc74oq0 c1b4x081 cuvhotc c176bk4h cpyozji c3air8l c1mq7p96 c1jt1fo7 cj20esf c16huols cdw8mzm c1f3dy5b`}>
-<div
-className={`w-element c1mrxjnq cw4wfcb c1flzvby cafamdi`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8\" /><path d=\"M10 9l5 3l-5 3l0 -6\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</div>
-</Link_1>
-<Link_1
-href={"https://www.instagram.com/buckeye_sli/"}
-target={"_blank"}
-className={`w-element clk9q2j c11k4s38 cc74oq0 c1b4x081 cuvhotc c176bk4h cpyozji c3air8l c1mq7p96 c1jt1fo7 cj20esf c16huols cdw8mzm c1f3dy5b`}>
-<div
-className={`w-element c1mrxjnq cw4wfcb c1flzvby cafamdi`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8\" /><path d=\"M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0\" /><path d=\"M16.5 7.5v.01\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</div>
-</Link_1>
-<Link_1
-href={"https://github.com/osu-bsli"}
-target={"_blank"}
-className={`w-element clk9q2j c11k4s38 cc74oq0 c1b4x081 cuvhotc c176bk4h cpyozji c3air8l c1mq7p96 c1jt1fo7 cj20esf c16huols cdw8mzm c1f3dy5b`}>
-<div
-className={`w-element c1mrxjnq cw4wfcb c1flzvby cafamdi`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-github\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</div>
-</Link_1>
-</div>
-</Slot>
-</div>
+}
+</Form>
+<RemixForm
+className={`w-element`}>
+<Input
+className={`w-element cwxng9o`} />
+<button
+className={`w-element`}>
+{"Submit"}
+</button>
+</RemixForm>
 </div>
 </div>
 <Slot>

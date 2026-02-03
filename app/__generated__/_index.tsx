@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-02T01:32:43.654Z";
+      export const lastPublished = "2026-02-03T18:49:01.711Z";
 
       export const siteName = undefined;
 
@@ -304,7 +304,7 @@ className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
 tag={"span"}
 className={`w-text cjl8er8`}>
-{"Former Members"}
+{"Alumni"}
 </Text>
 <Text
 tag={"span"}
@@ -1281,15 +1281,20 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 <div
 className={`w-element c1fsvg17 cp0jmbs cafamdi cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c89byf c1flzvby cwsyufx czfw4y0`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
-{"Ready to build some 🚀Rockets?"}
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2 ${"rocket-link"}`}>
+{"Ready to build some"}
+<span
+className={`w-element ${"rocket-icon"}`}>
+{" 🚀"}
+</span>
+{"Rockets?"}
 </h1>
 <div
 className={`w-element c1fsvg17 c2jpees c1bctvrt`}>
 <Link_1
 href={Social_Link}
 target={"_blank"}
-className={`w-element cl4qqj9 c1jmf9np c1i6hdg9 c1eartro c1jfo4di c15ziikq c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf cdr374f c3eev2k ckmcig3 cib2qxx chdqs4z c1p3t04y c1s6wxtp`}>
+className={`w-element cl4qqj9 c1jmf9np c1i6hdg9 c1eartro c1jfo4di c15ziikq c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x cjl8er8 cj20esf cp1jzw6 c3eev2k ckmcig3 cib2qxx chdqs4z c1p3t04y c1s6wxtp`}>
 {"Join our Slack"}
 </Link_1>
 </div>
@@ -1312,10 +1317,20 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem: any, index: number) =>
-<Fragment key={index}>
+{Object.entries(
+  // @ts-ignore
+  [1,2,3] ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Sponsors_External?.data?.data ?? {}
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Sponsors_External?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey}>
 <Link_1
 href={collectionItem?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -1326,9 +1341,13 @@ optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 <HtmlEmbed
@@ -1337,8 +1356,13 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
+{Object.entries(
+  // @ts-ignore
+  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_3 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_3}>
 <Link_1
 href={collectionItem_3?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -1348,7 +1372,9 @@ src={`${collectionItem_3?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 </div>
