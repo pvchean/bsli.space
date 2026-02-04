@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T19:01:39.473Z";
+      export const lastPublished = "2026-02-04T22:32:37.179Z";
 
       export const siteName = undefined;
 
@@ -144,7 +144,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -616,9 +616,12 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
-optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
+optimize={true}
+width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ca966ma`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -640,10 +643,10 @@ className={`w-element c1flzvby cafamdi`}>
 <DialogTrigger>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
-optimize={false}
 width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
+optimize={false}
 className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3`} />
 </DialogTrigger>
 <DialogOverlay
@@ -651,9 +654,12 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
-optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
+optimize={true}
+width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed

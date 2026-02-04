@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T19:01:39.473Z";
+      export const lastPublished = "2026-02-04T22:32:37.179Z";
 
       export const siteName = undefined;
 
@@ -145,7 +145,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -644,12 +644,34 @@ className={`w-link c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 </Box>
 <Box
 className={`w-box c199z4bu cjdezyc`}>
+<Dialog>
+<DialogTrigger>
 <Image
 src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
 width={1243}
 height={944}
 alt={""}
-className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
+className={`w-image cbxkl1b c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
+</DialogTrigger>
+<DialogOverlay
+className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
+<DialogContent
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
+<Image
+src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
+width={1243}
+height={944}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f`} />
+<DialogClose
+className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
+className={`w-html-embed`} />
+</DialogClose>
+</DialogContent>
+</DialogOverlay>
+</Dialog>
 </Box>
 </Box>
 </Box>
@@ -700,15 +722,18 @@ className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c4
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-nasa.hYJZ9o52_2vaKJF.webp"}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 cj9b88m`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
 </DialogClose>
+<Image
+src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
+width={1428}
+height={952}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -831,15 +856,18 @@ className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c4
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-irec.D2cHhfY__Znu9zU.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cj9b88m`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
 </DialogClose>
+<Image
+src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
+width={1426}
+height={944}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -961,7 +989,7 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
 <Image
 src={"https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cj9b88m`} />
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed

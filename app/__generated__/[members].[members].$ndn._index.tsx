@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T19:01:39.473Z";
+      export const lastPublished = "2026-02-04T22:32:37.179Z";
 
       export const siteName = undefined;
 
@@ -139,7 +139,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -650,13 +650,13 @@ className={`w-element`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol`}>
 <div
-className={`w-element cwr14mb c1lynjaq`}>
+className={`w-element cwr14mb c89byf`}>
 <h1
 className={`w-element cbewb4j c1iwa1os cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
 {"Roles at BSLI"}
 </h1>
 <div
-className={`w-element c1fsvg17 cpcsebf cp1jzw6 cwouaok`}>
+className={`w-element c1fsvg17 cpcsebf cp1jzw6`}>
 <Accordion
 collapsible={true}
 className={`w-accordion c1fsvg17 cpcsebf`}>
@@ -675,19 +675,25 @@ className={`w-item cvdddm5`}>
 className={`w-item-header c1fsvg17`}>
 <AccordionTrigger
 value={collectionItem_1?.id}
-className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg`}>
+className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg c13kj1ir c1r1nglt cq5sbay cj1r6i8`}>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Box
-className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96`}>
+className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96 camp34b`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
 className={`w-html-embed`} />
 </Box>
 <Text
-className={`w-text`}>
+className={`w-text crpjzr9 c1iwhssp`}>
 {`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_short"]}`}
 </Text>
+<Box
+className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96 c1xd87pa c1prqdl7`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
 </div>
 <div
 className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
@@ -717,13 +723,10 @@ className={`w-element`}>
 </AccordionTrigger>
 </AccordionHeader>
 <AccordionContent
-className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
+className={`w-item-content c19ubv75 c4g1j3m cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
 <div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
-<div
-className={`w-element cjl8er8 c1lst088`}>
+className={`w-element c1kq7zg2`}>
 {collectionItem_1?.position?.["description_long"]}
-</div>
 </div>
 </AccordionContent>
 </AccordionItem>
