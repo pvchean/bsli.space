@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-03T18:49:01.711Z";
+      export const lastPublished = "2026-02-04T07:29:06.368Z";
 
       export const siteName = undefined;
 
@@ -94,6 +94,7 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
@@ -123,6 +124,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/Nasa"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -144,6 +146,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Irec"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -169,6 +172,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -342,6 +346,7 @@ data-ws-index="4"
 className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
@@ -351,6 +356,7 @@ data-ws-index="5"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
@@ -639,8 +645,11 @@ className={`w-link c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 <Box
 className={`w-box c199z4bu cjdezyc`}>
 <Image
-src={"https://www.bsli.space/_astro/BSLI-Added-payload-both-teams.8t3mDXr7_Z1KqeT2.webp"}
-className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5`} />
+src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
+width={1243}
+height={944}
+alt={""}
+className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
 </Box>
 </Box>
 </Box>
@@ -681,7 +690,10 @@ className={`w-element`}>
 <Dialog>
 <DialogTrigger>
 <Image
-src={"https://www.bsli.space/_astro/subteam-nasa.hYJZ9o52_2vaKJF.webp"}
+src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
+width={1428}
+height={952}
+alt={""}
 className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
 </DialogTrigger>
 <DialogOverlay
@@ -808,7 +820,10 @@ className={`w-element`}>
 <Dialog>
 <DialogTrigger>
 <Image
-src={"https://www.bsli.space/_astro/subteam-irec.D2cHhfY__Znu9zU.webp"}
+src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
+width={1426}
+height={944}
+alt={""}
 className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
 </DialogTrigger>
 <DialogOverlay

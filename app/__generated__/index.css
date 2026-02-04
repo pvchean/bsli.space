@@ -1657,6 +1657,9 @@
   .cb812m5 {
     aspect-ratio: 5/3
   }
+  .c1k527w9 {
+    object-position: 50% 75%
+  }
   .c1ha922v {
     position: sticky
   }
@@ -2028,6 +2031,9 @@
   .cakfvvb {
     margin-bottom: 1rem
   }
+  .c1ppzf3f {
+    max-width: 14rem
+  }
   .c1tsavcz {
     max-height: 25rem
   }
@@ -2268,11 +2274,17 @@
   .chd6mf4 {
     width: min-content
   }
+  .c18o9eig {
+    padding-left: 0.25em
+  }
   .cjwasc2 {
     margin-right: var(--gap-xs)
   }
   .co3gz9b {
     outline-style: none
+  }
+  .cbxkl1b {
+    cursor: pointer
   }
   .c1hasikf {
     border-right-width: 0px
@@ -2294,9 +2306,6 @@
   }
   .c1illh6w {
     margin-right: 0.5em
-  }
-  .cbxkl1b {
-    cursor: pointer
   }
   .cvdddm5 {
     border-bottom: 1px solid rgb(226 232 240 / 1)
@@ -2482,8 +2491,8 @@
   .cpcsebf {
     flex-direction: column-reverse
   }
-  .c5do7do {
-    width: var(--size-15)
+  .cwouaok {
+    width: auto
   }
   .c1e4ejre {
     padding-top: 2.5rem
@@ -2774,6 +2783,9 @@
   .c4csrei {
     margin-top: 1em
   }
+  .cjf4twe {
+    max-width: 75lvw
+  }
   .c57lil3 {
     --image-height: 48px
   }
@@ -2922,5 +2934,20 @@
   }
   .cgve8lt {
     max-width: 80lvw
+  }
+  .c1vtx0a6 {
+    width: 100%
+  }
+  .cqakq4c {
+    border-left-width: 0px
+  }
+  .ctwqqoi {
+    border-top-width: 1px
+  }
+  .coc50eh {
+    width: 75lvw
+  }
+  .c32b0k6 {
+    font-size: 14px
   }
 }

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-03T18:49:01.711Z";
+      export const lastPublished = "2026-02-04T07:29:06.368Z";
 
       export const siteName = undefined;
 
@@ -93,6 +93,7 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
@@ -122,6 +123,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/Nasa"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -143,6 +145,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Irec"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -168,6 +171,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -341,6 +345,7 @@ data-ws-index="4"
 className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
@@ -350,6 +355,7 @@ data-ws-index="5"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
@@ -746,7 +752,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
 <h2
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c5azhl4 c1r0hodc c1785g20`}>
-{collectionItem_2?.title}
+{collectionItem_2?.position?.["name_short"]}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
@@ -789,7 +795,7 @@ data-ws-index="1"
 value={collectionItem_3?.name}
 className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
 <div
-className={`w-element cmr7w05 c1bctvrt cqmqoqg ca9k1ea c7dprmh c16nciq0`}>
+className={`w-element c2jpees c1bctvrt cqmqoqg ca9k1ea c7dprmh c16nciq0`}>
 <div
 className={`w-element ct7e8mf czxzndo c1fsvg17 cp0jmbs c1412oo6`}>
 <div
@@ -813,8 +819,8 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 <div
 className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
-{collectionItem_4?.title}
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq`}>
+{collectionItem_4?.position?.["name_short"]}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
@@ -824,7 +830,7 @@ className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
 </p>
 <Link_1
 href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
-className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
+className={`w-element c1jt1fo7 c1ppzf3f crr88tp c8kgf22 c1xkkw6h cjf4twe`}>
 {collectionItem_4?.["member_id"]?.Email}
 </Link_1>
 {(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&

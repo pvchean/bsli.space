@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-03T18:49:01.711Z";
+      export const lastPublished = "2026-02-04T07:29:06.368Z";
 
       export const siteName = undefined;
 
@@ -89,6 +89,7 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
@@ -118,6 +119,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/Nasa"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -139,6 +141,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Irec"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -164,6 +167,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -337,6 +341,7 @@ data-ws-index="4"
 className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
@@ -346,6 +351,7 @@ data-ws-index="5"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
@@ -601,7 +607,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf`}>
 <RemixForm
 id={"cmsFormAutoSubmit"}
-className={`w-element c1fsvg17 cnn2qey c1spra3t`}>
+className={`w-element c1fsvg17 c1spra3t`}>
 <Box
 className={`w-box c1fsvg17 c1flzvby cafamdi cp0jmbs c1l7q0iu c1i3l1kc cs5nzqp c19ubv75 c4g1j3m c1pqpmx c10utwzz c1ggzkww c1dj8jvm c1w6y7sa c7u3d47 c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cwey732 cjdezyc c9ntp2m c1tsh9nm c1q8vahf c1m4q22y ctrcrhq`}>
 <Input
@@ -628,7 +634,7 @@ className={`w-element c1fsvg17 c1flzvby c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb
 <Select
 name={"membersSearchType"}
 value={system?.search?.membersSearchType}
-className={`w-element cwxng9o chd6mf4 cug58nh cpomkwe c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y cjwasc2 c1fzb25u c1wvwf6y co3gz9b`}>
+className={`w-element cwxng9o chd6mf4 cug58nh c18o9eig c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y cjwasc2 c1fzb25u c1wvwf6y co3gz9b cbxkl1b`}>
 <option
 label={"Name"}
 value={"Name"}
@@ -650,7 +656,7 @@ className={`w-element`} />
 <Select
 name={"membersSearchScope"}
 value={system?.search?.membersSearchScope}
-className={`w-element c1pqpmx c1fzb25u c1wvwf6y cwxng9o chd6mf4 cug58nh cpomkwe c10pexzh c13hxy6u c1s90dhh c1a8npj4 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 cjwasc2 co3gz9b`}>
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y cwxng9o chd6mf4 cug58nh cpomkwe c10pexzh c13hxy6u c1s90dhh c1a8npj4 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 cjwasc2 co3gz9b cbxkl1b c1vtx0a6 cqakq4c ctwqqoi`}>
 <option
 label={"All Members"}
 value={"Active,Retired"}
@@ -673,7 +679,7 @@ className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
 <Select
 name={"membersSortType"}
 value={system?.search?.membersSortType}
-className={`w-element cwxng9o cug58nh cpomkwe co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w c1e5mpex`}>
+className={`w-element cwxng9o cug58nh c18o9eig co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w cbxkl1b c1e5mpex`}>
 <option
 label={"Joined"}
 value={"Joined"}
@@ -728,7 +734,7 @@ className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt`}>
 href={"/members/members/" + collectionItem?.["osu_ndn"]}
 className={`w-element cj20esf ch72vge c1xkkw6h c956szp c9ffb6f`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x coc50eh`}>
 <div
 className={`w-element`}>
 <Image
@@ -740,7 +746,7 @@ className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 </div>
 <div
 className={`w-element cr340of`}>
-{collectionItem?.["role_id"]?.[0]?.title || ' '}
+{collectionItem?.["role_id"]?.[0]?.position?.["name_short"] || ' '}
 </div>
 </div>
 <p
@@ -782,7 +788,7 @@ className={`w-element`}>
 }
 </div>
 <div
-className={`w-element c3eev2k chr8ff9 ctcwxwa c17m8aj7 cbujl1o c10agvjj chyxmce cuvhotc c1hzukz1 c15slgr1 c3air8l c1mq7p96 c1jt1fo7 c1h2ixpn cqajdup`}>
+className={`w-element c3eev2k chr8ff9 ctcwxwa c17m8aj7 cbujl1o c10agvjj chyxmce cuvhotc c1hzukz1 c15slgr1 c3air8l c1mq7p96 c1jt1fo7 c1h2ixpn cqajdup c32b0k6`}>
 {"> Learn more about me <"}
 </div>
 </div>

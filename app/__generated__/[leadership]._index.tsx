@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-03T18:49:01.711Z";
+      export const lastPublished = "2026-02-04T07:29:06.368Z";
 
       export const siteName = undefined;
 
@@ -88,6 +88,7 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
@@ -117,6 +118,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/Nasa"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -138,6 +140,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Irec"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -163,6 +166,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -336,6 +340,7 @@ data-ws-index="4"
 className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
@@ -345,6 +350,7 @@ data-ws-index="5"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
@@ -632,7 +638,7 @@ className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
 </div>
 <div
 className={`w-element cr340of`}>
-{collectionItem_2?.roles?.[0]?.title || ' '}
+{collectionItem_2?.roles?.[0]?.["name_short"] || ' '}
 </div>
 </div>
 <p

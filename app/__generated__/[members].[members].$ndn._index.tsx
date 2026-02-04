@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-03T18:49:01.711Z";
+      export const lastPublished = "2026-02-04T07:29:06.368Z";
 
       export const siteName = undefined;
 
@@ -88,6 +88,7 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
@@ -117,6 +118,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/Nasa"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -138,6 +140,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Irec"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -163,6 +166,7 @@ className={`w-text c1jt1fo7`}>
 </Link>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
@@ -336,6 +340,7 @@ data-ws-index="4"
 className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
@@ -345,6 +350,7 @@ data-ws-index="5"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
+prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
@@ -650,19 +656,38 @@ className={`w-element cbewb4j c1iwa1os cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606
 {"Roles at BSLI"}
 </h1>
 <div
-className={`w-element c1fsvg17 cpcsebf cp1jzw6 c5do7do`}>
-{CMS_Member?.data?.data?.[0]?.["role_id"]?.map?.((collectionItem: any, index: number) =>
-<Fragment key={index}>
+className={`w-element c1fsvg17 cpcsebf cp1jzw6 cwouaok`}>
+<Accordion
+collapsible={true}
+className={`w-accordion c1fsvg17 cpcsebf`}>
+{CMS_Member?.data?.data?.[0]?.["role_id"]?.map?.((collectionItem_1: any, index_1: number) =>
+<Fragment key={index_1}>
+<AccordionItem
+data-ws-index="0"
+value={collectionItem_1?.id}
+className={`w-item cvdddm5`}>
+<AccordionHeader
+className={`w-item-header c1fsvg17`}>
+<AccordionTrigger
+value={collectionItem_1?.id}
+className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg`}>
 <div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
-<div
-className={`w-element cjl8er8 c1lst088`}>
-{`${collectionItem?.team?.["Team_Name"]}: ${collectionItem?.title}`}
+className={`w-element c1fsvg17 c1flzvby cafamdi`}>
+<Box
+className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+<Text
+className={`w-text`}>
+{`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_short"]}`}
+</Text>
 </div>
 <div
 className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
 <Time
-dateTime={collectionItem?.start}
+dateTime={collectionItem_1?.start}
 dateStyle={"medium"}
 format={"MM, YYYY"}
 className={`w-time`} />
@@ -670,23 +695,36 @@ className={`w-time`} />
 className={`w-element`}>
 {" - "}
 </div>
-{(collectionItem?.end != null) &&
+{(collectionItem_1?.end != null) &&
 <Time
-dateTime={collectionItem?.end}
+dateTime={collectionItem_1?.end}
 dateStyle={"medium"}
 format={"MM, YYYY"}
 className={`w-time`} />
 }
-{(collectionItem?.end == null) &&
+{(collectionItem_1?.end == null) &&
 <div
 className={`w-element`}>
 {"Present"}
 </div>
 }
 </div>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
+<div
+className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
+<div
+className={`w-element cjl8er8 c1lst088`}>
+{`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_long"]}`}
 </div>
+</div>
+</AccordionContent>
+</AccordionItem>
 </Fragment>
 )}
+</Accordion>
 </div>
 </div>
 </div>
@@ -716,16 +754,16 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_2: any, index_2: number) =>
+{[1,2,3]?.map?.((collectionItem_3: any, index_3: number) =>
+<Fragment key={index_3}>
+{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_2: any, index_2: number) =>
 <Fragment key={index_2}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
 <Link_1
-href={collectionItem_1?.["Sponsor_Website_URL"]}
+href={collectionItem_2?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_1?.image}`}
+src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
 optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
@@ -741,14 +779,14 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_4: any, index_4: number) =>
-<Fragment key={index_4}>
+{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_5: any, index_5: number) =>
+<Fragment key={index_5}>
 <Link_1
-href={collectionItem_4?.["Sponsor_Website_URL"]}
+href={collectionItem_5?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_4?.image}`}
+src={`${collectionItem_5?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>

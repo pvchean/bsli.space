@@ -50,7 +50,7 @@ export const getResources = (_props: { system: System }) => {
     name: "CMS_Members",
     url: `${CMS_Item_URL}BSLI_Members`,
     searchParams: [
-      { name: "fields", value: "*,role_id.*" },
+      { name: "fields", value: "*,role_id.position.*" },
       { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.membersSearchScope}"}},{"${system?.search?.membersSearchType}":{"${system?.search?.membersSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.membersSearch == '' ? true : system?.search?.membersSearch}"}}]}`
  },
       { name: "sort", value: `${system?.search?.membersSearchOrder == "on" ? '-' : ''}${system?.search?.membersSortType}` },

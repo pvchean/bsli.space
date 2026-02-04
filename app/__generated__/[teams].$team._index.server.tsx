@@ -29,13 +29,14 @@ export const getResources = (_props: { system: System }) => {
   }
   const CMS_Subteams_1: ResourceRequest = {
     name: "CMS_Subteams",
-    url: `${CMS_Item_URL}BSLI_SubTeams?deep[important_roles][_filter][end][_null]`,
+    url: `${CMS_Item_URL}BSLI_SubTeams`,
     searchParams: [
       { name: "filter[_and][0][team][Team_Name][_eq]", value: `${system?.params?.team}` },
       { name: "filter[_and][1][name][_neq]", value: "Leadership" },
-      { name: "fields", value: "*,images.directus_files_id,roles.*,roles.member_id.*" },
+      { name: "fields", value: "*,images.directus_files_id,roles.position.*,roles.member_id.*" },
       { name: "deep[roles][_filter][_and][0][end][_null]", value: "" },
-      { name: "deep[roles][_filter][_and][1][rank][_gt]", value: "1" },
+      { name: "deep[roles][_filter][_and][1][position][rank][_gt]", value: "1" },
+      { name: "deep[roles][_sort]", value: "-position.rank" },
     ],
     method: "get",
     headers: [
@@ -61,7 +62,7 @@ export const getResources = (_props: { system: System }) => {
     searchParams: [
       { name: "filter[_and][0][team][Team_Name][_eq]", value: `${system?.params?.team}` },
       { name: "filter[_and][1][name][_eq]", value: "Leadership" },
-      { name: "fields", value: "*,images.directus_files_id,important_roles.*,important_roles.member_id.*,roles.*.*" },
+      { name: "fields", value: "images.directus_files_id,roles.position.*,roles.member_id.*" },
       { name: "deep[roles][_filter][_and][0][end][_null]", value: "" },
       { name: "deep[roles][_filter][_and][1][rank][_gt]", value: "1" },
     ],
