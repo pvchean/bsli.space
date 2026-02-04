@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "9ac2dce2-0274-4d69-87ef-02a08c2a8459",
+    "id": "363a125c-e62d-497e-8729-b4bf889a25f6",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 3751,
-    "createdAt": "2026-02-04T07:29:06.368+00:00",
-    "updatedAt": "2026-02-04T07:29:06.368+00:00",
+    "version": 3764,
+    "createdAt": "2026-02-04T07:33:52.985+00:00",
+    "updatedAt": "2026-02-04T07:33:52.985+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -60299,7 +60299,7 @@
           "id": "UsPH_fGskTHYwW4c6dpQr",
           "name": "CMS_Leadership",
           "method": "get",
-          "url": "`${$ws$dataSource$z6aYLesyjNPff55bbZDqm}BSLI_SubTeams?deep[important_roles][_filter][end][_null]`",
+          "url": "`${$ws$dataSource$z6aYLesyjNPff55bbZDqm}BSLI_SubTeams`",
           "searchParams": [
             {
               "name": "filter[_and][0][team][Team_Name][_eq]",
@@ -60318,7 +60318,7 @@
               "value": "\"\""
             },
             {
-              "name": "deep[roles][_filter][_and][1][rank][_gt]",
+              "name": "deep[roles][_filter][_and][1][position][rank][_gt]",
               "value": "\"1\""
             }
           ],
