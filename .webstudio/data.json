@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "363a125c-e62d-497e-8729-b4bf889a25f6",
+    "id": "c97ef3f5-a7cd-4be2-8df4-a3c9ed7f99ac",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 3764,
-    "createdAt": "2026-02-04T07:33:52.985+00:00",
-    "updatedAt": "2026-02-04T07:33:52.985+00:00",
+    "version": 3831,
+    "createdAt": "2026-02-04T19:01:39.473+00:00",
+    "updatedAt": "2026-02-04T19:01:39.473+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -35343,54 +35343,6 @@
         }
       ],
       [
-        "fdAikwiqhYs3qfKRQctcH:tAFRweP7yGMMQI5CmE4yb:display:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "fdAikwiqhYs3qfKRQctcH",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "flex"
-          }
-        }
-      ],
-      [
-        "fdAikwiqhYs3qfKRQctcH:tAFRweP7yGMMQI5CmE4yb:flexDirection:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "fdAikwiqhYs3qfKRQctcH",
-          "property": "flexDirection",
-          "value": {
-            "type": "keyword",
-            "value": "column"
-          }
-        }
-      ],
-      [
-        "fdAikwiqhYs3qfKRQctcH:tAFRweP7yGMMQI5CmE4yb:columnGap:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "fdAikwiqhYs3qfKRQctcH",
-          "property": "columnGap",
-          "value": {
-            "type": "var",
-            "value": "gap-s"
-          }
-        }
-      ],
-      [
-        "fdAikwiqhYs3qfKRQctcH:tAFRweP7yGMMQI5CmE4yb:rowGap:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "fdAikwiqhYs3qfKRQctcH",
-          "property": "rowGap",
-          "value": {
-            "type": "var",
-            "value": "gap-s"
-          }
-        }
-      ],
-      [
         "D9nEld6IpJwsf49AP4aNP:tAFRweP7yGMMQI5CmE4yb:position:",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
@@ -43281,6 +43233,55 @@
             "value": "column-reverse"
           }
         }
+      ],
+      [
+        "96I1xJdFwKBaNcyHjEl8g:tAFRweP7yGMMQI5CmE4yb:fontSize:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "96I1xJdFwKBaNcyHjEl8g",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 24
+          }
+        }
+      ],
+      [
+        "DuuJ5A-1rP5UhLo7gZMv8:tAFRweP7yGMMQI5CmE4yb:textAlign:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "DuuJ5A-1rP5UhLo7gZMv8",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "xQPyYzolE4BYa9PapL3b7:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "xQPyYzolE4BYa9PapL3b7",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-6"
+          }
+        }
+      ],
+      [
+        "DuuJ5A-1rP5UhLo7gZMv8:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "DuuJ5A-1rP5UhLo7gZMv8",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-3"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -46752,13 +46753,6 @@
         }
       ],
       [
-        "fdAikwiqhYs3qfKRQctcH",
-        {
-          "type": "local",
-          "id": "fdAikwiqhYs3qfKRQctcH"
-        }
-      ],
-      [
         "D9nEld6IpJwsf49AP4aNP",
         {
           "type": "local",
@@ -47205,6 +47199,13 @@
         {
           "type": "local",
           "id": "v8Xs7wwHN_wToQ-P2Fypl"
+        }
+      ],
+      [
+        "DuuJ5A-1rP5UhLo7gZMv8",
+        {
+          "type": "local",
+          "id": "DuuJ5A-1rP5UhLo7gZMv8"
         }
       ]
     ],
@@ -53041,16 +53042,6 @@
         }
       ],
       [
-        "srj7KBPqL1g9Qw1X1yDEs",
-        {
-          "instanceId": "srj7KBPqL1g9Qw1X1yDEs",
-          "values": [
-            "ZRcSJi_vqnJf4cDTUKUQc",
-            "fdAikwiqhYs3qfKRQctcH"
-          ]
-        }
-      ],
-      [
         "-1PLq5zkkRgEvzexhfBuF",
         {
           "instanceId": "-1PLq5zkkRgEvzexhfBuF",
@@ -53370,7 +53361,8 @@
         {
           "instanceId": "D_L2WHvLlgihzPt0rmSya",
           "values": [
-            "PfCV0BGwQD0Z7jPwDP4-f"
+            "QuOwEzSGTPKRquAPiVbUO",
+            "DuuJ5A-1rP5UhLo7gZMv8"
           ]
         }
       ],
@@ -54708,7 +54700,8 @@
                 }
               }
             ],
-            "isPinned": true
+            "isPinned": true,
+            "debug": false
           }
         }
       ],
@@ -58999,7 +58992,7 @@
           "instanceId": "OCtL1CSbPY8606aoiEqBa",
           "name": "src",
           "type": "expression",
-          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"]}`"
+          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].id}`"
         }
       ],
       [
@@ -59089,7 +59082,7 @@
           "instanceId": "cmJB7l129h0EIiXDaqV5t",
           "name": "src",
           "type": "expression",
-          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"goals_image\"]}`"
+          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"goals_image\"].id}`"
         }
       ],
       [
@@ -59649,6 +59642,76 @@
           "type": "boolean",
           "value": true
         }
+      ],
+      [
+        "wYb_PkDTYulD2h8oJxjDM",
+        {
+          "id": "wYb_PkDTYulD2h8oJxjDM",
+          "instanceId": "cmJB7l129h0EIiXDaqV5t",
+          "name": "width",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"goals_image\"].width"
+        }
+      ],
+      [
+        "_czbCiv4Rd6p-XaK92qtb",
+        {
+          "id": "_czbCiv4Rd6p-XaK92qtb",
+          "instanceId": "cmJB7l129h0EIiXDaqV5t",
+          "name": "height",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"goals_image\"].height"
+        }
+      ],
+      [
+        "uRK9PIQ0yuOm5Nr7xoGCj",
+        {
+          "id": "uRK9PIQ0yuOm5Nr7xoGCj",
+          "instanceId": "OCtL1CSbPY8606aoiEqBa",
+          "name": "width",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].width"
+        }
+      ],
+      [
+        "DM3S7or-K-ZHrAM78SS3Q",
+        {
+          "id": "DM3S7or-K-ZHrAM78SS3Q",
+          "instanceId": "OCtL1CSbPY8606aoiEqBa",
+          "name": "height",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].height"
+        }
+      ],
+      [
+        "1nHjC437aVKImy66IgDB6",
+        {
+          "id": "1nHjC437aVKImy66IgDB6",
+          "instanceId": "OCtL1CSbPY8606aoiEqBa",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].description"
+        }
+      ],
+      [
+        "Px5SOMbZFxS8ONX1J9Rhn",
+        {
+          "id": "Px5SOMbZFxS8ONX1J9Rhn",
+          "instanceId": "cmJB7l129h0EIiXDaqV5t",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"goals_image\"].description"
+        }
+      ],
+      [
+        "WgPOsgO3tGQX9mWd2qQv9",
+        {
+          "id": "WgPOsgO3tGQX9mWd2qQv9",
+          "instanceId": "LStBd5T5zGamoH-MkkwsJ",
+          "name": "aria-label",
+          "type": "string",
+          "value": "Google Maps link for Bolz Hall"
+        }
       ]
     ],
     "dataSources": [
@@ -60121,16 +60184,6 @@
         }
       ],
       [
-        "_9WKvnMm9NIdIwMOZ_QyX",
-        {
-          "type": "resource",
-          "id": "_9WKvnMm9NIdIwMOZ_QyX",
-          "scopeInstanceId": "srj7KBPqL1g9Qw1X1yDEs",
-          "name": "CMS_Member",
-          "resourceId": "gA2xc6DMewBWllp7TcLho"
-        }
-      ],
-      [
         "oVNc-uOllYSC69S0Pr_4I",
         {
           "type": "resource",
@@ -60340,7 +60393,7 @@
           "searchParams": [
             {
               "name": "fields",
-              "value": "\"display_name,purpose_paragraph,goals_paragraph,purpose_image,goals_image\""
+              "value": "\"display_name,purpose_paragraph,goals_paragraph,purpose_image.*,goals_image.*\""
             },
             {
               "name": "filter[Team_Name][_eq]",
@@ -60459,17 +60512,6 @@
           "control": "system",
           "method": "get",
           "url": "\"/$resources/current-date\"",
-          "searchParams": [],
-          "headers": []
-        }
-      ],
-      [
-        "gA2xc6DMewBWllp7TcLho",
-        {
-          "id": "gA2xc6DMewBWllp7TcLho",
-          "name": "CMS_Member",
-          "method": "get",
-          "url": "$ws$dataSource$z6aYLesyjNPff55bbZDqm + \"BSLI_Members\"",
           "searchParams": [],
           "headers": []
         }
@@ -74782,10 +74824,6 @@
             },
             {
               "type": "id",
-              "value": "srj7KBPqL1g9Qw1X1yDEs"
-            },
-            {
-              "type": "id",
               "value": "rnR54edahtwOknCVhG110"
             }
           ]
@@ -74819,17 +74857,6 @@
               "value": "LTbHBFzbmPlIsmgyz44BS"
             }
           ]
-        }
-      ],
-      [
-        "srj7KBPqL1g9Qw1X1yDEs",
-        {
-          "type": "instance",
-          "id": "srj7KBPqL1g9Qw1X1yDEs",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "Section",
-          "children": []
         }
       ],
       [
@@ -77201,7 +77228,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "`${$ws$dataSource$N__DASH__U__DASH__AfTs0NHauATHUwpZe.team[\"Team_Name\"]}: ${$ws$dataSource$N__DASH__U__DASH__AfTs0NHauATHUwpZe.position[\"name_long\"]}`"
+              "value": "$ws$dataSource$N__DASH__U__DASH__AfTs0NHauATHUwpZe.position[\"description_long\"]"
             }
           ]
         }

@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T07:33:52.985Z";
+      export const lastPublished = "2026-02-04T19:01:39.473Z";
 
       export const siteName = undefined;
 
@@ -755,6 +755,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -885,6 +886,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -1012,6 +1014,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -1084,7 +1087,7 @@ className={`w-element c97u9uk cr340of c16tluoy c3g43wk cv2z80y c4vnhzq ccq64u2`}
 {"Get Involved 🚀"}
 </h1>
 <AnimateChildren
-action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-in-out","fill":"backwards","duration":{"type":"var","value":"duration-default"},"rangeStart":["contain",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["contain",{"type":"unit","value":50,"unit":"%"}]}},{"name":"New Animation","description":"Create a new animation.","keyframes":[{"offset":0,"styles":{}}],"timing":{"easing":"linear","fill":"both","rangeStart":["cover",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["cover",{"type":"unit","value":100,"unit":"%"}]}}],"isPinned":true}}>
+action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-in-out","fill":"backwards","duration":{"type":"var","value":"duration-default"},"rangeStart":["contain",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["contain",{"type":"unit","value":50,"unit":"%"}]}},{"name":"New Animation","description":"Create a new animation.","keyframes":[{"offset":0,"styles":{}}],"timing":{"easing":"linear","fill":"both","rangeStart":["cover",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["cover",{"type":"unit","value":100,"unit":"%"}]}}],"isPinned":true,"debug":false}}>
 <div
 className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
 <div
@@ -1332,10 +1335,20 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem: any, index: number) =>
-<Fragment key={index}>
+{Object.entries(
+  // @ts-ignore
+  [1,2,3] ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Sponsors_External?.data?.data ?? {}
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Sponsors_External?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey}>
 <Link_1
 href={collectionItem?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -1346,9 +1359,13 @@ optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 <HtmlEmbed
@@ -1357,8 +1374,13 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
+{Object.entries(
+  // @ts-ignore
+  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_3 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_3}>
 <Link_1
 href={collectionItem_3?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -1368,7 +1390,9 @@ src={`${collectionItem_3?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 </div>

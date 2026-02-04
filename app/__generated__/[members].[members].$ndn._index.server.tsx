@@ -55,15 +55,6 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const CMS_Member_2: ResourceRequest = {
-    name: "CMS_Member",
-    url: CMS_Item_URL + "BSLI_Members",
-    searchParams: [
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
   const CMS_Member_1: ResourceRequest = {
     name: "CMS_Member",
     url: CMS_Item_URL + "BSLI_Members",
@@ -82,7 +73,6 @@ export const getResources = (_props: { system: System }) => {
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
     ["now", now],
-    ["CMS_Member_2", CMS_Member_2],
     ["CMS_Member_1", CMS_Member_1],
   ])
   const _action = new Map<string, ResourceRequest>([

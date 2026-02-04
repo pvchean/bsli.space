@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T07:33:52.985Z";
+      export const lastPublished = "2026-02-04T19:01:39.473Z";
 
       export const siteName = undefined;
 
@@ -41,7 +41,7 @@ let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm cp1jzw6`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
@@ -596,11 +596,11 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
 <div
 className={`w-element`}>
 <h1
-className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h`}>
+className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h c1xrjlv`}>
 {CMS_Member?.data?.data?.[0]?.Name}
 </h1>
 <p
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c190672s`}>
 {`${CMS_Member?.data?.data?.[0]?.Major || ' '} ${CMS_Member?.data?.data?.[0]?.["osu_year"] || ' '}`}
 </p>
 <p
@@ -660,8 +660,13 @@ className={`w-element c1fsvg17 cpcsebf cp1jzw6 cwouaok`}>
 <Accordion
 collapsible={true}
 className={`w-accordion c1fsvg17 cpcsebf`}>
-{CMS_Member?.data?.data?.[0]?.["role_id"]?.map?.((collectionItem_1: any, index_1: number) =>
-<Fragment key={index_1}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Member?.data?.data?.[0]?.["role_id"] ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray(CMS_Member?.data?.data?.[0]?.["role_id"]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
 <AccordionItem
 data-ws-index="0"
 value={collectionItem_1?.id}
@@ -717,13 +722,15 @@ className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1
 className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
 <div
 className={`w-element cjl8er8 c1lst088`}>
-{`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_long"]}`}
+{collectionItem_1?.position?.["description_long"]}
 </div>
 </div>
 </AccordionContent>
 </AccordionItem>
 </Fragment>
-)}
+)
+})
+}
 </Accordion>
 </div>
 </div>
@@ -736,8 +743,6 @@ className={`w-markdown-embed`}>
 </MarkdownEmbed>
 </div>
 </div>
-<div
-className={`w-element c11cvd9l c1lufqxe cnbmf4z c1fsvg17 cp0jmbs c2jpees c1bctvrt`} />
 <Slot>
 <Fragment_1>
 <div
@@ -754,10 +759,20 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{[1,2,3]?.map?.((collectionItem_3: any, index_3: number) =>
-<Fragment key={index_3}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_2: any, index_2: number) =>
-<Fragment key={index_2}>
+{Object.entries(
+  // @ts-ignore
+  [1,2,3] ?? {}
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_3}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Sponsors_External?.data?.data ?? {}
+).map(([_key, collectionItem_2]: any) => {
+  const collectionItemKey_2 = Array.isArray(CMS_Sponsors_External?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_2}>
 <Link_1
 href={collectionItem_2?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -768,9 +783,13 @@ optimize={false}
 className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 <HtmlEmbed
@@ -779,8 +798,13 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_5: any, index_5: number) =>
-<Fragment key={index_5}>
+{Object.entries(
+  // @ts-ignore
+  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
+).map(([_key, collectionItem_5]: any) => {
+  const collectionItemKey_5 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_5}>
 <Link_1
 href={collectionItem_5?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -790,7 +814,9 @@ src={`${collectionItem_5?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
-)}
+)
+})
+}
 </div>
 </div>
 </div>

@@ -2831,6 +2831,12 @@
   .c1x6vc8x {
     width: var(--size-14)
   }
+  .c1xrjlv {
+    font-size: var(--font-size-6)
+  }
+  .c190672s {
+    font-size: var(--font-size-3)
+  }
 }
 @media all and (max-width: 479px) {
   :root {
