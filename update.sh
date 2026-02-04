@@ -3,6 +3,9 @@
 # Go to repo directory
 cd "$(dirname "$0")" || exit 1
 
+# Sync git
+git pull --rebase
+
 # Run your build tools
 webstudio sync
 webstudio build --template docker
