@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T22:32:37.179Z";
+      export const lastPublished = "2026-02-06T07:14:41.129Z";
 
       export const siteName = undefined;
 
@@ -122,7 +122,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 <Box
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box

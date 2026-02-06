@@ -1633,24 +1633,6 @@
   .c1gla3s9 {
     padding: 6px
   }
-  .cwo73pd {
-    background-color: var(--background-card, rgb(52 58 64 / 1))
-  }
-  .ctkbqoa {
-    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 0.2)
-  }
-  .cwsyufx {
-    border: var(--border-size-1, 1px) none var(--foreground-border, rgb(73 80 87 / 1))
-  }
-  .czfw4y0 {
-    padding: var(--spacing-default, clamp(1.5rem,3vw,2rem))
-  }
-  .c1i6hdg9 {
-    padding-top: var(--size-3)
-  }
-  .c1eartro {
-    padding-bottom: var(--size-3)
-  }
   .c18fr3nm {
     min-height: 100%
   }
@@ -1793,6 +1775,12 @@
   .c1khw8dr {
     justify-content: space-around
   }
+  .cwo73pd {
+    background-color: var(--background-card, rgb(52 58 64 / 1))
+  }
+  .ctkbqoa {
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 0.2)
+  }
   .c1uoj13n {
     transition-property: scale, opacity
   }
@@ -1807,6 +1795,12 @@
   }
   .c8mwnvb {
     transition-behavior: normal, normal
+  }
+  .cwsyufx {
+    border: var(--border-size-1, 1px) none var(--foreground-border, rgb(73 80 87 / 1))
+  }
+  .czfw4y0 {
+    padding: var(--spacing-default, clamp(1.5rem,3vw,2rem))
   }
   .cziki7s:focus {
     outline-offset: var(--focus-offset)
@@ -2521,6 +2515,12 @@
   .cj9b88m {
     height: var(--size-15)
   }
+  .c1i6hdg9 {
+    padding-top: var(--size-3)
+  }
+  .c1eartro {
+    padding-bottom: var(--size-3)
+  }
 }
 @media all and (max-width: 991px) {
   .clacsc2 {
@@ -2914,12 +2914,6 @@
   .c2nedal {
     flex-direction: column-reverse
   }
-  .c1p3t04y {
-    font-size: 18px
-  }
-  .c1s6wxtp {
-    font-weight: 600
-  }
   .c1w29cqu {
     display: none
   }
@@ -2973,5 +2967,11 @@
   }
   .c32b0k6 {
     font-size: 14px
+  }
+  .c1p3t04y {
+    font-size: 18px
+  }
+  .c1s6wxtp {
+    font-weight: 600
   }
 }
