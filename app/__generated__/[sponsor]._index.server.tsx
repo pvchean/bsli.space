@@ -55,12 +55,22 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
+  const CMS_Member_1: ResourceRequest = {
+    name: "CMS_Member",
+    url: `${CMS_Item_URL}BSLI_Members?filter[osu_ndn][_eq]=ost.18&fields=*,role_id.*.*`,
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
     ["now", now],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
+    ["CMS_Member_1", CMS_Member_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

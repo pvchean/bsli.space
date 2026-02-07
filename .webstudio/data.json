@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "c782600b-fa97-4b7d-9ff1-03fba932e300",
+    "id": "b09eded4-27c5-4c0a-91f3-3258936bf602",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4278,
-    "createdAt": "2026-02-07T04:56:44.961+00:00",
-    "updatedAt": "2026-02-07T04:56:44.961+00:00",
+    "version": 4462,
+    "createdAt": "2026-02-07T06:35:46.129+00:00",
+    "updatedAt": "2026-02-07T06:35:46.129+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -95,10 +95,10 @@
           "name": "Teams",
           "title": "\"Untitled\"",
           "history": [
-            "/teams/Liquids",
             "/teams/NASA",
-            "/teams/Nasa",
             "/teams/IREC",
+            "/teams/Liquids",
+            "/teams/Nasa",
             "/teams/Irec",
             "/teams/nasa",
             "/teams/example",
@@ -26845,30 +26845,6 @@
         }
       ],
       [
-        "M1TUW_-TUWmhhEMJ1p4kS:tAFRweP7yGMMQI5CmE4yb:textDecorationLine:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "M1TUW_-TUWmhhEMJ1p4kS",
-          "property": "textDecorationLine",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          }
-        }
-      ],
-      [
-        "M1TUW_-TUWmhhEMJ1p4kS:tAFRweP7yGMMQI5CmE4yb:color:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "M1TUW_-TUWmhhEMJ1p4kS",
-          "property": "color",
-          "value": {
-            "type": "keyword",
-            "value": "currentColor"
-          }
-        }
-      ],
-      [
         "WniC9T8kI4mfVQCOVxtE5:tAFRweP7yGMMQI5CmE4yb:color:",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
@@ -44270,27 +44246,14 @@
         }
       ],
       [
-        "pR-AKBY_doN6gMlQcCXH3:w1CiYUsWrNY7Y9wcpTy3K:aspectRatio:",
-        {
-          "styleSourceId": "pR-AKBY_doN6gMlQcCXH3",
-          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
-          "property": "aspectRatio",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
         "VpB_Cpp8p7UgKZKlI6I1I:tAFRweP7yGMMQI5CmE4yb:maxHeight:",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
           "styleSourceId": "VpB_Cpp8p7UgKZKlI6I1I",
           "property": "maxHeight",
           "value": {
-            "type": "unit",
-            "value": 84,
-            "unit": "lvh"
+            "type": "unparsed",
+            "value": "calc(90lvh - 4rem)"
           }
         }
       ],
@@ -44301,9 +44264,8 @@
           "styleSourceId": "VpB_Cpp8p7UgKZKlI6I1I",
           "property": "maxWidth",
           "value": {
-            "type": "unit",
-            "unit": "lvw",
-            "value": 74
+            "type": "unparsed",
+            "value": "calc(80lvw - 3rem)"
           }
         }
       ],
@@ -44775,6 +44737,42 @@
             "type": "unit",
             "unit": "px",
             "value": 20
+          }
+        }
+      ],
+      [
+        "XUYXQdPLIsMx8EQiFdy7y:w1CiYUsWrNY7Y9wcpTy3K:aspectRatio:",
+        {
+          "styleSourceId": "XUYXQdPLIsMx8EQiFdy7y",
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "property": "aspectRatio",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "I37A7G0uYoY4qwc6TtEC-:tAFRweP7yGMMQI5CmE4yb:textDecorationLine:",
+        {
+          "styleSourceId": "I37A7G0uYoY4qwc6TtEC-",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "textDecorationLine",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "I37A7G0uYoY4qwc6TtEC-:tAFRweP7yGMMQI5CmE4yb:color:",
+        {
+          "styleSourceId": "I37A7G0uYoY4qwc6TtEC-",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "color",
+          "value": {
+            "type": "keyword",
+            "value": "currentColor"
           }
         }
       ]
@@ -47326,13 +47324,6 @@
         }
       ],
       [
-        "M1TUW_-TUWmhhEMJ1p4kS",
-        {
-          "type": "local",
-          "id": "M1TUW_-TUWmhhEMJ1p4kS"
-        }
-      ],
-      [
         "ahAj4phNYZduxr_5Y8BOc",
         {
           "type": "local",
@@ -48719,13 +48710,6 @@
         }
       ],
       [
-        "pR-AKBY_doN6gMlQcCXH3",
-        {
-          "type": "local",
-          "id": "pR-AKBY_doN6gMlQcCXH3"
-        }
-      ],
-      [
         "jKRVX4CG895DWnnLldlmS",
         {
           "type": "local",
@@ -48765,6 +48749,20 @@
         {
           "type": "local",
           "id": "-I-ZerSAkpYFJOUrAPegA"
+        }
+      ],
+      [
+        "XUYXQdPLIsMx8EQiFdy7y",
+        {
+          "type": "local",
+          "id": "XUYXQdPLIsMx8EQiFdy7y"
+        }
+      ],
+      [
+        "I37A7G0uYoY4qwc6TtEC-",
+        {
+          "type": "local",
+          "id": "I37A7G0uYoY4qwc6TtEC-"
         }
       ]
     ],
@@ -53505,17 +53503,6 @@
         }
       ],
       [
-        "2XfWxU4bKEKay1m8gYt8-",
-        {
-          "instanceId": "2XfWxU4bKEKay1m8gYt8-",
-          "values": [
-            "7puC0Kv9ErUyuv6KSpcaJ",
-            "SncIM55aza4z4B4g3MGz5",
-            "M1TUW_-TUWmhhEMJ1p4kS"
-          ]
-        }
-      ],
-      [
         "ITdH3H4mnu544t5zRs-b_",
         {
           "instanceId": "ITdH3H4mnu544t5zRs-b_",
@@ -55327,16 +55314,6 @@
         }
       ],
       [
-        "NzAtNb1xW8YfAvFJwNs1G",
-        {
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "values": [
-            "VpB_Cpp8p7UgKZKlI6I1I",
-            "pR-AKBY_doN6gMlQcCXH3"
-          ]
-        }
-      ],
-      [
         "9fhafGoLsWPWsXDXzyntL",
         {
           "instanceId": "9fhafGoLsWPWsXDXzyntL",
@@ -55409,6 +55386,27 @@
           "values": [
             "6zWe50CqRSG47WJN9ZLpm",
             "-I-ZerSAkpYFJOUrAPegA"
+          ]
+        }
+      ],
+      [
+        "NXmiHeob3v1Sv8_jeP6b9",
+        {
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "values": [
+            "VpB_Cpp8p7UgKZKlI6I1I",
+            "XUYXQdPLIsMx8EQiFdy7y"
+          ]
+        }
+      ],
+      [
+        "tSqDtTeiTb4bglhlx3h4l",
+        {
+          "instanceId": "tSqDtTeiTb4bglhlx3h4l",
+          "values": [
+            "7puC0Kv9ErUyuv6KSpcaJ",
+            "SncIM55aza4z4B4g3MGz5",
+            "I37A7G0uYoY4qwc6TtEC-"
           ]
         }
       ]
@@ -58351,8 +58349,8 @@
           "id": "Ai6yNa4c6ofZMIolYGj4u",
           "instanceId": "KV-v-VzSTtovGOVUmZFPC",
           "name": "src",
-          "type": "string",
-          "value": "https://www.bsli.space/_astro/Hana%20Winchester.DZzDsTGn_11DkYN.webp"
+          "type": "expression",
+          "value": "`${$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].headshot != null ? $ws$dataSource$oh9hAmtYpNGMYX1c99V8t + $ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].headshot : \"https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp\"}`"
         }
       ],
       [
@@ -58361,8 +58359,8 @@
           "id": "PWn6YssoTNAaO1-8gr0ef",
           "instanceId": "gxgm3x_nFIHnh7g7tr1Im",
           "name": "href",
-          "type": "string",
-          "value": "mailto:winchester.36@osu.edu"
+          "type": "expression",
+          "value": "`mailto:${$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].Email}`"
         }
       ],
       [
@@ -61450,56 +61448,6 @@
         }
       ],
       [
-        "dBCbn-Y4pYcQJ0VP72Anq",
-        {
-          "id": "dBCbn-Y4pYcQJ0VP72Anq",
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "name": "src",
-          "type": "expression",
-          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].id}`"
-        }
-      ],
-      [
-        "169n0-A02SESAzAmIOv4d",
-        {
-          "id": "169n0-A02SESAzAmIOv4d",
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "name": "optimize",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "2BKPfyzlbI71a5hzNVEhg",
-        {
-          "id": "2BKPfyzlbI71a5hzNVEhg",
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "name": "width",
-          "type": "expression",
-          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].width"
-        }
-      ],
-      [
-        "vqFCXfwgAd5PFFAtbTM5W",
-        {
-          "id": "vqFCXfwgAd5PFFAtbTM5W",
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "name": "height",
-          "type": "expression",
-          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].height"
-        }
-      ],
-      [
-        "BrH5FMpj-IaMuiIoqqXF2",
-        {
-          "id": "BrH5FMpj-IaMuiIoqqXF2",
-          "instanceId": "NzAtNb1xW8YfAvFJwNs1G",
-          "name": "alt",
-          "type": "expression",
-          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].description"
-        }
-      ],
-      [
         "U7-u2Eh7hJcymnxczcuL2",
         {
           "id": "U7-u2Eh7hJcymnxczcuL2",
@@ -61647,6 +61595,76 @@
           "name": "value",
           "type": "string",
           "value": "Overview"
+        }
+      ],
+      [
+        "v_HrEtaXk0G3jBJyCabV2",
+        {
+          "id": "v_HrEtaXk0G3jBJyCabV2",
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "name": "src",
+          "type": "expression",
+          "value": "`${$ws$dataSource$oh9hAmtYpNGMYX1c99V8t}${$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].id}`"
+        }
+      ],
+      [
+        "JUALsjjxAnfGBnXzOWQP6",
+        {
+          "id": "JUALsjjxAnfGBnXzOWQP6",
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "name": "optimize",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "mcLchKjBkSzItPDhrIPDW",
+        {
+          "id": "mcLchKjBkSzItPDhrIPDW",
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "name": "width",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].width"
+        }
+      ],
+      [
+        "hTfKXE89VoQeWI1I_5RAi",
+        {
+          "id": "hTfKXE89VoQeWI1I_5RAi",
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "name": "height",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].height"
+        }
+      ],
+      [
+        "0hZFRkt3yLK1R7zUYdVT0",
+        {
+          "id": "0hZFRkt3yLK1R7zUYdVT0",
+          "instanceId": "NXmiHeob3v1Sv8_jeP6b9",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$LVr1NEBnX6vMDU13VqBX3.data.data[0][\"purpose_image\"].description"
+        }
+      ],
+      [
+        "Jn7XOOjs7SOP1Lphym8WN",
+        {
+          "id": "Jn7XOOjs7SOP1Lphym8WN",
+          "instanceId": "tSqDtTeiTb4bglhlx3h4l",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].LinkedInURL != null && $ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].LinkedInURL !== ''"
+        }
+      ],
+      [
+        "trNYz_Yy50S7yz08MwYiw",
+        {
+          "id": "trNYz_Yy50S7yz08MwYiw",
+          "instanceId": "tSqDtTeiTb4bglhlx3h4l",
+          "name": "href",
+          "type": "expression",
+          "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].LinkedInURL"
         }
       ]
     ],
@@ -62177,6 +62195,16 @@
           "name": "CMS_Sponsors_external",
           "resourceId": "G0gztExk5EX8B1v7swkvp"
         }
+      ],
+      [
+        "u2Htq9dmPiwja36IpnRx-",
+        {
+          "type": "resource",
+          "id": "u2Htq9dmPiwja36IpnRx-",
+          "scopeInstanceId": "i_iLbcjwfzPC8oV3OVpws",
+          "name": "CMS_Member",
+          "resourceId": "qqgWI-uZcCduNdGCKt_Rt"
+        }
       ]
     ],
     "resources": [
@@ -62479,6 +62507,17 @@
               "value": "\"max-age=86400\""
             }
           ]
+        }
+      ],
+      [
+        "qqgWI-uZcCduNdGCKt_Rt",
+        {
+          "id": "qqgWI-uZcCduNdGCKt_Rt",
+          "name": "CMS_Member",
+          "method": "get",
+          "url": "`${$ws$dataSource$z6aYLesyjNPff55bbZDqm}BSLI_Members?filter[osu_ndn][_eq]=ost.18&fields=*,role_id.*.*`",
+          "searchParams": [],
+          "headers": []
         }
       ]
     ],
@@ -66323,7 +66362,7 @@
             },
             {
               "type": "text",
-              "value": " is a student-run organization that participates in various programs, such as the Nasa Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."
+              "value": " is a student-run organization that participates in various programs, such as the NASA Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."
             }
           ]
         }
@@ -73704,7 +73743,7 @@
             },
             {
               "type": "id",
-              "value": "B8SWjniHvPTRE0Ti6bqSz"
+              "value": "ebbYcBUfuZoWPwRZxZhLc"
             },
             {
               "type": "id",
@@ -73732,32 +73771,8 @@
           "label": "Name",
           "children": [
             {
-              "type": "text",
-              "value": "Hana Winchester"
-            }
-          ]
-        }
-      ],
-      [
-        "B8SWjniHvPTRE0Ti6bqSz",
-        {
-          "type": "instance",
-          "id": "B8SWjniHvPTRE0Ti6bqSz",
-          "component": "ws:element",
-          "tag": "p",
-          "label": "Major",
-          "children": [
-            {
-              "type": "text",
-              "value": "Computer Science & Engineering"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "Sophomore"
+              "type": "expression",
+              "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].Name"
             }
           ]
         }
@@ -73776,7 +73791,7 @@
             },
             {
               "type": "id",
-              "value": "2XfWxU4bKEKay1m8gYt8-"
+              "value": "tSqDtTeiTb4bglhlx3h4l"
             }
           ]
         }
@@ -73810,8 +73825,8 @@
           "label": "Title",
           "children": [
             {
-              "type": "text",
-              "value": "Alumni & Sponsorship Chair"
+              "type": "expression",
+              "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0][\"role_id\"][0].position[\"name_short\"]"
             }
           ]
         }
@@ -73831,25 +73846,6 @@
             {
               "type": "id",
               "value": "ITdH3H4mnu544t5zRs-b_"
-            }
-          ]
-        }
-      ],
-      [
-        "2XfWxU4bKEKay1m8gYt8-",
-        {
-          "type": "instance",
-          "id": "2XfWxU4bKEKay1m8gYt8-",
-          "component": "ws:element",
-          "tag": "a",
-          "children": [
-            {
-              "type": "id",
-              "value": "SBPjnTkO-iPZIytu7ColC"
-            },
-            {
-              "type": "id",
-              "value": "1M7ajQjGJBjfQAi3cpHcw"
             }
           ]
         }
@@ -73878,38 +73874,8 @@
           "tag": "p",
           "children": [
             {
-              "type": "text",
-              "value": "winchester.36@osu.edu"
-            }
-          ]
-        }
-      ],
-      [
-        "SBPjnTkO-iPZIytu7ColC",
-        {
-          "type": "instance",
-          "id": "SBPjnTkO-iPZIytu7ColC",
-          "component": "Slot",
-          "label": "LinkedIn Icon",
-          "children": [
-            {
-              "type": "id",
-              "value": "kj6DGfek22LzF3L63PSsB"
-            }
-          ]
-        }
-      ],
-      [
-        "1M7ajQjGJBjfQAi3cpHcw",
-        {
-          "type": "instance",
-          "id": "1M7ajQjGJBjfQAi3cpHcw",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "LinkedIn"
+              "type": "expression",
+              "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].Email"
             }
           ]
         }
@@ -78283,7 +78249,7 @@
             },
             {
               "type": "id",
-              "value": "NzAtNb1xW8YfAvFJwNs1G"
+              "value": "NXmiHeob3v1Sv8_jeP6b9"
             },
             {
               "type": "id",
@@ -79340,15 +79306,6 @@
         }
       ],
       [
-        "NzAtNb1xW8YfAvFJwNs1G",
-        {
-          "type": "instance",
-          "id": "NzAtNb1xW8YfAvFJwNs1G",
-          "component": "Image",
-          "children": []
-        }
-      ],
-      [
         "9fhafGoLsWPWsXDXzyntL",
         {
           "type": "instance",
@@ -79486,6 +79443,80 @@
           "tag": "body",
           "children": []
         }
+      ],
+      [
+        "NXmiHeob3v1Sv8_jeP6b9",
+        {
+          "type": "instance",
+          "id": "NXmiHeob3v1Sv8_jeP6b9",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "ebbYcBUfuZoWPwRZxZhLc",
+        {
+          "type": "instance",
+          "id": "ebbYcBUfuZoWPwRZxZhLc",
+          "component": "ws:element",
+          "tag": "p",
+          "label": "Major",
+          "children": [
+            {
+              "type": "expression",
+              "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].Major"
+            }
+          ]
+        }
+      ],
+      [
+        "tSqDtTeiTb4bglhlx3h4l",
+        {
+          "type": "instance",
+          "id": "tSqDtTeiTb4bglhlx3h4l",
+          "component": "ws:element",
+          "tag": "a",
+          "children": [
+            {
+              "type": "id",
+              "value": "627GwTOIIL_FQHZInb8hQ"
+            },
+            {
+              "type": "id",
+              "value": "W7MBEyQryru1E_B5q3LAF"
+            }
+          ]
+        }
+      ],
+      [
+        "627GwTOIIL_FQHZInb8hQ",
+        {
+          "type": "instance",
+          "id": "627GwTOIIL_FQHZInb8hQ",
+          "component": "Slot",
+          "label": "LinkedIn Icon",
+          "children": [
+            {
+              "type": "id",
+              "value": "kj6DGfek22LzF3L63PSsB"
+            }
+          ]
+        }
+      ],
+      [
+        "W7MBEyQryru1E_B5q3LAF",
+        {
+          "type": "instance",
+          "id": "W7MBEyQryru1E_B5q3LAF",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "LinkedIn"
+            }
+          ]
+        }
       ]
     ],
     "deployment": {
@@ -79597,10 +79628,10 @@
       "name": "Teams",
       "title": "\"Untitled\"",
       "history": [
-        "/teams/Liquids",
         "/teams/NASA",
-        "/teams/Nasa",
         "/teams/IREC",
+        "/teams/Liquids",
+        "/teams/Nasa",
         "/teams/Irec",
         "/teams/nasa",
         "/teams/example",

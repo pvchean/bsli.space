@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-07T04:56:44.961Z";
+      export const lastPublished = "2026-02-07T06:35:46.129Z";
 
       export const siteName = undefined;
 
@@ -33,6 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let CMS_Member = useResource("CMS_Member_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
@@ -647,32 +648,28 @@ className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q`}>
 <Image
-src={"https://www.bsli.space/_astro/Hana%20Winchester.DZzDsTGn_11DkYN.webp"}
+src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
 optimize={false}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 <div
 className={`w-element`}>
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
-{"Hana Winchester"}
+{CMS_Member?.data?.data?.[0]?.Name}
 </div>
 <div
 className={`w-element cr340of`}>
-{"Alumni & Sponsorship Chair"}
+{CMS_Member?.data?.data?.[0]?.["role_id"]?.[0]?.position?.["name_short"]}
 </div>
 </div>
 <p
 className={`w-element`}>
-{"Computer Science & Engineering"}
-{""}
-<br />
-{""}
-{"Sophomore"}
+{CMS_Member?.data?.data?.[0]?.Major}
 </p>
 <div
 className={`w-element c1jt1fo7`}>
 <Link_1
-href={"mailto:winchester.36@osu.edu"}
+href={`mailto:${CMS_Member?.data?.data?.[0]?.Email}`}
 className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
 <Slot>
 <Fragment_1>
@@ -686,10 +683,12 @@ className={`w-html-embed`} />
 </Slot>
 <p
 className={`w-element`}>
-{"winchester.36@osu.edu"}
+{CMS_Member?.data?.data?.[0]?.Email}
 </p>
 </Link_1>
+{(CMS_Member?.data?.data?.[0]?.LinkedInURL != null && CMS_Member?.data?.data?.[0]?.LinkedInURL !== '') &&
 <Link_1
+href={CMS_Member?.data?.data?.[0]?.LinkedInURL}
 className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
 <Slot>
 <HtmlEmbed
@@ -701,6 +700,7 @@ className={`w-element`}>
 {"LinkedIn"}
 </p>
 </Link_1>
+}
 </div>
 </div>
 </div>

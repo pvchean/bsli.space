@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-07T04:56:44.961Z";
+      export const lastPublished = "2026-02-07T06:35:46.129Z";
 
       export const siteName = undefined;
 
@@ -631,7 +631,7 @@ className={`w-paragraph ckhpfcg c14ukcfr c4vnhzq ctzyqaf cei00iu`}>
 className={`w-element c6zneyq c145f7eq`}>
 {"BSLI"}
 </span>
-{" is a student-run organization that participates in various programs, such as the Nasa Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."}
+{" is a student-run organization that participates in various programs, such as the NASA Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."}
 </Paragraph>
 </Box>
 <Box
@@ -668,7 +668,7 @@ src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
 width={1243}
 height={944}
 alt={""}
-className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -739,7 +739,7 @@ src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
 width={1428}
 height={952}
 alt={""}
-className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -873,7 +873,7 @@ src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
 width={1426}
 height={944}
 alt={""}
-className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -995,7 +995,7 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
 <Image
 src={"https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"}
-className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed

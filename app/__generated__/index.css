@@ -2470,11 +2470,11 @@
   .ct2gg2i:hover {
     opacity: 1
   }
-  .c1g46f8y {
-    max-height: 84lvh
+  .c1yk3kgb {
+    max-height: calc(90lvh - 4rem)
   }
-  .c1mbqom {
-    max-width: 74lvw
+  .c1w5i7t8 {
+    max-width: calc(80lvw - 3rem)
   }
   .ct2f3gw {
     min-width: 35lvw
