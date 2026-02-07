@@ -14,8 +14,20 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CMS_Sponsors_external: ResourceRequest = {
+    name: "CMS_Sponsors_external",
+    url: "https://cms.bsli.a2.lab512.org/items/BSLI_Sponsors_External",
+    searchParams: [
+      { name: "filter[active][_eq]", value: "true" },
+    ],
+    method: "get",
+    headers: [
+      { name: "Cache-Control", value: "max-age=86400" },
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["now", now],
+    ["CMS_Sponsors_external", CMS_Sponsors_external],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

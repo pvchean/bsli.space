@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "5b0d97ce-1c48-4476-bf46-8c01a24d0bb6",
+    "id": "c782600b-fa97-4b7d-9ff1-03fba932e300",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4261,
-    "createdAt": "2026-02-07T04:36:43.385+00:00",
-    "updatedAt": "2026-02-07T04:36:43.385+00:00",
+    "version": 4278,
+    "createdAt": "2026-02-07T04:56:44.961+00:00",
+    "updatedAt": "2026-02-07T04:56:44.961+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -58018,7 +58018,7 @@
           "instanceId": "zL05d52J3RiVkFMhS7SJQ",
           "name": "code",
           "type": "expression",
-          "value": "\"<style>.logo-slider {\\n  background: #fff;\\n  overflow: hidden;\\n  left: 0px;\\n  position: absolute;\\n  right: 0px\\n}\\n\\n.logo-track {\\n  display: flex;\\n  width: max-content; \\n  animation: scroll \" + $ws$dataSource$TUxnxabdgM26O0DAngnyr.data.data.length * 5 + \"s linear infinite;\\n}\\n\\n.logo-track img {\\n  object-fit: contain;\\n}\\n\\n@keyframes scroll {\\n  0%   { transform: translateX(0); }\\n  100% { transform: translateX(-33.333%); }\\n}\\n</style>\""
+          "value": "\"<style>.logo-slider {\\n  background: #fff;\\n  overflow: hidden;\\n  left: 0px;\\n  position: absolute;\\n  right: 0px\\n}\\n\\n.logo-track {\\n  display: flex;\\n  width: max-content; \\n  animation: scroll \" + $ws$dataSource$fTx6JQZIxfSDsD4Pg9d_q.data.data.length * 5 + \"s linear infinite;\\n}\\n\\n.logo-track img {\\n  object-fit: contain;\\n}\\n\\n@keyframes scroll {\\n  0%   { transform: translateX(0); }\\n  100% { transform: translateX(-33.333%); }\\n}\\n</style>\""
         }
       ],
       [
@@ -58092,7 +58092,7 @@
           "instanceId": "l7rPOJkQ_qI1cCPwiwpXQ",
           "name": "data",
           "type": "expression",
-          "value": "$ws$dataSource$TUxnxabdgM26O0DAngnyr.data.data"
+          "value": "$ws$dataSource$fTx6JQZIxfSDsD4Pg9d_q.data.data"
         }
       ],
       [
@@ -61895,16 +61895,6 @@
         }
       ],
       [
-        "TUxnxabdgM26O0DAngnyr",
-        {
-          "type": "resource",
-          "id": "TUxnxabdgM26O0DAngnyr",
-          "scopeInstanceId": "dQNZUWyPS3zNx5n3HbjUf",
-          "name": "CMS_Sponsors_External",
-          "resourceId": "K9T69hcE2o-J5YhK3GSYB"
-        }
-      ],
-      [
         "eunVxE2slDcXMyzNCuw84",
         {
           "type": "parameter",
@@ -62177,6 +62167,16 @@
           "scopeInstanceId": "6dIxycL_MsOFkvN7LaSjd",
           "name": "collectionItemKey"
         }
+      ],
+      [
+        "fTx6JQZIxfSDsD4Pg9d_q",
+        {
+          "type": "resource",
+          "id": "fTx6JQZIxfSDsD4Pg9d_q",
+          "scopeInstanceId": ":root",
+          "name": "CMS_Sponsors_external",
+          "resourceId": "G0gztExk5EX8B1v7swkvp"
+        }
       ]
     ],
     "resources": [
@@ -62340,27 +62340,6 @@
         }
       ],
       [
-        "K9T69hcE2o-J5YhK3GSYB",
-        {
-          "id": "K9T69hcE2o-J5YhK3GSYB",
-          "name": "CMS_Sponsors_External",
-          "method": "get",
-          "url": "`${$ws$dataSource$z6aYLesyjNPff55bbZDqm}BSLI_Sponsors_External`",
-          "searchParams": [
-            {
-              "name": "filter[active][_eq]",
-              "value": "\"true\""
-            }
-          ],
-          "headers": [
-            {
-              "name": "Cache-Control",
-              "value": "\"max-age=86400\""
-            }
-          ]
-        }
-      ],
-      [
         "JOevCRjjgpQM0gSXIzXxk",
         {
           "id": "JOevCRjjgpQM0gSXIzXxk",
@@ -62479,6 +62458,27 @@
             }
           ],
           "headers": []
+        }
+      ],
+      [
+        "G0gztExk5EX8B1v7swkvp",
+        {
+          "id": "G0gztExk5EX8B1v7swkvp",
+          "name": "CMS_Sponsors_external",
+          "method": "get",
+          "url": "\"https://cms.bsli.a2.lab512.org/items/BSLI_Sponsors_External\"",
+          "searchParams": [
+            {
+              "name": "filter[active][_eq]",
+              "value": "\"true\""
+            }
+          ],
+          "headers": [
+            {
+              "name": "Cache-Control",
+              "value": "\"max-age=86400\""
+            }
+          ]
         }
       ]
     ],

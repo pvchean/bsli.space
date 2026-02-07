@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-07T04:36:43.385Z";
+      export const lastPublished = "2026-02-07T04:56:44.961Z";
 
       export const siteName = undefined;
 
@@ -40,8 +40,8 @@ let CMS_Subteams = useResource("CMS_Subteams_1")
 let CMS_Team_Project = useResource("CMS_Team_Project_1")
 let CMS_Overview = useResource("CMS_Overview_1")
 let CMS_Leadership = useResource("CMS_Leadership_1")
-let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
-let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
+let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
+let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
@@ -704,13 +704,8 @@ value={"Overview"}
 className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
 {"Overview"}
 </TabsTrigger>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey}>
+{CMS_Subteams?.data?.data?.map?.((collectionItem: any, index: number) =>
+<Fragment key={index}>
 <TabsTrigger
 data-ws-index="1"
 value={`${collectionItem?.name}`}
@@ -718,9 +713,7 @@ className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s
 {collectionItem?.name}
 </TabsTrigger>
 </Fragment>
-)
-})
-}
+)}
 </TabsList>
 <TabsContent
 data-ws-index="0"
@@ -745,13 +738,8 @@ className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
 </div>
 <div
 className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo7 clojc2s`}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Overview?.data?.data?.[0]?.parameters ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray(CMS_Overview?.data?.data?.[0]?.parameters) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_1}>
+{CMS_Overview?.data?.data?.[0]?.parameters?.map?.((collectionItem_1: any, index_1: number) =>
+<Fragment key={index_1}>
 <div
 className={`w-element c1fsvg17 c1412oo6`}>
 <h2
@@ -773,20 +761,13 @@ className={`w-element c1jt1fo7 c1ni26wq`}>
 </div>
 </div>
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 <div
 className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7 c1emur3c c1bclcky c1drr1d0`}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Leadership?.data?.data?.[0]?.roles ?? {}
-).map(([_key, collectionItem_2]: any) => {
-  const collectionItemKey_2 = Array.isArray(CMS_Leadership?.data?.data?.[0]?.roles) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_2}>
+{CMS_Leadership?.data?.data?.[0]?.roles?.map?.((collectionItem_2: any, index_2: number) =>
+<Fragment key={index_2}>
 <div
 className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
 <h2
@@ -814,9 +795,7 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 </div>
 </div>
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 <div
@@ -829,13 +808,8 @@ className={`w-image c1j4r0zr cjebrku`} />
 </div>
 </div>
 </TabsContent>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_5 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_5}>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_3: any, index_5: number) =>
+<Fragment key={index_5}>
 <TabsContent
 data-ws-index="1"
 value={collectionItem_3?.name}
@@ -860,13 +834,8 @@ className={`w-element`}>
 </div>
 <div
 className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7 c4csrei`}>
-{Object.entries(
-  // @ts-ignore
-  collectionItem_3?.roles ?? {}
-).map(([_key, collectionItem_4]: any) => {
-  const collectionItemKey_3 = Array.isArray(collectionItem_3?.roles) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_3}>
+{collectionItem_3?.roles?.map?.((collectionItem_4: any, index_3: number) =>
+<Fragment key={index_3}>
 <div
 className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
 <h2
@@ -894,36 +863,25 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 </div>
 </div>
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 <div
 className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
-{Object.entries(
-  // @ts-ignore
-  collectionItem_3?.images ?? {}
-).map(([_key, collectionItem_5]: any) => {
-  const collectionItemKey_4 = Array.isArray(collectionItem_3?.images) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_4}>
+{collectionItem_3?.images?.map?.((collectionItem_5: any, index_4: number) =>
+<Fragment key={index_4}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]}`}
 loading={"eager"}
 optimize={false}
 className={`w-image c89byf c1j4r0zr c13v84m3 c1tsavcz`} />
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 </TabsContent>
 </Fragment>
-)
-})
-}
+)}
 <TabsList
 className={`w-tabs-list c1xd87pa c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt cnn2qey c146g9k6 coq06vt c1psuk3c c1ickg77 ckkkp6t c16nciq0`}>
 <TabsTrigger
@@ -931,13 +889,8 @@ data-ws-index="2"
 className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
 {"Overview"}
 </TabsTrigger>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem_6]: any) => {
-  const collectionItemKey_6 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_6}>
+{CMS_Subteams?.data?.data?.map?.((collectionItem_6: any, index_6: number) =>
+<Fragment key={index_6}>
 <TabsTrigger
 data-ws-index="3"
 value={`${collectionItem_6?.name}`}
@@ -945,9 +898,7 @@ className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s
 {collectionItem_6?.name}
 </TabsTrigger>
 </Fragment>
-)
-})
-}
+)}
 </TabsList>
 </Tabs>
 </div>
@@ -968,20 +919,10 @@ className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 className={`w-element ${"logo-slider"}`}>
 <div
 className={`w-element ${"logo-track"}`}>
-{Object.entries(
-  // @ts-ignore
-  [1,2,3] ?? {}
-).map(([_key, collectionItem_8]: any) => {
-  const collectionItemKey_8 = Array.isArray([1,2,3]) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_8}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Sponsors_External?.data?.data ?? {}
-).map(([_key, collectionItem_7]: any) => {
-  const collectionItemKey_7 = Array.isArray(CMS_Sponsors_External?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_7}>
+{[1,2,3]?.map?.((collectionItem_8: any, index_8: number) =>
+<Fragment key={index_8}>
+{CMS_Sponsors_external?.data?.data?.map?.((collectionItem_7: any, index_7: number) =>
+<Fragment key={index_7}>
 <Link_1
 href={collectionItem_7?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -992,28 +933,19 @@ optimize={true}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
-)
-})
-}
+)}
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 <HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_External?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
+code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_external?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
 className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{Object.entries(
-  // @ts-ignore
-  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
-).map(([_key, collectionItem_10]: any) => {
-  const collectionItemKey_10 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_10}>
+{[{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]?.map?.((collectionItem_10: any, index_10: number) =>
+<Fragment key={index_10}>
 <Link_1
 href={collectionItem_10?.["Sponsor_Website_URL"]}
 target={"_blank"}
@@ -1023,9 +955,7 @@ src={`${collectionItem_10?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
-)
-})
-}
+)}
 </div>
 </div>
 </div>
