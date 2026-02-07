@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "b09eded4-27c5-4c0a-91f3-3258936bf602",
+    "id": "9db34f30-0274-4a8a-ae54-8b05e7ec9575",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4462,
-    "createdAt": "2026-02-07T06:35:46.129+00:00",
-    "updatedAt": "2026-02-07T06:35:46.129+00:00",
+    "version": 4483,
+    "createdAt": "2026-02-07T06:54:05.215+00:00",
+    "updatedAt": "2026-02-07T06:54:05.215+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -62405,7 +62405,7 @@
           "searchParams": [
             {
               "name": "fields",
-              "value": "\"*,role_id.position.*\""
+              "value": "\"*,role_id.position.*,role_id.team.Team_Name\""
             },
             {
               "name": "filter",
@@ -74153,7 +74153,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$I95eABtylDsVhxBLUGdo8.roles[0][\"name_short\"] || ' '"
+              "value": "`${$ws$dataSource$I95eABtylDsVhxBLUGdo8.roles[0].rank <= 8 || $ws$dataSource$I95eABtylDsVhxBLUGdo8.roles[0].rank == 11 ? $ws$dataSource$I95eABtylDsVhxBLUGdo8.roles[0].team + ' ' : ''}${$ws$dataSource$I95eABtylDsVhxBLUGdo8.roles[0][\"name_short\"]}`"
             }
           ]
         }
@@ -76849,7 +76849,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"role_id\"][0].position[\"name_short\"] || ' '"
+              "value": "`${$ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"role_id\"][0].position.rank <= 8 || $ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"role_id\"][0].position.rank == 11 ? $ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"role_id\"][0].team[\"Team_Name\"] + ' ' : ''}${$ws$dataSource$Sp9jfhbnfh3APYM452zFI[\"role_id\"][0].position[\"name_short\"] || ' '}`"
             }
           ]
         }
