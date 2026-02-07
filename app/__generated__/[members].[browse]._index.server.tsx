@@ -7,17 +7,7 @@
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.a2.lab512.org/items/"
   const system = _props.system
-  const CMS_Sponsors_External_3: ResourceRequest = {
-    name: "CMS_Sponsors_External",
-    url: `${CMS_Item_URL}BSLI_Sponsors_External`,
-    searchParams: [
-    ],
-    method: "get",
-    headers: [
-      { name: "Cache-Control", value: "max-age=60000" },
-    ],
-  }
-  const CMS_Sponsors_External_4: ResourceRequest = {
+  const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
     searchParams: [
@@ -34,7 +24,7 @@ export const getResources = (_props: { system: System }) => {
     ],
     method: "get",
     headers: [
-      { name: "Cache-Control", value: "max-age=86400" },
+      { name: "Cache-Control", value: "max-age=60000" },
     ],
   }
   const CurrentDate_1: ResourceRequest = {
@@ -70,13 +60,24 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CMS_Sponsors_external_1: ResourceRequest = {
+    name: "CMS_Sponsors_external",
+    url: "https://cms.bsli.a2.lab512.org/items/BSLI_Sponsors_External",
+    searchParams: [
+      { name: "filter[active][_eq]", value: "true" },
+    ],
+    method: "get",
+    headers: [
+      { name: "Cache-Control", value: "max-age=86400" },
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
-    ["CMS_Sponsors_External_3", CMS_Sponsors_External_3],
-    ["CMS_Sponsors_External_4", CMS_Sponsors_External_4],
+    ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CurrentDate_1", CurrentDate_1],
     ["CMS_Members_1", CMS_Members_1],
     ["now", now],
+    ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

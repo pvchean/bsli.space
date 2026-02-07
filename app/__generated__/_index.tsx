@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T07:33:52.985Z";
+      export const lastPublished = "2026-02-07T04:56:44.961Z";
 
       export const siteName = undefined;
 
@@ -41,8 +41,8 @@ let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/membe
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
-let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
-let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
+let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
+let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
@@ -123,7 +123,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 <Box
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -145,7 +145,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -388,7 +388,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -482,16 +482,22 @@ className={`w-html-embed`} />
 <AccordionContent
 className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w c16nciq0 c13kj1ir cf8ja59 cb6mw6t cmzqacz c19t2nva c1pqfee0`}>
 <Link_1
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"NASA SL"}
 </Link_1>
 <Link_1
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"IREC"}
+</Link_1>
+<Link_1
+href={"/teams/Liquids"}
+target={"_self"}
+className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
+{"LIQUIDS"}
 </Link_1>
 </AccordionContent>
 </AccordionItem>
@@ -567,7 +573,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -644,12 +650,34 @@ className={`w-link c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 </Box>
 <Box
 className={`w-box c199z4bu cjdezyc`}>
+<Dialog>
+<DialogTrigger>
 <Image
 src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
 width={1243}
 height={944}
 alt={""}
-className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
+className={`w-image cbxkl1b c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
+</DialogTrigger>
+<DialogOverlay
+className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
+<DialogContent
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
+<Image
+src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
+width={1243}
+height={944}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+<DialogClose
+className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
+className={`w-html-embed`} />
+</DialogClose>
+</DialogContent>
+</DialogOverlay>
+</Dialog>
 </Box>
 </Box>
 </Box>
@@ -700,15 +728,18 @@ className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c4
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-nasa.hYJZ9o52_2vaKJF.webp"}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 cj9b88m`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
 </DialogClose>
+<Image
+src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
+width={1428}
+height={952}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -755,6 +786,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -830,15 +862,18 @@ className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c4
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
-<Image
-src={"https://www.bsli.space/_astro/subteam-irec.D2cHhfY__Znu9zU.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cj9b88m`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
 </DialogClose>
+<Image
+src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
+width={1426}
+height={944}
+alt={""}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -885,6 +920,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -959,7 +995,7 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c13ltoqo`}>
 <Image
 src={"https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"}
-className={`w-image c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cj9b88m`} />
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -973,11 +1009,11 @@ className={`w-html-embed`} />
 className={`w-element`}>
 <h3
 className={`w-element c1wu8pi6 cpomkwe cqdk6hy c956szp c1c2pt5o c1jtrzlm cjywo3c c1jfa76v c7jpbvn`}>
-{"Liquid Engine Project (Liquids)"}
+{"Liquid Rocket Systems (Liquids)"}
 </h3>
 <p
 className={`w-element`}>
-{"BSLI Liquids team focuses on liquid bipropellant rocket engine development. Current development includes working towards test firing an LR-101, and further refining our 1st custom engine."}
+{"Liquid Rocket Systems develops powerful liquid rocket engines. The team is currently working on our second engine, Prometheus, and our launch vehicle, Amadeus."}
 </p>
 </div>
 </div>
@@ -993,11 +1029,11 @@ className={`w-element c1wi860h c1wu8pi6 c1iwa1os`}>
 </h3>
 <p
 className={`w-element`}>
-{"Thursdays: 6 pm"}
+{"Thursdays: 6-8 pm"}
 {""}
 <br />
 {""}
-{"Sundays: 4 pm"}
+{"Sundays: 4-6 pm"}
 </p>
 </div>
 <div
@@ -1012,6 +1048,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 <Link_1
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
+aria-label={"Google Maps link for Bolz Hall"}
 className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
 <svg
 width={"800px"}
@@ -1084,7 +1121,7 @@ className={`w-element c97u9uk cr340of c16tluoy c3g43wk cv2z80y c4vnhzq ccq64u2`}
 {"Get Involved 🚀"}
 </h1>
 <AnimateChildren
-action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-in-out","fill":"backwards","duration":{"type":"var","value":"duration-default"},"rangeStart":["contain",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["contain",{"type":"unit","value":50,"unit":"%"}]}},{"name":"New Animation","description":"Create a new animation.","keyframes":[{"offset":0,"styles":{}}],"timing":{"easing":"linear","fill":"both","rangeStart":["cover",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["cover",{"type":"unit","value":100,"unit":"%"}]}}],"isPinned":true}}>
+action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-in-out","fill":"backwards","duration":{"type":"var","value":"duration-default"},"rangeStart":["contain",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["contain",{"type":"unit","value":50,"unit":"%"}]}},{"name":"New Animation","description":"Create a new animation.","keyframes":[{"offset":0,"styles":{}}],"timing":{"easing":"linear","fill":"both","rangeStart":["cover",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["cover",{"type":"unit","value":100,"unit":"%"}]}}],"isPinned":true,"debug":false}}>
 <div
 className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
 <div
@@ -1334,7 +1371,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {[1,2,3]?.map?.((collectionItem_1: any, index_1: number) =>
 <Fragment key={index_1}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem: any, index: number) =>
+{CMS_Sponsors_external?.data?.data?.map?.((collectionItem: any, index: number) =>
 <Fragment key={index}>
 <Link_1
 href={collectionItem?.["Sponsor_Website_URL"]}
@@ -1342,8 +1379,8 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem?.image}`}
-optimize={false}
-className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
+optimize={true}
+className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
 )}
@@ -1352,7 +1389,7 @@ className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </div>
 </div>
 <HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll 40s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
+code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_external?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
 className={`w-html-embed`} />
 </div>
 <div

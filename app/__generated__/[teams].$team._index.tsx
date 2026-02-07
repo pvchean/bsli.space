@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T07:33:52.985Z";
+      export const lastPublished = "2026-02-07T04:56:44.961Z";
 
       export const siteName = undefined;
 
@@ -40,8 +40,8 @@ let CMS_Subteams = useResource("CMS_Subteams_1")
 let CMS_Team_Project = useResource("CMS_Team_Project_1")
 let CMS_Overview = useResource("CMS_Overview_1")
 let CMS_Leadership = useResource("CMS_Leadership_1")
-let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
-let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
+let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
+let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
@@ -122,7 +122,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 <Box
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -144,7 +144,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -387,7 +387,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -481,16 +481,22 @@ className={`w-html-embed`} />
 <AccordionContent
 className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w c16nciq0 c13kj1ir cf8ja59 cb6mw6t cmzqacz c19t2nva c1pqfee0`}>
 <Link_1
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"NASA SL"}
 </Link_1>
 <Link_1
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"IREC"}
+</Link_1>
+<Link_1
+href={"/teams/Liquids"}
+target={"_self"}
+className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
+{"LIQUIDS"}
 </Link_1>
 </AccordionContent>
 </AccordionItem>
@@ -566,7 +572,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -589,9 +595,9 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 <div
 className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x c13d86jv c13kj1ir c16nciq0`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x c13d86jv cp1jzw6 c13kj1ir c16nciq0 c1qankp4`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 ctmlqlh`}>
+className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <h1
 className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c8kgf22 ccq64u2`}>
 {CMS_Team?.data?.data?.[0]?.["display_name"]}
@@ -604,8 +610,11 @@ className={`w-markdown-embed`}>
 <Dialog>
 <DialogTrigger>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
 optimize={false}
+width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
 className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c1j4r0zr c89byf c13v84m3 ctsnyh5 ca966ma`} />
 </DialogTrigger>
 <DialogOverlay
@@ -613,9 +622,12 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]}`}
-optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
+optimize={true}
+width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw ca966ma`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -630,24 +642,30 @@ className={`w-html-embed`} />
 <div
 className={`w-element c11cvd9l c1lufqxe c1czb951`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x cjr76fi c13kj1ir c16nciq0`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x cjr76fi cp1jzw6 c13kj1ir c16nciq0 c1qankp4`}>
 <div
-className={`w-element c1flzvby cafamdi`}>
+className={`w-element c1flzvby cafamdi c1j4r0zr cs5nzqp`}>
 <Dialog>
 <DialogTrigger>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
+width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
 optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3`} />
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3 c16ouw3o`} />
 </DialogTrigger>
 <DialogOverlay
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]}`}
-optimize={false}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f c13v84m3 ct4di1s ca966ma`} />
+src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
+optimize={true}
+width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
+height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
+alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
+className={`w-image c13v84m3 c1g46f8y c1mbqom c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -659,7 +677,7 @@ className={`w-html-embed`} />
 </Dialog>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cafamdi ctmlqlh`}>
+className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cafamdi`}>
 <MarkdownEmbed
 code={CMS_Team?.data?.data?.[0]?.["goals_paragraph"]}
 className={`w-markdown-embed`}>
@@ -676,12 +694,13 @@ className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"Meet the teams"}
 </h1>
 <Tabs
-value={"0"}
+value={"Overview"}
 className={`w-tabs`}>
 <TabsList
 className={`w-tabs-list c1fsvg17 c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt ch2sjzq cnn2qey c1yx70ji c1psuk3c cg2oqaz ckkkp6t`}>
 <TabsTrigger
 data-ws-index="0"
+value={"Overview"}
 className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
 {"Overview"}
 </TabsTrigger>
@@ -698,6 +717,7 @@ className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s
 </TabsList>
 <TabsContent
 data-ws-index="0"
+value={"Overview"}
 className={`w-tab-content csrzh74 c1lynjaq c16qquiv cptfpme cqlnok c1e3dx33`}>
 <div
 className={`w-element c2jpees c1bctvrt c13d86jv ca9k1ea c13kj1ir c16nciq0`}>
@@ -730,7 +750,7 @@ className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k csbbxse`}>
 className={`w-element`}>
 <p
 className={`w-element c1ni26wq`}>
-{collectionItem_1?.["primary_value"]}
+{collectionItem_1?.["primary_value"] == null ? "N/A" : collectionItem_1?.["primary_value"]}
 </p>
 {(collectionItem_1?.["secondary_value"] != null && collectionItem_1?.["secondary_value"] !== '') &&
 <p
@@ -901,7 +921,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {[1,2,3]?.map?.((collectionItem_8: any, index_8: number) =>
 <Fragment key={index_8}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_7: any, index_7: number) =>
+{CMS_Sponsors_external?.data?.data?.map?.((collectionItem_7: any, index_7: number) =>
 <Fragment key={index_7}>
 <Link_1
 href={collectionItem_7?.["Sponsor_Website_URL"]}
@@ -909,8 +929,8 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
-optimize={false}
-className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
+optimize={true}
+className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
 )}
@@ -919,7 +939,7 @@ className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </div>
 </div>
 <HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll 40s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
+code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_external?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
 className={`w-html-embed`} />
 </div>
 <div

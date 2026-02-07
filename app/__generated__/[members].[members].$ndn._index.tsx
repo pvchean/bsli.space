@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-04T07:33:52.985Z";
+      export const lastPublished = "2026-02-07T04:56:44.961Z";
 
       export const siteName = undefined;
 
@@ -35,13 +35,13 @@ let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/membe
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Member = useResource("CMS_Member_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
-let CMS_Sponsors_External = useResource("CMS_Sponsors_External_2")
-let CMS_Sponsors_External_1 = useResource("CMS_Sponsors_External_3")
+let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
+let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
 className={`w-element`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm cp1jzw6`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
@@ -117,7 +117,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 <Box
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -139,7 +139,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -382,7 +382,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -476,16 +476,22 @@ className={`w-html-embed`} />
 <AccordionContent
 className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w c16nciq0 c13kj1ir cf8ja59 cb6mw6t cmzqacz c19t2nva c1pqfee0`}>
 <Link_1
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"NASA SL"}
 </Link_1>
 <Link_1
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"IREC"}
+</Link_1>
+<Link_1
+href={"/teams/Liquids"}
+target={"_self"}
+className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
+{"LIQUIDS"}
 </Link_1>
 </AccordionContent>
 </AccordionItem>
@@ -561,7 +567,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -596,11 +602,11 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
 <div
 className={`w-element`}>
 <h1
-className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h`}>
+className={`w-element cbwi5wk cr340of cqymryr c1u5pwe6 c145f7eq c16tluoy ctzep2h c1xrjlv`}>
 {CMS_Member?.data?.data?.[0]?.Name}
 </h1>
 <p
-className={`w-element c1hvzz07 cr340of c1iwa1os cbewb4j`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c190672s`}>
 {`${CMS_Member?.data?.data?.[0]?.Major || ' '} ${CMS_Member?.data?.data?.[0]?.["osu_year"] || ' '}`}
 </p>
 <p
@@ -650,13 +656,13 @@ className={`w-element`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol`}>
 <div
-className={`w-element cwr14mb c1lynjaq`}>
+className={`w-element cwr14mb c89byf`}>
 <h1
 className={`w-element cbewb4j c1iwa1os cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
 {"Roles at BSLI"}
 </h1>
 <div
-className={`w-element c1fsvg17 cpcsebf cp1jzw6 cwouaok`}>
+className={`w-element c1fsvg17 cpcsebf cp1jzw6`}>
 <Accordion
 collapsible={true}
 className={`w-accordion c1fsvg17 cpcsebf`}>
@@ -670,19 +676,25 @@ className={`w-item cvdddm5`}>
 className={`w-item-header c1fsvg17`}>
 <AccordionTrigger
 value={collectionItem_1?.id}
-className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg`}>
+className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg c13kj1ir c1r1nglt cq5sbay cj1r6i8`}>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Box
-className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96`}>
+className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96 camp34b`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
 className={`w-html-embed`} />
 </Box>
 <Text
-className={`w-text`}>
+className={`w-text crpjzr9 c1iwhssp`}>
 {`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_short"]}`}
 </Text>
+<Box
+className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96 c1xd87pa c1prqdl7`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
 </div>
 <div
 className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
@@ -712,13 +724,10 @@ className={`w-element`}>
 </AccordionTrigger>
 </AccordionHeader>
 <AccordionContent
-className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
+className={`w-item-content c19ubv75 c4g1j3m cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
 <div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1412oo6 c1flzvby`}>
-<div
-className={`w-element cjl8er8 c1lst088`}>
-{`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_long"]}`}
-</div>
+className={`w-element c1kq7zg2`}>
+{collectionItem_1?.position?.["description_long"]}
 </div>
 </AccordionContent>
 </AccordionItem>
@@ -736,8 +745,6 @@ className={`w-markdown-embed`}>
 </MarkdownEmbed>
 </div>
 </div>
-<div
-className={`w-element c11cvd9l c1lufqxe cnbmf4z c1fsvg17 cp0jmbs c2jpees c1bctvrt`} />
 <Slot>
 <Fragment_1>
 <div
@@ -756,7 +763,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {[1,2,3]?.map?.((collectionItem_3: any, index_3: number) =>
 <Fragment key={index_3}>
-{CMS_Sponsors_External?.data?.data?.map?.((collectionItem_2: any, index_2: number) =>
+{CMS_Sponsors_external?.data?.data?.map?.((collectionItem_2: any, index_2: number) =>
 <Fragment key={index_2}>
 <Link_1
 href={collectionItem_2?.["Sponsor_Website_URL"]}
@@ -764,8 +771,8 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
-optimize={false}
-className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
+optimize={true}
+className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
 )}
@@ -774,7 +781,7 @@ className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </div>
 </div>
 <HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll 40s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
+code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_external?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
 className={`w-html-embed`} />
 </div>
 <div
