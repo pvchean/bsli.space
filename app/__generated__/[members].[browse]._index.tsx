@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-06T07:14:41.129Z";
+      export const lastPublished = "2026-02-07T04:36:43.385Z";
 
       export const siteName = undefined;
 
@@ -383,7 +383,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -477,16 +477,22 @@ className={`w-html-embed`} />
 <AccordionContent
 className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w c16nciq0 c13kj1ir cf8ja59 cb6mw6t cmzqacz c19t2nva c1pqfee0`}>
 <Link_1
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"NASA SL"}
 </Link_1>
 <Link_1
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 target={"_self"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"IREC"}
+</Link_1>
+<Link_1
+href={"/teams/Liquids"}
+target={"_self"}
+className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
+{"LIQUIDS"}
 </Link_1>
 </AccordionContent>
 </AccordionItem>
@@ -562,7 +568,7 @@ className={`w-box c10wrjl3 ${"rocket-embed-wrapper"}`}>
 href={Social_Link}
 className={`w-link cl4qqj9 c1jmf9np c1etu4bm c6v2f5e c1fzf5s cosky7r c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1u187jj cuvhotc c6tuzht c1oum3n3 c3air8l c1mq7p96 cnfu8e6 c1fsvg17 cuk7sto c1ymtqd1 ckmcig3 cib2qxx chdqs4z cx9ojor c1oq5ean c1gcvc6e ccc53j5 c10hpooi c12g0c4a ${"rocket-link"}`}>
 <span
-className={`w-element`}>
+className={`w-element c1fhcu5x`}>
 {"Join Us "}
 </span>
 <p
@@ -858,8 +864,8 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_1?.image}`}
-optimize={false}
-className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
+optimize={true}
+className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
 )
@@ -872,7 +878,7 @@ className={`w-image clnat8x carfxkz c89byf ccpu1nd cbdmr7j cua263c`} />
 </div>
 </div>
 <HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll 40s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
+code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_External?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
 className={`w-html-embed`} />
 </div>
 <div

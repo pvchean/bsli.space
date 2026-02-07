@@ -86,6 +86,7 @@ export const getResources = (_props: { system: System }) => {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
     searchParams: [
+      { name: "filter[active][_eq]", value: "true" },
     ],
     method: "get",
     headers: [
