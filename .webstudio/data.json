@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "9db34f30-0274-4a8a-ae54-8b05e7ec9575",
+    "id": "00637cd1-f754-4299-bdeb-b37dd5deed84",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4483,
-    "createdAt": "2026-02-07T06:54:05.215+00:00",
-    "updatedAt": "2026-02-07T06:54:05.215+00:00",
+    "version": 4486,
+    "createdAt": "2026-02-10T16:10:11.9+00:00",
+    "updatedAt": "2026-02-10T16:10:11.9+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -66362,7 +66362,7 @@
             },
             {
               "type": "text",
-              "value": " is a student-run organization that participates in various programs, such as the NASA Student launch initiative, The International Rocket Engineering Competition, as well as other fun projects. With dozens of talented engineers from various fields including Aerospace, Electrical and Mechanical Engineering."
+              "value": " is a student-run organization that participates in various programs, such as the NASA Student Launch Initiative, the International Rocket Engineering Competition, and our Liquid Rocket Systems (Liquids) team. We are a multidisciplinary group of dozens of talented students from various fields of study, working together on these and other fun projects."
             }
           ]
         }
