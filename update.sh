@@ -7,6 +7,7 @@ cd "$(dirname "$0")" || exit 1
 git pull --rebase
 
 # Run your build tools
+npm install -g webstudio@latest
 webstudio sync
 webstudio build --template docker
 
