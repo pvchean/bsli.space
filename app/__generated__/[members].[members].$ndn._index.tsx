@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-10T16:10:11.900Z";
+      export const lastPublished = "2026-02-16T17:55:09.050Z";
 
       export const siteName = undefined;
 
@@ -706,7 +706,7 @@ className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
 <Time
 dateTime={collectionItem_1?.start}
 dateStyle={"medium"}
-format={"MM, YYYY"}
+format={"MMM, YYYY"}
 className={`w-time`} />
 <div
 className={`w-element`}>
@@ -716,13 +716,13 @@ className={`w-element`}>
 <Time
 dateTime={collectionItem_1?.end}
 dateStyle={"medium"}
-format={"MM, YYYY"}
+format={"MMM, YYYY"}
 className={`w-time`} />
 }
 {(collectionItem_1?.end == null) &&
 <div
 className={`w-element`}>
-{"Present"}
+{"Present  "}
 </div>
 }
 </div>

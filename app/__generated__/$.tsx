@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-10T16:10:11.900Z";
+      export const lastPublished = "2026-02-16T17:55:09.050Z";
 
       export const siteName = undefined;
 
