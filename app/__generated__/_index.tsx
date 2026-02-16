@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-16T18:10:28.165Z";
+      export const lastPublished = "2026-02-16T18:16:52.569Z";
 
       export const siteName = undefined;
 
@@ -654,9 +654,8 @@ className={`w-box c199z4bu cjdezyc`}>
 <DialogTrigger>
 <Image
 src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
-width={1243}
-height={944}
 alt={""}
+loading={"eager"}
 className={`w-image cbxkl1b c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
 </DialogTrigger>
 <DialogOverlay
@@ -719,9 +718,8 @@ className={`w-element`}>
 <DialogTrigger>
 <Image
 src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
-width={1428}
-height={952}
 alt={""}
+loading={"eager"}
 className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
 </DialogTrigger>
 <DialogOverlay
@@ -853,9 +851,8 @@ className={`w-element`}>
 <DialogTrigger>
 <Image
 src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
-width={1426}
-height={944}
 alt={""}
+loading={"eager"}
 className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
 </DialogTrigger>
 <DialogOverlay
@@ -987,6 +984,7 @@ className={`w-element`}>
 <DialogTrigger>
 <Image
 src={"https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"}
+loading={"eager"}
 className={`w-image cbxkl1b c13v84m3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f c89byf c46bfho`} />
 </DialogTrigger>
 <DialogOverlay

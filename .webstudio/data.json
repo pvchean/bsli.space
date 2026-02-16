@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "661f0b1f-a547-426c-b627-0bc842739a50",
+    "id": "ce4ebed7-f31f-41ca-9fa9-8a5370b203c8",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4516,
-    "createdAt": "2026-02-16T18:10:28.165+00:00",
-    "updatedAt": "2026-02-16T18:10:28.165+00:00",
+    "version": 4526,
+    "createdAt": "2026-02-16T18:16:52.569+00:00",
+    "updatedAt": "2026-02-16T18:16:52.569+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -95,10 +95,10 @@
           "name": "Teams",
           "title": "\"Untitled\"",
           "history": [
+            "/teams/Liquids",
             "/teams/IREC",
             "/teams/NASA",
             "/teams/Nasa",
-            "/teams/Liquids",
             "/teams/Irec",
             "/teams/nasa",
             "/teams/example",
@@ -60908,26 +60908,6 @@
         }
       ],
       [
-        "XPnEePcQ-bmnII8u_nBrb",
-        {
-          "id": "XPnEePcQ-bmnII8u_nBrb",
-          "instanceId": "6Np-WlOs3goEFrI28-cDD",
-          "name": "width",
-          "type": "asset",
-          "value": "ef9c68dd65bc76d6cef09029a8065d15e14c102e1890cc7f4e6ded357c3098e5"
-        }
-      ],
-      [
-        "qjGHUxcwrmAghgV8XVHXQ",
-        {
-          "id": "qjGHUxcwrmAghgV8XVHXQ",
-          "instanceId": "6Np-WlOs3goEFrI28-cDD",
-          "name": "height",
-          "type": "asset",
-          "value": "ef9c68dd65bc76d6cef09029a8065d15e14c102e1890cc7f4e6ded357c3098e5"
-        }
-      ],
-      [
         "RhyDW_N39kpWp347mYtnD",
         {
           "id": "RhyDW_N39kpWp347mYtnD",
@@ -60965,26 +60945,6 @@
           "name": "alt",
           "type": "asset",
           "value": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
-        }
-      ],
-      [
-        "BRKjzRVJFfXQu9guC_7zc",
-        {
-          "id": "BRKjzRVJFfXQu9guC_7zc",
-          "instanceId": "juKQkIfzZqNNH4e4yggVo",
-          "name": "width",
-          "type": "asset",
-          "value": "93b784cc4d01fd2554f173ac3f27e7975c16aad97744d1eb757db7283d408d53"
-        }
-      ],
-      [
-        "dcBEDgh5jdxGqSE0ImIQP",
-        {
-          "id": "dcBEDgh5jdxGqSE0ImIQP",
-          "instanceId": "juKQkIfzZqNNH4e4yggVo",
-          "name": "height",
-          "type": "asset",
-          "value": "93b784cc4d01fd2554f173ac3f27e7975c16aad97744d1eb757db7283d408d53"
         }
       ],
       [
@@ -61253,26 +61213,6 @@
           "id": "cPiu_AQMU56WKXhTjh3Da",
           "instanceId": "Ca3fnmcwZFFgpxNDzNR0V",
           "name": "src",
-          "type": "asset",
-          "value": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
-        }
-      ],
-      [
-        "2Ela7AmELIyFSYQqnkTXr",
-        {
-          "id": "2Ela7AmELIyFSYQqnkTXr",
-          "instanceId": "Ca3fnmcwZFFgpxNDzNR0V",
-          "name": "width",
-          "type": "asset",
-          "value": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
-        }
-      ],
-      [
-        "K1Mfmwc-Qf9BoSEuIZIJ2",
-        {
-          "id": "K1Mfmwc-Qf9BoSEuIZIJ2",
-          "instanceId": "Ca3fnmcwZFFgpxNDzNR0V",
-          "name": "height",
           "type": "asset",
           "value": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
         }
@@ -61665,6 +61605,46 @@
           "name": "href",
           "type": "expression",
           "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].LinkedInURL"
+        }
+      ],
+      [
+        "hrDBXB_g2z8HnL2x7WqT8",
+        {
+          "id": "hrDBXB_g2z8HnL2x7WqT8",
+          "instanceId": "Ca3fnmcwZFFgpxNDzNR0V",
+          "name": "loading",
+          "type": "string",
+          "value": "eager"
+        }
+      ],
+      [
+        "JWUyuejVCont4onWzlBQV",
+        {
+          "id": "JWUyuejVCont4onWzlBQV",
+          "instanceId": "juKQkIfzZqNNH4e4yggVo",
+          "name": "loading",
+          "type": "string",
+          "value": "eager"
+        }
+      ],
+      [
+        "XhvNZjbFmfDZ1Z_IohpkM",
+        {
+          "id": "XhvNZjbFmfDZ1Z_IohpkM",
+          "instanceId": "6Np-WlOs3goEFrI28-cDD",
+          "name": "loading",
+          "type": "string",
+          "value": "eager"
+        }
+      ],
+      [
+        "hdVgPjGa8W9EZzmAOi7nB",
+        {
+          "id": "hdVgPjGa8W9EZzmAOi7nB",
+          "instanceId": "PqyxxO5TnKkZyG31GUQKe",
+          "name": "loading",
+          "type": "string",
+          "value": "eager"
         }
       ]
     ],
@@ -79628,10 +79608,10 @@
       "name": "Teams",
       "title": "\"Untitled\"",
       "history": [
+        "/teams/Liquids",
         "/teams/IREC",
         "/teams/NASA",
         "/teams/Nasa",
-        "/teams/Liquids",
         "/teams/Irec",
         "/teams/nasa",
         "/teams/example",
