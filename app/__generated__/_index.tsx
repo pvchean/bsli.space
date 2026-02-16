@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-16T17:55:09.050Z";
+      export const lastPublished = "2026-02-16T18:10:28.165Z";
 
       export const siteName = undefined;
 
@@ -838,7 +838,7 @@ className={`w-element`}>
 <div
 className={`w-element c123613w`}>
 <Link
-href={"/teams/Nasa"}
+href={"/teams/NASA"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
 {"Learn more about NASA"}
 </Link>
@@ -972,7 +972,7 @@ className={`w-element`}>
 <div
 className={`w-element c123613w`}>
 <Link
-href={"/teams/Irec"}
+href={"/teams/IREC"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
 {"Learn more about IREC"}
 </Link>
