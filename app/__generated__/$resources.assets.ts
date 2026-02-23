@@ -24,6 +24,11 @@
     "width": 1428,
     "height": 952
   },
+  "bc5e91a3592ebd1fce7bdafcd426c7e505a47b23f21c2376d759f7023f04fd06": {
+    "url": "/cgi/image/subteam-liquids.CTO2r4AB_1B3upm_mUppfDkVGESv2r8SWD9Vw.webp?format=raw",
+    "width": 800,
+    "height": 533
+  },
   "ef9c68dd65bc76d6cef09029a8065d15e14c102e1890cc7f4e6ded357c3098e5": {
     "url": "/cgi/image/IMG_0971_nX0q1jQ7XxMak-7uoats5.png?format=raw",
     "width": 1426,

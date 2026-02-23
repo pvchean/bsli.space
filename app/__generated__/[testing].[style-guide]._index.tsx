@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-16T18:16:52.569Z";
+      export const lastPublished = "2026-02-23T16:59:08.817Z";
 
       export const siteName = undefined;
 

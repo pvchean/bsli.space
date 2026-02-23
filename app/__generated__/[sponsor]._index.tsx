@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-16T18:16:52.569Z";
+      export const lastPublished = "2026-02-23T16:59:08.817Z";
 
       export const siteName = undefined;
 
@@ -190,7 +190,7 @@ className={`w-text c1jt1fo7`}>
 <Box
 className={`w-box`}>
 <Link
-className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c1xkkw6h c4vnhzq c1uoj13n c1ewg6un c8e02rt c209sw5 c8mwnvb cwsyufx czfw4y0 cziki7s c96y687 c1xi5py c1rw67qd`}>
+className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c1xkkw6h c4vnhzq c1uoj13n c1ewg6un c8e02rt c209sw5 c8mwnvb cfl148o cwsyufx czfw4y0 cziki7s c96y687 c1xi5py c1rw67qd`}>
 <Box
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
@@ -203,31 +203,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"BSLI is composed of multiple teams"}
-{""}
-<br />
-{""}
-{"that work together in order to provie"}
-{""}
-<br />
-{""}
-{"students with experience working"}
-{""}
-<br />
-{""}
-{"in a large team towards challenging"}
-{""}
-<br />
-{""}
-{"goals. Each team focuses in a specific"}
-{""}
-<br />
-{""}
-{"category, take a look and see which"}
-{""}
-<br />
-{""}
-{"team you want to be part of!"}
+{"BSLI is composed of multiple teams that work together in order to provide students with experience working towards challenging goals. The tasks are multi-disciplinary so all majors are welcome!"}
 </Paragraph>
 </Box>
 </Link>
@@ -606,15 +582,10 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg1
 className={`w-element c1fsvg17 cp0jmbs c1flzvby c2jpees c1bctvrt`}>
 <p
 className={`w-element`}>
-{"Hi, I'm Hana Winchester! I'm the "}
+{"Hi, I'm Liav Ost! I'm the "}
 <b
 className={`w-element`}>
-{"Sponsorship"}
-</b>
-{" "}
-<b
-className={`w-element`}>
-{"Chair"}
+{"Finance Director"}
 </b>
 {" for the Buckeye Space Launch Initiative. If you want to sponsor us or just want to learn more, you can reach me and our leadership team at the email below."}
 </p>

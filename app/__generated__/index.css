@@ -1796,6 +1796,9 @@
   .c8mwnvb {
     transition-behavior: normal, normal
   }
+  .cfl148o {
+    max-width: 25em
+  }
   .cwsyufx {
     border: var(--border-size-1, 1px) none var(--foreground-border, rgb(73 80 87 / 1))
   }

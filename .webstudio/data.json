@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "ce4ebed7-f31f-41ca-9fa9-8a5370b203c8",
+    "id": "a81eb44c-17c6-4341-b679-72d7bb8011f9",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4526,
-    "createdAt": "2026-02-16T18:16:52.569+00:00",
-    "updatedAt": "2026-02-16T18:16:52.569+00:00",
+    "version": 4544,
+    "createdAt": "2026-02-23T16:59:08.817+00:00",
+    "updatedAt": "2026-02-23T16:59:08.817+00:00",
     "pages": {
       "meta": {
         "faviconAssetId": "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3"
@@ -44775,6 +44775,19 @@
             "value": "currentColor"
           }
         }
+      ],
+      [
+        "r1RFPWhhxW5Fd2k4PRHM7:tAFRweP7yGMMQI5CmE4yb:maxWidth:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "r1RFPWhhxW5Fd2k4PRHM7",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 25
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -48764,6 +48777,13 @@
           "type": "local",
           "id": "I37A7G0uYoY4qwc6TtEC-"
         }
+      ],
+      [
+        "r1RFPWhhxW5Fd2k4PRHM7",
+        {
+          "type": "local",
+          "id": "r1RFPWhhxW5Fd2k4PRHM7"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -51501,7 +51521,8 @@
           "instanceId": "b8QJqSV5U1HxjWBrCc0N4",
           "values": [
             "OeSPqJypFoQL8qIAn6tsO",
-            "lxviBGOoGBnfQCWCjxss4"
+            "lxviBGOoGBnfQCWCjxss4",
+            "r1RFPWhhxW5Fd2k4PRHM7"
           ]
         }
       ],
@@ -60115,8 +60136,8 @@
           "id": "0BVvB1F_gFoQ6if-KrEZJ",
           "instanceId": "PqyxxO5TnKkZyG31GUQKe",
           "name": "src",
-          "type": "string",
-          "value": "https://www.bsli.space/_astro/subteam-liquids.CTO2r4AB_1B3upm.webp"
+          "type": "asset",
+          "value": "bc5e91a3592ebd1fce7bdafcd426c7e505a47b23f21c2376d759f7023f04fd06"
         }
       ],
       [
@@ -61645,6 +61666,16 @@
           "name": "loading",
           "type": "string",
           "value": "eager"
+        }
+      ],
+      [
+        "d1xci4drMk-fBLYRBllKP",
+        {
+          "id": "d1xci4drMk-fBLYRBllKP",
+          "instanceId": "PqyxxO5TnKkZyG31GUQKe",
+          "name": "alt",
+          "type": "asset",
+          "value": "bc5e91a3592ebd1fce7bdafcd426c7e505a47b23f21c2376d759f7023f04fd06"
         }
       ]
     ],
@@ -68549,55 +68580,7 @@
           "children": [
             {
               "type": "text",
-              "value": "BSLI is composed of multiple teams"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "that work together in order to provie"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "students with experience working"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "in a large team towards challenging"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "goals. Each team focuses in a specific"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "category, take a look and see which"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "team you want to be part of!"
+              "value": "BSLI is composed of multiple teams that work together in order to provide students with experience working towards challenging goals. The tasks are multi-disciplinary so all majors are welcome!"
             }
           ]
         }
@@ -73560,19 +73543,11 @@
           "children": [
             {
               "type": "text",
-              "value": "Hi, I'm Hana Winchester! I'm the "
+              "value": "Hi, I'm Liav Ost! I'm the "
             },
             {
               "type": "id",
               "value": "1NQFRknDGvWhkU2biZhL9"
-            },
-            {
-              "type": "text",
-              "value": " "
-            },
-            {
-              "type": "id",
-              "value": "SmDJ9tVIztt177KwCiSFc"
             },
             {
               "type": "text",
@@ -73591,7 +73566,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Sponsorship"
+              "value": "Finance Director"
             }
           ]
         }
@@ -73856,21 +73831,6 @@
             {
               "type": "expression",
               "value": "$ws$dataSource$u2Htq9dmPiwja36IpnRx__DASH__.data.data[0].Email"
-            }
-          ]
-        }
-      ],
-      [
-        "SmDJ9tVIztt177KwCiSFc",
-        {
-          "type": "instance",
-          "id": "SmDJ9tVIztt177KwCiSFc",
-          "component": "ws:element",
-          "tag": "b",
-          "children": [
-            {
-              "type": "text",
-              "value": "Chair"
             }
           ]
         }
@@ -79875,6 +79835,19 @@
       "meta": {
         "width": 1428,
         "height": 952
+      }
+    },
+    {
+      "id": "bc5e91a3592ebd1fce7bdafcd426c7e505a47b23f21c2376d759f7023f04fd06",
+      "name": "subteam-liquids.CTO2r4AB_1B3upm_mUppfDkVGESv2r8SWD9Vw.webp",
+      "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
+      "size": 123292,
+      "type": "image",
+      "format": "webp",
+      "createdAt": "2026-02-23T16:57:23.674+00:00",
+      "meta": {
+        "width": 800,
+        "height": 533
       }
     },
     {
