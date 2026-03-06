@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T02:53:06.356Z";
+      export const lastPublished = "2026-03-06T03:46:02.270Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -579,7 +579,7 @@ className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`
 {"BSLI Leadership Team"}
 </h1>
 <div
-className={`w-element c1fsvg17 cxkx6pe c1jggrh7`}>
+className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c1flzvby cafamdi c1spra3t`}>
 {Object.entries(
   // @ts-ignore
   CMS_Leadership?.data ?? {}
@@ -618,7 +618,7 @@ className={`w-element cugth94 c1lufqxe cnbmf4z ${"list-section"}`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <h1
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k c145f7eq`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k c145f7eq c1al7kr5`}>
 {collectionItem_1?.["display_name"]}
 </h1>
 <div

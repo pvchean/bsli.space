@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T02:53:06.356Z";
+      export const lastPublished = "2026-03-06T03:46:02.270Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -625,7 +625,7 @@ className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm
 </Link_1>
 </div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q co74p4k`}>
 <Image
 src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : URL_Member_UnknownHeadshot}`}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
@@ -660,7 +660,7 @@ className={`w-html-embed`} />
 </Fragment_1>
 </Slot>
 <p
-className={`w-element`}>
+className={`w-element crr88tp c56gnia`}>
 {CMS_Member?.data?.data?.[0]?.Email}
 </p>
 </Link_1>
@@ -717,7 +717,7 @@ className={`w-element c1fsvg17 cp0jmbs c1san6ol cgxl3bw cwn5zzf cjxujza c1i7ltwx
 <div
 className={`w-element`}>
 <h1
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c16tluoy`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c16tluoy c1ghud8g`}>
 {collectionItem?.Name}
 </h1>
 <p

@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "25e76205-04b7-400c-bd1b-367560375072",
+    "id": "edf96926-cf43-47ed-b321-03451529a4d9",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4967,
-    "createdAt": "2026-03-06T02:53:06.356+00:00",
-    "updatedAt": "2026-03-06T02:53:06.356+00:00",
+    "version": 5018,
+    "createdAt": "2026-03-06T03:46:02.27+00:00",
+    "updatedAt": "2026-03-06T03:46:02.27+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -45337,6 +45337,237 @@
             "value": "none"
           }
         }
+      ],
+      [
+        "bo54tpOLnn6s9ucCmzEYj:3E4R89ToUooxuXCXSOciI:paddingTop:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "bo54tpOLnn6s9ucCmzEYj",
+          "property": "paddingTop",
+          "value": {
+            "type": "var",
+            "value": "size-fluid-4"
+          }
+        }
+      ],
+      [
+        "bo54tpOLnn6s9ucCmzEYj:XTdymZ9XqqAKLq2TuXM6-:paddingTop:",
+        {
+          "breakpointId": "XTdymZ9XqqAKLq2TuXM6-",
+          "styleSourceId": "bo54tpOLnn6s9ucCmzEYj",
+          "property": "paddingTop",
+          "value": {
+            "type": "var",
+            "value": "size-fluid-5"
+          }
+        }
+      ],
+      [
+        "SjHgjlB9JfMnLMyJBRHrV:XTdymZ9XqqAKLq2TuXM6-:flexWrap:",
+        {
+          "breakpointId": "XTdymZ9XqqAKLq2TuXM6-",
+          "styleSourceId": "SjHgjlB9JfMnLMyJBRHrV",
+          "property": "flexWrap",
+          "value": {
+            "type": "keyword",
+            "value": "wrap"
+          }
+        }
+      ],
+      [
+        "SjHgjlB9JfMnLMyJBRHrV:tAFRweP7yGMMQI5CmE4yb:alignItems:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "SjHgjlB9JfMnLMyJBRHrV",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "SjHgjlB9JfMnLMyJBRHrV:tAFRweP7yGMMQI5CmE4yb:justifyContent:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "SjHgjlB9JfMnLMyJBRHrV",
+          "property": "justifyContent",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "RnwMzRCMPHmz5sRyHXi74:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "RnwMzRCMPHmz5sRyHXi74",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-fluid-2"
+          }
+        }
+      ],
+      [
+        "V-m5aZtmv3lxsvAL5_Lpq:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "V-m5aZtmv3lxsvAL5_Lpq",
+          "property": "fontSize",
+          "value": {
+            "type": "unparsed",
+            "value": "min(4vw, 20px)"
+          }
+        }
+      ],
+      [
+        "V-m5aZtmv3lxsvAL5_Lpq:w1CiYUsWrNY7Y9wcpTy3K:fontSize:",
+        {
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "styleSourceId": "V-m5aZtmv3lxsvAL5_Lpq",
+          "property": "fontSize",
+          "value": {
+            "type": "unparsed",
+            "value": "min(5vw, 20px)"
+          }
+        }
+      ],
+      [
+        "lEmZ3lm8ZCd5ICWNBaYpt:3E4R89ToUooxuXCXSOciI:alignSelf:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "lEmZ3lm8ZCd5ICWNBaYpt",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "ahAj4phNYZduxr_5Y8BOc:tAFRweP7yGMMQI5CmE4yb:wordWrap:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "ahAj4phNYZduxr_5Y8BOc",
+          "property": "wordWrap",
+          "value": {
+            "type": "keyword",
+            "value": "break-word"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "ahAj4phNYZduxr_5Y8BOc:tAFRweP7yGMMQI5CmE4yb:maxWidth:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "ahAj4phNYZduxr_5Y8BOc",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 90
+          }
+        }
+      ],
+      [
+        "cZtP8_zwhue8T7PBUCZ9K:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "cZtP8_zwhue8T7PBUCZ9K",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-4"
+          }
+        }
+      ],
+      [
+        "0Uro1RI_V86osPMJg27Wh:3E4R89ToUooxuXCXSOciI:paddingTop:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "0Uro1RI_V86osPMJg27Wh",
+          "property": "paddingTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 0
+          }
+        }
+      ],
+      [
+        "dA2FORxzuLQwDZlYnMwrS:3E4R89ToUooxuXCXSOciI:paddingBottom:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "dA2FORxzuLQwDZlYnMwrS",
+          "property": "paddingBottom",
+          "value": {
+            "type": "var",
+            "value": "size-fluid-5"
+          }
+        }
+      ],
+      [
+        "dA2FORxzuLQwDZlYnMwrS:w1CiYUsWrNY7Y9wcpTy3K:paddingBottom:",
+        {
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "styleSourceId": "dA2FORxzuLQwDZlYnMwrS",
+          "property": "paddingBottom",
+          "value": {
+            "type": "var",
+            "value": "size-fluid-4"
+          }
+        }
+      ],
+      [
+        "egRbeta-86WJjexX0NZUK:w1CiYUsWrNY7Y9wcpTy3K:fontSize:",
+        {
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "styleSourceId": "egRbeta-86WJjexX0NZUK",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-1"
+          }
+        }
+      ],
+      [
+        "u3E6GiRCnnCVvSGGAEpeo:w1CiYUsWrNY7Y9wcpTy3K:paddingTop:",
+        {
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "styleSourceId": "u3E6GiRCnnCVvSGGAEpeo",
+          "property": "paddingTop",
+          "value": {
+            "type": "var",
+            "value": "size-fluid-2"
+          }
+        }
+      ],
+      [
+        "1aTpBKoKZkFa4Pruo0_BV:3E4R89ToUooxuXCXSOciI:fontSize:",
+        {
+          "breakpointId": "3E4R89ToUooxuXCXSOciI",
+          "styleSourceId": "1aTpBKoKZkFa4Pruo0_BV",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-2"
+          }
+        }
+      ],
+      [
+        "1aTpBKoKZkFa4Pruo0_BV:w1CiYUsWrNY7Y9wcpTy3K:fontSize:",
+        {
+          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
+          "styleSourceId": "1aTpBKoKZkFa4Pruo0_BV",
+          "property": "fontSize",
+          "value": {
+            "type": "var",
+            "value": "font-size-1"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -49411,6 +49642,20 @@
           "type": "local",
           "id": "ZD4RG9qP1f1g51j5X3qbX"
         }
+      ],
+      [
+        "bo54tpOLnn6s9ucCmzEYj",
+        {
+          "type": "local",
+          "id": "bo54tpOLnn6s9ucCmzEYj"
+        }
+      ],
+      [
+        "0Uro1RI_V86osPMJg27Wh",
+        {
+          "type": "local",
+          "id": "0Uro1RI_V86osPMJg27Wh"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -52997,7 +53242,8 @@
         {
           "instanceId": "UO1SYgm3hzI1RMRRvuCIo",
           "values": [
-            "ZRcSJi_vqnJf4cDTUKUQc"
+            "ZRcSJi_vqnJf4cDTUKUQc",
+            "bo54tpOLnn6s9ucCmzEYj"
           ]
         }
       ],
@@ -55813,7 +56059,8 @@
         {
           "instanceId": "hbfVo1VFMk6JZFHGkEgh9",
           "values": [
-            "ZRcSJi_vqnJf4cDTUKUQc"
+            "ZRcSJi_vqnJf4cDTUKUQc",
+            "0Uro1RI_V86osPMJg27Wh"
           ]
         }
       ],
@@ -62499,6 +62746,16 @@
           "name": "id",
           "type": "string",
           "value": "sub-teams"
+        }
+      ],
+      [
+        "-SFlmN8AqShJeyv6Cpsqv",
+        {
+          "id": "-SFlmN8AqShJeyv6Cpsqv",
+          "instanceId": "04WgD6jjKbODlkqKX-CuV",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": false
         }
       ]
     ],

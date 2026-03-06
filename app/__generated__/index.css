@@ -2187,6 +2187,9 @@
   .c1q9w5dq {
     row-gap: 0.25em
   }
+  .c56gnia {
+    max-width: 90%
+  }
   .c1mynah0 {
     column-gap: 0
   }
@@ -2195,9 +2198,6 @@
   }
   .cugth94 {
     padding-top: var(--size-fluid-5)
-  }
-  .c56gnia {
-    max-width: 90%
   }
   .cjcj0qs {
     padding-bottom: 0
@@ -2625,6 +2625,9 @@
   .c4o45ll {
     row-gap: 0.1rem
   }
+  .c87gihr {
+    padding-top: var(--size-fluid-5)
+  }
   .c1emur3c {
     font-size: 2.5lvw
   }
@@ -2713,6 +2716,9 @@
   }
   .c1mj31gn {
     max-width: none
+  }
+  .cto3hbg {
+    padding-bottom: var(--size-fluid-5)
   }
   .cjdezyc {
     width: 100%
@@ -2837,6 +2843,9 @@
   .c1bkp8hc {
     bottom: var(--gap-m)
   }
+  .c1tjbwzw {
+    padding-top: var(--size-fluid-4)
+  }
   .c1bclcky {
     font-size: 18px
   }
@@ -2857,6 +2866,12 @@
   }
   .c13gsvnv {
     margin-left: 15px
+  }
+  .c1al7kr5 {
+    font-size: var(--font-size-fluid-2)
+  }
+  .c4jlsy0 {
+    font-size: min(4vw, 20px)
   }
   .cuc9pay {
     border-top-width: 1px
@@ -2906,6 +2921,9 @@
   .cq5sbay {
     row-gap: 0
   }
+  .c1h9u4a1 {
+    padding-top: 0px
+  }
   .c1x6vc8x {
     width: var(--size-14)
   }
@@ -2941,8 +2959,14 @@
   .c19n8h5r {
     width: 50lvw
   }
+  .cqlik49 {
+    padding-top: var(--size-fluid-2)
+  }
   .c1akm3sr {
     hyphens: auto
+  }
+  .c12yxm2d {
+    font-size: var(--font-size-1)
   }
   .c11ytquf {
     flex-grow: 1
@@ -2967,6 +2991,9 @@
   }
   .c16xs1d3 {
     font-size: min(12vw, 64px)
+  }
+  .c1m19j5i {
+    padding-bottom: var(--size-fluid-4)
   }
   .c2nedal {
     flex-direction: column-reverse
@@ -3015,6 +3042,9 @@
   }
   .cgve8lt {
     max-width: 80lvw
+  }
+  .c1mip80r {
+    font-size: min(5vw, 20px)
   }
   .c1vtx0a6 {
     width: 100%

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T02:53:06.356Z";
+      export const lastPublished = "2026-03-06T03:46:02.270Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -577,10 +577,6 @@ className={`w-element chlecrf cjcj0qs cnbmf4z`}>
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1mynah0 c18jhn4e c1flzvby c1fhcu5x`}>
 <div
 className={`w-element`}>
-<div
-className={`w-element c3eev2k c18s813s cjl8er8 c145f7eq`}>
-{"Currently Active"}
-</div>
 <h1
 className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`}>
 {"BSLI Members"}

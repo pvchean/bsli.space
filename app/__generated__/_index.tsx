@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T02:53:06.356Z";
+      export const lastPublished = "2026-03-06T03:46:02.270Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -610,7 +610,7 @@ className={`w-element c145f7eq cjl8er8`}>
 </section>
 <Box
 tag={"section"}
-className={`w-box chlecrf c1lufqxe cnbmf4z c19ubv75 c4g1j3m cs5nzqp`}>
+className={`w-box chlecrf c1lufqxe cnbmf4z c19ubv75 c4g1j3m cs5nzqp cqlik49`}>
 <Box
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cwr14mb cs5nzqp c7dprmh c16nciq0 cmzqacz cb6mw6t c1xq1124`}>
 <Box
@@ -623,7 +623,7 @@ className={`w-heading cbwi5wk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq chbpnm4 
 {"What is BSLI?"}
 </Heading>
 <Paragraph
-className={`w-paragraph ckhpfcg c14ukcfr c4vnhzq ctzyqaf cei00iu`}>
+className={`w-paragraph ckhpfcg c14ukcfr c4vnhzq ctzyqaf cei00iu c12yxm2d`}>
 <span
 className={`w-element c6zneyq c145f7eq`}>
 {"BSLI"}
@@ -691,7 +691,7 @@ className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k 
 {"Our Teams"}
 </h1>
 <p
-className={`w-element c3eev2k c1ddz7he ckhpfcg`}>
+className={`w-element c3eev2k c1ddz7he ckhpfcg cei00iu c12yxm2d`}>
 {"All BSLI project teams meet in the "}
 <b
 className={`w-element`}>
@@ -1111,7 +1111,7 @@ className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 </section>
 <div
 id={"get-involved"}
-className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z cto3hbg c1m19j5i`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cqmqoqg c13kj1ir c16nciq0 c2nedal`}>
 <div
@@ -1330,7 +1330,7 @@ className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c1j4r0zr cjdezyc 
 </div>
 </div>
 <div
-className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z c1h9u4a1`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
