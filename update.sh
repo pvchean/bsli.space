@@ -11,6 +11,8 @@ npm install -g webstudio@latest
 webstudio sync
 webstudio build --template docker
 
+cp ./favicon.ico ./public/favicon.ico
+
 # 1. Generate a version number based on timestamp
 VERSION="v$(date '+%Y%m%d.%H%M%S')"
 
