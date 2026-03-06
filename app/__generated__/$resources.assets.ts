@@ -1,18 +1,23 @@
 
     export const assets = {
+  "0a434b5a02d7308a8ce5c45510fac256534b5c7051e7498d9ef4a3982be06279": {
+    "url": "/cgi/image/OSUCOE-Logo_bGn1AOH4cEuElK3jzHv_T.webp?format=raw",
+    "width": 1024,
+    "height": 147
+  },
+  "152f312f057c063535b80eba558ac9eac358454eb28efdddea059c5a232794f2": {
+    "url": "/cgi/image/DSC4344_dCCsqRbQ7ZPfsQmWqAlD5.webp?format=raw",
+    "width": 1290,
+    "height": 861
+  },
+  "1dd68e420c29c89f3672eba39771c558d1303483ed7bfe9056c73512a04ff050": {
+    "url": "/cgi/image/unknown_t8djPfRa4bG2TBmbHFmpR.webp?format=raw",
+    "width": 1536,
+    "height": 1025
+  },
   "272f344be357d80145efdd92fc6f5e28a1b7a110d317fa5aa4533e8dd95c9b63": {
     "url": "/cgi/asset/AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf?format=raw",
     "family": "Anek Devanagari"
-  },
-  "4ef27449f09e529f703964cfb2a19e5ef981bf0676be9568e2fd3bd3dbd08eb3": {
-    "url": "/cgi/image/bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp?format=raw",
-    "width": 640,
-    "height": 480
-  },
-  "55b4ecec493171534801f86567a9152b926cf8bdd0062aa64f77f98831edafbc": {
-    "url": "/cgi/image/temp-logo_VoLGlBi1qX_cywG1xnlrv.svg?format=raw",
-    "width": 169,
-    "height": 40
   },
   "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681": {
     "url": "/cgi/image/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png?format=raw",
@@ -24,10 +29,20 @@
     "width": 1428,
     "height": 952
   },
+  "b658a7f0542002821e63a8546c81e0e8f27f661552e9b43c4645207553f0be8e": {
+    "url": "/cgi/image/bsli_logo_XHTAmTIKnXNFz6cFNxN5m.png?format=raw",
+    "width": 46,
+    "height": 45
+  },
   "bc5e91a3592ebd1fce7bdafcd426c7e505a47b23f21c2376d759f7023f04fd06": {
     "url": "/cgi/image/subteam-liquids.CTO2r4AB_1B3upm_mUppfDkVGESv2r8SWD9Vw.webp?format=raw",
     "width": 800,
     "height": 533
+  },
+  "dde880b652e23968dd3d448dade3ee70903932bb3a544f1d23caee14db808821": {
+    "url": "/cgi/image/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg?format=raw",
+    "width": 800,
+    "height": 800
   },
   "ef9c68dd65bc76d6cef09029a8065d15e14c102e1890cc7f4e6ded357c3098e5": {
     "url": "/cgi/image/IMG_0971_nX0q1jQ7XxMak-7uoats5.png?format=raw",

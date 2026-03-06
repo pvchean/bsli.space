@@ -12,14 +12,14 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-23T16:59:08.817Z";
+      export const lastPublished = "2026-03-06T01:46:15.534Z";
 
-      export const siteName = undefined;
+      export const siteName = "Buckeye Space Launch Intiative";
 
       export const breakpoints = [{"id":"tAFRweP7yGMMQI5CmE4yb"},{"id":"XTdymZ9XqqAKLq2TuXM6-","maxWidth":991},{"id":"3E4R89ToUooxuXCXSOciI","maxWidth":767},{"id":"w1CiYUsWrNY7Y9wcpTy3K","maxWidth":479}];
 
       export const favIconAsset: string | undefined =
-        "bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp";
+        "bsli_logo_kBxuYU93L-wMxotsYrt-q.svg";
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
@@ -30,9 +30,24 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       
             
+            const Script = ({children, ...props}: Record<string, string | boolean>) => {
+              if (children == null) {
+                return <script {...props} />;
+              }
+
+              return <script {...props} dangerouslySetInnerHTML={{__html: children}} />;
+            };
+            const Style = ({children, ...props}: Record<string, string | boolean>) => {
+              if (children == null) {
+                return <style {...props} />;
+              }
+
+              return <style {...props} dangerouslySetInnerHTML={{__html: children}} />;
+            };
+            
 
             export const CustomCode = () => {
-              return (<></>);
+              return (<><Script defer src={"https://umami.bsli.space/script.js"} data-website-id={"ad99b5af-6526-4b30-bcbc-976332ecd31e"} data-do-not-track={"true"}></Script></>);
             }
           
 
@@ -40,7 +55,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
-let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
@@ -72,7 +87,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -310,7 +328,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and former engineers"}
+{"A repository of all of our wonderful engineers and alumni"}
 </Paragraph>
 </Box>
 </Link>
@@ -403,7 +421,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -633,6 +654,10 @@ src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
 alt={""}
 loading={"eager"}
 className={`w-image cbxkl1b c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c89byf c1j4r0zr cb812m5 c1k527w9 c1fhcu5x`} />
+<p
+className={`w-element`}>
+{"verison"}
+</p>
 </DialogTrigger>
 <DialogOverlay
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
@@ -687,7 +712,7 @@ className={`w-element`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x cafamdi cxu6jij c131me5s cdgow9j`}>
 <div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
+className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f cm07v6j c1mj31gn cc6fyqo c10v9pep`}>
 <div
 className={`w-element`}>
 <Dialog>
@@ -820,7 +845,7 @@ className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 </div>
 </div>
 <div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
+className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f cm07v6j c1mj31gn cc6fyqo c10v9pep`}>
 <div
 className={`w-element`}>
 <Dialog>
@@ -953,7 +978,7 @@ className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c
 </div>
 </div>
 <div
-className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f c1mj31gn cc6fyqo`}>
+className={`w-element c1fsvg17 c9olze7 c1412oo6 cp0jmbs c9ffb6f cm07v6j c1mj31gn cc6fyqo c10v9pep`}>
 <div
 className={`w-element`}>
 <Dialog>
@@ -1296,7 +1321,10 @@ className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
 <div
 className={`w-element c1fzb25u c1wvwf6y c1j4r0zr cjdezyc c199z4bu`}>
 <Image
-src={"https://www.bsli.space/_astro/DSC4344.CG1689RL_1I7n9U.webp"}
+src={"/assets/DSC4344_dCCsqRbQ7ZPfsQmWqAlD5.webp"}
+width={1290}
+height={861}
+alt={""}
 className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c1j4r0zr cjdezyc c2o370s c1tdkztw cakx71b c19l2s1w chet79q`} />
 </div>
 </div>
@@ -1364,7 +1392,6 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem?.image}`}
-optimize={true}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
@@ -1412,7 +1439,10 @@ className={`w-element c1lynjaq c89byf c74yqvr c1fsvg17 cp0jmbs c2jpees c1bctvrt`
 <div
 className={`w-element c1fsvg17 c1412oo6 c1flzvby c13kj1ir cb6mw6t cmzqacz`}>
 <Image
-src={"https://www.bsli.space/_astro/OSUCOE-Logo.DtgUvi6S.webp"}
+src={"/assets/OSUCOE-Logo_bGn1AOH4cEuElK3jzHv_T.webp"}
+width={1024}
+height={147}
+alt={""}
 className={`w-image cm703g2`} />
 <Slot>
 <div

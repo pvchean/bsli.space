@@ -11,14 +11,14 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-23T16:59:08.817Z";
+      export const lastPublished = "2026-03-06T01:46:15.534Z";
 
-      export const siteName = undefined;
+      export const siteName = "Buckeye Space Launch Intiative";
 
       export const breakpoints = [{"id":"tAFRweP7yGMMQI5CmE4yb"},{"id":"XTdymZ9XqqAKLq2TuXM6-","maxWidth":991},{"id":"3E4R89ToUooxuXCXSOciI","maxWidth":767},{"id":"w1CiYUsWrNY7Y9wcpTy3K","maxWidth":479}];
 
       export const favIconAsset: string | undefined =
-        "bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp";
+        "bsli_logo_kBxuYU93L-wMxotsYrt-q.svg";
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
@@ -35,7 +35,7 @@ let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/membe
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Team = useResource("CMS_Team_1")
-let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let CMS_Subteams = useResource("CMS_Subteams_1")
 let CMS_Team_Project = useResource("CMS_Team_Project_1")
 let CMS_Overview = useResource("CMS_Overview_1")
@@ -71,7 +71,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -309,7 +312,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and former engineers"}
+{"A repository of all of our wonderful engineers and alumni"}
 </Paragraph>
 </Box>
 </Link>
@@ -402,7 +405,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -587,10 +593,10 @@ className={`w-markdown-embed`}>
 <DialogTrigger>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
-optimize={false}
-width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
+width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
+loading={"eager"}
 className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c1j4r0zr c89byf c13v84m3 ctsnyh5 ca966ma`} />
 </DialogTrigger>
 <DialogOverlay
@@ -599,7 +605,6 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
-optimize={true}
 width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
@@ -628,7 +633,7 @@ src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
 width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
-optimize={false}
+loading={"eager"}
 className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3 c16ouw3o`} />
 </DialogTrigger>
 <DialogOverlay
@@ -637,7 +642,6 @@ className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam
 className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
-optimize={true}
 width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
@@ -770,14 +774,19 @@ className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c5azhl4 c1r0hodc
 {collectionItem_2?.position?.["name_short"]}
 </h2>
 <div
-className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
+className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1mi6rnj`}>
+<Link
+href={"/members/" + collectionItem_2?.["member_id"]?.["osu_ndn"]}
+prefetch={"intent"}
+className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <p
 className={`w-element c1iebxzq cjl8er8 c145f7eq c5azhl4 c1r0hodc c1fg96d4 cah9upb`}>
 {collectionItem_2?.["member_id"]?.Name}
 </p>
+</Link>
 <Link_1
 href={`mailto:${collectionItem_2?.["member_id"]?.Email}`}
-className={`w-element c1jt1fo7 cnm978k crr88tp c8kgf22 c1xkkw6h`}>
+className={`w-element cnm978k crr88tp c8kgf22 c1xkkw6h c1jt1fo7`}>
 {collectionItem_2?.["member_id"]?.Email}
 </Link_1>
 {(collectionItem_2?.["member_id"]?.LinkedInURL != null && collectionItem_2?.["member_id"]?.LinkedInURL !== '') &&
@@ -800,7 +809,6 @@ className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
 src={CMS_Asset_URL + CMS_Team_Project?.data?.data?.[0]?.["overview_image"]}
 loading={"eager"}
-optimize={false}
 className={`w-image c1j4r0zr cjebrku`} />
 </div>
 </div>
@@ -830,7 +838,7 @@ className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c145f7eq`}>
 </h1>
 </div>
 <div
-className={`w-element`}>
+className={`w-element cdr374f`}>
 {collectionItem_3?.["long_description"]}
 </div>
 </div>
@@ -887,7 +895,6 @@ className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]}`}
 loading={"eager"}
-optimize={false}
 className={`w-image c89byf c1j4r0zr c13v84m3 c1tsavcz`} />
 </Fragment>
 )
@@ -964,7 +971,6 @@ target={"_blank"}
 className={`w-element`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
-optimize={true}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
@@ -1012,7 +1018,10 @@ className={`w-element c1lynjaq c89byf c74yqvr c1fsvg17 cp0jmbs c2jpees c1bctvrt`
 <div
 className={`w-element c1fsvg17 c1412oo6 c1flzvby c13kj1ir cb6mw6t cmzqacz`}>
 <Image
-src={"https://www.bsli.space/_astro/OSUCOE-Logo.DtgUvi6S.webp"}
+src={"/assets/OSUCOE-Logo_bGn1AOH4cEuElK3jzHv_T.webp"}
+width={1024}
+height={147}
+alt={""}
 className={`w-image cm703g2`} />
 <Slot>
 <div

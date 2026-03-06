@@ -4,21 +4,21 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Time as Time, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed, Time as Time } from "@webstudio-is/sdk-components-react";
 import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-23T16:59:08.817Z";
+      export const lastPublished = "2026-03-06T01:46:15.534Z";
 
-      export const siteName = undefined;
+      export const siteName = "Buckeye Space Launch Intiative";
 
       export const breakpoints = [{"id":"tAFRweP7yGMMQI5CmE4yb"},{"id":"XTdymZ9XqqAKLq2TuXM6-","maxWidth":991},{"id":"3E4R89ToUooxuXCXSOciI","maxWidth":767},{"id":"w1CiYUsWrNY7Y9wcpTy3K","maxWidth":479}];
 
       export const favIconAsset: string | undefined =
-        "bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp";
+        "bsli_logo_kBxuYU93L-wMxotsYrt-q.svg";
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
@@ -34,7 +34,7 @@ let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/membe
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Member = useResource("CMS_Member_1")
-let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
@@ -66,7 +66,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -304,7 +307,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and former engineers"}
+{"A repository of all of our wonderful engineers and alumni"}
 </Paragraph>
 </Box>
 </Link>
@@ -397,7 +400,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -571,7 +577,6 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg1
 className={`w-element c2jpees c1bctvrt cwr14mb ca9k1ea c13kj1ir c16nciq0`}>
 <Image
 src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
-optimize={false}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
@@ -634,9 +639,15 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg1
 <div
 className={`w-element cwr14mb c89byf`}>
 <h1
-className={`w-element cbewb4j c1iwa1os cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
 {"Roles at BSLI"}
 </h1>
+{(CMS_Member?.data?.data?.[0]?.["role_id"]?.length == 0) &&
+<div
+className={`w-element c12ae195`}>
+{"No roles have been recorded yet. This does not mean the member hasn't contributed"}
+</div>
+}
 <div
 className={`w-element c1fsvg17 cpcsebf cp1jzw6`}>
 <Accordion
@@ -645,18 +656,18 @@ className={`w-accordion c1fsvg17 cpcsebf`}>
 {Object.entries(
   // @ts-ignore
   CMS_Member?.data?.data?.[0]?.["role_id"] ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray(CMS_Member?.data?.data?.[0]?.["role_id"]) ? Number(_key) : _key;
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Member?.data?.data?.[0]?.["role_id"]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_1}>
+<Fragment key={collectionItemKey}>
 <AccordionItem
 data-ws-index="0"
-value={collectionItem_1?.id}
+value={collectionItem?.id}
 className={`w-item cvdddm5`}>
 <AccordionHeader
 className={`w-item-header c1fsvg17`}>
 <AccordionTrigger
-value={collectionItem_1?.id}
+value={collectionItem?.id}
 className={`w-item-trigger c1fsvg17 c10utwzz c167ums0 c1w8b2ns c1flzvby c1412oo6 c15wh6je c1gv7k1f c18q2u3w cy0jph6 c6zneyq cskft4f cmr7w05 c19ldtn2 c1hqx5et cqb32sg c13kj1ir c1r1nglt cq5sbay cj1r6i8`}>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
@@ -668,7 +679,7 @@ className={`w-html-embed`} />
 </Box>
 <Text
 className={`w-text crpjzr9 c1iwhssp`}>
-{`${collectionItem_1?.team?.["Team_Name"]}: ${collectionItem_1?.position?.["name_short"]}`}
+{`${collectionItem?.team?.["Team_Name"]}: ${collectionItem?.position?.["name_short"]}`}
 </Text>
 <Box
 className={`w-box c1uk46yp c1d9st3e c1glodg c1wvwf6y cuvhotc c1hzukz1 c1k1e95b c1mku3eu c1mq7p96 c1xd87pa c1prqdl7`}>
@@ -680,7 +691,7 @@ className={`w-html-embed`} />
 <div
 className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
 <Time
-dateTime={collectionItem_1?.start}
+dateTime={collectionItem?.start}
 dateStyle={"medium"}
 format={"MMM, YYYY"}
 className={`w-time`} />
@@ -688,14 +699,14 @@ className={`w-time`} />
 className={`w-element`}>
 {" - "}
 </div>
-{(collectionItem_1?.end != null) &&
+{(collectionItem?.end != null) &&
 <Time
-dateTime={collectionItem_1?.end}
+dateTime={collectionItem?.end}
 dateStyle={"medium"}
 format={"MMM, YYYY"}
 className={`w-time`} />
 }
-{(collectionItem_1?.end == null) &&
+{(collectionItem?.end == null) &&
 <div
 className={`w-element`}>
 {"Present  "}
@@ -708,7 +719,7 @@ className={`w-element`}>
 className={`w-item-content c19ubv75 c4g1j3m cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c18q2u3w`}>
 <div
 className={`w-element c1kq7zg2`}>
-{collectionItem_1?.position?.["description_long"]}
+{collectionItem?.position?.["description_long"]}
 </div>
 </AccordionContent>
 </AccordionItem>
@@ -721,10 +732,14 @@ className={`w-element c1kq7zg2`}>
 </div>
 </div>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c14b9ffx c1fhcu5x c1san6ol ci6cri9 c1mmlarp`}>
+<h1
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
+{"About Me"}
+</h1>
 <MarkdownEmbed
-code={CMS_Member?.data?.data?.[0]?.["about_me"]}
-className={`w-markdown-embed`}>
+code={`${CMS_Member?.data?.data?.[0]?.["about_me"] == null || CMS_Member?.data?.data?.[0]?.["about_me"] == '' ? "About Me has not been filled out by member" : CMS_Member?.data?.data?.[0]?.["about_me"]}`}
+className={`w-markdown-embed c1bc7smi`}>
 </MarkdownEmbed>
 </div>
 </div>
@@ -747,24 +762,23 @@ className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
   [1,2,3] ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+).map(([_key, collectionItem_2]: any) => {
+  const collectionItemKey_2 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_3}>
+<Fragment key={collectionItemKey_2}>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
-).map(([_key, collectionItem_2]: any) => {
-  const collectionItemKey_2 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_2}>
+<Fragment key={collectionItemKey_1}>
 <Link_1
-href={collectionItem_2?.["Sponsor_Website_URL"]}
+href={collectionItem_1?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
-optimize={true}
+src={`${CMS_Asset_URL}${collectionItem_1?.image}`}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
@@ -786,16 +800,16 @@ className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz
 {Object.entries(
   // @ts-ignore
   [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
-).map(([_key, collectionItem_5]: any) => {
-  const collectionItemKey_5 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
+).map(([_key, collectionItem_4]: any) => {
+  const collectionItemKey_4 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_5}>
+<Fragment key={collectionItemKey_4}>
 <Link_1
-href={collectionItem_5?.["Sponsor_Website_URL"]}
+href={collectionItem_4?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_5?.image}`}
+src={`${collectionItem_4?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
@@ -812,7 +826,10 @@ className={`w-element c1lynjaq c89byf c74yqvr c1fsvg17 cp0jmbs c2jpees c1bctvrt`
 <div
 className={`w-element c1fsvg17 c1412oo6 c1flzvby c13kj1ir cb6mw6t cmzqacz`}>
 <Image
-src={"https://www.bsli.space/_astro/OSUCOE-Logo.DtgUvi6S.webp"}
+src={"/assets/OSUCOE-Logo_bGn1AOH4cEuElK3jzHv_T.webp"}
+width={1024}
+height={147}
+alt={""}
 className={`w-image cm703g2`} />
 <Slot>
 <div

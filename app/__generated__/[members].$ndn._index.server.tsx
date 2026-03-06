@@ -5,7 +5,7 @@
       import type { PageMeta } from "@webstudio-is/sdk";
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
-  let CMS_Item_URL = "https://cms.bsli.a2.lab512.org/items/"
+  let CMS_Item_URL = "https://cms.bsli.space/items/"
   const system = _props.system
   const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",

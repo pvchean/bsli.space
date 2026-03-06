@@ -11,14 +11,14 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-02-23T16:59:08.817Z";
+      export const lastPublished = "2026-03-06T01:46:15.534Z";
 
-      export const siteName = undefined;
+      export const siteName = "Buckeye Space Launch Intiative";
 
       export const breakpoints = [{"id":"tAFRweP7yGMMQI5CmE4yb"},{"id":"XTdymZ9XqqAKLq2TuXM6-","maxWidth":991},{"id":"3E4R89ToUooxuXCXSOciI","maxWidth":767},{"id":"w1CiYUsWrNY7Y9wcpTy3K","maxWidth":479}];
 
       export const favIconAsset: string | undefined =
-        "bsli-logo-hr_2-640x480_EzVFM3BPUgqqBgDDQY0YK.webp";
+        "bsli_logo_kBxuYU93L-wMxotsYrt-q.svg";
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
@@ -34,7 +34,9 @@ let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/membe
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Member = useResource("CMS_Member_1")
-let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.a2.lab512.org/assets/")
+let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
+let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("/image/unknown_t9djPfRa4bG2TBmbHFmpR.webp")
+let CMS_Sponsorship_Tiers = useResource("CMS_Sponsorship_Tiers_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
@@ -66,7 +68,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -304,7 +309,7 @@ className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1san6ol cgxl3bw cwn5zzf`}>
 <Paragraph
 className={`w-paragraph`}>
-{"A repository of all of our wonderful current and former engineers"}
+{"A repository of all of our wonderful engineers and alumni"}
 </Paragraph>
 </Box>
 </Link>
@@ -397,7 +402,10 @@ aria-label={"Home"}
 href={"/"}
 className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
 <Image
-src={"https://www.bsli.space/_astro/bsli_logo.Bras2UvP.png"}
+src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
+width={800}
+height={800}
+alt={""}
 className={`w-image ch1llrh c11buura`} />
 <div
 className={`w-element cjl8er8 cv1zxuk c13l961t`}>
@@ -619,8 +627,7 @@ className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q`}>
 <Image
-src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
-optimize={false}
+src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : URL_Member_UnknownHeadshot}`}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 <div
 className={`w-element`}>
@@ -676,6 +683,82 @@ className={`w-element`}>
 </div>
 </div>
 </div>
+<div
+className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
+<div
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c1flzvby c1fhcu5x`}>
+<div
+className={`w-element c3eev2k`}>
+<h1
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
+{"Sponsorship Tiers"}
+</h1>
+<p
+className={`w-element c6zneyq ca8dj3o`}>
+{"Become a sponsor of BSLI! Sponsors make us able to fund rockets and get to competition! By sponsoring us, you help the next generation of engineers achieve great feats of engineering with products that will have your logo in them!"}
+</p>
+</div>
+<div
+className={`w-element cmr7w05 c1bctvrt c9q2fil ca9k1ea c1hb1gqv c13kj1ir c16nciq0 c1t7hw98 cxu6jij`}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Sponsorship_Tiers?.data?.data ?? {}
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Sponsorship_Tiers?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey}>
+<div
+className={`w-element ${"testclass" + collectionItemKey}`}>
+<HtmlEmbed
+code={`<style>\n  .testclass${collectionItemKey} {\n    --testcolor: ${collectionItem?.Color}99;\n  }\n</style>`}
+className={`w-html-embed`} />
+<div
+className={`w-element c1fsvg17 cp0jmbs c1san6ol cgxl3bw cwn5zzf cjxujza c1i7ltwx c19c37rj co52ume cwo73pd c1wzpcnj c9ffb6f c1j4r0zr ch102ro cd2v6qh czfw4y0 cc6fyqo`}>
+<div
+className={`w-element`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c16tluoy`}>
+{collectionItem?.Name}
+</h1>
+<p
+className={`w-element`}>
+{`For a one year commitment of $${collectionItem?.commitment}, you become a ${collectionItem?.Name} Tier Sponsor.`}
+</p>
+</div>
+<div
+className={`w-element`}>
+<div
+className={`w-element cjl8er8`}>
+{`${collectionItem?.["previous_tier"] == null ? "Benefits include:" : "Everything in " + collectionItem?.["previous_tier"] + ", plus:"}`}
+</div>
+<ul
+className={`w-element c1erpp2i c1oubvo3 c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 cqymryr`}>
+{Object.entries(
+  // @ts-ignore
+  collectionItem?.Benefits ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray(collectionItem?.Benefits) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+<li
+className={`w-element`}>
+{collectionItem_1?.Benefit}
+</li>
+</Fragment>
+)
+})
+}
+</ul>
+</div>
+</div>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+</div>
 <Slot>
 <Fragment_1>
 <div
@@ -695,24 +778,23 @@ className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
   [1,2,3] ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_1}>
+<Fragment key={collectionItemKey_3}>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
-).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
+).map(([_key, collectionItem_2]: any) => {
+  const collectionItemKey_2 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey}>
+<Fragment key={collectionItemKey_2}>
 <Link_1
-href={collectionItem?.["Sponsor_Website_URL"]}
+href={collectionItem_2?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem?.image}`}
-optimize={true}
+src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
@@ -734,16 +816,16 @@ className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz
 {Object.entries(
   // @ts-ignore
   [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_3 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
+).map(([_key, collectionItem_5]: any) => {
+  const collectionItemKey_5 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_3}>
+<Fragment key={collectionItemKey_5}>
 <Link_1
-href={collectionItem_3?.["Sponsor_Website_URL"]}
+href={collectionItem_5?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_3?.image}`}
+src={`${collectionItem_5?.image}`}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
 </Fragment>
@@ -760,7 +842,10 @@ className={`w-element c1lynjaq c89byf c74yqvr c1fsvg17 cp0jmbs c2jpees c1bctvrt`
 <div
 className={`w-element c1fsvg17 c1412oo6 c1flzvby c13kj1ir cb6mw6t cmzqacz`}>
 <Image
-src={"https://www.bsli.space/_astro/OSUCOE-Logo.DtgUvi6S.webp"}
+src={"/assets/OSUCOE-Logo_bGn1AOH4cEuElK3jzHv_T.webp"}
+width={1024}
+height={147}
+alt={""}
 className={`w-image cm703g2`} />
 <Slot>
 <div
