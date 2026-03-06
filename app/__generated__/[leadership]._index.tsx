@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T01:46:15.534Z";
+      export const lastPublished = "2026-03-06T02:32:20.346Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -35,7 +35,7 @@ let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/membe
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Leadership = useResource("CMS_Leadership_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
-let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("/image/unknown_t9djPfRa4bG2TBmbHFmpR.webp")
+let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("https://cms.bsli.space/assets/d381fb9a-145f-4ff4-a4cc-0d90ed1b2c11")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")

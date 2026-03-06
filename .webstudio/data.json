@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "36ec7cff-a13b-418c-be30-8497d79c6d0b",
+    "id": "ab1ac6ef-ac60-4453-b2b5-f2af1ed13fe9",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4958,
-    "createdAt": "2026-03-06T01:46:15.534+00:00",
-    "updatedAt": "2026-03-06T01:46:15.534+00:00",
+    "version": 4962,
+    "createdAt": "2026-03-06T02:32:20.346+00:00",
+    "updatedAt": "2026-03-06T02:32:20.346+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -63065,7 +63065,7 @@
           "name": "URL_Member_UnknownHeadshot",
           "value": {
             "type": "string",
-            "value": "/image/unknown_t9djPfRa4bG2TBmbHFmpR.webp"
+            "value": "https://cms.bsli.space/assets/d381fb9a-145f-4ff4-a4cc-0d90ed1b2c11"
           }
         }
       ]
