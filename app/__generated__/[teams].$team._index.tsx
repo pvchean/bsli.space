@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T02:32:20.346Z";
+      export const lastPublished = "2026-03-06T02:53:06.356Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -666,6 +666,7 @@ className={`w-markdown-embed`}>
 </div>
 </div>
 <div
+id={"sub-teams"}
 className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>

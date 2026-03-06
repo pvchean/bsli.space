@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "ab1ac6ef-ac60-4453-b2b5-f2af1ed13fe9",
+    "id": "25e76205-04b7-400c-bd1b-367560375072",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 4962,
-    "createdAt": "2026-03-06T02:32:20.346+00:00",
-    "updatedAt": "2026-03-06T02:32:20.346+00:00",
+    "version": 4967,
+    "createdAt": "2026-03-06T02:53:06.356+00:00",
+    "updatedAt": "2026-03-06T02:53:06.356+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -21,7 +21,9 @@
         "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
         "meta": {
           "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
-          "excludePageFromSearch": "false"
+          "excludePageFromSearch": "false",
+          "language": "\"en-US\"",
+          "socialImageAssetId": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
         },
         "path": ""
       },
@@ -62488,6 +62490,16 @@
           "type": "asset",
           "value": "1dd68e420c29c89f3672eba39771c558d1303483ed7bfe9056c73512a04ff050"
         }
+      ],
+      [
+        "1GB-8GWb7AnmNGATGRKGW",
+        {
+          "id": "1GB-8GWb7AnmNGATGRKGW",
+          "instanceId": "dkIXYogbjpequFvuR8JRR",
+          "name": "id",
+          "type": "string",
+          "value": "sub-teams"
+        }
       ]
     ],
     "dataSources": [
@@ -80579,7 +80591,9 @@
     "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
     "meta": {
       "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
-      "excludePageFromSearch": "false"
+      "excludePageFromSearch": "false",
+      "language": "\"en-US\"",
+      "socialImageAssetId": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
     },
     "path": ""
   },
@@ -80594,7 +80608,9 @@
       "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
       "meta": {
         "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
-        "excludePageFromSearch": "false"
+        "excludePageFromSearch": "false",
+        "language": "\"en-US\"",
+        "socialImageAssetId": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
       },
       "path": ""
     },
