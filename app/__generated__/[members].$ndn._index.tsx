@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T03:46:02.270Z";
+      export const lastPublished = "2026-03-06T06:49:34.965Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -574,7 +574,7 @@ className={`w-element c11cvd9l c1lufqxe cnbmf4z c1fsvg17 cp0jmbs c2jpees c1bctvr
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
-className={`w-element c2jpees c1bctvrt cwr14mb ca9k1ea c13kj1ir c16nciq0`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea cwr14mb c13kj1ir c16nciq0`}>
 <Image
 src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : "https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp"}`}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />

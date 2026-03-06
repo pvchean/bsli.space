@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T03:46:02.270Z";
+      export const lastPublished = "2026-03-06T06:49:34.965Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -699,7 +699,7 @@ className={`w-element c6zneyq ca8dj3o`}>
 </p>
 </div>
 <div
-className={`w-element cmr7w05 c1bctvrt c9q2fil ca9k1ea c1hb1gqv c13kj1ir c16nciq0 c1t7hw98 cxu6jij`}>
+className={`w-element cmr7w05 c1bctvrt ca9k1ea c9q2fil c1hb1gqv c13kj1ir c16nciq0 c1t7hw98 cxu6jij`}>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsorship_Tiers?.data?.data ?? {}

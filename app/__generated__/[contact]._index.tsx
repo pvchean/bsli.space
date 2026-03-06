@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T03:46:02.270Z";
+      export const lastPublished = "2026-03-06T06:49:34.965Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -581,8 +581,12 @@ className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k 
 {"Let's Connect!"}
 </h1>
 <p
-className={`w-element`}>
-{"Want to reach out to us? Have questions, comments, or concerns?! Get in touch with us in the following ways:"}
+className={`w-element c3eev2k`}>
+{"Want to reach out to us? Have questions, comments, or concerns?!"}
+{""}
+<br />
+{""}
+{"Get in touch with us in the following ways:"}
 </p>
 </div>
 </div>

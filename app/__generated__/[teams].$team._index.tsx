@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T03:46:02.270Z";
+      export const lastPublished = "2026-03-06T06:49:34.965Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -708,7 +708,7 @@ data-ws-index="0"
 value={"Overview"}
 className={`w-tab-content csrzh74 c1lynjaq c16qquiv cptfpme cqlnok c1e3dx33`}>
 <div
-className={`w-element c2jpees c1bctvrt c13d86jv ca9k1ea c13kj1ir c16nciq0`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea c13d86jv c13kj1ir c16nciq0`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
 <div
@@ -781,7 +781,7 @@ href={"/members/" + collectionItem_2?.["member_id"]?.["osu_ndn"]}
 prefetch={"intent"}
 className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <p
-className={`w-element c1iebxzq cjl8er8 c145f7eq c5azhl4 c1r0hodc c1fg96d4 cah9upb`}>
+className={`w-element c1iebxzq cjl8er8 c145f7eq cuvhotc cvm8xtw cpyozji c3air8l c1mq7p96 c5azhl4 c1r0hodc c1fg96d4 cah9upb c7oh6o3 c1h2ixpn`}>
 {collectionItem_2?.["member_id"]?.Name}
 </p>
 </Link>
@@ -818,15 +818,15 @@ className={`w-image c1j4r0zr cjebrku`} />
   // @ts-ignore
   CMS_Subteams?.data?.data ?? {}
 ).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_5 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_4 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_5}>
+<Fragment key={collectionItemKey_4}>
 <TabsContent
 data-ws-index="1"
 value={collectionItem_3?.name}
 className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
 <div
-className={`w-element c2jpees c1bctvrt cqmqoqg ca9k1ea c7dprmh c16nciq0`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea cqmqoqg c7dprmh c16nciq0`}>
 <div
 className={`w-element ct7e8mf czxzndo c1fsvg17 cp0jmbs c1412oo6`}>
 <div
@@ -885,18 +885,43 @@ className={`w-element c1xkkw6h c1jt1fo7`}>
 </div>
 </div>
 <div
-className={`w-element c89byf c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea cablujx c89byf cp0jmbs c13kj1ir c16nciq0 ${`testclass${collectionItemKey_4}`}`}>
+<HtmlEmbed
+code={`<style>\n  .testclass${collectionItemKey_4} {\n    --img-max-height: calc(30rem /${collectionItem_3?.images?.length});\n  }\n</style>`}
+className={`w-html-embed c3gf6q4`} />
 {Object.entries(
   // @ts-ignore
   collectionItem_3?.images ?? {}
 ).map(([_key, collectionItem_5]: any) => {
-  const collectionItemKey_4 = Array.isArray(collectionItem_3?.images) ? Number(_key) : _key;
+  const collectionItemKey_5 = Array.isArray(collectionItem_3?.images) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_4}>
+<Fragment key={collectionItemKey_5}>
+<Dialog>
+<DialogTrigger>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]}`}
+src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
 loading={"eager"}
-className={`w-image c89byf c1j4r0zr c13v84m3 c1tsavcz`} />
+className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c13v84m3 c89byf c1j4r0zr chbrwit`} />
+</DialogTrigger>
+<DialogOverlay
+className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
+<DialogContent
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+<Image
+src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
+loading={"eager"}
+width={collectionItem_5?.["directus_files_id"]?.width}
+height={collectionItem_5?.["directus_files_id"]?.height}
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+<DialogClose
+className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
+className={`w-html-embed`} />
+</DialogClose>
+</DialogContent>
+</DialogOverlay>
+</Dialog>
 </Fragment>
 )
 })

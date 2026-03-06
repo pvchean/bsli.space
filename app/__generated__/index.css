@@ -2040,9 +2040,6 @@
   .c1ppzf3f {
     max-width: 14rem
   }
-  .c1tsavcz {
-    max-height: 25rem
-  }
   .cp1e7em {
     height: 22px
   }
@@ -2557,6 +2554,12 @@
   .cqajdup:hover {
     color: var(--foreground-secondary)
   }
+  .cvm8xtw {
+    transition-duration: 350ms
+  }
+  .c7oh6o3:hover {
+    color: var(--background-primary)
+  }
   .ca8dj3o {
     max-width: 50em
   }
@@ -2565,6 +2568,12 @@
   }
   .c1bc7smi {
     max-width: 100%
+  }
+  .chbrwit {
+    max-height: var(--img-max-height)
+  }
+  .c3gf6q4 {
+    max-height: var(--img-max-heigh)
   }
 }
 @media all and (max-width: 991px) {
