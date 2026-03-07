@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:55:18.070Z";
+      export const lastPublished = "2026-03-07T09:04:57.408Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

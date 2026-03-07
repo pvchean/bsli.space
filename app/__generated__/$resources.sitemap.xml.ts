@@ -15,6 +15,10 @@
   {
     "path": "/contact",
     "lastModified": "2026-03-07"
+  },
+  {
+    "path": "/our-sponsors",
+    "lastModified": "2026-03-07"
   }
 ];
     

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:55:18.070Z";
+      export const lastPublished = "2026-03-07T09:04:57.408Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -774,7 +774,7 @@ className={`w-html-embed`} />
 </Fragment_1>
 </Slot>
 <p
-className={`w-element crr88tp c19ubv75 c4g1j3m c14yma0j c1slz6ta c13l961t`}>
+className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c13l961t`}>
 {collectionItem?.Email}
 </p>
 </div>

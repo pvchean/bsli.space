@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "7c5cd1b0-d30c-47ff-aafb-5c8aa79211a3",
+    "id": "61596f45-49a6-4b62-b649-77795b76ca33",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5755,
-    "createdAt": "2026-03-07T08:55:18.07+00:00",
-    "updatedAt": "2026-03-07T08:55:18.07+00:00",
+    "version": 5769,
+    "createdAt": "2026-03-07T09:04:57.408+00:00",
+    "updatedAt": "2026-03-07T09:04:57.408+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -38,6 +38,7 @@
           "rootInstanceId": "BgEzAm4i1EJip534oH3eW",
           "meta": {
             "excludePageFromSearch": "false",
+            "language": "\"en-US\"",
             "status": "404"
           },
           "path": "/*"
@@ -157,7 +158,7 @@
         {
           "id": "eznHv1AO9tYabuhOWQPzz",
           "name": "Sponsor",
-          "title": "\"BSLI: Sponsors Us!\"",
+          "title": "\"BSLI - Sponsors Us!\"",
           "history": [
             "/sponsor"
           ],
@@ -179,7 +180,7 @@
         {
           "id": "dB9G6KAREsEhl9UPP2dLp",
           "name": "browse",
-          "title": "\"Untitled\"",
+          "title": "\"BSLI - Members\"",
           "history": [
             "/browse"
           ],
@@ -187,7 +188,7 @@
           "meta": {
             "description": "\"\"",
             "excludePageFromSearch": "true",
-            "language": "\"\"",
+            "language": "\"en-US\"",
             "socialImageUrl": "\"\"",
             "redirect": "\"\"",
             "documentType": "html",
@@ -201,7 +202,7 @@
         {
           "id": "ofh1AMY8ZYwy-Pdqs_QxE",
           "name": "Contact",
-          "title": "\"BSLI: Contact Us!\"",
+          "title": "\"BSLI - Contact Us!\"",
           "history": [
             "/contact"
           ],
@@ -223,7 +224,7 @@
         {
           "id": "D0oHdxH9u0zWYjzwKHPuz",
           "name": "member page",
-          "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
+          "title": "`BSLI - ${$ws$system.params.ndn}'s Profile'`",
           "history": [
             "/anikina.2",
             "/senthilnathan.11",
@@ -250,7 +251,7 @@
           "meta": {
             "description": "\"\"",
             "excludePageFromSearch": "false",
-            "language": "\"\"",
+            "language": "\"en-US\"",
             "socialImageUrl": "\"\"",
             "redirect": "\"\"",
             "documentType": "html",
@@ -307,15 +308,15 @@
         {
           "id": "K378zVJ2GNsQ7JeVnsktf",
           "name": "Our Sponsors",
-          "title": "\"Untitled\"",
+          "title": "\"BSLI - Our Sponsors\"",
           "history": [
             "/our-sponsors"
           ],
           "rootInstanceId": "8KepMBjDqibIpQf2HRgel",
           "meta": {
-            "description": "\"\"",
-            "excludePageFromSearch": "true",
-            "language": "\"\"",
+            "description": "\"Our amazing sponsors enable our teams to excell and create awesome competition-class rockets!\"",
+            "excludePageFromSearch": "false",
+            "language": "\"en-US\"",
             "socialImageUrl": "\"\"",
             "redirect": "\"\"",
             "documentType": "html",
@@ -46958,48 +46959,6 @@
         }
       ],
       [
-        "OikLgeDkoW-gWNpTYTFj9:tAFRweP7yGMMQI5CmE4yb:textShadow:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "OikLgeDkoW-gWNpTYTFj9",
-          "property": "textShadow",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "shadow",
-                "position": "outset",
-                "offsetX": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "offsetY": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 2
-                },
-                "blur": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 5
-                },
-                "color": {
-                  "type": "color",
-                  "colorSpace": "srgb",
-                  "components": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "alpha": 0.2
-                }
-              }
-            ]
-          }
-        }
-      ],
-      [
         "OikLgeDkoW-gWNpTYTFj9:tAFRweP7yGMMQI5CmE4yb:textOverflow:",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
@@ -85211,6 +85170,7 @@
       "rootInstanceId": "BgEzAm4i1EJip534oH3eW",
       "meta": {
         "excludePageFromSearch": "false",
+        "language": "\"en-US\"",
         "status": "404"
       },
       "path": "/*"
@@ -85330,7 +85290,7 @@
     {
       "id": "eznHv1AO9tYabuhOWQPzz",
       "name": "Sponsor",
-      "title": "\"BSLI: Sponsors Us!\"",
+      "title": "\"BSLI - Sponsors Us!\"",
       "history": [
         "/sponsor"
       ],
@@ -85352,7 +85312,7 @@
     {
       "id": "dB9G6KAREsEhl9UPP2dLp",
       "name": "browse",
-      "title": "\"Untitled\"",
+      "title": "\"BSLI - Members\"",
       "history": [
         "/browse"
       ],
@@ -85360,7 +85320,7 @@
       "meta": {
         "description": "\"\"",
         "excludePageFromSearch": "true",
-        "language": "\"\"",
+        "language": "\"en-US\"",
         "socialImageUrl": "\"\"",
         "redirect": "\"\"",
         "documentType": "html",
@@ -85374,7 +85334,7 @@
     {
       "id": "ofh1AMY8ZYwy-Pdqs_QxE",
       "name": "Contact",
-      "title": "\"BSLI: Contact Us!\"",
+      "title": "\"BSLI - Contact Us!\"",
       "history": [
         "/contact"
       ],
@@ -85396,7 +85356,7 @@
     {
       "id": "D0oHdxH9u0zWYjzwKHPuz",
       "name": "member page",
-      "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
+      "title": "`BSLI - ${$ws$system.params.ndn}'s Profile'`",
       "history": [
         "/anikina.2",
         "/senthilnathan.11",
@@ -85423,7 +85383,7 @@
       "meta": {
         "description": "\"\"",
         "excludePageFromSearch": "false",
-        "language": "\"\"",
+        "language": "\"en-US\"",
         "socialImageUrl": "\"\"",
         "redirect": "\"\"",
         "documentType": "html",
@@ -85480,15 +85440,15 @@
     {
       "id": "K378zVJ2GNsQ7JeVnsktf",
       "name": "Our Sponsors",
-      "title": "\"Untitled\"",
+      "title": "\"BSLI - Our Sponsors\"",
       "history": [
         "/our-sponsors"
       ],
       "rootInstanceId": "8KepMBjDqibIpQf2HRgel",
       "meta": {
-        "description": "\"\"",
-        "excludePageFromSearch": "true",
-        "language": "\"\"",
+        "description": "\"Our amazing sponsors enable our teams to excell and create awesome competition-class rockets!\"",
+        "excludePageFromSearch": "false",
+        "language": "\"en-US\"",
         "socialImageUrl": "\"\"",
         "redirect": "\"\"",
         "documentType": "html",

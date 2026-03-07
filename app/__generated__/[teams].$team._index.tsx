@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:55:18.070Z";
+      export const lastPublished = "2026-03-07T09:04:57.408Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -866,7 +866,7 @@ className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
 </p>
 <Link_1
 href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
-className={`w-element crr88tp c19ubv75 c4g1j3m c14yma0j c1slz6ta c1jt1fo7 c1xkkw6h czoybq c8kgf22 c13l961t cjf4twe`}>
+className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c1jt1fo7 c1xkkw6h czoybq c8kgf22 c13l961t cjf4twe`}>
 {collectionItem_4?.["member_id"]?.Email}
 </Link_1>
 {(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&

@@ -91,10 +91,10 @@ export const getResources = (_props: { system: System }) => {
 }): PageMeta => {
   let system_1 = system
   return {
-    title: `BSLI: ${system_1?.params?.ndn}'s Profile'`,
+    title: `BSLI - ${system_1?.params?.ndn}'s Profile'`,
     description: "",
     excludePageFromSearch: false,
-    language: "",
+    language: "en-US",
     socialImageAssetName: undefined,
     socialImageUrl: "",
     status: undefined,

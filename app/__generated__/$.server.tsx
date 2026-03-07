@@ -79,7 +79,7 @@ export const getResources = (_props: { system: System }) => {
     title: "Page not found",
     description: undefined,
     excludePageFromSearch: false,
-    language: undefined,
+    language: "en-US",
     socialImageAssetName: undefined,
     socialImageUrl: undefined,
     status: 404,

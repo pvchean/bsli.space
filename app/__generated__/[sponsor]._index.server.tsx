@@ -97,7 +97,7 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "BSLI: Sponsors Us!",
+    title: "BSLI - Sponsors Us!",
     description: "Our amazing sponsors enable our teams to excell and create awesome competition-class rockets!",
     excludePageFromSearch: false,
     language: "en-US",
