@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "94e0ab29-f2a3-4760-a320-13aaf388adf9",
+    "id": "2cbc528d-7c75-42d2-a15a-7fce21852db1",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5701,
-    "createdAt": "2026-03-07T08:04:29.887+00:00",
-    "updatedAt": "2026-03-07T08:04:29.887+00:00",
+    "version": 5712,
+    "createdAt": "2026-03-07T08:09:40.391+00:00",
+    "updatedAt": "2026-03-07T08:09:40.391+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -225,17 +225,17 @@
           "name": "member page",
           "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
           "history": [
+            "/jia.659",
+            "/senthilnathan.11",
             "/retiredmembertest.1",
             "/cheandominguez.1",
             "/ost.18",
-            "/jia.659",
             "/stottmann.3",
             "/anikina.2",
             "/francisco.98",
             "/sabet.16",
             "/campbell.2528",
             "/fastring.1",
-            "/senthilnathan.11",
             "/undefined",
             "/nicley.6",
             "/members/jia.659",
@@ -37862,7 +37862,7 @@
           "value": {
             "type": "unit",
             "unit": "em",
-            "value": 0.5
+            "value": 0.75
           }
         }
       ],
@@ -85192,17 +85192,17 @@
       "name": "member page",
       "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
       "history": [
+        "/jia.659",
+        "/senthilnathan.11",
         "/retiredmembertest.1",
         "/cheandominguez.1",
         "/ost.18",
-        "/jia.659",
         "/stottmann.3",
         "/anikina.2",
         "/francisco.98",
         "/sabet.16",
         "/campbell.2528",
         "/fastring.1",
-        "/senthilnathan.11",
         "/undefined",
         "/nicley.6",
         "/members/jia.659",
