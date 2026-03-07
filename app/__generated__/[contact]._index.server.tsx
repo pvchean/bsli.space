@@ -76,10 +76,10 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Untitled",
-    description: "",
-    excludePageFromSearch: true,
-    language: "",
+    title: "BSLI: Contact Us!",
+    description: "Contact us for more information regarding sponsorship opportunities, benefits, and other general inquiries!",
+    excludePageFromSearch: false,
+    language: "en-US",
     socialImageAssetName: undefined,
     socialImageUrl: "",
     status: undefined,

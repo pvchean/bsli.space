@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T06:49:34.965Z";
+      export const lastPublished = "2026-03-07T08:04:29.887Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -39,7 +39,7 @@ className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0
 <Box
 className={`w-box c1fsvg17 cp0jmbs cgxl3bw cwn5zzf c1ov9q2r`}>
 <Heading
-className={`w-heading c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`}>
+className={`w-heading c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
 {"Style Guide"}
 </Heading>
 <Slot>
@@ -324,7 +324,7 @@ className={`w-text c17lgwgr c1mr6vvn cfivbop cm6nhus c3eev2k c13lfb4j c4w3pr1 cw
 {"heading-1|2|3|4|5|6"}
 </Text>
 <Heading
-className={`w-heading c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`}>
+className={`w-heading c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
 {"Heading 1 text "}
 {""}
 <br />

@@ -148,11 +148,12 @@ export const getResources = (_props: { system: System }) => {
   system: System;
   resources: Record<string, any>;
 }): PageMeta => {
+  let system_1 = system
   return {
-    title: "Untitled",
+    title: `BSLI - ${system_1?.params?.team} Team`,
     description: "",
-    excludePageFromSearch: true,
-    language: "",
+    excludePageFromSearch: false,
+    language: "en-US",
     socialImageAssetName: undefined,
     socialImageUrl: "",
     status: undefined,

@@ -10,7 +10,7 @@ import { Image as Image } from "@webstudio-is/sdk-components-react";
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T06:49:34.965Z";
+      export const lastPublished = "2026-03-07T08:04:29.887Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

@@ -7,6 +7,7 @@
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.space/items/"
   const system = _props.system
+  let CMS_Default_Limit = 25
   const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
@@ -40,11 +41,13 @@ export const getResources = (_props: { system: System }) => {
     name: "CMS_Members",
     url: `${CMS_Item_URL}BSLI_Members`,
     searchParams: [
-      { name: "fields", value: "*,role_id.position.*,role_id.team.Team_Name" },
+      { name: "fields", value: "headshot,Name,Major,Email,LinkedInURL,osu_ndn,role_id.position.*,role_id.team.Team_Name" },
       { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.membersSearchScope}"}},{"${system?.search?.membersSearchType}":{"${system?.search?.membersSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.membersSearch == '' ? true : system?.search?.membersSearch}"}}]}`
  },
       { name: "sort", value: `${system?.search?.membersSearchOrder == "on" ? '-' : ''}${system?.search?.membersSortType}` },
       { name: "deep", value: "{\"role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
+      { name: "limit", value: system?.search?.membersSearchLimit != null && system?.search?.membersSearchLimit > 0 ? system?.search?.membersSearchLimit : CMS_Default_Limit },
+      { name: "meta", value: "total_count" },
     ],
     method: "get",
     headers: [

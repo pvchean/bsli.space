@@ -4,9 +4,9 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
 import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
-import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
+import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
@@ -22,7 +22,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        ["AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf"]
+        []
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -30,23 +30,18 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
       
 
       const Page = (_props: { system: any; }) => {
-const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
-let CMS_Team = useResource("CMS_Team_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
-let CMS_Subteams = useResource("CMS_Subteams_1")
-let CMS_Team_Project = useResource("CMS_Team_Project_1")
-let CMS_Overview = useResource("CMS_Overview_1")
-let CMS_Leadership = useResource("CMS_Leadership_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
-let CurrentDate = useResource("CurrentDate_1")
+let CurrentDate = useResource("CurrentDate_2")
+let CurrentDate_1 = useResource("CurrentDate_3")
 return <Body
 className={`w-element`}>
 <div
-className={`w-element`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
@@ -575,441 +570,36 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element c11cvd9l c1lufqxe cnbmf4z c1tjbwzw c1we9m35 c87gihr`}>
+className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x c13d86jv cp1jzw6 c7dprmh c16nciq0 c1qankp4`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c1flzvby c1fhcu5x`}>
 <div
-className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
-<h1
-className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k c8kgf22 ccq64u2`}>
-{CMS_Team?.data?.data?.[0]?.["display_name"]}
-</h1>
-<MarkdownEmbed
-code={CMS_Team?.data?.data?.[0]?.["purpose_paragraph"]}
-className={`w-markdown-embed`}>
-</MarkdownEmbed>
-</div>
-<Dialog>
-<DialogTrigger>
-<Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
-height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
-alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
-width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
-loading={"eager"}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c1j4r0zr c89byf c13v84m3 ctsnyh5 clwffw2 cis02v9`} />
-</DialogTrigger>
-<DialogOverlay
-className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
-<DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
-<Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
-width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
-height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
-alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw ca966ma`} />
-<DialogClose
-className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
-className={`w-html-embed`} />
-</DialogClose>
-</DialogContent>
-</DialogOverlay>
-</Dialog>
-</div>
-</div>
-<div
-className={`w-element c11cvd9l c1lufqxe c1czb951 c1tjbwzw c1we9m35`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c74yqvr c1fhcu5x cjr76fi cp1jzw6 c13kj1ir c16nciq0 c1qankp4`}>
-<div
-className={`w-element c1flzvby cafamdi c1j4r0zr cs5nzqp`}>
-<Dialog>
-<DialogTrigger>
-<Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
-width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
-height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
-alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
-loading={"eager"}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c13v84m3 c16ouw3o ca966ma cis02v9`} />
-</DialogTrigger>
-<DialogOverlay
-className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
-<DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
-<Image
-src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
-width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
-height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
-alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
-<DialogClose
-className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
-className={`w-html-embed`} />
-</DialogClose>
-</DialogContent>
-</DialogOverlay>
-</Dialog>
-</div>
-<div
-className={`w-element cp0jmbs cysrbo7 c91clyd cafamdi`}>
-<MarkdownEmbed
-code={CMS_Team?.data?.data?.[0]?.["goals_paragraph"]}
-className={`w-markdown-embed`}>
-</MarkdownEmbed>
-</div>
-</div>
-</div>
-<div
-id={"sub-teams"}
-className={`w-element c11cvd9l c1lufqxe cnbmf4z c170ti9e cto3hbg c179cl7g c1m19j5i`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c3eev2k`}>
-{"Meet the teams"}
-</h1>
-<Tabs
-value={"Overview"}
-className={`w-tabs`}>
-<TabsList
-className={`w-tabs-list c1fsvg17 c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt ch2sjzq cnn2qey c1yx70ji c1psuk3c cg2oqaz ckkkp6t c1xf2msi cn95y1b cr6l4at c9p96au`}>
-<TabsTrigger
-data-ws-index="0"
-value={"Overview"}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
-{"Overview"}
-</TabsTrigger>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey}>
-<TabsTrigger
-data-ws-index="1"
-value={`${collectionItem?.name}`}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
-{collectionItem?.name}
-</TabsTrigger>
-</Fragment>
-)
-})
-}
-</TabsList>
-<TabsContent
-data-ws-index="0"
-value={"Overview"}
-className={`w-tab-content csrzh74 c1lynjaq c16qquiv cptfpme cqlnok c1e3dx33`}>
-<div
-className={`w-element c2jpees c1bctvrt ca9k1ea c13d86jv c13kj1ir c16nciq0`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6`}>
-<div
-className={`w-element`}>
-<div
-className={`w-element`}>
-<h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq c3eev2k csbbxse ccq64u2`}>
-{CMS_Team_Project?.data?.data?.[0]?.name}
-</h1>
-<p
-className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
-{`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Present"}`}
-</p>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo7 clojc2s`}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Overview?.data?.data?.[0]?.parameters ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray(CMS_Overview?.data?.data?.[0]?.parameters) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_1}>
-<div
-className={`w-element c1fsvg17 c1412oo6`}>
-<h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k csbbxse`}>
-{collectionItem_1?.parameter}
-</h2>
-<div
-className={`w-element`}>
-<p
-className={`w-element c1ni26wq`}>
-{collectionItem_1?.["primary_value"] == null ? "N/A" : collectionItem_1?.["primary_value"]}
-</p>
-{(collectionItem_1?.["secondary_value"] != null && collectionItem_1?.["secondary_value"] !== '') &&
-<p
-className={`w-element c1jt1fo7 c1ni26wq`}>
-{` / ${collectionItem_1?.["secondary_value"]}`}
-</p>
-}
-</div>
-</div>
-</Fragment>
-)
-})
-}
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cp1jzw6 cg41cv6 c1fcs10q c1ickg77 ck93zi7 c1emur3c c1bclcky c1drr1d0`}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Leadership?.data?.data?.[0]?.roles ?? {}
-).map(([_key, collectionItem_2]: any) => {
-  const collectionItemKey_2 = Array.isArray(CMS_Leadership?.data?.data?.[0]?.roles) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_2}>
-<div
-className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
-<h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c5azhl4 c1r0hodc c1785g20`}>
-{collectionItem_2?.position?.["name_short"]}
-</h2>
-<div
-className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1mi6rnj`}>
-<Link
-href={"/members/" + collectionItem_2?.["member_id"]?.["osu_ndn"]}
-prefetch={"intent"}
-className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
-<p
-className={`w-element c1iebxzq cjl8er8 c145f7eq cuvhotc cvm8xtw cpyozji c3air8l c1mq7p96 c5azhl4 c1r0hodc c1fg96d4 cah9upb c7oh6o3 c1h2ixpn`}>
-{collectionItem_2?.["member_id"]?.Name}
-</p>
-</Link>
-<Link_1
-href={`mailto:${collectionItem_2?.["member_id"]?.Email}`}
-className={`w-element cnm978k crr88tp c8kgf22 c1xkkw6h c1jt1fo7`}>
-{collectionItem_2?.["member_id"]?.Email}
-</Link_1>
-{(collectionItem_2?.["member_id"]?.LinkedInURL != null && collectionItem_2?.["member_id"]?.LinkedInURL !== '') &&
-<Link_1
-href={collectionItem_2?.["member_id"]?.LinkedInURL}
-className={`w-element c1xkkw6h c1jt1fo7`}>
-{"LinkedIn"}
-</Link_1>
-}
-</div>
-</div>
-</Fragment>
-)
-})
-}
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 c1flzvby cafamdi`}>
-<Image
-src={CMS_Asset_URL + CMS_Team_Project?.data?.data?.[0]?.["overview_image"]}
-loading={"eager"}
-className={`w-image c1j4r0zr cjebrku`} />
-</div>
-</div>
-</TabsContent>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_4 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_4}>
-<TabsContent
-data-ws-index="1"
-value={collectionItem_3?.name}
-className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
-<div
-className={`w-element c2jpees c1bctvrt ca9k1ea cqmqoqg c7dprmh c16nciq0`}>
-<div
-className={`w-element ct7e8mf czxzndo c1fsvg17 cp0jmbs c1412oo6`}>
-<div
-className={`w-element`}>
-<div
-className={`w-element cakfvvb`}>
-<h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c145f7eq`}>
-{collectionItem_3?.name}
-</h1>
-</div>
-<div
-className={`w-element cdr374f c1qankp4`}>
-{collectionItem_3?.["long_description"]}
-</div>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw cdr374f cg41cv6 c1fcs10q c1ickg77 ck93zi7 c4csrei`}>
-{Object.entries(
-  // @ts-ignore
-  collectionItem_3?.roles ?? {}
-).map(([_key, collectionItem_4]: any) => {
-  const collectionItemKey_3 = Array.isArray(collectionItem_3?.roles) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_3}>
-<div
-className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
-<h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq`}>
-{collectionItem_4?.position?.["name_short"]}
-</h2>
-<div
-className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
-<p
-className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
-{collectionItem_4?.["member_id"]?.Name}
-</p>
-<Link_1
-href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
-className={`w-element crr88tp c19ubv75 c4g1j3m c14yma0j c1slz6ta c1jt1fo7 c1xkkw6h czoybq c8kgf22 c13l961t cjf4twe`}>
-{collectionItem_4?.["member_id"]?.Email}
-</Link_1>
-{(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&
-<Link_1
-href={collectionItem_4?.["member_id"]?.LinkedInURL}
-className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
-<Slot>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" width=\"1.4em\" height=\"1.4em\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 11v5\" /><path d=\"M8 8v.01\" /><path d=\"M12 16v-5\" /><path d=\"M16 16v-3a2 2 0 1 0 -4 0\" /><path d=\"M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</Slot>
-<p
-className={`w-element`}>
-{"LinkedIn"}
-</p>
-</Link_1>
-}
-</div>
-</div>
-</Fragment>
-)
-})
-}
-</div>
-</div>
-<div
-className={`w-element c2jpees c1bctvrt ca9k1ea cablujx c89byf cp0jmbs c13kj1ir c16nciq0 ${`testclass${collectionItemKey_4}`}`}>
-<HtmlEmbed
-code={`<style>\n  .testclass${collectionItemKey_4} {\n    --img-max-height: calc(30rem /${collectionItem_3?.images?.length});\n  }\n</style>`}
-className={`w-html-embed c3gf6q4`} />
-{Object.entries(
-  // @ts-ignore
-  collectionItem_3?.images ?? {}
-).map(([_key, collectionItem_5]: any) => {
-  const collectionItemKey_5 = Array.isArray(collectionItem_3?.images) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_5}>
-<Dialog>
-<DialogTrigger>
-<Image
-src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
-loading={"eager"}
-className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c13v84m3 c89byf c1j4r0zr chbrwit`} />
-</DialogTrigger>
-<DialogOverlay
-className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
-<DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
-<Image
-src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
-loading={"eager"}
-width={collectionItem_5?.["directus_files_id"]?.width}
-height={collectionItem_5?.["directus_files_id"]?.height}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
-<DialogClose
-className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
-className={`w-html-embed`} />
-</DialogClose>
-</DialogContent>
-</DialogOverlay>
-</Dialog>
-</Fragment>
-)
-})
-}
-</div>
-</div>
-</TabsContent>
-</Fragment>
-)
-})
-}
-<TabsList
-className={`w-tabs-list c1xd87pa c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt cnn2qey c146g9k6 coq06vt c1psuk3c c1ickg77 ckkkp6t c16nciq0 c1blr1ay`}>
-<TabsTrigger
-data-ws-index="2"
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
-{"Overview"}
-</TabsTrigger>
-{Object.entries(
-  // @ts-ignore
-  CMS_Subteams?.data?.data ?? {}
-).map(([_key, collectionItem_6]: any) => {
-  const collectionItemKey_6 = Array.isArray(CMS_Subteams?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_6}>
-<TabsTrigger
-data-ws-index="3"
-value={`${collectionItem_6?.name}`}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
-{collectionItem_6?.name}
-</TabsTrigger>
-</Fragment>
-)
-})
-}
-</TabsList>
-</Tabs>
-</div>
-</div>
-<Slot>
-<Fragment_1>
-<div
-className={`w-element chlecrf c1lufqxe cnbmf4z cd9xxqw c1psuk3c cu3vj2g ckkkp6t`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cr6l4at c9p96au`}>
-<Link_1
-href={"/our-sponsors"}
-className={`w-element cj20esf ch72vge c1xkkw6h`}>
+className={`w-element c3eev2k c1lynjaq`}>
 <h1
 className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c3eev2k c1ns6fne c1k10hzu`}>
-{"Our Awesome Sponsors"}
+{"Thank you to our Awesome Sponsors"}
 </h1>
-</Link_1>
+<p
+className={`w-element`}>
+{"Our awesome sponsors allow us to invest into the materials and equipment that make our goals possible! Without them we would not be able to achieve such success!"}
+</p>
+</div>
 <div
-className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
-<div
-className={`w-element ${"logo-slider"}`}>
-<div
-className={`w-element ${"logo-track"}`}>
-{Object.entries(
-  // @ts-ignore
-  [1,2,3] ?? {}
-).map(([_key, collectionItem_8]: any) => {
-  const collectionItemKey_8 = Array.isArray([1,2,3]) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_8}>
+className={`w-element c1fsvg17 c2jpees c1bctvrt cnn2qey c1lynjaq c1flzvby cafamdi cp92zs6`}>
 <Slot>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
-).map(([_key, collectionItem_7]: any) => {
-  const collectionItemKey_7 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_7}>
+<Fragment key={collectionItemKey}>
 <Link_1
-href={collectionItem_7?.["Sponsor_Website_URL"]}
+href={collectionItem?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_7?.image}`}
+src={`${CMS_Asset_URL}${collectionItem?.image}`}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>
@@ -1017,37 +607,6 @@ className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbd
 })
 }
 </Slot>
-</Fragment>
-)
-})
-}
-</div>
-</div>
-<HtmlEmbed
-code={"<style>.logo-slider {\n  background: #fff;\n  overflow: hidden;\n  left: 0px;\n  position: absolute;\n  right: 0px\n}\n\n.logo-track {\n  display: flex;\n  width: max-content; \n  animation: scroll " + CMS_Sponsors_external?.data?.data?.length * 5 + "s linear infinite;\n}\n\n.logo-track img {\n  object-fit: contain;\n}\n\n@keyframes scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-33.333%); }\n}\n</style>"}
-className={`w-html-embed`} />
-</div>
-<div
-className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{Object.entries(
-  // @ts-ignore
-  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
-).map(([_key, collectionItem_10]: any) => {
-  const collectionItemKey_10 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_10}>
-<Link_1
-href={collectionItem_10?.["Sponsor_Website_URL"]}
-target={"_blank"}
-className={`w-element c1fsvg17 c1flzvby cafamdi`}>
-<Image
-src={`${collectionItem_10?.image}`}
-className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
-</Link_1>
-</Fragment>
-)
-})
-}
 </div>
 </div>
 </div>
@@ -1151,12 +710,10 @@ className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{`© ${CurrentDate_1?.data?.year} Buckeye Space Launch Initiative`}
 </p>
 </div>
 </div>
-</Fragment_1>
-</Slot>
 </div>
 </Body>
 }

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-06T06:49:34.965Z";
+      export const lastPublished = "2026-03-07T08:04:29.887Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -34,9 +34,10 @@ const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(25)
+let CMS_Members = useResource("CMS_Members_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("https://cms.bsli.space/assets/d381fb9a-145f-4ff4-a4cc-0d90ed1b2c11")
-let CMS_Members = useResource("CMS_Members_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
@@ -94,7 +95,7 @@ className={`w-menu-item`}>
 <Link
 href={"/"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
 </NavigationMenuItem>
@@ -104,7 +105,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Teams"}
@@ -221,7 +222,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Members"}
@@ -322,7 +323,7 @@ className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
 </NavigationMenuItem>
@@ -332,7 +333,7 @@ className={`w-menu-item`}>
 <Link
 href={"/contact"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq ciz9etv cuzmxq4 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Contact"}
 </Link>
 </NavigationMenuItem>
@@ -354,7 +355,7 @@ className={`w-box c1w29cqu camp34b`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
-code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    // We attach listeners to the document to handle elements added dynamically (Webstudio hydration)\n    document.addEventListener('mouseover', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target._isSmoking) return; // Prevent double triggers\n      \n      const rocket = target.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      clearTimeout(target._stopTimeout);\n      target._isSmoking = true;\n      loop(rocket, target);\n    });\n\n    document.addEventListener('mouseout', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target.contains(e.relatedTarget)) return; \n      target._isSmoking = false;\n      cancelAnimationFrame(target._animFrame);\n    });\n\n    function loop(rocket, container) {\n      if (!container._isSmoking) return;\n      for (let i = 0; i < 3; i++) spawn(rocket);\n      container._animFrame = requestAnimationFrame(() => loop(rocket, container));\n    }\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      if (rect.width === 0) return; // invisible element check\n\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; // +135deg to find tail\n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`; // Growth effect\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    // We attach listeners to the document to handle elements added dynamically (Webstudio hydration)\n    document.addEventListener('mouseover', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target._isSmoking) return; // Prevent double triggers\n      \n      const rocket = target.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      clearTimeout(target._stopTimeout);\n      target._isSmoking = true;\n      loop(rocket, target);\n    });\n\n    document.addEventListener('mouseout', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target.contains(e.relatedTarget)) return; \n      target._isSmoking = false;\n      cancelAnimationFrame(target._animFrame);\n    });\n\n    function loop(rocket, container) {\n      if (!container._isSmoking) return;\n      for (let i = 0; i < 3; i++) spawn(rocket);\n      container._animFrame = requestAnimationFrame(() => loop(rocket, container));\n    }\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      if (rect.width === 0) return; // invisible element check\n\n      // Determine the scaling multiplier based on your 20px reference size\n      const scaleRatio = rect.width / 20;\n\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; // +135deg to find tail\n      const offset = rect.width * 0.4; // This already scales natively with rect.width\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      \n      // Scale the velocity\n      const speed = (Math.random() * 4 + 2) * scaleRatio;\n      \n      // Scale the initial -4px hardcoded centering offset\n      let x = (cx - (4 * scaleRatio)) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      \n      // Scale the base size of the particles\n      const sizeBase = (Math.random() * 4 + 4) * scaleRatio;\n\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`; // Growth effect scales naturally\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
 clientOnly={true}
 className={`w-html-embed`} />
 <Box
@@ -503,7 +504,7 @@ className={`w-item-content c19ubv75 c4g1j3m c1qh3k9k c1kn31ar cuvhotc co9pqhk c1
 <Link_1
 href={"/leadership"}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
-{"Leadership Members"}
+{"Leadership"}
 </Link_1>
 <Link_1
 href={Active_Members_URL}
@@ -513,7 +514,7 @@ className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 <Link_1
 href={Former_Members_URL}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
-{"Former Members"}
+{"BSLI Alumni"}
 </Link_1>
 </AccordionContent>
 </AccordionItem>
@@ -542,7 +543,7 @@ className={`w-box co74p4k cmv1zps c1bkp8hc`}>
 <Slot>
 <Fragment_1>
 <HtmlEmbed
-code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    // We attach listeners to the document to handle elements added dynamically (Webstudio hydration)\n    document.addEventListener('mouseover', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target._isSmoking) return; // Prevent double triggers\n      \n      const rocket = target.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      clearTimeout(target._stopTimeout);\n      target._isSmoking = true;\n      loop(rocket, target);\n    });\n\n    document.addEventListener('mouseout', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target.contains(e.relatedTarget)) return; \n      target._isSmoking = false;\n      cancelAnimationFrame(target._animFrame);\n    });\n\n    function loop(rocket, container) {\n      if (!container._isSmoking) return;\n      for (let i = 0; i < 3; i++) spawn(rocket);\n      container._animFrame = requestAnimationFrame(() => loop(rocket, container));\n    }\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      if (rect.width === 0) return; // invisible element check\n\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; // +135deg to find tail\n      const offset = rect.width * 0.4;\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      const speed = Math.random() * 4 + 2;\n      \n      let x = (cx - 4) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      const sizeBase = Math.random() * 4 + 4;\n\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`; // Growth effect\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
+code={"<style>\n  .smoke-particle {\n    position: absolute;\n    pointer-events: none;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(245, 245, 245, 0.8) 0%, rgba(100, 100, 100, 0.1) 70%);\n    z-index: 9999;\n    will-change: transform, opacity;\n  }\n</style>\n<script>\n  (function() {\n    // We attach listeners to the document to handle elements added dynamically (Webstudio hydration)\n    document.addEventListener('mouseover', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target._isSmoking) return; // Prevent double triggers\n      \n      const rocket = target.querySelector('.rocket-icon');\n      if (!rocket) return;\n\n      clearTimeout(target._stopTimeout);\n      target._isSmoking = true;\n      loop(rocket, target);\n    });\n\n    document.addEventListener('mouseout', (e) => {\n      const target = e.target.closest('.rocket-link');\n      if (!target || target.contains(e.relatedTarget)) return; \n      target._isSmoking = false;\n      cancelAnimationFrame(target._animFrame);\n    });\n\n    function loop(rocket, container) {\n      if (!container._isSmoking) return;\n      for (let i = 0; i < 3; i++) spawn(rocket);\n      container._animFrame = requestAnimationFrame(() => loop(rocket, container));\n    }\n\n    function spawn(el) {\n      const rect = el.getBoundingClientRect();\n      if (rect.width === 0) return; // invisible element check\n\n      // Determine the scaling multiplier based on your 20px reference size\n      const scaleRatio = rect.width / 20;\n\n      const w = window;\n      const cx = rect.left + rect.width / 2 + w.scrollX;\n      const cy = rect.top + rect.height / 2 + w.scrollY;\n\n      const mat = new WebKitCSSMatrix(getComputedStyle(el).transform);\n      const angle = Math.atan2(mat.b, mat.a) + 2.356; // +135deg to find tail\n      const offset = rect.width * 0.4; // This already scales natively with rect.width\n\n      const div = document.createElement('div');\n      div.className = 'smoke-particle';\n      document.body.appendChild(div);\n\n      const jitter = angle + 0.35 * (Math.random() - 0.5);\n      \n      // Scale the velocity\n      const speed = (Math.random() * 4 + 2) * scaleRatio;\n      \n      // Scale the initial -4px hardcoded centering offset\n      let x = (cx - (4 * scaleRatio)) + Math.cos(angle) * offset;\n      let y = cy + Math.sin(angle) * offset;\n      let vx = Math.cos(jitter) * speed;\n      let vy = Math.sin(jitter) * speed;\n      let op = 1;\n      \n      // Scale the base size of the particles\n      const sizeBase = (Math.random() * 4 + 4) * scaleRatio;\n\n      (function anim() {\n        x += vx;\n        y += vy;\n        vx *= 0.95;\n        vy *= 0.95;\n        op -= 0.02;\n\n        if (op <= 0) return div.remove();\n\n        div.style.left = x + 'px';\n        div.style.top = y + 'px';\n        div.style.opacity = op;\n        div.style.width = div.style.height = sizeBase + 'px';\n        div.style.transform = `scale(${2 + (2 - 2 * op)})`; // Growth effect scales naturally\n\n        requestAnimationFrame(anim);\n      })();\n    }\n  })();\n</script>"}
 clientOnly={true}
 className={`w-html-embed`} />
 <Box
@@ -578,8 +579,8 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ccq64u2`}>
-{"BSLI Members"}
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
+{`BSLI ${system?.search?.membersSearchScope == "Retired" ? "Alumni" : "Members"}`}
 </h1>
 </div>
 </div>
@@ -590,6 +591,9 @@ className={`w-element chlecrf c1lufqxe cnbmf4z`}>
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
 className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf`}>
+<div
+id={"search-bar"}
+className={`w-element c1o9wctx c18u1s1s cs5nzqp c1l7b3ti`} />
 <RemixForm
 id={"cmsFormAutoSubmit"}
 className={`w-element c1fsvg17 c1spra3t`}>
@@ -706,6 +710,16 @@ code={"<style>\n  .members-sort-icon-unchecked, .members-sort-icon-checked {\n  
 className={`w-html-embed`} />
 </label>
 </div>
+<Input
+name={"membersSearchLimit"}
+value={CMS_Default_Limit}
+type={"number"}
+className={`w-text-input c1xd87pa`} />
+<Input
+name={"membersSearchPrev"}
+value={CMS_Members?.data?.data?.length}
+type={"number"}
+className={`w-text-input c1xd87pa`} />
 <HtmlEmbed
 code={"<style>\n  .auto-submit-indicator {\n    display: inline-flex;\n    align-items: center;\n    vertical-align: middle;\n  }\n  .auto-submit-indicator svg {\n    transform: rotate(-90deg);\n  }\n  .progress-ring {\n    /* Smooth out the tiny increments */\n    transition: stroke-dashoffset 10ms linear;\n  }\n</style>\n\n<script type=\"module\">\n  const form = document.getElementById('cmsFormAutoSubmit');\n  const circle = document.getElementById('loaderCircle');\n  \n  const circumference = 2 * Math.PI * 8; // ~50.26\n  const WAIT_TIME = 800; // Total countdown time in ms\n  \n  let startTime;\n  let rafId;\n\n  function updateCircle(timestamp) {\n    if (!startTime) startTime = timestamp;\n    const elapsed = timestamp - startTime;\n    const progress = Math.min(elapsed / (WAIT_TIME + 200), 1);\n    \n    // Calculate offset: Full (50.26) to Empty (0)\n    // To make it \"grow\", we subtract progress from circumference\n    const offset = circumference - (progress * circumference);\n    circle.style.strokeDashoffset = offset;\n\n    if (elapsed < WAIT_TIME) {\n      rafId = requestAnimationFrame(updateCircle);\n    } else {\n      // Countdown finished\n      form.requestSubmit();\n      resetCircle();\n    }\n  }\n\n  function startCountdown() {\n    resetCircle();\n    rafId = requestAnimationFrame(updateCircle);\n  }\n\n  function resetCircle() {\n    cancelAnimationFrame(rafId);\n    startTime = null;\n    circle.style.strokeDashoffset = circumference;\n  }\n\n  // Handle Checkbox/Buttons\n  form.addEventListener('click', (event) => {\n    if (event.target.type === \"button\" || event.target.type === \"checkbox\") {\n      startCountdown();\n    }\n  });\n\n  // Handle Typing/Input\n  form.addEventListener('input', () => {\n    startCountdown();\n  });\n</script>"}
 className={`w-html-embed`} />
@@ -725,6 +739,7 @@ href={"/members/" + collectionItem?.["osu_ndn"]}
 prefetch={"intent"}
 className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <div
+id={collectionItemKey}
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x coc50eh`}>
 <div
 className={`w-element`}>
@@ -759,7 +774,7 @@ className={`w-html-embed`} />
 </Fragment_1>
 </Slot>
 <p
-className={`w-element crr88tp c56gnia`}>
+className={`w-element crr88tp c19ubv75 c4g1j3m c14yma0j c1slz6ta c13l961t`}>
 {collectionItem?.Email}
 </p>
 </div>
@@ -806,6 +821,26 @@ className={`w-element c3eev2k`}>
 </div>
 }
 </div>
+<div
+className={`w-element`}>
+{(CMS_Members?.data?.data?.length < CMS_Members?.data?.meta?.["total_count"]) &&
+<div
+className={`w-element cj20esf`}>
+{(CMS_Members?.data?.data?.length < CMS_Members?.data?.meta?.["total_count"]) &&
+<Link_1
+href={`/members/browse?membersSearch=${system?.search?.membersSearch}&membersSearchType=${system?.search?.membersSearchType}&membersSearchScope=${system?.search?.membersSearchScope}&membersSortType=${system?.search?.membersSortType}&membersSearchLimit=${+system?.search?.membersSearchLimit + CMS_Default_Limit}&membersSearchPrev=${system?.search?.membersSearchPrev}#${CMS_Members?.data?.data?.length - 1}`}
+className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>
+{"Load More Results"}
+</Link_1>
+}
+</div>
+}
+<Link_1
+href={"#search-bar"}
+className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c12dl879 c1r92k6l cib2qxx chdqs4z`}>
+{"Scroll to Top"}
+</Link_1>
+</div>
 </div>
 </div>
 <Slot>
@@ -814,10 +849,14 @@ className={`w-element c3eev2k`}>
 className={`w-element chlecrf c1lufqxe cnbmf4z cd9xxqw c1psuk3c cu3vj2g ckkkp6t`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cr6l4at c9p96au`}>
+<Link_1
+href={"/our-sponsors"}
+className={`w-element cj20esf ch72vge c1xkkw6h`}>
 <h1
 className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c3eev2k c1ns6fne c1k10hzu`}>
 {"Our Awesome Sponsors"}
 </h1>
+</Link_1>
 <div
 className={`w-element c89byf carfxkz cp92zs6 c57lil3 cptmabw`}>
 <div
@@ -831,6 +870,7 @@ className={`w-element ${"logo-track"}`}>
   const collectionItemKey_2 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_2}>
+<Slot>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
@@ -850,6 +890,7 @@ className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbd
 )
 })
 }
+</Slot>
 </Fragment>
 )
 })
