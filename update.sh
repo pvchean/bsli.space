@@ -9,6 +9,7 @@ git pull --rebase
 # Run your build tools
 npm install -g webstudio@latest
 webstudio sync
+rm -rf app/
 webstudio build --template docker
 
 cp ./favicon.ico ./public/favicon.ico
