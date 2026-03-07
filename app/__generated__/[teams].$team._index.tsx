@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T09:20:26.186Z";
+      export const lastPublished = "2026-03-07T09:52:52.963Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -945,6 +945,7 @@ className={`w-html-embed`} />
 className={`w-tabs-list c1xd87pa c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt cnn2qey c146g9k6 coq06vt c1psuk3c c1ickg77 ckkkp6t c16nciq0 c1blr1ay`}>
 <TabsTrigger
 data-ws-index="2"
+value={"Overview"}
 className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
 {"Overview"}
 </TabsTrigger>

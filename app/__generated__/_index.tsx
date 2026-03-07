@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T09:20:26.186Z";
+      export const lastPublished = "2026-03-07T09:52:52.963Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
