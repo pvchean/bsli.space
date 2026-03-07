@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T09:52:52.963Z";
+      export const lastPublished = "2026-03-07T10:36:31.958Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -668,7 +668,7 @@ src={"/assets/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png"}
 width={1243}
 height={944}
 alt={""}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -738,7 +738,7 @@ src={"/assets/IMG_0961_AXT4JrgD-TrZrPca9dyY_.png"}
 width={1428}
 height={952}
 alt={""}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -872,7 +872,7 @@ src={"/assets/IMG_0971_nX0q1jQ7XxMak-7uoats5.png"}
 width={1426}
 height={944}
 alt={""}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 </DialogContent>
 </DialogOverlay>
 </Dialog>
@@ -1000,7 +1000,7 @@ src={"/assets/subteam-liquids.CTO2r4AB_1B3upm_mUppfDkVGESv2r8SWD9Vw.webp"}
 width={800}
 height={533}
 alt={""}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed

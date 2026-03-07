@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "954b8b69-7559-4206-8697-14d1133ac0c7",
+    "id": "20837428-42e3-4127-8dc7-6e81690423ed",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5846,
-    "createdAt": "2026-03-07T09:52:52.963+00:00",
-    "updatedAt": "2026-03-07T09:52:52.963+00:00",
+    "version": 5852,
+    "createdAt": "2026-03-07T10:36:31.958+00:00",
+    "updatedAt": "2026-03-07T10:36:31.958+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -103,9 +103,9 @@
           "name": "Teams",
           "title": "`BSLI - ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/IREC",
-            "/teams/NASA",
             "/teams/Liquids",
+            "/teams/NASA",
+            "/teams/IREC",
             "/teams/Nasa",
             "/teams/Irec",
             "/teams/nasa",
@@ -41009,18 +41009,6 @@
         }
       ],
       [
-        "VpB_Cpp8p7UgKZKlI6I1I:tAFRweP7yGMMQI5CmE4yb:objectFit:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "VpB_Cpp8p7UgKZKlI6I1I",
-          "property": "objectFit",
-          "value": {
-            "type": "keyword",
-            "value": "cover"
-          }
-        }
-      ],
-      [
         "VpB_Cpp8p7UgKZKlI6I1I:tAFRweP7yGMMQI5CmE4yb:maxHeight:",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
@@ -45864,6 +45852,30 @@
           "value": {
             "type": "var",
             "value": "foreground-accent"
+          }
+        }
+      ],
+      [
+        "VpB_Cpp8p7UgKZKlI6I1I:tAFRweP7yGMMQI5CmE4yb:objectFit:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "VpB_Cpp8p7UgKZKlI6I1I",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "VpB_Cpp8p7UgKZKlI6I1I:tAFRweP7yGMMQI5CmE4yb:width:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "VpB_Cpp8p7UgKZKlI6I1I",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "min-content"
           }
         }
       ]
@@ -82999,9 +83011,9 @@
       "name": "Teams",
       "title": "`BSLI - ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/IREC",
-        "/teams/NASA",
         "/teams/Liquids",
+        "/teams/NASA",
+        "/teams/IREC",
         "/teams/Nasa",
         "/teams/Irec",
         "/teams/nasa",

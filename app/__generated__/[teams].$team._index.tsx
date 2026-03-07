@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T09:52:52.963Z";
+      export const lastPublished = "2026-03-07T10:36:31.958Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -608,7 +608,7 @@ src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
 width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3 ca966ma`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3 ca966ma`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -645,7 +645,7 @@ src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
 width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -920,7 +920,7 @@ src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
 loading={"eager"}
 width={collectionItem_5?.["directus_files_id"]?.width}
 height={collectionItem_5?.["directus_files_id"]?.height}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
+className={`w-image c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1gdhahs chd6mf4 c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
