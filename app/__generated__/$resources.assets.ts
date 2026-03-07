@@ -19,6 +19,11 @@
     "url": "/cgi/asset/AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf?format=raw",
     "family": "Anek Devanagari"
   },
+  "45cf4edfee624b608c3b9e84d9b1d3194092eac4b9867baed7c347bf9e21ba98": {
+    "url": "/cgi/image/osu_battelle_center_9gFd14q_0uND9rumro-26.webp?format=raw",
+    "width": 480,
+    "height": 300
+  },
   "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681": {
     "url": "/cgi/image/IMG_0954_2HLKIJedcKWm6Y86tEpSm.png?format=raw",
     "width": 1243,
@@ -38,6 +43,11 @@
     "url": "/cgi/image/subteam-liquids.CTO2r4AB_1B3upm_mUppfDkVGESv2r8SWD9Vw.webp?format=raw",
     "width": 800,
     "height": 533
+  },
+  "d0a0542cdc393adcfbbc0626cf6fa6cecf053b93218b1aab30260c8804f6b282": {
+    "url": "/cgi/image/OSUCOE_kVYFmU9GMAQKCqjNoGMkk.webp?format=raw",
+    "width": 480,
+    "height": 300
   },
   "dde880b652e23968dd3d448dade3ee70903932bb3a544f1d23caee14db808821": {
     "url": "/cgi/image/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg?format=raw",

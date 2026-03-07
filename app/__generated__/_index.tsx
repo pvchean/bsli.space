@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:09:40.391Z";
+      export const lastPublished = "2026-03-07T08:33:41.551Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -1429,25 +1429,28 @@ className={`w-html-embed`} />
 </div>
 <div
 className={`w-element c1fsvg17 c1flzvby cafamdi cmr7w05 c19ldtn2 cb6mw6t cmzqacz c194y5ox cmem9uo`}>
-{Object.entries(
-  // @ts-ignore
-  [{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}] ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_3 = Array.isArray([{"image":"https://www.bsli.space/_astro/OSUCOE.CtuEF25R.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://engineering.osu.edu/"},{"image":"https://www.bsli.space/_astro/osu%20battelle%20center.D64vWBvM.webp","Sponsor_Name":"","Sponsor_Website_URL":"https://battellecenter.osu.edu/"}]) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_3}>
 <Link_1
-href={collectionItem_3?.["Sponsor_Website_URL"]}
+href={"https://engineering.osu.edu/"}
 target={"_blank"}
 className={`w-element c1fsvg17 c1flzvby cafamdi`}>
 <Image
-src={`${collectionItem_3?.image}`}
+src={"/assets/OSUCOE_kVYFmU9GMAQKCqjNoGMkk.webp"}
+width={480}
+height={300}
+alt={""}
 className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </Link_1>
-</Fragment>
-)
-})
-}
+<Link_1
+href={"https://battellecenter.osu.edu/"}
+target={"_blank"}
+className={`w-element c1fsvg17 c1flzvby cafamdi`}>
+<Image
+src={"/assets/osu_battelle_center_9gFd14q_0uND9rumro-26.webp"}
+width={480}
+height={300}
+alt={""}
+className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
+</Link_1>
 </div>
 </div>
 </div>
