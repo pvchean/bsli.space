@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:33:41.551Z";
+      export const lastPublished = "2026-03-07T08:47:29.581Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -579,7 +579,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
 {`BSLI ${system?.search?.membersSearchScope == "Retired" ? "Alumni" : "Members"}`}
 </h1>
 </div>

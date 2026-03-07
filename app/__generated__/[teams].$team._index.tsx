@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:33:41.551Z";
+      export const lastPublished = "2026-03-07T08:47:29.581Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -581,7 +581,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea 
 <div
 className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <h1
-className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k c8kgf22 ccq64u2`}>
+className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq c8kgf22 ccq64u2`}>
 {CMS_Team?.data?.data?.[0]?.["display_name"]}
 </h1>
 <MarkdownEmbed
@@ -716,7 +716,7 @@ className={`w-element`}>
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq c3eev2k csbbxse ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq ct44ftq csbbxse ccq64u2`}>
 {CMS_Team_Project?.data?.data?.[0]?.name}
 </h1>
 <p

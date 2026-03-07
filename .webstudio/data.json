@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "eecb3d1b-d55e-4711-a151-5d5091c7077f",
+    "id": "7e7bf088-3159-4506-8c0d-8fd10aca3366",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5726,
-    "createdAt": "2026-03-07T08:33:41.551+00:00",
-    "updatedAt": "2026-03-07T08:33:41.551+00:00",
+    "version": 5744,
+    "createdAt": "2026-03-07T08:47:29.581+00:00",
+    "updatedAt": "2026-03-07T08:47:29.581+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -102,9 +102,9 @@
           "name": "Teams",
           "title": "`BSLI - ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/Liquids",
-            "/teams/IREC",
             "/teams/NASA",
+            "/teams/IREC",
+            "/teams/Liquids",
             "/teams/Nasa",
             "/teams/Irec",
             "/teams/nasa",
@@ -47913,7 +47913,7 @@
           "property": "textAlign",
           "value": {
             "type": "keyword",
-            "value": "center"
+            "value": "start"
           }
         }
       ],
@@ -66268,6 +66268,36 @@
           "name": "alt",
           "type": "asset",
           "value": "45cf4edfee624b608c3b9e84d9b1d3194092eac4b9867baed7c347bf9e21ba98"
+        }
+      ],
+      [
+        "Go7jg9c3HxQlHM2WgD_Qk",
+        {
+          "id": "Go7jg9c3HxQlHM2WgD_Qk",
+          "instanceId": "KewZ0BxBuTirWj_hrY7za",
+          "name": "prefetch",
+          "type": "string",
+          "value": "intent"
+        }
+      ],
+      [
+        "8HaNnaLBm5tNttG0qF9GE",
+        {
+          "id": "8HaNnaLBm5tNttG0qF9GE",
+          "instanceId": "HEJ5BBUzHazGAAAJrjXVO",
+          "name": "prefetch",
+          "type": "string",
+          "value": "intent"
+        }
+      ],
+      [
+        "lDxipcPdPalZ6Xv7HGEkV",
+        {
+          "id": "lDxipcPdPalZ6Xv7HGEkV",
+          "instanceId": "-Xo-8-7TtW12akWM0EJkm",
+          "name": "prefetch",
+          "type": "string",
+          "value": "intent"
         }
       ]
     ],
@@ -85245,9 +85275,9 @@
       "name": "Teams",
       "title": "`BSLI - ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/Liquids",
-        "/teams/IREC",
         "/teams/NASA",
+        "/teams/IREC",
+        "/teams/Liquids",
         "/teams/Nasa",
         "/teams/Irec",
         "/teams/nasa",

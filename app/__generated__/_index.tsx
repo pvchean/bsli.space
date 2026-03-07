@@ -12,7 +12,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:33:41.551Z";
+      export const lastPublished = "2026-03-07T08:47:29.581Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -619,7 +619,7 @@ className={`w-box c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c14b9ffx cafamdi cb6mw6t cmz
 className={`w-box c14b9ffx cafamdi c1fsvg17 cp0jmbs c2jpees c1bctvrt`}>
 <Heading
 tag={"h1"}
-className={`w-heading cbwi5wk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k chbpnm4 ctzyqaf ccq64u2 c1akm3sr`}>
+className={`w-heading cbwi5wk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq chbpnm4 ctzyqaf ccq64u2 c1akm3sr`}>
 {"What is BSLI?"}
 </Heading>
 <Paragraph
@@ -838,6 +838,7 @@ className={`w-element`}>
 className={`w-element c123613w`}>
 <Link
 href={"/teams/NASA"}
+prefetch={"intent"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
 {"Learn more about NASA"}
 </Link>
@@ -971,6 +972,7 @@ className={`w-element`}>
 className={`w-element c123613w`}>
 <Link
 href={"/teams/IREC"}
+prefetch={"intent"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
 {"Learn more about IREC"}
 </Link>
@@ -1101,6 +1103,7 @@ className={`w-element`}>
 className={`w-element c123613w`}>
 <Link
 href={"/teams/Liquids"}
+prefetch={"intent"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
 {"Learn more about Liquids"}
 </Link>
@@ -1117,7 +1120,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq ca9k1ea
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c3g43wk cv2z80y c4vnhzq c3eev2k ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c3g43wk cv2z80y c4vnhzq ct44ftq ccq64u2`}>
 {"Get Involved 🚀"}
 </h1>
 <AnimateChildren
@@ -1336,20 +1339,20 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 <div
 className={`w-element c1fsvg17 cp0jmbs cafamdi cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c89byf c1flzvby cwsyufx czfw4y0`}>
 <div
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
 <h1
-className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k cj20esf ccq64u2`}>
+className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq cj20esf ccq64u2`}>
 {"Ready to build some "}
 </h1>
 <h1
-className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k cj20esf ccq64u2 ${"rocket-link"}`}>
+className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq cj20esf ccq64u2 ${"rocket-link"}`}>
 <span
 className={`w-element ${"rocket-icon"}`}>
 {"🚀"}
 </span>
 </h1>
 <h1
-className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k cj20esf ccq64u2`}>
+className={`w-element c1nehgyx cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq cj20esf ccq64u2`}>
 <span
 className={`w-element`}>
 {" "}

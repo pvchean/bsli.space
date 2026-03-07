@@ -918,8 +918,8 @@
   .c4vnhzq {
     color: var(--foreground-primary)
   }
-  .c3eev2k {
-    text-align: center
+  .ct44ftq {
+    text-align: start
   }
   .ctxsfy {
     max-width: var(--size-content-3)
@@ -1010,6 +1010,9 @@
   }
   .cm6nhus {
     color: var(--gray-0)
+  }
+  .c3eev2k {
+    text-align: center
   }
   .c13lfb4j {
     border-top-left-radius: 3px
@@ -2015,9 +2018,6 @@
   }
   .ck93zi7 {
     border-left: 3px solid var(--shadow-color-07)
-  }
-  .ct44ftq {
-    text-align: start
   }
   .co6alii {
     align-items: end
