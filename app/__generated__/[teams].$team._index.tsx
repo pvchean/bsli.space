@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T10:36:31.958Z";
+      export const lastPublished = "2026-03-07T11:38:44.838Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -826,7 +826,7 @@ data-ws-index="1"
 value={collectionItem_3?.name}
 className={`w-tab-content csrzh74 cqlnok c1e3dx33`}>
 <div
-className={`w-element c2jpees c1bctvrt ca9k1ea cqmqoqg c7dprmh c16nciq0`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea cqmqoqg c7dprmh c16nciq0 c1mncygw ${`sub-team-grid${collectionItemKey_4}`}`}>
 <div
 className={`w-element ct7e8mf czxzndo c1fsvg17 cp0jmbs c1412oo6`}>
 <div
@@ -893,9 +893,20 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element c2jpees c1bctvrt ca9k1ea cablujx c89byf cp0jmbs c13kj1ir c16nciq0 ${`testclass${collectionItemKey_4}`}`}>
+className={`w-element c2jpees c1bctvrt ca9k1ea c9q2fil c89byf cp0jmbs c13kj1ir c16nciq0 ${`image-grid${collectionItemKey_4}`}`}>
 <HtmlEmbed
-code={`<style>\n  .testclass${collectionItemKey_4} {\n    --img-max-height: calc(30rem /${collectionItem_3?.images?.length});\n  }\n</style>`}
+code={`<style>
+.image-grid${collectionItemKey_4} {
+  --img-max-height: ${collectionItem_3?.["portrait_images"] ? "45rem" : (30 / collectionItem_3?.images?.length) + "rem)"};
+  --img-max-width: ${collectionItem_3?.["portrait_images"] ? (100 / collectionItem_3?.images?.length) + "%" : "100%"};
+  grid-template-columns: 1fr${collectionItem_3?.["portrait_images"] ? " 1fr" : ""};
+  ${collectionItem_3?.["portrait_images"] ? "column-gap: var(--gap-xs)" : ""};
+  ${collectionItem_3?.["portrait_images"] ? "display: grid;" : ""}
+}
+.sub-team-grid${collectionItemKey_4} {
+  ${collectionItem_3?.["portrait_images"] ? "grid-template-columns: 1fr 1.4fr;" : ""}
+}
+</style>`}
 className={`w-html-embed c3gf6q4`} />
 {Object.entries(
   // @ts-ignore

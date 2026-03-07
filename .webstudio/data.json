@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "20837428-42e3-4127-8dc7-6e81690423ed",
+    "id": "639f17ab-d88c-43a9-9dc0-fadeb60d7027",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5852,
-    "createdAt": "2026-03-07T10:36:31.958+00:00",
-    "updatedAt": "2026-03-07T10:36:31.958+00:00",
+    "version": 5892,
+    "createdAt": "2026-03-07T11:38:44.838+00:00",
+    "updatedAt": "2026-03-07T11:38:44.838+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -103,9 +103,9 @@
           "name": "Teams",
           "title": "`BSLI - ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/Liquids",
             "/teams/NASA",
             "/teams/IREC",
+            "/teams/Liquids",
             "/teams/Nasa",
             "/teams/Irec",
             "/teams/nasa",
@@ -22428,30 +22428,6 @@
         }
       ],
       [
-        "bx6ZJ5Ag8jsL11f0ds6oG:tAFRweP7yGMMQI5CmE4yb:gridTemplateColumns:",
-        {
-          "styleSourceId": "bx6ZJ5Ag8jsL11f0ds6oG",
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "property": "gridTemplateColumns",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "fr",
-                "value": 1
-              },
-              {
-                "type": "unit",
-                "unit": "fr",
-                "value": 1
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
         "x5GFpgbLSdFFIdsKMYDPT:tAFRweP7yGMMQI5CmE4yb:marginBottom:",
         {
           "styleSourceId": "x5GFpgbLSdFFIdsKMYDPT",
@@ -43788,20 +43764,6 @@
         }
       ],
       [
-        "ZPZ2ozuZGOJQ3xnR7pCGl:tAFRweP7yGMMQI5CmE4yb:gridTemplateColumns:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "ZPZ2ozuZGOJQ3xnR7pCGl",
-          "property": "gridTemplateColumns",
-          "value": {
-            "type": "unit",
-            "unit": "fr",
-            "value": 1
-          },
-          "listed": true
-        }
-      ],
-      [
         "Ss4PWY6t5DYGoeOtGKgDm:tAFRweP7yGMMQI5CmE4yb:color::hover",
         {
           "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
@@ -45877,6 +45839,43 @@
             "type": "keyword",
             "value": "min-content"
           }
+        }
+      ],
+      [
+        "bx6ZJ5Ag8jsL11f0ds6oG:tAFRweP7yGMMQI5CmE4yb:gridTemplateColumns:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "bx6ZJ5Ag8jsL11f0ds6oG",
+          "property": "gridTemplateColumns",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "fr",
+                "value": 1
+              },
+              {
+                "type": "unit",
+                "unit": "fr",
+                "value": 1
+              }
+            ]
+          },
+          "listed": true
+        }
+      ],
+      [
+        "bx6ZJ5Ag8jsL11f0ds6oG:XTdymZ9XqqAKLq2TuXM6-:columnGap:",
+        {
+          "breakpointId": "XTdymZ9XqqAKLq2TuXM6-",
+          "styleSourceId": "bx6ZJ5Ag8jsL11f0ds6oG",
+          "property": "columnGap",
+          "value": {
+            "type": "var",
+            "value": "gap-xs"
+          },
+          "listed": true
         }
       ]
     ],
@@ -63332,7 +63331,7 @@
           "instanceId": "o5ItLq2Wtn6ZRxPrsYETe",
           "name": "code",
           "type": "expression",
-          "value": "`<style>\\n  .testclass${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF} {\\n    --img-max-height: calc(30rem /${$ws$dataSource$25hPDYdphtrrOipw9PvAC.images.length});\\n  }\\n</style>`"
+          "value": "`<style>\n.image-grid${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF} {\n  --img-max-height: ${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? \"45rem\" : (30 / $ws$dataSource$25hPDYdphtrrOipw9PvAC.images.length) + \"rem)\"};\n  --img-max-width: ${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? (100 / $ws$dataSource$25hPDYdphtrrOipw9PvAC.images.length) + \"%\" : \"100%\"};\n  grid-template-columns: 1fr${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? \" 1fr\" : \"\"};\n  ${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? \"column-gap: var(--gap-xs)\" : \"\"};\n  ${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? \"display: grid;\" : \"\"}\n}\n.sub-team-grid${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF} {\n  ${$ws$dataSource$25hPDYdphtrrOipw9PvAC[\"portrait_images\"] ? \"grid-template-columns: 1fr 1.4fr;\" : \"\"}\n}\n</style>`"
         }
       ],
       [
@@ -63342,7 +63341,7 @@
           "instanceId": "EdJlutPcsBWTifuBuvhFH",
           "name": "class",
           "type": "expression",
-          "value": "`testclass${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF}`"
+          "value": "`image-grid${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF}`"
         }
       ],
       [
@@ -64033,6 +64032,16 @@
           "name": "value",
           "type": "string",
           "value": "Overview"
+        }
+      ],
+      [
+        "dIzK1SN94OM05IB0jmk8-",
+        {
+          "id": "dIzK1SN94OM05IB0jmk8-",
+          "instanceId": "6CZ3ewvj__j5Eb_T7uKTm",
+          "name": "class",
+          "type": "expression",
+          "value": "`sub-team-grid${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF}`"
         }
       ]
     ],
@@ -83011,9 +83020,9 @@
       "name": "Teams",
       "title": "`BSLI - ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/Liquids",
         "/teams/NASA",
         "/teams/IREC",
+        "/teams/Liquids",
         "/teams/Nasa",
         "/teams/Irec",
         "/teams/nasa",
