@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T08:47:29.581Z";
+      export const lastPublished = "2026-03-07T08:55:18.070Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -69,7 +69,7 @@ className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0j
 <Link
 aria-label={"Home"}
 href={"/"}
-className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
+className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 clacsc2`}>
 <Image
 src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
 width={800}
@@ -403,7 +403,7 @@ className={`w-box c16nciq0 cobla0g cjv9a89`}>
 <Link
 aria-label={"Home"}
 href={"/"}
-className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cxkx6pe c1jggrh7 cp1jzw6 cuzmxq4 clacsc2`}>
+className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 clacsc2`}>
 <Image
 src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
 width={800}

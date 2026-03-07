@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "7e7bf088-3159-4506-8c0d-8fd10aca3366",
+    "id": "7c5cd1b0-d30c-47ff-aafb-5c8aa79211a3",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5744,
-    "createdAt": "2026-03-07T08:47:29.581+00:00",
-    "updatedAt": "2026-03-07T08:47:29.581+00:00",
+    "version": 5755,
+    "createdAt": "2026-03-07T08:55:18.07+00:00",
+    "updatedAt": "2026-03-07T08:55:18.07+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -102,8 +102,8 @@
           "name": "Teams",
           "title": "`BSLI - ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/NASA",
             "/teams/IREC",
+            "/teams/NASA",
             "/teams/Liquids",
             "/teams/Nasa",
             "/teams/Irec",
@@ -225,13 +225,13 @@
           "name": "member page",
           "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
           "history": [
-            "/jia.659",
+            "/anikina.2",
             "/senthilnathan.11",
+            "/jia.659",
             "/retiredmembertest.1",
             "/cheandominguez.1",
             "/ost.18",
             "/stottmann.3",
-            "/anikina.2",
             "/francisco.98",
             "/sabet.16",
             "/campbell.2528",
@@ -14702,30 +14702,6 @@
           "value": {
             "type": "keyword",
             "value": "black"
-          }
-        }
-      ],
-      [
-        "z4MES16CAwYPqtwTUxhVp:tAFRweP7yGMMQI5CmE4yb:columnGap:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "z4MES16CAwYPqtwTUxhVp",
-          "property": "columnGap",
-          "value": {
-            "type": "var",
-            "value": "gap-xs"
-          }
-        }
-      ],
-      [
-        "z4MES16CAwYPqtwTUxhVp:tAFRweP7yGMMQI5CmE4yb:rowGap:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "z4MES16CAwYPqtwTUxhVp",
-          "property": "rowGap",
-          "value": {
-            "type": "var",
-            "value": "gap-xs"
           }
         }
       ],
@@ -48189,6 +48165,30 @@
             "value": 50
           }
         }
+      ],
+      [
+        "z4MES16CAwYPqtwTUxhVp:tAFRweP7yGMMQI5CmE4yb:rowGap:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "z4MES16CAwYPqtwTUxhVp",
+          "property": "rowGap",
+          "value": {
+            "type": "var",
+            "value": "gap-xs"
+          }
+        }
+      ],
+      [
+        "z4MES16CAwYPqtwTUxhVp:tAFRweP7yGMMQI5CmE4yb:columnGap:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "z4MES16CAwYPqtwTUxhVp",
+          "property": "columnGap",
+          "value": {
+            "type": "var",
+            "value": "gap-xs"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -63879,7 +63879,7 @@
           "instanceId": "6oClGMsO7ttrejK8SstZD",
           "name": "src",
           "type": "expression",
-          "value": "`${$ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].headshot != null ? $ws$dataSource$oh9hAmtYpNGMYX1c99V8t + $ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].headshot : \"https://www.bsli.space/_astro/unknown.hji7jlXh_ZSqBAk.webp\"}`"
+          "value": "`${$ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].headshot != null ? $ws$dataSource$oh9hAmtYpNGMYX1c99V8t + $ws$dataSource$oVNc__DASH__uOllYSC69S0Pr_4I.data.data[0].headshot : $ws$dataSource$ILB66rXqZ0d4Ddj__DASH__UqIER}`"
         }
       ],
       [
@@ -85275,8 +85275,8 @@
       "name": "Teams",
       "title": "`BSLI - ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/NASA",
         "/teams/IREC",
+        "/teams/NASA",
         "/teams/Liquids",
         "/teams/Nasa",
         "/teams/Irec",
@@ -85398,13 +85398,13 @@
       "name": "member page",
       "title": "`BSLI: ${$ws$system.params.ndn}'s Profile'`",
       "history": [
-        "/jia.659",
+        "/anikina.2",
         "/senthilnathan.11",
+        "/jia.659",
         "/retiredmembertest.1",
         "/cheandominguez.1",
         "/ost.18",
         "/stottmann.3",
-        "/anikina.2",
         "/francisco.98",
         "/sabet.16",
         "/campbell.2528",
