@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T09:04:57.408Z";
+      export const lastPublished = "2026-03-07T09:20:26.186Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -602,13 +602,13 @@ className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c1j4r0zr c89byf c1
 <DialogOverlay
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c1du3pv3 c1vfllh7 c1q5u0h8 c1p3smmm cn8qi1f`}>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id}`}
 width={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["purpose_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw ca966ma`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3 ca966ma`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -639,13 +639,13 @@ className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c89byf c1j4r0zr c1
 <DialogOverlay
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c1du3pv3 c1vfllh7 c1q5u0h8 c1p3smmm cn8qi1f`}>
 <Image
 src={`${CMS_Asset_URL}${CMS_Team?.data?.data?.[0]?.["goals_image"]?.id}`}
 width={CMS_Team?.data?.data?.[0]?.["goals_image"]?.width}
 height={CMS_Team?.data?.data?.[0]?.["goals_image"]?.height}
 alt={CMS_Team?.data?.data?.[0]?.["goals_image"]?.description}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -682,7 +682,7 @@ className={`w-tabs-list c1fsvg17 c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce
 <TabsTrigger
 data-ws-index="0"
 value={"Overview"}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
 {"Overview"}
 </TabsTrigger>
 {Object.entries(
@@ -695,7 +695,7 @@ className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s
 <TabsTrigger
 data-ws-index="1"
 value={`${collectionItem?.name}`}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
 {collectionItem?.name}
 </TabsTrigger>
 </Fragment>
@@ -914,13 +914,13 @@ className={`w-image c1qdzuay c1lkbaaj cx8n37q ce5jf0f cbxkl1b c13v84m3 c89byf c1
 <DialogOverlay
 className={`w-dialog-overlay czo9i5g ctceiha c1fo1ayq c1qd5zzm c1wv1eol c1087yam ciksgf cq30v12 c1fsvg17 co1ll7o cahebid`}>
 <DialogContent
-className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk`}>
+className={`w-dialog-content c1jv7t7p c1fsvg17 cp0jmbs cyh8ggh c9hxfpz ck8rfg2 c1e4ejre c1lxa43x c1865isj cvjm5bw c1r8kyly c1yahuid cs5nzqp c12wm6pc ci6cri9 c1mmlarp c1eoyb97 caj1dxk c1du3pv3 c1vfllh7 c1q5u0h8 c1p3smmm cn8qi1f`}>
 <Image
 src={`${CMS_Asset_URL}${collectionItem_5?.["directus_files_id"]?.id}`}
 loading={"eager"}
 width={collectionItem_5?.["directus_files_id"]?.width}
 height={collectionItem_5?.["directus_files_id"]?.height}
-className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw`} />
+className={`w-image c13v84m3 c1yk3kgb c1w5i7t8 c1qdzuay c1lkbaaj cx8n37q ce5jf0f ct2f3gw c1z0dj9s c1up4jg3`} />
 <DialogClose
 className={`w-close-button c1mjxydt c1hczg6h cla1k6n c14ya6oz co1nra7 clh5fio cq6x6v5 c19wdhfz c1fsvg17 c1flzvby cafamdi c1d9st3e c1glodg cug58nh c1ypij4j c7ulb6s ct2gg2i cqlnok`}>
 <HtmlEmbed
@@ -945,7 +945,7 @@ className={`w-html-embed`} />
 className={`w-tabs-list c1xd87pa c1flzvby cafamdi c1vyzjsw c14hpjav c199hctz cce0u8f c2jpees c1bctvrt cnn2qey c146g9k6 coq06vt c1psuk3c c1ickg77 ckkkp6t c16nciq0 c1blr1ay`}>
 <TabsTrigger
 data-ws-index="2"
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
 {"Overview"}
 </TabsTrigger>
 {Object.entries(
@@ -958,7 +958,7 @@ className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s
 <TabsTrigger
 data-ws-index="3"
 value={`${collectionItem_6?.name}`}
-className={`w-tab-trigger cav9cgc ci928yn c1m16de3 cxyxs0i c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d c1m0ls9k c137ezzo cev8o73 c8kig2b c14h6wmf`}>
+className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
 {collectionItem_6?.name}
 </TabsTrigger>
 </Fragment>
