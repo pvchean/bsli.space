@@ -1,16 +1,28 @@
 {
   "build": {
-    "id": "639f17ab-d88c-43a9-9dc0-fadeb60d7027",
+    "id": "83615914-9cd1-4548-a70f-194b762a7ccc",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 5892,
-    "createdAt": "2026-03-07T11:38:44.838+00:00",
-    "updatedAt": "2026-03-07T11:38:44.838+00:00",
+    "version": 5922,
+    "createdAt": "2026-03-12T00:26:27.352+00:00",
+    "updatedAt": "2026-03-12T00:26:27.352+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
         "faviconAssetId": "dde880b652e23968dd3d448dade3ee70903932bb3a544f1d23caee14db808821",
         "code": "<script defer src=\"https://umami.bsli.space/script.js\" data-website-id=\"ad99b5af-6526-4b30-bcbc-976332ecd31e\" data-do-not-track=\"true\"></script>"
       },
+      "redirects": [
+        {
+          "old": "/projects/irec",
+          "new": "/teams/IREC",
+          "status": "301"
+        },
+        {
+          "old": "/projects/nasa",
+          "new": "/teams/NASA",
+          "status": "301"
+        }
+      ],
       "homePage": {
         "id": "HrVe4aYHhV_bPti5G88S7",
         "name": "Home",
@@ -103,8 +115,8 @@
           "name": "Teams",
           "title": "`BSLI - ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/NASA",
             "/teams/IREC",
+            "/teams/NASA",
             "/teams/Liquids",
             "/teams/Nasa",
             "/teams/Irec",
@@ -23198,42 +23210,6 @@
         }
       ],
       [
-        "E6k3wsnx_wRBGehFmof7W:tAFRweP7yGMMQI5CmE4yb:fontSize:",
-        {
-          "styleSourceId": "E6k3wsnx_wRBGehFmof7W",
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "property": "fontSize",
-          "value": {
-            "type": "var",
-            "value": "font-size-fluid-1"
-          }
-        }
-      ],
-      [
-        "E6k3wsnx_wRBGehFmof7W:tAFRweP7yGMMQI5CmE4yb:fontWeight:",
-        {
-          "styleSourceId": "E6k3wsnx_wRBGehFmof7W",
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "property": "fontWeight",
-          "value": {
-            "type": "keyword",
-            "value": "600"
-          }
-        }
-      ],
-      [
-        "E6k3wsnx_wRBGehFmof7W:tAFRweP7yGMMQI5CmE4yb:color:",
-        {
-          "styleSourceId": "E6k3wsnx_wRBGehFmof7W",
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "property": "color",
-          "value": {
-            "type": "var",
-            "value": "foreground-accent"
-          }
-        }
-      ],
-      [
         "1896uvsu5mZJKTHqLsaEH:tAFRweP7yGMMQI5CmE4yb:color:",
         {
           "styleSourceId": "1896uvsu5mZJKTHqLsaEH",
@@ -44419,19 +44395,6 @@
         }
       ],
       [
-        "rVuUrvUR1bL2v476nXY-q:tAFRweP7yGMMQI5CmE4yb:lineHeight:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "rVuUrvUR1bL2v476nXY-q",
-          "property": "lineHeight",
-          "value": {
-            "type": "unit",
-            "unit": "number",
-            "value": 1
-          }
-        }
-      ],
-      [
         "Fe6Cb853lyYTIi3ZidLiM:tAFRweP7yGMMQI5CmE4yb:textDecorationLine:",
         {
           "styleSourceId": "Fe6Cb853lyYTIi3ZidLiM",
@@ -44573,18 +44536,6 @@
           "value": {
             "type": "keyword",
             "value": "wrap"
-          }
-        }
-      ],
-      [
-        "eB2Je8dJkHOM9rEeQZ4GW:tAFRweP7yGMMQI5CmE4yb:maxWidth:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "eB2Je8dJkHOM9rEeQZ4GW",
-          "property": "maxWidth",
-          "value": {
-            "type": "var",
-            "value": "size-lg"
           }
         }
       ],
@@ -45876,6 +45827,78 @@
             "value": "gap-xs"
           },
           "listed": true
+        }
+      ],
+      [
+        "Dpe85XCpUhyj-JmrO2GWR:tAFRweP7yGMMQI5CmE4yb:color:",
+        {
+          "styleSourceId": "Dpe85XCpUhyj-JmrO2GWR",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "color",
+          "value": {
+            "type": "keyword",
+            "value": "inherit"
+          }
+        }
+      ],
+      [
+        "Dpe85XCpUhyj-JmrO2GWR:tAFRweP7yGMMQI5CmE4yb:fontSize:",
+        {
+          "styleSourceId": "Dpe85XCpUhyj-JmrO2GWR",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "fontSize",
+          "value": {
+            "type": "keyword",
+            "value": "inherit"
+          }
+        }
+      ],
+      [
+        "Dpe85XCpUhyj-JmrO2GWR:tAFRweP7yGMMQI5CmE4yb:textDecorationLine:",
+        {
+          "styleSourceId": "Dpe85XCpUhyj-JmrO2GWR",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "textDecorationLine",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "Dpe85XCpUhyj-JmrO2GWR:tAFRweP7yGMMQI5CmE4yb:alignSelf:",
+        {
+          "styleSourceId": "Dpe85XCpUhyj-JmrO2GWR",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "stretch"
+          }
+        }
+      ],
+      [
+        "1896uvsu5mZJKTHqLsaEH:tAFRweP7yGMMQI5CmE4yb:textAlign:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "1896uvsu5mZJKTHqLsaEH",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "end"
+          }
+        }
+      ],
+      [
+        "VEHkqMuWO5t07e8FeOK7N:tAFRweP7yGMMQI5CmE4yb:maxWidth:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "VEHkqMuWO5t07e8FeOK7N",
+          "property": "maxWidth",
+          "value": {
+            "type": "var",
+            "value": "size-lg"
+          }
         }
       ]
     ],
@@ -47869,13 +47892,6 @@
         {
           "type": "local",
           "id": "1896uvsu5mZJKTHqLsaEH"
-        }
-      ],
-      [
-        "E6k3wsnx_wRBGehFmof7W",
-        {
-          "type": "local",
-          "id": "E6k3wsnx_wRBGehFmof7W"
         }
       ],
       [
@@ -50190,6 +50206,13 @@
         {
           "type": "local",
           "id": "rmzjN-x3qVs-uBvG5g14d"
+        }
+      ],
+      [
+        "Dpe85XCpUhyj-JmrO2GWR",
+        {
+          "type": "local",
+          "id": "Dpe85XCpUhyj-JmrO2GWR"
         }
       ]
     ],
@@ -54163,15 +54186,6 @@
         }
       ],
       [
-        "SqmwSltm-DH0StH4pG1hW",
-        {
-          "instanceId": "SqmwSltm-DH0StH4pG1hW",
-          "values": [
-            "E6k3wsnx_wRBGehFmof7W"
-          ]
-        }
-      ],
-      [
         "vPH-8T2BiTY1q2NXBbkQF",
         {
           "instanceId": "vPH-8T2BiTY1q2NXBbkQF",
@@ -57275,6 +57289,24 @@
           "instanceId": "CR5iCZ1xoH7pSA9fcRaRC",
           "values": [
             "rmzjN-x3qVs-uBvG5g14d"
+          ]
+        }
+      ],
+      [
+        "y6JLiK7v78I8RmyE-cAzn",
+        {
+          "instanceId": "y6JLiK7v78I8RmyE-cAzn",
+          "values": [
+            "Dpe85XCpUhyj-JmrO2GWR"
+          ]
+        }
+      ],
+      [
+        "Tjy2KShN5v4yLFMMSI0Ih",
+        {
+          "instanceId": "Tjy2KShN5v4yLFMMSI0Ih",
+          "values": [
+            "Ss4PWY6t5DYGoeOtGKgDm"
           ]
         }
       ]
@@ -64042,6 +64074,26 @@
           "name": "class",
           "type": "expression",
           "value": "`sub-team-grid${$ws$dataSource$ZyE8JCkfK6K0jDYqmM3hF}`"
+        }
+      ],
+      [
+        "3-HX6XNRoZqgc9sh8T1Mg",
+        {
+          "id": "3-HX6XNRoZqgc9sh8T1Mg",
+          "instanceId": "y6JLiK7v78I8RmyE-cAzn",
+          "name": "href",
+          "type": "expression",
+          "value": "\"/members/\" + $ws$dataSource$lI__DASH____DASH__5lzKEcbGav2S2TIND[\"member_id\"][\"osu_ndn\"]"
+        }
+      ],
+      [
+        "lt_SBtOThDnH60fMST1dC",
+        {
+          "id": "lt_SBtOThDnH60fMST1dC",
+          "instanceId": "y6JLiK7v78I8RmyE-cAzn",
+          "name": "prefetch",
+          "type": "string",
+          "value": "intent"
         }
       ]
     ],
@@ -73701,7 +73753,7 @@
           "children": [
             {
               "type": "id",
-              "value": "SqmwSltm-DH0StH4pG1hW"
+              "value": "y6JLiK7v78I8RmyE-cAzn"
             },
             {
               "type": "id",
@@ -73710,21 +73762,6 @@
             {
               "type": "id",
               "value": "HkmjLvbEK4CRtewbdlyXz"
-            }
-          ]
-        }
-      ],
-      [
-        "SqmwSltm-DH0StH4pG1hW",
-        {
-          "type": "instance",
-          "id": "SqmwSltm-DH0StH4pG1hW",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "expression",
-              "value": "$ws$dataSource$lI__DASH____DASH__5lzKEcbGav2S2TIND[\"member_id\"].Name"
             }
           ]
         }
@@ -82901,6 +82938,35 @@
           "component": "Image",
           "children": []
         }
+      ],
+      [
+        "y6JLiK7v78I8RmyE-cAzn",
+        {
+          "type": "instance",
+          "id": "y6JLiK7v78I8RmyE-cAzn",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "Tjy2KShN5v4yLFMMSI0Ih"
+            }
+          ]
+        }
+      ],
+      [
+        "Tjy2KShN5v4yLFMMSI0Ih",
+        {
+          "type": "instance",
+          "id": "Tjy2KShN5v4yLFMMSI0Ih",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "expression",
+              "value": "$ws$dataSource$lI__DASH____DASH__5lzKEcbGav2S2TIND[\"member_id\"].Name"
+            }
+          ]
+        }
       ]
     ],
     "deployment": {
@@ -83020,8 +83086,8 @@
       "name": "Teams",
       "title": "`BSLI - ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/NASA",
         "/teams/IREC",
+        "/teams/NASA",
         "/teams/Liquids",
         "/teams/Nasa",
         "/teams/Irec",

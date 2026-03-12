@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-07T11:38:44.838Z";
+      export const lastPublished = "2026-03-12T00:26:27.352Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -859,14 +859,19 @@ className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq`}>
 {collectionItem_4?.position?.["name_short"]}
 </h2>
 <div
-className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7`}>
+className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7 c1mi6rnj`}>
+<Link
+href={"/members/" + collectionItem_4?.["member_id"]?.["osu_ndn"]}
+prefetch={"intent"}
+className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <p
-className={`w-element c1iebxzq cjl8er8 c145f7eq`}>
+className={`w-element c1iebxzq cjl8er8 c145f7eq cuvhotc cvm8xtw cpyozji c3air8l c1mq7p96 c5azhl4 c1r0hodc c1fg96d4 cah9upb c7oh6o3 c1h2ixpn`}>
 {collectionItem_4?.["member_id"]?.Name}
 </p>
+</Link>
 <Link_1
 href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
-className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c1jt1fo7 c1xkkw6h czoybq c8kgf22 c13l961t cjf4twe`}>
+className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c1jt1fo7 c1xkkw6h czoybq c13l961t cjf4twe`}>
 {collectionItem_4?.["member_id"]?.Email}
 </Link_1>
 {(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&
