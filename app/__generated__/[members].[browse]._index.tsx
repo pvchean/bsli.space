@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-12T00:26:27.352Z";
+      export const lastPublished = "2026-03-13T21:41:50.239Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -33,6 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(25)
 let CMS_Members = useResource("CMS_Members_1")
@@ -61,7 +62,7 @@ className={`w-html-embed`} />
 className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g caf9fuo`}>
+className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g cgaaecy`}>
 <Slot>
 <Fragment_1>
 <Link
@@ -95,7 +96,7 @@ className={`w-menu-item`}>
 <Link
 href={"/"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
 </NavigationMenuItem>
@@ -105,7 +106,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Teams"}
@@ -201,7 +202,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"BSLI Teams"}
 </Heading>
 </Box>
@@ -222,7 +223,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Members"}
@@ -302,7 +303,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"The BSLI Family"}
 </Heading>
 </Box>
@@ -323,7 +324,7 @@ className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
 </NavigationMenuItem>
@@ -333,8 +334,18 @@ className={`w-menu-item`}>
 <Link
 href={"/contact"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Contact"}
+</Link>
+</NavigationMenuItem>
+<NavigationMenuItem
+data-ws-index="6"
+className={`w-menu-item`}>
+<Link
+href={URL_Blog_Browse}
+prefetch={"intent"}
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+{"Blog"}
 </Link>
 </NavigationMenuItem>
 </NavigationMenuList>
@@ -536,6 +547,15 @@ className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 c
 {"Contact Us"}
 </Link_1>
 </AccordionItem>
+<AccordionItem
+data-ws-index="6"
+className={`w-item cvdddm5`}>
+<Link_1
+href={URL_Blog_Browse}
+className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+{"BSLI Blog"}
+</Link_1>
+</AccordionItem>
 </Accordion>
 </Box>
 <Box
@@ -579,18 +599,18 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 <div
 className={`w-element`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2 c1s8m1cs`}>
 {`BSLI ${system?.search?.membersSearchScope == "Retired" ? "Alumni" : "Members"}`}
 </h1>
 </div>
 </div>
 </div>
 <div
-className={`w-element chlecrf c1lufqxe cnbmf4z`}>
+className={`w-element cdz0zkj c1lufqxe cnbmf4z`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
-className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf`}>
+className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf c1kp5vo3`}>
 <div
 id={"search-bar"}
 className={`w-element c1o9wctx c18u1s1s cs5nzqp c1l7b3ti`} />
@@ -598,13 +618,12 @@ className={`w-element c1o9wctx c18u1s1s cs5nzqp c1l7b3ti`} />
 id={"cmsFormAutoSubmit"}
 className={`w-element c1fsvg17 c1spra3t`}>
 <Box
-className={`w-box c1fsvg17 c1flzvby cafamdi cp0jmbs c1l7q0iu c1i3l1kc cs5nzqp c19ubv75 c4g1j3m c1pqpmx c10utwzz c1ggzkww c1dj8jvm c1w6y7sa c7u3d47 c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cwey732 cjdezyc c9ntp2m c1tsh9nm c1q8vahf c1m4q22y ctrcrhq`}>
+className={`w-box c1fsvg17 c1flzvby cafamdi cp0jmbs c1l7q0iu c1i3l1kc cs5nzqp c19ubv75 c4g1j3m c1pqpmx c10utwzz c1ggzkww c1dj8jvm c1w6y7sa c7u3d47 c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cwey732 cjdezyc c9mu0fu c9ntp2m c1tsh9nm c1q8vahf c1m4q22y ctrcrhq`}>
 <Input
 placeholder={"Full name"}
 name={"membersSearch"}
 id={"inputName"}
 aria-label={"full name"}
-autoFocus={true}
 value={system?.search?.membersSearch}
 className={`w-text-input c4vnhzq cv8cc1s c14r1w05 co3gz9b c89byf cfh3hzd`} />
 <Box
@@ -615,7 +634,7 @@ className={`w-html-embed cs5nzqp`} />
 </Box>
 </Box>
 <div
-className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1qwcq2w`}>
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c9mu0fu c1qwcq2w`}>
 <div
 className={`w-element c1fsvg17 c1flzvby c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb25u c1wvwf6y c1oubvo3 c13l961t`}>
 {"Search by: "}
@@ -645,7 +664,7 @@ className={`w-element`} />
 <Select
 name={"membersSearchScope"}
 value={system?.search?.membersSearchScope}
-className={`w-element c1pqpmx c1fzb25u c1wvwf6y cwxng9o chd6mf4 cug58nh cpomkwe c10pexzh c13hxy6u c1s90dhh c1a8npj4 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 cjwasc2 co3gz9b cbxkl1b c1vtx0a6 cqakq4c ctwqqoi`}>
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y cwxng9o chd6mf4 cug58nh cpomkwe c10pexzh c13hxy6u c1s90dhh c1a8npj4 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 cjwasc2 co3gz9b cbxkl1b c9mu0fu cqakq4c ctwqqoi c1vtx0a6`}>
 <option
 label={"All Members"}
 value={"Active,Retired"}
@@ -660,7 +679,7 @@ value={"Retired"}
 className={`w-element`} />
 </Select>
 <div
-className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cjdezyc cuc9pay c1d1qz07`}>
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 c9mu0fu cjdezyc cuc9pay c1d1qz07 cf6g7sd`}>
 <div
 className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
 {"Sort by: "}
@@ -668,7 +687,7 @@ className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
 <Select
 name={"membersSortType"}
 value={system?.search?.membersSortType}
-className={`w-element cwxng9o cug58nh c18o9eig co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w cbxkl1b c1e5mpex`}>
+className={`w-element cwxng9o cug58nh c18o9eig co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w cbxkl1b`}>
 <option
 label={"Joined"}
 value={"Joined"}
@@ -740,7 +759,7 @@ prefetch={"intent"}
 className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <div
 id={collectionItemKey}
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x coc50eh`}>
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cov3pab c1n7i0rg chyxmce csgp7p3 c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f cmauqv c1fzb25u c1wvwf6y c1j4r0zr cwsyufx cy9492r c1x6vc8x coc50eh c1sg2ohq cu74mob`}>
 <div
 className={`w-element`}>
 <Image
@@ -756,11 +775,11 @@ className={`w-element cr340of`}>
 </div>
 </div>
 <p
-className={`w-element`}>
+className={`w-element c1pfnraz cmug2yo`}>
 {`${collectionItem?.Major || ' '} ${collectionItem?.["osu_year"] || ' '}`}
 </p>
 <div
-className={`w-element c1jt1fo7`}>
+className={`w-element c1jt1fo7 cmug2yo`}>
 <div
 className={`w-element c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
@@ -774,7 +793,7 @@ className={`w-html-embed`} />
 </Fragment_1>
 </Slot>
 <p
-className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c13l961t`}>
+className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c15kg2z5 c13l961t`}>
 {collectionItem?.Email}
 </p>
 </div>
@@ -787,7 +806,7 @@ code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"no
 className={`w-html-embed cwxng9o`} />
 </Slot>
 <p
-className={`w-element`}>
+className={`w-element c15kg2z5`}>
 {"LinkedIn"}
 </p>
 </div>
@@ -806,10 +825,10 @@ className={`w-element c3eev2k chr8ff9 ctcwxwa c17m8aj7 cbujl1o c10agvjj chyxmce 
 {(CMS_Members?.data?.data?.length == 0) &&
 <div
 className={`w-element c140xxeu`}>
-<h1
+<h2
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
 {"No member found"}
-</h1>
+</h2>
 <p
 className={`w-element c3eev2k`}>
 {"None of the BSLI members in our database"}
@@ -823,10 +842,10 @@ className={`w-element c3eev2k`}>
 </div>
 <div
 className={`w-element`}>
-{(CMS_Members?.data?.data?.length < CMS_Members?.data?.meta?.["total_count"]) &&
+{(+system?.search?.membersSearchLimit < CMS_Members?.data?.meta?.["total_count"]) &&
 <div
 className={`w-element cj20esf`}>
-{(CMS_Members?.data?.data?.length < CMS_Members?.data?.meta?.["total_count"]) &&
+{(+system?.search?.membersSearchLimit < CMS_Members?.data?.meta?.["total_count"]) &&
 <Link_1
 href={`/members/browse?membersSearch=${system?.search?.membersSearch}&membersSearchType=${system?.search?.membersSearchType}&membersSearchScope=${system?.search?.membersSearchScope}&membersSortType=${system?.search?.membersSortType}&membersSearchLimit=${+system?.search?.membersSearchLimit + CMS_Default_Limit}&membersSearchPrev=${system?.search?.membersSearchPrev}#${CMS_Members?.data?.data?.length - 1}`}
 className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>

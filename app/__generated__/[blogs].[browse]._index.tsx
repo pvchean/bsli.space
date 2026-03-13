@@ -4,8 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Link as Link_1, Body as Body, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
@@ -22,7 +22,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        []
+        ["AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf"]
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -30,16 +30,20 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
       
 
       const Page = (_props: { system: any; }) => {
+const system = _props.system;
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
 let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(9)
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
+let [Image_Not_Found, set$Image_Not_Found] = useVariableState<any>("data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIxNDAiCiAgaGVpZ2h0PSIxNDAiCiAgdmlld0JveD0iMCAwIDYwMCA2MDAiCiAgZmlsbD0ibm9uZSIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjREZFM0U2IiAvPgogIDxwYXRoCiAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiCiAgICBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICBkPSJNNDUwIDE3MEgxNTBDMTQxLjcxNiAxNzAgMTM1IDE3Ni43MTYgMTM1IDE4NVY0MTVDMTM1IDQyMy4yODQgMTQxLjcxNiA0MzAgMTUwIDQzMEg0NTBDNDU4LjI4NCA0MzAgNDY1IDQyMy4yODQgNDY1IDQxNVYxODVDNDY1IDE3Ni43MTYgNDU4LjI4NCAxNzAgNDUwIDE3MFpNMTUwIDE0NUMxMjcuOTA5IDE0NSAxMTAgMTYyLjkwOSAxMTAgMTg1VjQxNUMxMTAgNDM3LjA5MSAxMjcuOTA5IDQ1NSAxNTAgNDU1SDQ1MEM0NzIuMDkxIDQ1NSA0OTAgNDM3LjA5MSA0OTAgNDE1VjE4NUM0OTAgMTYyLjkwOSA0NzIuMDkxIDE0NSA0NTAgMTQ1SDE1MFoiCiAgICBmaWxsPSIjQzFDOENEIgogIC8+CiAgPHBhdGgKICAgIGQ9Ik0yMzcuMTM1IDIzNS4wMTJDMjM3LjEzNSAyNTUuNzIzIDIyMC4zNDUgMjcyLjUxMiAxOTkuNjM1IDI3Mi41MTJDMTc4LjkyNCAyNzIuNTEyIDE2Mi4xMzUgMjU1LjcyMyAxNjIuMTM1IDIzNS4wMTJDMTYyLjEzNSAyMTQuMzAxIDE3OC45MjQgMTk3LjUxMiAxOTkuNjM1IDE5Ny41MTJDMjIwLjM0NSAxOTcuNTEyIDIzNy4xMzUgMjE0LjMwMSAyMzcuMTM1IDIzNS4wMTJaIgogICAgZmlsbD0iI0MxQzhDRCIKICAvPgogIDxwYXRoCiAgICBkPSJNMTYwIDQwNVYzNjcuMjA1TDIyMS42MDkgMzA2LjM2NEwyNTYuNTUyIDMzOC42MjhMMzU4LjE2MSAyMzRMNDQwIDMxNi4wNDNWNDA1SDE2MFoiCiAgICBmaWxsPSIjQzFDOENEIgogIC8+Cjwvc3ZnPg==")
+let CMS_Blogs = useResource("CMS_Blogs_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
-className={`w-element cafamdi c1flzvby`}>
+className={`w-element`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
 <Slot>
@@ -589,36 +593,222 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf cbn0s32 cnbmf4z`}>
+className={`w-element chlecrf cjcj0qs cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 c1flzvby c1fhcu5x`}>
-<div
-className={`w-element c3eev2k c149an7b c3reh9r c8kgf22 c1nzl49g cs5nzqp c145f7eq`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1mynah0 c18jhn4e c1flzvby c1fhcu5x`}>
 <div
 className={`w-element`}>
-{"404"}
+<h1
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
+{"BSLI Blogs!"}
+</h1>
+</div>
+</div>
 </div>
 <div
-className={`w-element c1mjxydt c3uabvi chnjbpv c1ov3q5h c54yjzg c1lalx8r`}>
-{"404"}
+className={`w-element chlecrf c1lufqxe cnbmf4z`}>
+<div
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
+<div
+className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf`}>
+<div
+id={"search-bar"}
+className={`w-element c1o9wctx c18u1s1s cs5nzqp c1l7b3ti`} />
+<RemixForm
+id={"cmsFormAutoSubmit"}
+className={`w-element c1fsvg17 c1spra3t`}>
+<Box
+className={`w-box c1fsvg17 c1flzvby cafamdi cp0jmbs c1l7q0iu c1i3l1kc cs5nzqp c19ubv75 c4g1j3m c1pqpmx c10utwzz c1ggzkww c1dj8jvm c1w6y7sa c7u3d47 c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cwey732 cjdezyc c9mu0fu cbdpvyv c9ae672`}>
+<Input
+placeholder={"Blog Title"}
+name={"blogsSearch"}
+id={"inputName"}
+aria-label={"full name"}
+value={system?.search?.blogsSearch}
+className={`w-text-input c4vnhzq cv8cc1s c14r1w05 co3gz9b c89byf cfh3hzd`} />
+<Box
+className={`w-box c1mjxydt c1hqntle c1vcw128 chbj6j3 cv1zxuk c1j4r0zr c1fsvg17 c1flzvby cafamdi ctmc8oc cpomkwe cdr374f cnn2qey c1e0ori2 c167epo5 cpojcej c1vt4r6t`}>
+<HtmlEmbed
+code={"<div class=\"auto-submit-indicator\">\n  <svg width=\"1.2em\" height=\"1.2em\" viewBox=\"0 0 24 24\">\n    \n    <line x1=\"8\" y1=\"16\" x2=\"3\" y2=\"21\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" />\n    \n    <circle class=\"bg\" cx=\"14\" cy=\"10\" r=\"8\" stroke=\"black\" stroke-width=\"1.5\" fill=\"none\" />\n    \n    <circle class=\"progress-ring\" id=\"loaderCircle\" cx=\"14\" cy=\"10\" r=\"6\" \n            stroke=\"#007bff\" stroke-width=\"4\" fill=\"none\" \n            stroke-dasharray=\"50.26\" stroke-dashoffset=\"50.26\" />\n  </svg>\n</div>"}
+className={`w-html-embed cs5nzqp`} />
+</Box>
+</Box>
+<div
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c9mu0fu c1qwcq2w`}>
+<div
+className={`w-element c1fsvg17 c1flzvby c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb25u c1wvwf6y c1oubvo3 c13l961t`}>
+{"Search by: "}
+</div>
+<Select
+name={"blogsSearchType"}
+value={system?.search?.blogsSearchType}
+className={`w-element cwxng9o chd6mf4 cug58nh c18o9eig c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y cjwasc2 c1fzb25u c1wvwf6y co3gz9b cbxkl1b`}>
+<option
+label={"Title"}
+value={"title"}
+className={`w-element`} />
+<option
+label={"Tag"}
+value={"tags"}
+className={`w-element`} />
+</Select>
 </div>
 <div
-className={`w-element c1mjxydt c3uabvi c1huqjn9 c1ov3q5h cg41c99 c1lalx8r`}>
-{"404"}
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c10pexzh c13hxy6u c1s90dhh c1a8npj4 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 c9mu0fu cjdezyc cuc9pay c1d1qz07 cf6g7sd c1q8vahf c134nqof cw6dfp7 c1aq1pxe`}>
+<div
+className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
+{"Sort by: "}
+</div>
+<Select
+name={"blogsSortType"}
+value={system?.search?.blogsSortType}
+className={`w-element cwxng9o cug58nh c18o9eig co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w cbxkl1b`}>
+<option
+label={"Title"}
+value={"title"}
+className={`w-element`} />
+<option
+label={"Date"}
+value={"publish_date"}
+className={`w-element`} />
+</Select>
+<label
+className={`w-element cfucm7u c1flzvby cbxkl1b cjwasc2 c1fzb25u c1wvwf6y ${"members-sort-checkbox"}`}>
+<Input_1
+type={"checkbox"}
+name={"blogsSearchOrder"}
+checked={system?.search?.blogsSearchOrder == 'on'}
+className={`w-element c1xd87pa`} />
+<div
+className={`w-element ${"members-sort-icon-unchecked"}`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M4 6l9 0\"></path><path d=\"M4 12l7 0\"></path><path d=\"M4 18l7 0\"></path><path d=\"M15 15l3 3l3 -3\"></path><path d=\"M18 6l0 12\"></path></svg>"}
+className={`w-html-embed`} />
 </div>
 <div
-className={`w-element c1mjxydt ctvnhz1 c1wv1eol c89byf ck8rfg2 ceb8qgf`} />
+className={`w-element ${"members-sort-icon-checked"}`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M4 6l7 0\"></path><path d=\"M4 12l7 0\"></path><path d=\"M4 18l9 0\"></path><path d=\"M15 9l3 -3l3 3\"></path><path d=\"M18 6l0 12\"></path></svg>"}
+className={`w-html-embed`} />
+</div>
+<HtmlEmbed
+code={"<style>\n  .members-sort-icon-unchecked, .members-sort-icon-checked {\n    width: 24px;\n    height: 24px;\n    margin-right: 8px; /* Space between icon and text */\n    transition: all 0.2s ease;\n  }\n\n  /* Default state: Show unchecked, hide checked */\n  .members-sort-icon-checked {\n    display: none;\n    fill: #007bff; /* Blue color for checked */\n  }\n  .members-sort-icon-unchecked {\n    display: block;\n    fill: #ccc; /* Gray color for unchecked */\n  }\n\n  /* CHECKED State: Swap the icons */\n  /* When input is checked, find the sibling SVG with class .members-sort-icon-unchecked and hide it */\n  .members-sort-checkbox input:checked ~ .members-sort-icon-unchecked {\n    display: none;\n  }\n  /* When input is checked, find the sibling SVG with class .members-sort-icon-checked and show it */\n  .members-sort-checkbox input:checked ~ .members-sort-icon-checked {\n    display: block;\n  }\n</style>"}
+className={`w-html-embed`} />
+</label>
+</div>
+<Input
+name={"blogsSearchLimit"}
+value={CMS_Default_Limit}
+type={"number"}
+className={`w-text-input c1xd87pa`} />
+<HtmlEmbed
+code={"<style>\n  .auto-submit-indicator {\n    display: inline-flex;\n    align-items: center;\n    vertical-align: middle;\n  }\n  .auto-submit-indicator svg {\n    transform: rotate(-90deg);\n  }\n  .progress-ring {\n    /* Smooth out the tiny increments */\n    transition: stroke-dashoffset 10ms linear;\n  }\n</style>\n\n<script type=\"module\">\n  const form = document.getElementById('cmsFormAutoSubmit');\n  const circle = document.getElementById('loaderCircle');\n  \n  const circumference = 2 * Math.PI * 8; // ~50.26\n  const WAIT_TIME = 800; // Total countdown time in ms\n  \n  let startTime;\n  let rafId;\n\n  function updateCircle(timestamp) {\n    if (!startTime) startTime = timestamp;\n    const elapsed = timestamp - startTime;\n    const progress = Math.min(elapsed / (WAIT_TIME + 200), 1);\n    \n    // Calculate offset: Full (50.26) to Empty (0)\n    // To make it \"grow\", we subtract progress from circumference\n    const offset = circumference - (progress * circumference);\n    circle.style.strokeDashoffset = offset;\n\n    if (elapsed < WAIT_TIME) {\n      rafId = requestAnimationFrame(updateCircle);\n    } else {\n      // Countdown finished\n      form.requestSubmit();\n      resetCircle();\n    }\n  }\n\n  function startCountdown() {\n    resetCircle();\n    rafId = requestAnimationFrame(updateCircle);\n  }\n\n  function resetCircle() {\n    cancelAnimationFrame(rafId);\n    startTime = null;\n    circle.style.strokeDashoffset = circumference;\n  }\n\n  // Handle Checkbox/Buttons\n  form.addEventListener('click', (event) => {\n    if (event.target.type === \"button\" || event.target.type === \"checkbox\") {\n      startCountdown();\n    }\n  });\n\n  // Handle Typing/Input\n  form.addEventListener('input', () => {\n    startCountdown();\n  });\n</script>"}
+className={`w-html-embed`} />
+</RemixForm>
+</div>
+<div
+className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt`}>
+{Object.entries(
+  // @ts-ignore
+  CMS_Blogs?.data?.data ?? {}
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey_1 = Array.isArray(CMS_Blogs?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+<div
+id={collectionItemKey_1}
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cdj3arn c1gv7k1f chyxmce cy0jph6 cjxujza c1i7ltwx cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c5do7do c1fzb25u c1wvwf6y c1j4r0zr cs5nzqp c19ubv75 c4g1j3m cwsyufx cjdezyc`}>
+<Image
+src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.headshot : Image_Not_Found}`}
+className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
+<div
+className={`w-element cnbemn c1017uqz`}>
+<div
+className={`w-element c1lst088 c145f7eq c1wu8pi6 c1l7036h cr340of`}>
+{collectionItem?.title}
 </div>
 <p
-className={`w-element c1cu6i67 c43u5xt c14s6yal c1g0f1uu c3eev2k ck7r5gb`}>
-{"Page not found as it went ballistic and was lost in the New Mexico desert."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
+className={`w-element`}>
+{CMS_Blogs?.data?.data?.[0]?.["short_description"]}
 </p>
+</div>
+<div
+className={`w-element cnbemn c1fsvg17 cp0jmbs c2jpees c1bctvrt c1017uqz`}>
+<div
+className={`w-element c1fsvg17 cxkx6pe c1jggrh7 cnn2qey c1flzvby c1san6ol c3ed4hq`}>
+{Object.entries(
+  // @ts-ignore
+  collectionItem?.tags ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey = Array.isArray(collectionItem?.tags) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey}>
+<Link_1
+href={`/blogs/browse?blogsSearch=${collectionItem_1}&blogsSearchType=tags&blogsSortType=${system?.search?.blogsSortType}&blogsSearchLimit=${+system?.search?.blogsSearchLimit + CMS_Default_Limit}`}
+className={`w-element cib2qxx chdqs4z cj20esf cvr011x ch72vge c956szp cxh6ugy`}>
+<div
+className={`w-element c1qdzuay c1lkbaaj cx8n37q ce5jf0f cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 c1czb951 c1wi860h czsjn9t c17omac7 c1cgehif`}>
+{"#" + collectionItem_1}
+</div>
+</Link_1>
+</Fragment>
+)
+})
+}
+</div>
+<Time
+dateTime={collectionItem?.["publish_date"]}
+format={"MMM DD, YYYY"}
+className={`w-time c1jt1fo7 c1pwhxce`} />
+</div>
+<Link_1
+href={"/blogs/" + collectionItem?.["url_slug"]}
+className={`w-element cib2qxx chdqs4z cj20esf cvr011x c223jcu cdr374f cxh6ugy c1mjxydt c1iq19mg c1t7zt1n c10agvjj cxwzc4q chyxmce cm1zr1v c1lk8kkr cjxujza cr65kmo cl931j8 c1ghr02j csbbxse c6zneyq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 cbxkl1b c1vsskdb cqajdup`}>
+{"Learn More"}
+</Link_1>
+</div>
+</Fragment>
+)
+})
+}
+{(CMS_Blogs?.data?.data?.length == 0) &&
+<div
+className={`w-element c140xxeu`}>
+<h2
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+{"No blog found"}
+</h2>
+<p
+className={`w-element c3eev2k`}>
+{"None of the BSLI blogs in our database"}
+{""}
+<br />
+{""}
+{"fit your search parameters"}
+</p>
+</div>
+}
+</div>
+<div
+className={`w-element`}>
+{(system?.search < undefined?.data?.meta?.["total_count"]) &&
+<div
+className={`w-element cj20esf`}>
+{(undefined?.data?.data?.length < undefined?.data?.meta?.["total_count"]) &&
+<Link_1
+href={`/blogs/browse?blogsSearch=${system?.search?.blogsSearch}&blogsSearchType=${system?.search?.blogsSearchType}&blogsSortType=${system?.search?.blogsSortType}&blogsSearchLimit=${+system?.search?.blogsSearchLimit + CMS_Default_Limit}#${CMS_Blogs?.data?.data?.length - 1}`}
+className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>
+{"Load More Results"}
+</Link_1>
+}
+</div>
+}
+<Link_1
+href={"#search-bar"}
+className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c12dl879 cecahc4 c1r92k6l cib2qxx chdqs4z c1qankp4`}>
+{"Scroll to Top"}
+</Link_1>
+</div>
 </div>
 </div>
 <Slot>
@@ -644,24 +834,24 @@ className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
   [1,2,3] ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_1}>
+<Fragment key={collectionItemKey_3}>
 <Slot>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
-).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
+).map(([_key, collectionItem_2]: any) => {
+  const collectionItemKey_2 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey}>
+<Fragment key={collectionItemKey_2}>
 <Link_1
-href={collectionItem?.["Sponsor_Website_URL"]}
+href={collectionItem_2?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem?.image}`}
+src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>

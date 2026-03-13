@@ -4,14 +4,14 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
-import { Link as Link, Body as Body, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-12T00:26:27.352Z";
+      export const lastPublished = "2026-03-13T21:41:50.239Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -22,7 +22,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        []
+        ["AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf"]
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -32,7 +32,9 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
       const Page = (_props: { system: any; }) => {
 let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
 let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let CMS_Blog_Post = useResource("CMS_Blog_Post_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
@@ -57,7 +59,7 @@ className={`w-html-embed`} />
 className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g caf9fuo`}>
+className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g cgaaecy`}>
 <Slot>
 <Fragment_1>
 <Link
@@ -91,7 +93,7 @@ className={`w-menu-item`}>
 <Link
 href={"/"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
 </NavigationMenuItem>
@@ -101,7 +103,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Teams"}
@@ -197,7 +199,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"BSLI Teams"}
 </Heading>
 </Box>
@@ -218,7 +220,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Members"}
@@ -298,7 +300,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"The BSLI Family"}
 </Heading>
 </Box>
@@ -319,7 +321,7 @@ className={`w-menu-item`}>
 <Link
 href={"/sponsor"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Sponsor"}
 </Link>
 </NavigationMenuItem>
@@ -329,8 +331,18 @@ className={`w-menu-item`}>
 <Link
 href={"/contact"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1dlgajh cb3y8iq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Contact"}
+</Link>
+</NavigationMenuItem>
+<NavigationMenuItem
+data-ws-index="6"
+className={`w-menu-item`}>
+<Link
+href={URL_Blog_Browse}
+prefetch={"intent"}
+className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+{"Blog"}
 </Link>
 </NavigationMenuItem>
 </NavigationMenuList>
@@ -532,6 +544,15 @@ className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 c
 {"Contact Us"}
 </Link_1>
 </AccordionItem>
+<AccordionItem
+data-ws-index="6"
+className={`w-item cvdddm5`}>
+<Link_1
+href={URL_Blog_Browse}
+className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+{"BSLI Blog"}
+</Link_1>
+</AccordionItem>
 </Accordion>
 </Box>
 <Box
@@ -569,9 +590,24 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element c11cvd9l c1lufqxe cnbmf4z`}>
+className={`w-element cugth94 c1lufqxe cnbmf4z cqzfy8o c1wozlyc`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`} />
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
+<h1
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
+{CMS_Blog_Post?.data?.data?.[0]?.title}
+</h1>
+<div
+className={`w-element c1lynjaq c1gdhahs`}>
+<HtmlEmbed
+code={"<style>\n  /* The parent paragraph identified by JS */\n.img-wrapper-p {\n  display: block;\n  clear: both;\n  margin-bottom: 0.2em;\n}\n\n/* Float logic for desktop */\n@media (min-width: 768px) {\n  .img-left img {\n    float: left;\n    margin-right: var(--gap-xs);\n  }\n\n  .img-right img {\n    float: right;\n    margin-left: var(--gap-xs);\n  }\n}\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n  // Select all images inside your specific markdown class\n  const images = document.querySelectorAll('.w-markdown-embed img');\n\n  images.forEach((img, index) => {\n    const parent = img.parentElement;\n\n    if (parent && parent.tagName === 'P') {\n      // Alternating Logic\n      if (index % 2 === 0) {\n        parent.classList.add('img-left');\n      } else {\n        parent.classList.add('img-right');\n      }\n    }\n  });\n});\n</script>"}
+className={`w-html-embed`} />
+<MarkdownEmbed
+code={CMS_Blog_Post?.data?.data?.[0]?.content}
+className={`w-markdown-embed c1lynjaq c1gdhahs c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c1d827q3 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp`}>
+</MarkdownEmbed>
+</div>
+</div>
 </div>
 <Slot>
 <Fragment_1>

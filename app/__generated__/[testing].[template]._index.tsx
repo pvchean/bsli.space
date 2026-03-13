@@ -4,8 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Body as Body, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
@@ -39,7 +39,7 @@ let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_1")
 return <Body
-className={`w-element cafamdi c1flzvby`}>
+className={`w-element`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 c18fr3nm`}>
 <Slot>
@@ -589,37 +589,9 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf cbn0s32 cnbmf4z`}>
+className={`w-element cugth94 c1lufqxe cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 c1flzvby c1fhcu5x`}>
-<div
-className={`w-element c3eev2k c149an7b c3reh9r c8kgf22 c1nzl49g cs5nzqp c145f7eq`}>
-<div
-className={`w-element`}>
-{"404"}
-</div>
-<div
-className={`w-element c1mjxydt c3uabvi chnjbpv c1ov3q5h c54yjzg c1lalx8r`}>
-{"404"}
-</div>
-<div
-className={`w-element c1mjxydt c3uabvi c1huqjn9 c1ov3q5h cg41c99 c1lalx8r`}>
-{"404"}
-</div>
-<div
-className={`w-element c1mjxydt ctvnhz1 c1wv1eol c89byf ck8rfg2 ceb8qgf`} />
-</div>
-<p
-className={`w-element c1cu6i67 c43u5xt c14s6yal c1g0f1uu c3eev2k ck7r5gb`}>
-{"Page not found as it went ballistic and was lost in the New Mexico desert."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-</p>
-</div>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`} />
 </div>
 <Slot>
 <Fragment_1>

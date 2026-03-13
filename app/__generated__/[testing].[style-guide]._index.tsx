@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-12T00:26:27.352Z";
+      export const lastPublished = "2026-03-13T21:41:50.239Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -33,7 +33,7 @@ return <Body
 id={"top"}
 className={`w-body`}>
 <Box
-className={`w-box c11cvd9l c1lufqxe cnbmf4z`}>
+className={`w-box cugth94 c1lufqxe cnbmf4z`}>
 <Box
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1470z5h c13ho07r c1flzvby c1fhcu5x`}>
 <Box
@@ -83,7 +83,7 @@ className={`w-heading cbwi5wk cr340of c1iwa1os cbewb4j`}>
 <Box
 className={`w-box ca9k1ea cablujx c11hykm7 c1ezwkgn cvtksgq`}>
 <Box
-className={`w-box cjxujza c1i7ltwx c19c37rj co52ume c1fsvg17 c1flzvby cafamdi c11cvd9l c1lufqxe csf549j c14jnrlx c10utwzz c1wvwf6y cp0jmbs c1dw2fcd ck2f9w5 cnbmf4z c1d051iu`}>
+className={`w-box cjxujza c1i7ltwx c19c37rj co52ume c1fsvg17 c1flzvby cafamdi cugth94 c1lufqxe csf549j c14jnrlx c10utwzz c1wvwf6y cp0jmbs c1dw2fcd ck2f9w5 cnbmf4z c1d051iu`}>
 <Text
 className={`w-text c17lgwgr c1mr6vvn cfivbop cm6nhus c3eev2k c13lfb4j c4w3pr1 cwk6zv9 cq5b81a c5qvjxf`}>
 {"section"}
@@ -149,7 +149,7 @@ className={`w-text-1 c18rwu55 c9enewt c162yw8a cut6zwa c1vn25wx c1voizkc c3z33ta
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"Foreground"}
 </Heading>
 <Box
@@ -202,7 +202,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 c2
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"Background"}
 </Heading>
 <Box
@@ -246,7 +246,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 cc
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"Other"}
 </Heading>
 <Box
@@ -340,7 +340,7 @@ className={`w-heading cbwi5wk cr340of c1iwa1os cbewb4j`}>
 {"you can edit"}
 </Heading>
 <Heading
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j c3eev2k`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
 {"Heading 3 text "}
 {""}
 <br />
@@ -642,7 +642,7 @@ className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
 </Box>
 </Box>
 <Box
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1l7q0iu c1i3l1kc c1flzvby c1fhcu5x c11cvd9l c1lufqxe cnbmf4z cafamdi`}>
+className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c1l7q0iu c1i3l1kc c1flzvby c1fhcu5x cugth94 c1lufqxe cnbmf4z cafamdi`}>
 <Heading
 tag={"h2"}
 className={`w-heading cbwi5wk cr340of c1iwa1os cbewb4j`}>
@@ -674,7 +674,7 @@ tag={"main"}
 className={`w-box`}>
 <Box
 tag={"section"}
-className={`w-box c11cvd9l c1lufqxe cnbmf4z`}>
+className={`w-box cugth94 c1lufqxe cnbmf4z`}>
 <Box
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`} />
 </Box>
