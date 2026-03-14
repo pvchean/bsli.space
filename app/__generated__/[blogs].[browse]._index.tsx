@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-13T21:41:50.239Z";
+      export const lastPublished = "2026-03-14T16:40:10.351Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -718,9 +718,14 @@ className={`w-element c1fsvg17 cnn2qey c1flzvby cafamdi c2jpees c1bctvrt`}>
 <div
 id={collectionItemKey_1}
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cdj3arn c1gv7k1f chyxmce cy0jph6 cjxujza c1i7ltwx cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c5do7do c1fzb25u c1wvwf6y c1j4r0zr cs5nzqp c19ubv75 c4g1j3m cwsyufx cjdezyc`}>
+<Link_1
+href={"/blogs/" + collectionItem?.["url_slug"]}
+className={`w-element cj20esf`}>
 <Image
 src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.headshot : Image_Not_Found}`}
+optimize={collectionItem?.headshot != null}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
+</Link_1>
 <div
 className={`w-element cnbemn c1017uqz`}>
 <div

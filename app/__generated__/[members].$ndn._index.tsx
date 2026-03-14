@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-13T21:41:50.239Z";
+      export const lastPublished = "2026-03-14T16:40:10.351Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -758,10 +758,16 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg1
 className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
 {"About Me"}
 </h1>
+<div
+className={`w-element c1lynjaq c1gdhahs`}>
+<HtmlEmbed
+code={"<style>\n  /* The parent paragraph identified by JS */\n.img-wrapper-p {\n  display: block;\n  clear: both;\n  margin-bottom: 0.2em;\n}\n\n/* Float logic for desktop */\n@media (min-width: 768px) {\n  .img-left img {\n    float: left;\n    margin-right: var(--gap-xs);\n  }\n\n  .img-right img {\n    float: right;\n    margin-left: var(--gap-xs);\n  }\n}\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n  // Select all images inside your specific markdown class\n  const images = document.querySelectorAll('.w-markdown-embed img');\n\n  images.forEach((img, index) => {\n    const parent = img.parentElement;\n\n    if (parent && parent.tagName === 'P') {\n      // Alternating Logic\n      if (index % 2 === 0) {\n        parent.classList.add('img-left');\n      } else {\n        parent.classList.add('img-right');\n      }\n    }\n  });\n});\n</script>"}
+className={`w-html-embed`} />
 <MarkdownEmbed
 code={`${CMS_Member?.data?.data?.[0]?.["about_me"] == null || CMS_Member?.data?.data?.[0]?.["about_me"] == '' ? "About Me has not been filled out by member" : CMS_Member?.data?.data?.[0]?.["about_me"]}`}
-className={`w-markdown-embed c1bc7smi`}>
+className={`w-markdown-embed c1lynjaq c1gdhahs c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c1d827q3 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp`}>
 </MarkdownEmbed>
+</div>
 </div>
 </div>
 <Slot>
