@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-14T16:40:10.351Z";
+      export const lastPublished = "2026-03-14T17:13:40.100Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -604,7 +604,7 @@ code={"<style>\n  /* The parent paragraph identified by JS */\n.img-wrapper-p {\
 className={`w-html-embed`} />
 <MarkdownEmbed
 code={CMS_Blog_Post?.data?.data?.[0]?.content}
-className={`w-markdown-embed c1lynjaq c1gdhahs c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c1d827q3 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp`}>
+className={`w-markdown-embed c1lynjaq c1gdhahs c1ny6974 coso6sz c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c1d827q3 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp`}>
 </MarkdownEmbed>
 </div>
 </div>
