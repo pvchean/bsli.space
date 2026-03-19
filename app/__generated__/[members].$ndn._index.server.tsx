@@ -6,7 +6,6 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.space/items/"
-  const system = _props.system
   const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
@@ -27,7 +26,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=60000" },
     ],
   }
-  const CurrentDate_1: ResourceRequest = {
+  const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
     url: "/$resources/current-date",
     searchParams: [
@@ -45,18 +44,6 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const CMS_Member_1: ResourceRequest = {
-    name: "CMS_Member",
-    url: CMS_Item_URL + "BSLI_Members",
-    searchParams: [
-      { name: "fields", value: "*,role_id.*.*" },
-      { name: "filter[osu_ndn][_eq]", value: system?.params?.ndn },
-      { name: "deep[role_id][_sort]", value: "end,start" },
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
   const CMS_Sponsors_external_1: ResourceRequest = {
     name: "CMS_Sponsors_external",
     url: "https://cms.bsli.a2.lab512.org/items/BSLI_Sponsors_External",
@@ -68,13 +55,35 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
+  const CurrentDate_3: ResourceRequest = {
+    name: "Current Date",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const CMS_Member_1: ResourceRequest = {
+    name: "CMS_Member",
+    url: "https://cms.bsli.space/items/BSLI_Members",
+    searchParams: [
+      { name: "fields", value: "*,role_id.*.*" },
+      { name: "filter[osu_ndn][_eq]", value: "cheandominguez.1" },
+      { name: "deep[role_id][_sort]", value: "end,start" },
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
-    ["CurrentDate_1", CurrentDate_1],
+    ["CurrentDate_2", CurrentDate_2],
     ["now", now],
-    ["CMS_Member_1", CMS_Member_1],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
+    ["CurrentDate_3", CurrentDate_3],
+    ["CMS_Member_1", CMS_Member_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -89,10 +98,10 @@ export const getResources = (_props: { system: System }) => {
   system: System;
   resources: Record<string, any>;
 }): PageMeta => {
-  let system_1 = system
+  let CMS_Member = resources.CMS_Member_1
   return {
-    title: `BSLI - ${system_1?.params?.ndn}'s Profile'`,
-    description: "",
+    title: `BSLI | ${CMS_Member?.data?.data?.[0]?.Name}`,
+    description: CMS_Member?.data?.data?.[0]?.["short_introduction"],
     excludePageFromSearch: false,
     language: "en-US",
     socialImageAssetName: undefined,
@@ -111,5 +120,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     

@@ -71,18 +71,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
-  const CMS_Team_1: ResourceRequest = {
-    name: "CMS_Team",
-    url: `${CMS_Item_URL}BSLI_Teams`,
-    searchParams: [
-      { name: "fields", value: "display_name,purpose_paragraph,goals_paragraph,purpose_image.*,goals_image.*" },
-      { name: "filter[Team_Name][_eq]", value: system?.params?.team },
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
-  const CurrentDate_1: ResourceRequest = {
+  const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
     url: "/$resources/current-date",
     searchParams: [
@@ -123,17 +112,38 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
+  const CurrentDate_3: ResourceRequest = {
+    name: "Current Date",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const CMS_Team_1: ResourceRequest = {
+    name: "CMS_Team",
+    url: "https://cms.bsli.space/items/BSLI_Teams",
+    searchParams: [
+      { name: "fields", value: "display_name,purpose_paragraph,goals_paragraph,purpose_image.*,goals_image.*" },
+      { name: "filter[Team_Name][_eq]", value: "IREC" },
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
     ["CMS_Subteams_1", CMS_Subteams_1],
     ["CMS_Overview_1", CMS_Overview_1],
     ["CMS_Leadership_1", CMS_Leadership_1],
-    ["CMS_Team_1", CMS_Team_1],
-    ["CurrentDate_1", CurrentDate_1],
+    ["CurrentDate_2", CurrentDate_2],
     ["CMS_Team_Project_1", CMS_Team_Project_1],
     ["now", now],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
+    ["CurrentDate_3", CurrentDate_3],
+    ["CMS_Team_1", CMS_Team_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -149,13 +159,15 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   let system_1 = system
+  let CMS_Team = resources.CMS_Team_1
+  let CMS_Asset_URL = "https://cms.bsli.space/assets/"
   return {
-    title: `BSLI - ${system_1?.params?.team} Team`,
-    description: "",
+    title: `BSLI | ${system_1?.params?.team} Team`,
+    description: CMS_Team?.data?.data?.[0]?.["purpose_paragraph"],
     excludePageFromSearch: false,
     language: "en-US",
     socialImageAssetName: undefined,
-    socialImageUrl: "",
+    socialImageUrl: CMS_Asset_URL + CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id,
     status: undefined,
     redirect: "",
     custom: [
@@ -170,5 +182,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     

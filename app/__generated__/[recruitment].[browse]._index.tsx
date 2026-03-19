@@ -4,8 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
-import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react";
+import { Link as Link, Link as Link_1, Body as Body, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
@@ -30,15 +30,15 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
       
 
       const Page = (_props: { system: any; }) => {
+const system = _props.system;
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let CMS_Member = useResource("CMS_Member_1")
+let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(25)
+let CMS_Recruitment = useResource("CMS_Recruitment_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
-let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("https://cms.bsli.space/assets/d381fb9a-145f-4ff4-a4cc-0d90ed1b2c11")
-let CMS_Sponsorship_Tiers = useResource("CMS_Sponsorship_Tiers_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_2")
@@ -675,190 +675,245 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf c1lufqxe c1czb951`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<p
-className={`w-element csbbxse cr340of c145f7eq`}>
-{"Corporate sponsorships"}
-</p>
-<h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
-{"Want to sponsor us?"}
-</h1>
-</div>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x c1p22wyd c13kj1ir`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby c2jpees c1bctvrt`}>
-<p
-className={`w-element`}>
-{"Hi, I'm Liav Ost! I'm the "}
-<b
-className={`w-element`}>
-{"Finance Director"}
-</b>
-{" for the Buckeye Space Launch Initiative. If you want to sponsor us or just want to learn more, you can reach me and our leadership team at the email below."}
-</p>
-<Link_1
-href={"mailto:eng-buckeyesli@osu.edu"}
-className={`w-element c145f7eq cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1fsvg17 c1r92k6l cib2qxx chdqs4z`}>
-<Slot>
-<Fragment_1>
-<div
-className={`w-element cw4wfcb c1mrxjnq`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1.4em\" height=\"1.4em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"></path>\n  <path d=\"M3 7l9 6l9 -6\"></path>\n</svg>"}
-className={`w-html-embed`} />
-</div>
-</Fragment_1>
-</Slot>
-<span
-className={`w-element`}>
-{" eng-buckeyesli@osu.edu"}
-</span>
-</Link_1>
-<p
-className={`w-element`}>
-{"If you want to donate to us individually, click on the link below!"}
-</p>
-<Link_1
-className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1fsvg17 c89byf c1flzvby cafamdi c1r92k6l cib2qxx chdqs4z`}>
-{"Primary / Individual Donations"}
-</Link_1>
-</div>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q co74p4k`}>
-<Image
-src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : URL_Member_UnknownHeadshot}`}
-className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
-<div
-className={`w-element`}>
-<div
-className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
-{CMS_Member?.data?.data?.[0]?.Name}
-</div>
-<div
-className={`w-element cr340of`}>
-{CMS_Member?.data?.data?.[0]?.["role_id"]?.[0]?.position?.["name_short"]}
-</div>
-</div>
-<p
-className={`w-element`}>
-{CMS_Member?.data?.data?.[0]?.Major}
-</p>
-<div
-className={`w-element c1jt1fo7`}>
-<Link_1
-href={`mailto:${CMS_Member?.data?.data?.[0]?.Email}`}
-className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
-<Slot>
-<Fragment_1>
-<div
-className={`w-element cw4wfcb c1mrxjnq`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1.4em\" height=\"1.4em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"></path>\n  <path d=\"M3 7l9 6l9 -6\"></path>\n</svg>"}
-className={`w-html-embed`} />
-</div>
-</Fragment_1>
-</Slot>
-<p
-className={`w-element crr88tp c56gnia`}>
-{CMS_Member?.data?.data?.[0]?.Email}
-</p>
-</Link_1>
-{(CMS_Member?.data?.data?.[0]?.LinkedInURL != null && CMS_Member?.data?.data?.[0]?.LinkedInURL !== '') &&
-<Link_1
-href={CMS_Member?.data?.data?.[0]?.LinkedInURL}
-className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
-<Slot>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" width=\"1.4em\" height=\"1.4em\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 11v5\" /><path d=\"M8 8v.01\" /><path d=\"M12 16v-5\" /><path d=\"M16 16v-3a2 2 0 1 0 -4 0\" /><path d=\"M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10\" /></svg>"}
-className={`w-html-embed cwxng9o`} />
-</Slot>
-<p
-className={`w-element`}>
-{"LinkedIn"}
-</p>
-</Link_1>
-}
-</div>
-</div>
-</div>
-</div>
-<div
 className={`w-element cugth94 c1lufqxe cnbmf4z`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c1flzvby c1fhcu5x`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <div
-className={`w-element c3eev2k`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u cwxng9o cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
-{"Sponsorship Tiers"}
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2 c16xs1d3`}>
+{"Come work with Us!"}
 </h1>
 <p
-className={`w-element c6zneyq ca8dj3o`}>
-{"Become a sponsor of BSLI! Sponsors make us able to fund rockets and get to competition! By sponsoring us, you help the next generation of engineers achieve great feats of engineering with products that will have your logo in them!"}
+className={`w-element c3eev2k c1ddz7he ckhpfcg cei00iu c12yxm2d`}>
+{"BSLI is always looking for new talent to help with projects! No previous experience is required! Be part of an inclusive community that is dedicated to making cool rockets!"}
 </p>
 </div>
+</div>
 <div
-className={`w-element cmr7w05 c1bctvrt ca9k1ea c9q2fil c1hb1gqv c13kj1ir c16nciq0 c1t7hw98 cxu6jij`}>
+className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
+<div
+className={`w-element c10pexzh c13hxy6u c1s90dhh c1a8npj4 c10llg57 c1w6y7sa cbg2aew cx3mdd6 cfc4s7x cwsp33d cgnc27n c1u0emql c19ubv75 c4g1j3m c1wi860h c89byf c1kp5vo3`}>
+<div
+id={"search-bar"}
+className={`w-element c1o9wctx c18u1s1s cs5nzqp c1l7b3ti`} />
+<RemixForm
+id={"cmsFormAutoSubmit"}
+className={`w-element c1fsvg17 c1spra3t`}>
+<Box
+className={`w-box c1fsvg17 c1flzvby cafamdi cp0jmbs c1l7q0iu c1i3l1kc cs5nzqp c19ubv75 c4g1j3m c1pqpmx c10utwzz c1ggzkww c1dj8jvm c1w6y7sa c7u3d47 c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 cwey732 cjdezyc c9mu0fu c9ntp2m c1tsh9nm c1q8vahf c1m4q22y ctrcrhq`}>
+<Input
+placeholder={"Recruitment Title"}
+name={"search"}
+id={"inputName"}
+aria-label={"full name"}
+value={system?.search?.search}
+className={`w-text-input c4vnhzq cv8cc1s c14r1w05 co3gz9b c89byf cfh3hzd`} />
+<Box
+className={`w-box c1mjxydt c1hqntle c1vcw128 chbj6j3 cv1zxuk c1j4r0zr c1fsvg17 c1flzvby cafamdi ctmc8oc cpomkwe cdr374f cnn2qey c1e0ori2 c167epo5 cpojcej c1vt4r6t`}>
+<HtmlEmbed
+code={"<div class=\"auto-submit-indicator\">\n  <svg width=\"1.2em\" height=\"1.2em\" viewBox=\"0 0 24 24\">\n    \n    <line x1=\"8\" y1=\"16\" x2=\"3\" y2=\"21\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" />\n    \n    <circle class=\"bg\" cx=\"14\" cy=\"10\" r=\"8\" stroke=\"black\" stroke-width=\"1.5\" fill=\"none\" />\n    \n    <circle class=\"progress-ring\" id=\"loaderCircle\" cx=\"14\" cy=\"10\" r=\"6\" \n            stroke=\"#007bff\" stroke-width=\"4\" fill=\"none\" \n            stroke-dasharray=\"50.26\" stroke-dashoffset=\"50.26\" />\n  </svg>\n</div>"}
+className={`w-html-embed cs5nzqp`} />
+</Box>
+</Box>
+<div
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c9mu0fu c1qwcq2w`}>
+<div
+className={`w-element c1fsvg17 c1flzvby c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1fzb25u c1wvwf6y c1oubvo3 c13l961t`}>
+{"Search by: "}
+</div>
+<Select
+name={"searchType"}
+value={system?.search?.searchType}
+className={`w-element cwxng9o chd6mf4 cug58nh c18o9eig c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y cjwasc2 c1fzb25u c1wvwf6y co3gz9b cbxkl1b`}>
+<option
+label={"Title"}
+value={"title"}
+className={`w-element`} />
+<option
+label={"Tags"}
+value={"keywords"}
+className={`w-element`} />
+</Select>
+</div>
+<div
+className={`w-element c1pqpmx c1fzb25u c1wvwf6y c1fsvg17 c1dj8jvm c1hasikf cbg2aew c1n1jjw3 c10pexzh c13hxy6u c1s90dhh c1a8npj4 c9mu0fu cjdezyc cuc9pay c1d1qz07 cf6g7sd`}>
+<div
+className={`w-element c1fsvg17 c1flzvby c1oubvo3 c1fzb25u c1wvwf6y c13l961t`}>
+{"Sort by: "}
+</div>
+<Select
+name={"sortType"}
+value={system?.search?.sortType}
+className={`w-element cwxng9o cug58nh c18o9eig co3gz9b c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y chd6mf4 c1gv7k1f c1fzb25u c1wvwf6y c1illh6w cbxkl1b`}>
+<option
+label={"Posted"}
+value={"date"}
+className={`w-element`} />
+<option
+label={"Title"}
+value={"title"}
+className={`w-element`} />
+</Select>
+<label
+className={`w-element cfucm7u c1flzvby cbxkl1b cjwasc2 c1fzb25u c1wvwf6y ${"members-sort-checkbox"}`}>
+<Input_1
+type={"checkbox"}
+name={"searchOrder"}
+checked={system?.search?.searchOrder == 'on'}
+className={`w-element c1xd87pa`} />
+<div
+className={`w-element ${"members-sort-icon-unchecked"}`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M4 6l9 0\"></path><path d=\"M4 12l7 0\"></path><path d=\"M4 18l7 0\"></path><path d=\"M15 15l3 3l3 -3\"></path><path d=\"M18 6l0 12\"></path></svg>"}
+className={`w-html-embed`} />
+</div>
+<div
+className={`w-element ${"members-sort-icon-checked"}`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M4 6l7 0\"></path><path d=\"M4 12l7 0\"></path><path d=\"M4 18l9 0\"></path><path d=\"M15 9l3 -3l3 3\"></path><path d=\"M18 6l0 12\"></path></svg>"}
+className={`w-html-embed`} />
+</div>
+<HtmlEmbed
+code={"<style>\n  .members-sort-icon-unchecked, .members-sort-icon-checked {\n    width: 24px;\n    height: 24px;\n    margin-right: 8px; /* Space between icon and text */\n    transition: all 0.2s ease;\n  }\n\n  /* Default state: Show unchecked, hide checked */\n  .members-sort-icon-checked {\n    display: none;\n    fill: #007bff; /* Blue color for checked */\n  }\n  .members-sort-icon-unchecked {\n    display: block;\n    fill: #ccc; /* Gray color for unchecked */\n  }\n\n  /* CHECKED State: Swap the icons */\n  /* When input is checked, find the sibling SVG with class .members-sort-icon-unchecked and hide it */\n  .members-sort-checkbox input:checked ~ .members-sort-icon-unchecked {\n    display: none;\n  }\n  /* When input is checked, find the sibling SVG with class .members-sort-icon-checked and show it */\n  .members-sort-checkbox input:checked ~ .members-sort-icon-checked {\n    display: block;\n  }\n</style>"}
+className={`w-html-embed`} />
+</label>
+</div>
+<Input
+name={"searchLimit"}
+value={CMS_Default_Limit}
+type={"number"}
+className={`w-text-input c1xd87pa`} />
+<HtmlEmbed
+code={"<style>\n  .auto-submit-indicator {\n    display: inline-flex;\n    align-items: center;\n    vertical-align: middle;\n  }\n  .auto-submit-indicator svg {\n    transform: rotate(-90deg);\n  }\n  .progress-ring {\n    /* Smooth out the tiny increments */\n    transition: stroke-dashoffset 10ms linear;\n  }\n</style>\n\n<script type=\"module\">\n  const form = document.getElementById('cmsFormAutoSubmit');\n  const circle = document.getElementById('loaderCircle');\n  \n  const circumference = 2 * Math.PI * 8; // ~50.26\n  const WAIT_TIME = 800; // Total countdown time in ms\n  \n  let startTime;\n  let rafId;\n\n  function updateCircle(timestamp) {\n    if (!startTime) startTime = timestamp;\n    const elapsed = timestamp - startTime;\n    const progress = Math.min(elapsed / (WAIT_TIME + 200), 1);\n    \n    // Calculate offset: Full (50.26) to Empty (0)\n    // To make it \"grow\", we subtract progress from circumference\n    const offset = circumference - (progress * circumference);\n    circle.style.strokeDashoffset = offset;\n\n    if (elapsed < WAIT_TIME) {\n      rafId = requestAnimationFrame(updateCircle);\n    } else {\n      // Countdown finished\n      form.requestSubmit();\n      resetCircle();\n    }\n  }\n\n  function startCountdown() {\n    resetCircle();\n    rafId = requestAnimationFrame(updateCircle);\n  }\n\n  function resetCircle() {\n    cancelAnimationFrame(rafId);\n    startTime = null;\n    circle.style.strokeDashoffset = circumference;\n  }\n\n  // Handle Checkbox/Buttons\n  form.addEventListener('click', (event) => {\n    if (event.target.type === \"button\" || event.target.type === \"checkbox\") {\n      startCountdown();\n    }\n  });\n\n  // Handle Typing/Input\n  form.addEventListener('input', () => {\n    startCountdown();\n  });\n</script>"}
+className={`w-html-embed`} />
+</RemixForm>
+</div>
+<div
+className={`w-element c1fsvg17 c2jpees c1bctvrt cp0jmbs c89byf`}>
 {Object.entries(
   // @ts-ignore
-  CMS_Sponsorship_Tiers?.data?.data ?? {}
+  CMS_Recruitment?.data?.data ?? {}
 ).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Sponsorship_Tiers?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_1 = Array.isArray(CMS_Recruitment?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+<div
+className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1vw3iks c1n7i0rg c19ig9hm csgp7p3 cjxujza c1i7ltwx c19c37rj co52ume cwo73pd ctkbqoa c9ffb6f cs5nzqp cwsyufx`}>
+<Link_1
+href={"/recruitment/post/" + collectionItem?.id}
+className={`w-element cib2qxx chdqs4z cvr011x c223jcu cdr374f cxh6ugy c1mjxydt c1iq19mg c1t7zt1n c10agvjj cg2bizo chyxmce c1ay6vmr c1lk8kkr cjxujza cr65kmo cl931j8 c1ghr02j csbbxse c6zneyq cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 cbxkl1b cj20esf c1vsskdb cqajdup c1u3mvpt c79irg9 c1k58oyj c7tl1el clox6uf c9p96au cr6l4at c1ogo1wq cb5ipx6 cjsmrup cf6ovt7`}>
+{"Learn More"}
+</Link_1>
+<div
+className={`w-element`}>
+<div
+className={`w-element c1fsvg17 c1flzvby c1412oo6 c1s491bc`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606 c1p3t04y cei00iu`}>
+{collectionItem?.title}
+</h1>
+<div
+className={`w-element c16qquiv c1jt1fo7 c1p7y13d`}>
+<p
+className={`w-element cj20esf`}>
+{"Posted On: "}
+</p>
+<Time
+dateTime={collectionItem?.date}
+format={"MMM DD"}
+className={`w-time`} />
+</div>
+</div>
+<p
+className={`w-element c32b0k6 calzjdr`}>
+{`${collectionItem?.["suggested_majors"]}, and all other majors!`}
+</p>
+<p
+className={`w-element c223jcu c32b0k6 calzjdr`}>
+{`${collectionItem?.commitment?.split?.(".")?.[0]} `}
+</p>
+</div>
+<p
+className={`w-element c1slz6ta c12yi2k3 c708twz c1a3c3x6 c1rivdr3 c19ubv75 c4g1j3m cmug2yo`}>
+{collectionItem?.responsibilities}
+</p>
+<div
+className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c13kj1ir`}>
+<div
+className={`w-element c1slz6ta c12yi2k3 c708twz c1ti5t9o c1rivdr3 c19ubv75 c4g1j3m cxkx6pe c1jggrh7 c1kr250i c32b0k6`}>
+<div
+className={`w-element cj20esf`}>
+{"Tags:"}
+</div>
+{Object.entries(
+  // @ts-ignore
+  collectionItem?.keywords ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey = Array.isArray(collectionItem?.keywords) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey}>
 <div
-className={`w-element ${"testclass" + collectionItemKey}`}>
-<HtmlEmbed
-code={`<style>\n  .testclass${collectionItemKey} {\n    --testcolor: ${collectionItem?.Color}99;\n  }\n</style>`}
-className={`w-html-embed`} />
+className={`w-element cj20esf cbsp6a7`}>
+{collectionItem_1}
+</div>
+</Fragment>
+)
+})
+}
+</div>
 <div
-className={`w-element c1fsvg17 cp0jmbs c1san6ol cgxl3bw cwn5zzf cjxujza c1i7ltwx c19c37rj co52ume cwo73pd c1wzpcnj c9ffb6f c1j4r0zr ch102ro cd2v6qh czfw4y0 cc6fyqo`}>
-<div
-className={`w-element`}>
-<h1
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq c16tluoy c1ghud8g`}>
-{collectionItem?.Name}
-</h1>
+className={`w-element c16qquiv c1jt1fo7 c1xd87pa c1fzb25u c1wvwf6y c1s491bc cmug2yo c1pfnraz`}>
 <p
-className={`w-element`}>
-{`For a one year commitment of $${collectionItem?.commitment}, you become a ${collectionItem?.Name} Tier Sponsor.`}
+className={`w-element cj20esf`}>
+{"Posted On: "}
+</p>
+<Time
+dateTime={collectionItem?.date}
+format={"MMM DD"}
+className={`w-time`} />
+</div>
+</div>
+</div>
+</Fragment>
+)
+})
+}
+{(CMS_Recruitment?.data?.data?.length == 0) &&
+<div
+className={`w-element c140xxeu`}>
+<h2
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf c3eev2k c89byf`}>
+{"No post found"}
+</h2>
+<p
+className={`w-element c3eev2k`}>
+{"None of the BSLI recruitment post in our database"}
+{""}
+<br />
+{""}
+{"fit your search parameters"}
 </p>
 </div>
+}
+</div>
 <div
 className={`w-element`}>
+{(+system?.search?.membersSearchLimit < CMS_Recruitment?.data?.meta?.["total_count"]) &&
 <div
-className={`w-element cjl8er8`}>
-{`${collectionItem?.["previous_tier"] == null ? "Benefits include:" : "Everything in " + collectionItem?.["previous_tier"] + ", plus:"}`}
+className={`w-element cj20esf`}>
+<Link_1
+href={`/recruitment/browse?search=${system?.search?.search}&searchType=${system?.search?.searchType}&sortType=${system?.search?.sortType}&searchOrder=${system?.search?.searchOrder}&membersSearchLimit=${+system?.search?.searchLimit + CMS_Default_Limit}#${system?.search?.searchLimit - 1}`}
+className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>
+{"Load More Results"}
+</Link_1>
 </div>
-<ul
-className={`w-element c1erpp2i c1oubvo3 c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 cqymryr`}>
-{Object.entries(
-  // @ts-ignore
-  collectionItem?.Benefits ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray(collectionItem?.Benefits) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_1}>
-<li
-className={`w-element`}>
-{collectionItem_1?.Benefit}
-</li>
-</Fragment>
-)
-})
 }
-</ul>
-</div>
-</div>
-</div>
-</Fragment>
-)
-})
-}
+<Link_1
+href={"#search-bar"}
+className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c12dl879 c1r92k6l cib2qxx chdqs4z`}>
+{"Scroll to Top"}
+</Link_1>
 </div>
 </div>
 </div>

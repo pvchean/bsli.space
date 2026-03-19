@@ -19,6 +19,11 @@
     "url": "/cgi/asset/AnekDevanagari-VariableFont_wdth_wght_WlsGXRLNI8fsI8VlvhIUd.ttf?format=raw",
     "family": "Anek Devanagari"
   },
+  "39cd93ab0ac8826aba7bf0a0bcc2bdc8f055bdc7f3af575fbd44d7a80085c150": {
+    "url": "/cgi/image/i_want_you_uvaF8bX5Z9zD5P-ah3gzg.png?format=raw",
+    "width": 600,
+    "height": 600
+  },
   "45cf4edfee624b608c3b9e84d9b1d3194092eac4b9867baed7c347bf9e21ba98": {
     "url": "/cgi/image/osu_battelle_center_9gFd14q_0uND9rumro-26.webp?format=raw",
     "width": 480,

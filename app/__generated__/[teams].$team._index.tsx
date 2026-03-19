@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-14T17:13:40.100Z";
+      export const lastPublished = "2026-03-19T20:00:29.559Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -31,10 +31,11 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       const Page = (_props: { system: any; }) => {
 const system = _props.system;
-let [Active_Members_URL, set$Active_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Active&membersSortType=Joined")
-let [Former_Members_URL, set$Former_Members_URL] = useVariableState<any>("/members/browse?membersSearch=&membersSearchType=Name&membersSearchScope=Retired&membersSortType=Joined")
+let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
+let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
+let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
 let CMS_Team = useResource("CMS_Team_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let CMS_Subteams = useResource("CMS_Subteams_1")
@@ -43,7 +44,8 @@ let CMS_Overview = useResource("CMS_Overview_1")
 let CMS_Leadership = useResource("CMS_Leadership_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
-let CurrentDate = useResource("CurrentDate_1")
+let CurrentDate = useResource("CurrentDate_2")
+let CurrentDate_1 = useResource("CurrentDate_3")
 return <Body
 className={`w-element`}>
 <div
@@ -64,13 +66,13 @@ className={`w-html-embed`} />
 className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 ct7e8mf c14ri6jw c16nciq0 cjv9a89 cobla0g cgaaecy`}>
+className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 c19cc9oe c14ri6jw c16nciq0 cjv9a89 cobla0g`}>
 <Slot>
 <Fragment_1>
 <Link
 aria-label={"Home"}
 href={"/"}
-className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 clacsc2`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi c1fsvg17 cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 c66ad5w ceykrqm`}>
 <Image
 src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
 width={800}
@@ -91,14 +93,14 @@ className={`w-box c1fsvg17 c1flzvby cafamdi c10utwzz c1wvwf6y camp34b`}>
 <NavigationMenu
 className={`w-navigation-menu c89byf`}>
 <NavigationMenuList
-className={`w-menu-list c1fsvg17 c10utwzz c167ums0 caolt3e c1slfvmz c1flzvby cafamdi ca5zzoi cfrk7dk c6zneyq c1cbgey cnjvulf cll65rd cmimdwh`}>
+className={`w-menu-list c1fsvg17 c10utwzz c167ums0 caolt3e c1slfvmz c1flzvby cafamdi cmyp3kd cte9lon c6zneyq c1cbgey cnjvulf cll65rd cmimdwh`}>
 <NavigationMenuItem
 data-ws-index="0"
 className={`w-menu-item`}>
 <Link
 href={"/"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 {"Home"}
 </Link>
 </NavigationMenuItem>
@@ -108,7 +110,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Teams"}
@@ -128,7 +130,7 @@ className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <Link
 href={"/teams/NASA"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -150,7 +152,7 @@ className={`w-text c1jt1fo7`}>
 <Link
 href={"/teams/IREC"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -176,7 +178,7 @@ className={`w-text c1jt1fo7`}>
 <Link
 href={"/teams/Liquids"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -204,7 +206,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"BSLI Teams"}
 </Heading>
 </Box>
@@ -225,7 +227,7 @@ className={`w-menu-item`}>
 <NavigationMenuTrigger>
 <Button
 type={"button"}
-className={`w-button cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+className={`w-button cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
 <Text
 className={`w-text c6zneyq`}>
 {"Members"}
@@ -245,7 +247,7 @@ className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 c1eve8s5`}>
 <Link
 href={"/leadership"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -261,9 +263,9 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={Active_Members_URL}
+href={URL_Active_Members}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -279,9 +281,9 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={Former_Members_URL}
+href={URL_Former_Members}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
 className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
 <Text
@@ -305,7 +307,7 @@ className={`w-link c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj c
 className={`w-box c1fsvg17 c14b9ffx c1san6ol cp0jmbs cgxl3bw cwn5zzf`}>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"The BSLI Family"}
 </Heading>
 </Box>
@@ -323,31 +325,103 @@ className={`w-paragraph`}>
 <NavigationMenuItem
 data-ws-index="4"
 className={`w-menu-item`}>
+<NavigationMenuTrigger>
+<Button
+type={"button"}
+className={`w-button cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+<Text
+className={`w-text c6zneyq`}>
+{"Get Involved"}
+</Text>
+<Box
+className={`w-box c1bwj3k1 c1fzb25u c1wvwf6y chnfnc0 c1to3kz4 c152vyhe c1imj6t3 c1kmx7u7 c3air8l c1mq7p96`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"currentColor\" width=\"100%\" height=\"100%\"><path d=\"M4.04 6.284a.65.65 0 0 1 .92.001L8 9.335l3.04-3.05a.65.65 0 1 1 .921.918l-3.5 3.512a.65.65 0 0 1-.921 0L4.039 7.203a.65.65 0 0 1 .001-.92Z\"></path></svg>"}
+className={`w-html-embed`} />
+</Box>
+</Button>
+</NavigationMenuTrigger>
+<NavigationMenuContent
+className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c1vcw128 c1cjq5fs`}>
+<Box
+className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 c1eve8s5`}>
 <Link
-href={"/sponsor"}
+href={URL_Active_Members}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
-{"Sponsor"}
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+<Box
+className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
+<Text
+tag={"span"}
+className={`w-text cjl8er8`}>
+{"Work with US!"}
+</Text>
+<Text
+tag={"span"}
+className={`w-text c1jt1fo7`}>
+{"We want student like you to join us!"}
+</Text>
+</Box>
 </Link>
+<Link
+href={"/leadership"}
+prefetch={"intent"}
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
+<Box
+className={`w-box c1fsvg17 cp0jmbs c14b9ffx c1khw8dr c9ffb6f`}>
+<Text
+tag={"span"}
+className={`w-text cjl8er8`}>
+{"BSLI Blog"}
+</Text>
+<Text
+tag={"span"}
+className={`w-text c1jt1fo7`}>
+{"See what the team has done lately"}
+</Text>
+</Box>
+</Link>
+</Box>
+<Box
+className={`w-box c18oa85n`}>
+<Image
+src={"/assets/i_want_you_uvaF8bX5Z9zD5P-ah3gzg.png"}
+width={600}
+height={600}
+alt={""}
+loading={"eager"}
+className={`w-image c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f cwsyufx czbwsk4`} />
+</Box>
+</NavigationMenuContent>
 </NavigationMenuItem>
 <NavigationMenuItem
 data-ws-index="5"
 className={`w-menu-item`}>
 <Link
-href={"/contact"}
+href={URL_Blog_Browse}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
-{"Contact"}
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+{"Blog"}
 </Link>
 </NavigationMenuItem>
 <NavigationMenuItem
 data-ws-index="6"
 className={`w-menu-item`}>
 <Link
-href={URL_Blog_Browse}
+href={"/sponsor"}
 prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z cfucm7u c1xkkw6h c4vnhzq cvfslw5 c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
-{"Blog"}
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+{"Sponsor"}
+</Link>
+</NavigationMenuItem>
+<NavigationMenuItem
+data-ws-index="7"
+className={`w-menu-item`}>
+<Link
+href={"/contact"}
+prefetch={"intent"}
+className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
+{"Contact"}
 </Link>
 </NavigationMenuItem>
 </NavigationMenuList>
@@ -414,7 +488,7 @@ className={`w-box c16nciq0 cobla0g cjv9a89`}>
 <Link
 aria-label={"Home"}
 href={"/"}
-className={`w-link cib2qxx chdqs4z c1fsvg17 c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 clacsc2`}>
+className={`w-link cib2qxx chdqs4z c1xkkw6h cee7ro capzw2w c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c1flzvby cafamdi c1fsvg17 cp1jzw6 c1jggrh7 cxkx6pe cuzmxq4 c66ad5w ceykrqm`}>
 <Image
 src={"/assets/bsli_logo_kBxuYU93L-wMxotsYrt-q.svg"}
 width={800}
@@ -448,7 +522,7 @@ data-ws-index="0"
 className={`w-item cvdddm5`}>
 <Link_1
 href={"/"}
-className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz cee7ro cj20esf c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
 {"Home"}
 </Link_1>
 </AccordionItem>
@@ -520,12 +594,12 @@ className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"Leadership"}
 </Link_1>
 <Link_1
-href={Active_Members_URL}
+href={URL_Active_Members}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"Active Members"}
 </Link_1>
 <Link_1
-href={Former_Members_URL}
+href={URL_Former_Members}
 className={`w-element chwh08j cs4hfdr c18xtsld cei00iu cypsx38 cj20esf`}>
 {"BSLI Alumni"}
 </Link_1>
@@ -536,7 +610,7 @@ data-ws-index="4"
 className={`w-item cvdddm5`}>
 <Link_1
 href={"/sponsor"}
-className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz cee7ro cj20esf c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
 {"Sponsor Us!"}
 </Link_1>
 </AccordionItem>
@@ -545,7 +619,7 @@ data-ws-index="5"
 className={`w-item cvdddm5`}>
 <Link_1
 href={"/contact"}
-className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz cee7ro cj20esf c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
 {"Contact Us"}
 </Link_1>
 </AccordionItem>
@@ -554,8 +628,17 @@ data-ws-index="6"
 className={`w-item cvdddm5`}>
 <Link_1
 href={URL_Blog_Browse}
-className={`w-element cib2qxx chdqs4z cj20esf cj6dqoz cee7ro c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz cee7ro cj20esf c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
 {"BSLI Blog"}
+</Link_1>
+</AccordionItem>
+<AccordionItem
+data-ws-index="7"
+className={`w-item cvdddm5`}>
+<Link_1
+href={URL_Recruitment_Browse}
+className={`w-element cib2qxx chdqs4z cj6dqoz cee7ro cj20esf c11ze5x0 c1f3bza8 chwh08j cs4hfdr c1ghud8g c18xtsld c1wsyy83 cypsx38`}>
+{"Work with Us!"}
 </Link_1>
 </AccordionItem>
 </Accordion>
@@ -756,7 +839,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo
 <div
 className={`w-element c1fsvg17 c1412oo6`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j csbbxse`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf csbbxse`}>
 {collectionItem_1?.parameter}
 </h2>
 <div
@@ -791,7 +874,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 <div
 className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq c5azhl4 c1r0hodc c1785g20`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq c5azhl4 c1r0hodc c1785g20`}>
 {collectionItem_2?.position?.["name_short"]}
 </h2>
 <div
@@ -875,7 +958,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 <div
 className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
 <h2
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j ct44ftq`}>
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq`}>
 {collectionItem_4?.position?.["name_short"]}
 </h2>
 <div
@@ -897,7 +980,7 @@ className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c1jt1fo7 c1xkkw6h czoybq
 {(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&
 <Link_1
 href={collectionItem_4?.["member_id"]?.LinkedInURL}
-className={`w-element cib2qxx chdqs4z c1fsvg17 c1xkkw6h cac1h7s cwbv5p c1q9w5dq`}>
+className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" width=\"1.4em\" height=\"1.4em\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 11v5\" /><path d=\"M8 8v.01\" /><path d=\"M12 16v-5\" /><path d=\"M16 16v-3a2 2 0 1 0 -4 0\" /><path d=\"M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10\" /></svg>"}
@@ -1092,7 +1175,7 @@ className={`w-image cpkvuvm cm703g2 c13v84m3 c7zeh76 c19n8h5r`} />
 </div>
 </div>
 <div
-className={`w-element c89byf c1czb951 c1vw3iks c1ui0x5x c1fsvg17 cp0jmbs c1flzvby cp37hgp c1dh4qz9 c9znzqy`}>
+className={`w-element c89byf c1czb951 c1vw3iks c1ui0x5x c1fsvg17 cp0jmbs c1flzvby chyxmce c1dh4qz9 c9znzqy`}>
 <div
 className={`w-element c1lynjaq c89byf c74yqvr c1fsvg17 cp0jmbs c2jpees c1bctvrt`}>
 <div
@@ -1103,6 +1186,8 @@ width={1024}
 height={147}
 alt={""}
 className={`w-image cm703g2`} />
+<div
+className={`w-element c1fsvg17 cp0jmbs c7dprmh`}>
 <Slot>
 <div
 className={`w-element c1fsvg17`}>
@@ -1165,15 +1250,21 @@ className={`w-html-embed cwxng9o`} />
 </Link_1>
 </div>
 </Slot>
+<Link_1
+href={"/contact"}
+className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7 c3eev2k`}>
+{"Contact Us!"}
+</Link_1>
+</div>
 </div>
 <div
-className={`w-element c1fsvg17 c2jpees c1bctvrt c1i5lp6y c1jt1fo7 c1412oo6 crr88tp c13kj1ir c191262q`}>
+className={`w-element c1fsvg17 c2jpees c1bctvrt c19e0j5a c1jt1fo7 c1412oo6 crr88tp c1kr250i c13kj1ir c191262q`}>
 <p
 className={`w-element`}>
 {"Website Styled By: Brian Jia ("}
 <Link_1
 href={"mailto:jia.659@buckeyemail.osu.edu"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz c1jt1fo7`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 {"jia.659@buckeyemail.osu.edu"}
 </Link_1>
 {")"}
@@ -1183,7 +1274,7 @@ className={`w-element`}>
 {"Maintained By: Paul Chean ("}
 <Link_1
 href={"mailto:cheandominguez.1@buckeyemail.osu.edu"}
-className={`w-element cib2qxx chdqs4z c1ni26wq cj6dqoz c1jt1fo7`}>
+className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 {"cheandominguez.1@buckeyemail.osu.edu"}
 </Link_1>
 {")"}

@@ -27,7 +27,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=60000" },
     ],
   }
-  const CurrentDate_1: ResourceRequest = {
+  const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
     url: "/$resources/current-date",
     searchParams: [
@@ -69,13 +69,23 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const CurrentDate_3: ResourceRequest = {
+    name: "Current Date",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
-    ["CurrentDate_1", CurrentDate_1],
+    ["CurrentDate_2", CurrentDate_2],
     ["now", now],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
     ["CMS_Blogs_1", CMS_Blogs_1],
+    ["CurrentDate_3", CurrentDate_3],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -91,9 +101,9 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Untitled",
-    description: "",
-    excludePageFromSearch: true,
+    title: "BSLI | Blogs!",
+    description: "Short blogs were teams and subteams go over what they have done and accomplished lately",
+    excludePageFromSearch: false,
     language: "",
     socialImageAssetName: undefined,
     socialImageUrl: "",
@@ -111,5 +121,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     

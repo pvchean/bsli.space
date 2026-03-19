@@ -10,7 +10,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-14T17:13:40.100Z";
+      export const lastPublished = "2026-03-19T20:00:29.559Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -56,14 +56,14 @@ className={`w-paragraph ctxsfy ckhpfcg`}>
 <RichTextLink
 href={"https://docs.webstudio.is/university/craft"}
 target={"_blank"}
-className={`w-rich-text-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-rich-text-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Craft"}
 </RichTextLink>
 {", the recommended starting point for Webstudio Projects. "}
 <RichTextLink
 href={"https://docs.webstudio.is/university/foundations/css-variables"}
 target={"_blank"}
-className={`w-rich-text-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-rich-text-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"CSS variables"}
 </RichTextLink>
 {" containing colors, sizes, and more are on the Global Root. "}
@@ -149,7 +149,7 @@ className={`w-text-1 c18rwu55 c9enewt c162yw8a cut6zwa c1vn25wx c1voizkc c3z33ta
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"Foreground"}
 </Heading>
 <Box
@@ -202,7 +202,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 c2
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"Background"}
 </Heading>
 <Box
@@ -246,7 +246,7 @@ className={`w-box c1mffhsv cxciect c1o2qwnh c1w7e3f7 cnmxwi8 cyrirbg c1n1fq70 cc
 </Box>
 <Heading
 tag={"h3"}
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"Other"}
 </Heading>
 <Box
@@ -300,7 +300,7 @@ className={`w-text c17lgwgr c1mr6vvn cfivbop cm6nhus c3eev2k c13lfb4j c4w3pr1 cw
 {"link"}
 </Text>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Link text you can edit"}
 </Link>
 </Box>
@@ -340,7 +340,7 @@ className={`w-heading cbwi5wk cr340of c1iwa1os cbewb4j`}>
 {"you can edit"}
 </Heading>
 <Heading
-className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j`}>
+className={`w-heading c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
 {"Heading 3 text "}
 {""}
 <br />
@@ -375,7 +375,7 @@ className={`w-heading c3xj8hq cr340of c1iwa1os cbewb4j`}>
 className={`w-paragraph`}>
 {"Paragraph "}
 <RichTextLink
-className={`w-rich-text-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-rich-text-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"text you"}
 </RichTextLink>
 {" can edit"}
@@ -599,43 +599,43 @@ className={`w-box c828f2h cno0pav czo9i5g c1hqntle c1vcw128 c1iq19mg cdbjjrt c3z
 <Box
 className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 c1hb1gqv cgxl3bw cwn5zzf c1flzvby c1fhcu5x c1412oo6 c7q89f2`}>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Layout"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Colors"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Links & Buttons"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Elements"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Forms"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Radix"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Utility"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Slots"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Custom"}
 </Link>
 <Link
-className={`w-link cib2qxx chdqs4z c1ni26wq cj6dqoz cee7ro`}>
+className={`w-link cib2qxx chdqs4z cj6dqoz cee7ro`}>
 {"Notes"}
 </Link>
 </Box>

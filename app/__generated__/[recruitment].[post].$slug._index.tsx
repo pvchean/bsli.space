@@ -35,10 +35,9 @@ let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/membe
 let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let CMS_Member = useResource("CMS_Member_1")
+let CMS_Recruitment = useResource("CMS_Recruitment_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
 let [URL_Member_UnknownHeadshot, set$URL_Member_UnknownHeadshot] = useVariableState<any>("https://cms.bsli.space/assets/d381fb9a-145f-4ff4-a4cc-0d90ed1b2c11")
-let CMS_Sponsorship_Tiers = useResource("CMS_Sponsorship_Tiers_1")
 let CMS_Sponsors_external = useResource("CMS_Sponsors_external_1")
 let CMS_Sponsors_External = useResource("CMS_Sponsors_External_1")
 let CurrentDate = useResource("CurrentDate_2")
@@ -675,82 +674,121 @@ className={`w-element c508zfy cuvhotc c1a8buj6 c1xqxr2h c3air8l c1mq7p96 c1mo5vy
 </Fragment_1>
 </Slot>
 <div
-className={`w-element chlecrf c1lufqxe c1czb951`}>
+className={`w-element cugth94 c1lufqxe cnbmf4z`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
-<p
-className={`w-element csbbxse cr340of c145f7eq`}>
-{"Corporate sponsorships"}
-</p>
+<div
+className={`w-element cp1jzw6`}>
 <h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
-{"Want to sponsor us?"}
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606 ccq64u2`}>
+{CMS_Recruitment?.data?.data?.title}
 </h1>
-</div>
+<p
+className={`w-element c1kp5vo3 cdr374f`}>
+{CMS_Recruitment?.data?.data?.responsibilities}
+</p>
+<ul
+className={`w-element c1slfvmz cy0jph6 c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
+<li
+className={`w-element`}>
 <div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf c1lynjaq c1fsvg17 c1hb1gqv c2jpees c1bctvrt c1flzvby c1fhcu5x c1p22wyd c13kj1ir`}>
-<div
-className={`w-element c1fsvg17 cp0jmbs c1flzvby c2jpees c1bctvrt`}>
+className={`w-element`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
+{"Who can Apply?"}
+</h1>
 <p
 className={`w-element`}>
-{"Hi, I'm Liav Ost! I'm the "}
-<b
-className={`w-element`}>
-{"Finance Director"}
-</b>
-{" for the Buckeye Space Launch Initiative. If you want to sponsor us or just want to learn more, you can reach me and our leadership team at the email below."}
+{"All OSU Students pursuing a " + CMS_Recruitment?.data?.data?.["suggested_majors"] + ", and all other majors!"}
 </p>
-<Link_1
-href={"mailto:eng-buckeyesli@osu.edu"}
-className={`w-element c145f7eq cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1fsvg17 c1r92k6l cib2qxx chdqs4z`}>
-<Slot>
-<Fragment_1>
-<div
-className={`w-element cw4wfcb c1mrxjnq`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1.4em\" height=\"1.4em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"></path>\n  <path d=\"M3 7l9 6l9 -6\"></path>\n</svg>"}
-className={`w-html-embed`} />
 </div>
-</Fragment_1>
-</Slot>
-<span
+</li>
+<li
 className={`w-element`}>
-{" eng-buckeyesli@osu.edu"}
-</span>
-</Link_1>
+<div
+className={`w-element`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
+{"How much time do I need to commit for this role?"}
+</h1>
 <p
 className={`w-element`}>
-{"If you want to donate to us individually, click on the link below!"}
+{CMS_Recruitment?.data?.data?.commitment}
 </p>
-<Link_1
-className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq c1fsvg17 c89byf c1flzvby cafamdi c1r92k6l cib2qxx chdqs4z`}>
-{"Primary / Individual Donations"}
-</Link_1>
 </div>
+</li>
+<li
+className={`w-element`}>
+<div
+className={`w-element`}>
+<h1
+className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf`}>
+{"What if I have no experience?"}
+</h1>
+<p
+className={`w-element`}>
+{"As long as you like to learn and show up, you will do great! BSLI trains all of their members on how to perform their assigned tasks. Via mentorship from fellow students and team leads each member will learn and gain experience doing various rocket and non-rocket related things. Show up and see what the club is like, try this role, or find something else you enjoy doing within this club!"}
+</p>
+</div>
+</li>
+</ul>
+<div
+className={`w-element`}>
+<div
+className={`w-element c1fsvg17 cqmqoqg c3svy07 cbauh2v c2jpees c1bctvrt c13kj1ir`}>
+<div
+className={`w-element`}>
+<h1
+className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606`}>
+{"Apply Now!"}
+</h1>
+<p
+className={`w-element cecahc4 c3ed4hq`}>
+{"Contact us via any of the methods below, or show up to the team meeting and express your interest in this role!"}
+</p>
+<div
+className={`w-element c1fsvg17 c2jpees c1bctvrt c12ae195 cxu6jij c1jf0qx c1aq1pxe`}>
+<Link_1
+href={`mailto:${CMS_Recruitment?.data?.data?.["contact_member"]?.Email}?subject=I'm interested in the ${CMS_Recruitment?.data?.data?.title} Position`}
+className={`w-element cib2qxx chdqs4z c1xkkw6h cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1fhcu5x c6zneyq cj20esf ckmcig3`}>
+{"Email Us"}
+</Link_1>
+{(CMS_Recruitment?.data?.data?.["application_form"] != null && CMS_Recruitment?.data?.data?.["application_form"] != '') &&
+<Link_1
+href={CMS_Recruitment?.data?.data?.["application_form"]}
+target={"_blank"}
+className={`w-element cib2qxx chdqs4z c1xkkw6h cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1fhcu5x c6zneyq cj20esf ckmcig3`}>
+{"Apply via interest form"}
+</Link_1>
+}
+</div>
+</div>
+<div
+className={`w-element`}>
 <div
 className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cnbmf4z ctkbqoa c9ffb6f c1fzb25u c1wvwf6y cmauqv cwsyufx czfw4y0 c191262q co74p4k`}>
 <Image
-src={`${CMS_Member?.data?.data?.[0]?.headshot != null ? CMS_Asset_URL + CMS_Member?.data?.data?.[0]?.headshot : URL_Member_UnknownHeadshot}`}
+src={`${CMS_Recruitment?.data?.data?.["contact_member"]?.headshot != null ? CMS_Asset_URL + CMS_Recruitment?.data?.data?.["contact_member"]?.headshot : URL_Member_UnknownHeadshot}`}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 <div
 className={`w-element`}>
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
-{CMS_Member?.data?.data?.[0]?.Name}
+{CMS_Recruitment?.data?.data?.["contact_member"]?.Name}
 </div>
 <div
 className={`w-element cr340of`}>
-{CMS_Member?.data?.data?.[0]?.["role_id"]?.[0]?.position?.["name_short"]}
+{`${CMS_Recruitment?.data?.data?.["contact_member"]?.["role_id"]?.[0]?.position?.rank <= 8 || CMS_Recruitment?.data?.data?.["contact_member"]?.["role_id"]?.[0]?.position?.rank == 11 ? CMS_Recruitment?.data?.data?.["contact_member"]?.["role_id"]?.[0]?.team?.["Team_Name"] + ' ' : ''}${CMS_Recruitment?.data?.data?.["contact_member"]?.["role_id"]?.[0]?.position?.["name_short"] || ' '}`}
 </div>
 </div>
 <p
 className={`w-element`}>
-{CMS_Member?.data?.data?.[0]?.Major}
+{CMS_Recruitment?.data?.data?.["contact_member"]?.Major}
 </p>
 <div
 className={`w-element c1jt1fo7`}>
 <Link_1
-href={`mailto:${CMS_Member?.data?.data?.[0]?.Email}`}
+href={`mailto:${CMS_Recruitment?.data?.data?.["contact_member"]?.Email}?subject=I'm interested in the ${CMS_Recruitment?.data?.data?.title} Position`}
 className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
 <Fragment_1>
@@ -764,12 +802,12 @@ className={`w-html-embed`} />
 </Slot>
 <p
 className={`w-element crr88tp c56gnia`}>
-{CMS_Member?.data?.data?.[0]?.Email}
+{CMS_Recruitment?.data?.data?.["contact_member"]?.Email}
 </p>
 </Link_1>
-{(CMS_Member?.data?.data?.[0]?.LinkedInURL != null && CMS_Member?.data?.data?.[0]?.LinkedInURL !== '') &&
+{(CMS_Recruitment?.data?.data?.["contact_member"]?.LinkedInURL != null && CMS_Recruitment?.data?.data?.["contact_member"]?.LinkedInURL !== '') &&
 <Link_1
-href={CMS_Member?.data?.data?.[0]?.LinkedInURL}
+href={CMS_Recruitment?.data?.data?.["contact_member"]?.LinkedInURL}
 className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
 <Slot>
 <HtmlEmbed
@@ -786,79 +824,7 @@ className={`w-element`}>
 </div>
 </div>
 </div>
-<div
-className={`w-element cugth94 c1lufqxe cnbmf4z`}>
-<div
-className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs cmr7w05 c19ldtn2 c1flzvby c1fhcu5x`}>
-<div
-className={`w-element c3eev2k`}>
-<h1
-className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c16tluoy`}>
-{"Sponsorship Tiers"}
-</h1>
-<p
-className={`w-element c6zneyq ca8dj3o`}>
-{"Become a sponsor of BSLI! Sponsors make us able to fund rockets and get to competition! By sponsoring us, you help the next generation of engineers achieve great feats of engineering with products that will have your logo in them!"}
-</p>
 </div>
-<div
-className={`w-element cmr7w05 c1bctvrt ca9k1ea c9q2fil c1hb1gqv c13kj1ir c16nciq0 c1t7hw98 cxu6jij`}>
-{Object.entries(
-  // @ts-ignore
-  CMS_Sponsorship_Tiers?.data?.data ?? {}
-).map(([_key, collectionItem]: any) => {
-  const collectionItemKey = Array.isArray(CMS_Sponsorship_Tiers?.data?.data) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey}>
-<div
-className={`w-element ${"testclass" + collectionItemKey}`}>
-<HtmlEmbed
-code={`<style>\n  .testclass${collectionItemKey} {\n    --testcolor: ${collectionItem?.Color}99;\n  }\n</style>`}
-className={`w-html-embed`} />
-<div
-className={`w-element c1fsvg17 cp0jmbs c1san6ol cgxl3bw cwn5zzf cjxujza c1i7ltwx c19c37rj co52ume cwo73pd c1wzpcnj c9ffb6f c1j4r0zr ch102ro cd2v6qh czfw4y0 cc6fyqo`}>
-<div
-className={`w-element`}>
-<h1
-className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq c16tluoy c1ghud8g`}>
-{collectionItem?.Name}
-</h1>
-<p
-className={`w-element`}>
-{`For a one year commitment of $${collectionItem?.commitment}, you become a ${collectionItem?.Name} Tier Sponsor.`}
-</p>
-</div>
-<div
-className={`w-element`}>
-<div
-className={`w-element cjl8er8`}>
-{`${collectionItem?.["previous_tier"] == null ? "Benefits include:" : "Everything in " + collectionItem?.["previous_tier"] + ", plus:"}`}
-</div>
-<ul
-className={`w-element c1erpp2i c1oubvo3 c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 cqymryr`}>
-{Object.entries(
-  // @ts-ignore
-  collectionItem?.Benefits ?? {}
-).map(([_key, collectionItem_1]: any) => {
-  const collectionItemKey_1 = Array.isArray(collectionItem?.Benefits) ? Number(_key) : _key;
-  return (
-<Fragment key={collectionItemKey_1}>
-<li
-className={`w-element`}>
-{collectionItem_1?.Benefit}
-</li>
-</Fragment>
-)
-})
-}
-</ul>
-</div>
-</div>
-</div>
-</Fragment>
-)
-})
-}
 </div>
 </div>
 </div>
@@ -885,24 +851,24 @@ className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
   [1,2,3] ?? {}
-).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
+).map(([_key, collectionItem_1]: any) => {
+  const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_3}>
+<Fragment key={collectionItemKey_1}>
 <Slot>
 {Object.entries(
   // @ts-ignore
   CMS_Sponsors_external?.data?.data ?? {}
-).map(([_key, collectionItem_2]: any) => {
-  const collectionItemKey_2 = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
+).map(([_key, collectionItem]: any) => {
+  const collectionItemKey = Array.isArray(CMS_Sponsors_external?.data?.data) ? Number(_key) : _key;
   return (
-<Fragment key={collectionItemKey_2}>
+<Fragment key={collectionItemKey}>
 <Link_1
-href={collectionItem_2?.["Sponsor_Website_URL"]}
+href={collectionItem?.["Sponsor_Website_URL"]}
 target={"_blank"}
 className={`w-element`}>
 <Image
-src={`${CMS_Asset_URL}${collectionItem_2?.image}`}
+src={`${CMS_Asset_URL}${collectionItem?.image}`}
 className={`w-image cszfrj9 c13gsvnv carfxkz c89byf c1uyot0f cyezpnn cbibhrs cbdmr7j crt6s2m cbx7069 ck43fmp cwzkrrp`} />
 </Link_1>
 </Fragment>

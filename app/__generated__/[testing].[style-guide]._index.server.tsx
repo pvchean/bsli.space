@@ -63,5 +63,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     

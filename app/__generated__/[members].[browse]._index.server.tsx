@@ -28,7 +28,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=60000" },
     ],
   }
-  const CurrentDate_1: ResourceRequest = {
+  const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
     url: "/$resources/current-date",
     searchParams: [
@@ -42,11 +42,11 @@ export const getResources = (_props: { system: System }) => {
     url: `${CMS_Item_URL}BSLI_Members`,
     searchParams: [
       { name: "fields", value: "headshot,Name,Major,Email,LinkedInURL,osu_ndn,role_id.position.*,role_id.team.Team_Name" },
-      { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.membersSearchScope}"}},{"${system?.search?.membersSearchType}":{"${system?.search?.membersSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.membersSearch == '' ? true : system?.search?.membersSearch}"}}]}`
+      { name: "filter", value: `{"_and":[{"status":{"_in":"${system?.search?.searchScope}"}},{"${system?.search?.searchType}":{"${system?.search?.search == '' ? "_nnull" : "_icontains"}":"${system?.search?.search == '' ? true : system?.search?.search}"}}]}`
  },
-      { name: "sort", value: `${system?.search?.membersSearchOrder == "on" ? '-' : ''}${system?.search?.membersSortType}` },
+      { name: "sort", value: `${system?.search?.searchOrder == "on" ? '-' : ''}${system?.search?.sortType}` },
       { name: "deep", value: "{\"role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
-      { name: "limit", value: system?.search?.membersSearchLimit != null && system?.search?.membersSearchLimit > 0 ? system?.search?.membersSearchLimit : CMS_Default_Limit },
+      { name: "limit", value: system?.search?.searchLimit != null && system?.search?.searchLimit > 0 ? system?.search?.searchLimit : CMS_Default_Limit },
       { name: "meta", value: "total_count" },
     ],
     method: "get",
@@ -74,13 +74,23 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
+  const CurrentDate_3: ResourceRequest = {
+    name: "Current Date",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
-    ["CurrentDate_1", CurrentDate_1],
+    ["CurrentDate_2", CurrentDate_2],
     ["CMS_Members_1", CMS_Members_1],
     ["now", now],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
+    ["CurrentDate_3", CurrentDate_3],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -96,7 +106,7 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "BSLI - Members",
+    title: "BSLI | Members",
     description: "",
     excludePageFromSearch: true,
     language: "en-US",
@@ -116,5 +126,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     

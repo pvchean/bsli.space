@@ -26,7 +26,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=60000" },
     ],
   }
-  const CurrentDate_1: ResourceRequest = {
+  const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
     url: "/$resources/current-date",
     searchParams: [
@@ -55,9 +55,18 @@ export const getResources = (_props: { system: System }) => {
       { name: "Cache-Control", value: "max-age=86400" },
     ],
   }
+  const CurrentDate_3: ResourceRequest = {
+    name: "Current Date",
+    url: "/$resources/current-date",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const CMS_Blog_Post_1: ResourceRequest = {
     name: "CMS_Blog_Post",
-    url: CMS_Item_URL + "BSLI_Blogs",
+    url: "https://cms.bsli.space/items/BSLI_Blogs",
     searchParams: [
       { name: "filter[status][_eq]", value: "published" },
     ],
@@ -69,9 +78,10 @@ export const getResources = (_props: { system: System }) => {
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
-    ["CurrentDate_1", CurrentDate_1],
+    ["CurrentDate_2", CurrentDate_2],
     ["now", now],
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
+    ["CurrentDate_3", CurrentDate_3],
     ["CMS_Blog_Post_1", CMS_Blog_Post_1],
   ])
   const _action = new Map<string, ResourceRequest>([
@@ -87,13 +97,15 @@ export const getResources = (_props: { system: System }) => {
   system: System;
   resources: Record<string, any>;
 }): PageMeta => {
+  let CMS_Blog_Post = resources.CMS_Blog_Post_1
+  let CMS_Asset_URL = "https://cms.bsli.space/assets/"
   return {
-    title: "Untitled",
-    description: "",
-    excludePageFromSearch: true,
-    language: "",
+    title: "BSLI | " + CMS_Blog_Post?.data?.data?.[0]?.title,
+    description: CMS_Blog_Post?.data?.data?.[0]?.["short_description"],
+    excludePageFromSearch: false,
+    language: "en-US",
     socialImageAssetName: undefined,
-    socialImageUrl: "",
+    socialImageUrl: CMS_Asset_URL + CMS_Blog_Post?.data?.data?.[0]?.thumbnail,
     status: undefined,
     redirect: "",
     custom: [
@@ -108,5 +120,5 @@ export const getRemixParams = ({ ...params }: Params): Params => {
 }
 
 
-      export const contactEmail = "pvchean@gmail.com";
+      export const contactEmail = "cheandominguez.1@buckeyemail.osu.edu";
     
