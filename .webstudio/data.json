@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "302d1a99-4229-4ad8-b090-3e45dddee4e4",
+    "id": "9aaad655-decb-46a8-9ff6-d7a8498ab0bd",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7505,
-    "createdAt": "2026-03-19T20:05:55.724+00:00",
-    "updatedAt": "2026-03-19T20:05:55.724+00:00",
+    "version": 7514,
+    "createdAt": "2026-03-19T20:11:27.973+00:00",
+    "updatedAt": "2026-03-19T20:11:27.973+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -24584,7 +24584,7 @@
           "property": "fontSize",
           "value": {
             "type": "unparsed",
-            "value": "min(1.85lvw, 24px)"
+            "value": "min(1.95lvw, 24px)"
           }
         }
       ],
@@ -60059,13 +60059,6 @@
         }
       ],
       [
-        "r1ROx3UNWLsQXiFcDWtot",
-        {
-          "type": "local",
-          "id": "r1ROx3UNWLsQXiFcDWtot"
-        }
-      ],
-      [
         "DM32FzhOMJvyCRKh6eyLg",
         {
           "type": "local",
@@ -69031,17 +69024,6 @@
         }
       ],
       [
-        "BfqAYe5CH4c1xuQU0E4rf",
-        {
-          "instanceId": "BfqAYe5CH4c1xuQU0E4rf",
-          "values": [
-            "7puC0Kv9ErUyuv6KSpcaJ",
-            "RlRpiySHzzDaIumS5xNOt",
-            "r1ROx3UNWLsQXiFcDWtot"
-          ]
-        }
-      ],
-      [
         "6kT1_CrhGZ41XT8anKTf2",
         {
           "instanceId": "6kT1_CrhGZ41XT8anKTf2",
@@ -77607,26 +77589,6 @@
         }
       ],
       [
-        "Ef4w7TBgeXm1ejh0OPsI6",
-        {
-          "id": "Ef4w7TBgeXm1ejh0OPsI6",
-          "instanceId": "BfqAYe5CH4c1xuQU0E4rf",
-          "name": "href",
-          "type": "expression",
-          "value": "$ws$dataSource$cuDG4v0G9xCwkmzu85V0f"
-        }
-      ],
-      [
-        "apwDnYaHmkfhgT-EFoD06",
-        {
-          "id": "apwDnYaHmkfhgT-EFoD06",
-          "instanceId": "BfqAYe5CH4c1xuQU0E4rf",
-          "name": "prefetch",
-          "type": "string",
-          "value": "intent"
-        }
-      ],
-      [
         "Xsm29SiOwo5-GAt2M-Bp6",
         {
           "id": "Xsm29SiOwo5-GAt2M-Bp6",
@@ -84358,10 +84320,6 @@
             {
               "type": "id",
               "value": "ZjfxQY3LPEhV_epU8rNIa"
-            },
-            {
-              "type": "id",
-              "value": "eQ36KjcO5eBbHF_dBiWHS"
             },
             {
               "type": "id",
@@ -101280,34 +101238,6 @@
             {
               "type": "text",
               "value": "We want student like you to join us!"
-            }
-          ]
-        }
-      ],
-      [
-        "eQ36KjcO5eBbHF_dBiWHS",
-        {
-          "type": "instance",
-          "id": "eQ36KjcO5eBbHF_dBiWHS",
-          "component": "@webstudio-is/sdk-components-react-radix:NavigationMenuItem",
-          "children": [
-            {
-              "type": "id",
-              "value": "BfqAYe5CH4c1xuQU0E4rf"
-            }
-          ]
-        }
-      ],
-      [
-        "BfqAYe5CH4c1xuQU0E4rf",
-        {
-          "type": "instance",
-          "id": "BfqAYe5CH4c1xuQU0E4rf",
-          "component": "Link",
-          "children": [
-            {
-              "type": "text",
-              "value": "Blog"
             }
           ]
         }

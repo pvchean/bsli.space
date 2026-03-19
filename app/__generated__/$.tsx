@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-19T20:05:55.724Z";
+      export const lastPublished = "2026-03-19T20:11:27.973Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -60,7 +60,7 @@ className={`w-html-embed`} />
 className={`w-element c1ha922v c167ob2o ctceiha c1517000 c3as5a5 c1h7pdcy`}>
 <Box
 tag={"header"}
-className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 c19cc9oe c14ri6jw c16nciq0 cjv9a89 cobla0g`}>
+className={`w-box cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x cmimdx8 c1hqntle caaf2sz cr1yw4f csfjp84 c5usfr3 c14ri6jw c16nciq0 cjv9a89 cobla0g`}>
 <Slot>
 <Fragment_1>
 <Link
@@ -392,16 +392,6 @@ className={`w-image c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf c1qdzuay c1lkbaaj 
 data-ws-index="5"
 className={`w-menu-item`}>
 <Link
-href={URL_Blog_Browse}
-prefetch={"intent"}
-className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
-{"Blog"}
-</Link>
-</NavigationMenuItem>
-<NavigationMenuItem
-data-ws-index="6"
-className={`w-menu-item`}>
-<Link
 href={"/sponsor"}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby cafamdi cug58nh c1x5j7jp c1w8q7w3 c4f9xwy c1sm3e4y c18jhn4e c1mynah0 cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 ciz9etv cuzmxq4 c1e3l8n5 c138cqna c4o45ll`}>
@@ -409,7 +399,7 @@ className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cvfslw5 cfucm7u c1flzvby caf
 </Link>
 </NavigationMenuItem>
 <NavigationMenuItem
-data-ws-index="7"
+data-ws-index="6"
 className={`w-menu-item`}>
 <Link
 href={"/contact"}
