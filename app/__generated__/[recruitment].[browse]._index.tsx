@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-19T20:00:29.559Z";
+      export const lastPublished = "2026-03-19T20:05:55.724Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -33,9 +33,9 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 const system = _props.system;
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
+let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
 let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
-let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
 let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(25)
 let CMS_Recruitment = useResource("CMS_Recruitment_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
@@ -343,7 +343,7 @@ className={`w-menu-content c1mjxydt cvuc00n c1fsvg17 c2jpees c1bctvrt c1hqntle c
 <Box
 className={`w-box c1fsvg17 cp0jmbs cxkx6pe c1jggrh7 c1eve8s5`}>
 <Link
-href={URL_Active_Members}
+href={URL_Recruitment_Browse}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
@@ -361,7 +361,7 @@ className={`w-text c1jt1fo7`}>
 </Box>
 </Link>
 <Link
-href={"/leadership"}
+href={URL_Blog_Browse}
 prefetch={"intent"}
 className={`w-link cib2qxx chdqs4z c1xkkw6h c4vnhzq cfucm7u c1flzvby c1san6ol cxkx6pe c1jggrh7 cjxujza c1i7ltwx c19c37rj co52ume c12d0zc7 c1b3b22y cho9p8j c1gjgb2x c1oehldr c1n772oz ckf1t7t czjcsg8 cuzmxq4`}>
 <Box
