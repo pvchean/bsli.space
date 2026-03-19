@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "9aaad655-decb-46a8-9ff6-d7a8498ab0bd",
+    "id": "148d9a3e-0e50-441a-85f8-d2a1bd7233b5",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7514,
-    "createdAt": "2026-03-19T20:11:27.973+00:00",
-    "updatedAt": "2026-03-19T20:11:27.973+00:00",
+    "version": 7527,
+    "createdAt": "2026-03-19T20:33:05.575+00:00",
+    "updatedAt": "2026-03-19T20:33:05.575+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -234,6 +234,7 @@
           "name": "member page",
           "title": "`BSLI | ${$ws$dataSource$7j2tVyPUNnf11__DASH__zhg8L9I.data.data[0].Name}`",
           "history": [
+            "/kotta.4",
             "/senthilnathan.11",
             "/cheandominguez.1",
             "/jia.659",
@@ -252,8 +253,7 @@
             "/members/dill.163",
             "/members/null",
             "/members/bohm.26",
-            "/members/dague.34",
-            "/members/pittner.13"
+            "/members/dague.34"
           ],
           "rootInstanceId": "pZZuDpVCUwNSpuiUr9HRf",
           "meta": {
@@ -424,8 +424,9 @@
           "name": "recruitment post",
           "title": "\"BSLI | Recruitment:\"",
           "history": [
-            "/post/3",
-            "/post/1"
+            "/post/2",
+            "/post/1",
+            "/post/3"
           ],
           "rootInstanceId": "p_Y5k8kaKJ6YgwztEHyy6",
           "meta": {
@@ -77637,6 +77638,16 @@
           "type": "string",
           "value": "eager"
         }
+      ],
+      [
+        "q1u8ymQgOvTlSzH45ItYo",
+        {
+          "id": "q1u8ymQgOvTlSzH45ItYo",
+          "instanceId": "p6Yy_UWz20d8VpIrahAUz",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "$ws$dataSource$HHIP1XSY02Zdk4SLTb0JB.data.data[\"contact_email\"] != null"
+        }
       ]
     ],
     "dataSources": [
@@ -101502,6 +101513,7 @@
       "name": "member page",
       "title": "`BSLI | ${$ws$dataSource$7j2tVyPUNnf11__DASH__zhg8L9I.data.data[0].Name}`",
       "history": [
+        "/kotta.4",
         "/senthilnathan.11",
         "/cheandominguez.1",
         "/jia.659",
@@ -101520,8 +101532,7 @@
         "/members/dill.163",
         "/members/null",
         "/members/bohm.26",
-        "/members/dague.34",
-        "/members/pittner.13"
+        "/members/dague.34"
       ],
       "rootInstanceId": "pZZuDpVCUwNSpuiUr9HRf",
       "meta": {
@@ -101692,8 +101703,9 @@
       "name": "recruitment post",
       "title": "\"BSLI | Recruitment:\"",
       "history": [
-        "/post/3",
-        "/post/1"
+        "/post/2",
+        "/post/1",
+        "/post/3"
       ],
       "rootInstanceId": "p_Y5k8kaKJ6YgwztEHyy6",
       "meta": {
