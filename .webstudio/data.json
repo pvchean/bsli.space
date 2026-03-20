@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "e8a3f112-a847-4b8f-899e-8d3787a95921",
+    "id": "37351fd6-a4e1-488d-9a15-3c7dcc751e0c",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7545,
-    "createdAt": "2026-03-20T20:37:02.138+00:00",
-    "updatedAt": "2026-03-20T20:37:02.138+00:00",
+    "version": 7546,
+    "createdAt": "2026-03-20T20:40:57.275+00:00",
+    "updatedAt": "2026-03-20T20:40:57.275+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -79511,16 +79511,6 @@
         }
       ],
       [
-        "sPwgLRcki0crGAIhE5v7Y",
-        {
-          "type": "resource",
-          "id": "sPwgLRcki0crGAIhE5v7Y",
-          "scopeInstanceId": "3fJLiEvAU6wnhhAbAV4BE",
-          "name": "CMS_Member",
-          "resourceId": "iTByDw_fXFmSu8tWHc1US"
-        }
-      ],
-      [
         "AGlQipJgu7fGDqvOKQTNh",
         {
           "type": "parameter",
@@ -80011,26 +80001,6 @@
             {
               "name": "deep",
               "value": "\"{\\\"contact_member.role_id\\\": {\\\"_filter\\\": {\\\"end\\\": { \\\"_null\\\": true}}}}\""
-            }
-          ],
-          "headers": []
-        }
-      ],
-      [
-        "iTByDw_fXFmSu8tWHc1US",
-        {
-          "id": "iTByDw_fXFmSu8tWHc1US",
-          "name": "CMS_Member",
-          "method": "get",
-          "url": "\"https://cms.bsli.space/items/BSLI_Members\"",
-          "searchParams": [
-            {
-              "name": "filter[osu_ndn][_eq]",
-              "value": "$ws$dataSource$HHIP1XSY02Zdk4SLTb0JB"
-            },
-            {
-              "name": "fields",
-              "value": "\"*,role_id.*.*\""
             }
           ],
           "headers": []

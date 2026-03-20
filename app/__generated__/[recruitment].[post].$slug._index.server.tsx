@@ -76,17 +76,6 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const CMS_Member: ResourceRequest = {
-    name: "CMS_Member",
-    url: "https://cms.bsli.space/items/BSLI_Members",
-    searchParams: [
-      { name: "filter[osu_ndn][_eq]", value: CMS_Recruitment },
-      { name: "fields", value: "*,role_id.*.*" },
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
   const _data = new Map<string, ResourceRequest>([
     ["CMS_Sponsors_External_1", CMS_Sponsors_External_1],
     ["CMS_Sponsors_External_2", CMS_Sponsors_External_2],
@@ -95,7 +84,6 @@ export const getResources = (_props: { system: System }) => {
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
     ["CurrentDate_3", CurrentDate_3],
     ["CMS_Recruitment_1", CMS_Recruitment_1],
-    ["CMS_Member", CMS_Member],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
