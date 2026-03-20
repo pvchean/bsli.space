@@ -313,6 +313,12 @@
   form.w-webhook-form {
     box-sizing: border-box
   }
+  div.w-video-animation {
+    box-sizing: border-box
+  }
+  video.w-video {
+    max-width: 100%
+  }
 }
 @media all {
   .cafamdi {

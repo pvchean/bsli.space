@@ -6,7 +6,6 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.space/items/"
-  const system = _props.system
   const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
@@ -67,21 +66,10 @@ export const getResources = (_props: { system: System }) => {
   }
   const CMS_Recruitment_1: ResourceRequest = {
     name: "CMS_Recruitment",
-    url: CMS_Item_URL + "BSLI_Member_Recruitment/" + system?.params?.slug,
+    url: "https://cms.bsli.space/items/BSLI_Member_Recruitment/3",
     searchParams: [
       { name: "fields", value: "*,contact_member.headshot,contact_member.Name,contact_member.Major,contact_member.Email,contact_member.LinkedInURL,contact_member.osu_ndn,contact_member.role_id.position.*,contact_member.role_id.team.Team_Name" },
       { name: "deep", value: "{\"contact_member.role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
-  const CMS_Member: ResourceRequest = {
-    name: "CMS_Member",
-    url: "https://cms.bsli.space/items/BSLI_Members",
-    searchParams: [
-      { name: "filter[osu_ndn][_eq]", value: CMS_Recruitment },
-      { name: "fields", value: "*,role_id.*.*" },
     ],
     method: "get",
     headers: [
@@ -95,7 +83,6 @@ export const getResources = (_props: { system: System }) => {
     ["CMS_Sponsors_external_1", CMS_Sponsors_external_1],
     ["CurrentDate_3", CurrentDate_3],
     ["CMS_Recruitment_1", CMS_Recruitment_1],
-    ["CMS_Member", CMS_Member],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
@@ -110,10 +97,9 @@ export const getResources = (_props: { system: System }) => {
   system: System;
   resources: Record<string, any>;
 }): PageMeta => {
-  let CMS_Recruitment = resources.CMS_Recruitment_1
   return {
-    title: "BSLI | Recruitment: " + CMS_Recruitment?.data?.data?.title,
-    description: CMS_Recruitment?.data?.data?.responsibilities,
+    title: "Untitled",
+    description: "",
     excludePageFromSearch: true,
     language: "",
     socialImageAssetName: undefined,

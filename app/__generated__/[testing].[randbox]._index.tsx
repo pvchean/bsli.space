@@ -5,12 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body } from "@webstudio-is/sdk-components-react-router";
-import { Image as Image } from "@webstudio-is/sdk-components-react";
+import { Image as Image, Video as Video } from "@webstudio-is/sdk-components-react";
+import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-animation";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-19T20:33:05.575Z";
+      export const lastPublished = "2026-03-20T20:37:02.138Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -37,6 +38,17 @@ width={1536}
 height={1025}
 alt={""}
 className={`w-image`} />
+<VideoAnimation
+timeline={true}
+className={`w-video-animation`}>
+<Video
+preload={"auto"}
+autoPlay={true}
+muted={true}
+playsInline={true}
+crossOrigin={"anonymous"}
+className={`w-video`} />
+</VideoAnimation>
 </Body>
 }
 
