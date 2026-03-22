@@ -6,6 +6,7 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let CMS_Item_URL = "https://cms.bsli.space/items/"
+  const system = _props.system
   const CMS_Sponsors_External_1: ResourceRequest = {
     name: "CMS_Sponsors_External",
     url: `${CMS_Item_URL}BSLI_Sponsors_External`,
@@ -69,7 +70,7 @@ export const getResources = (_props: { system: System }) => {
     url: "https://cms.bsli.space/items/BSLI_Members",
     searchParams: [
       { name: "fields", value: "*,role_id.*.*" },
-      { name: "filter[osu_ndn][_eq]", value: "cheandominguez.1" },
+      { name: "filter[osu_ndn][_eq]", value: system?.params?.ndn },
       { name: "deep[role_id][_sort]", value: "end,start" },
     ],
     method: "get",

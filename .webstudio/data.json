@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "37351fd6-a4e1-488d-9a15-3c7dcc751e0c",
+    "id": "5c3aebd9-8dd9-4bc2-aaf9-9b685a6adc0e",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7546,
-    "createdAt": "2026-03-20T20:40:57.275+00:00",
-    "updatedAt": "2026-03-20T20:40:57.275+00:00",
+    "version": 7548,
+    "createdAt": "2026-03-22T14:43:07.466+00:00",
+    "updatedAt": "2026-03-22T14:43:07.466+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -79956,7 +79956,7 @@
             },
             {
               "name": "filter[osu_ndn][_eq]",
-              "value": "\"cheandominguez.1\""
+              "value": "$ws$system.params.ndn"
             },
             {
               "name": "deep[role_id][_sort]",
