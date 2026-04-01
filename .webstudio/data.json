@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "5c3aebd9-8dd9-4bc2-aaf9-9b685a6adc0e",
+    "id": "f7845b81-cfb8-4a2f-b584-adba77648e7e",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7548,
-    "createdAt": "2026-03-22T14:43:07.466+00:00",
-    "updatedAt": "2026-03-22T14:43:07.466+00:00",
+    "version": 7598,
+    "createdAt": "2026-04-01T20:10:20.465+00:00",
+    "updatedAt": "2026-04-01T20:10:20.465+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -49362,19 +49362,6 @@
         }
       ],
       [
-        "mkInSktOwZv2Im9hDNals:tAFRweP7yGMMQI5CmE4yb:fontSize:",
-        {
-          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
-          "styleSourceId": "mkInSktOwZv2Im9hDNals",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 28
-          }
-        }
-      ],
-      [
         "mkInSktOwZv2Im9hDNals:w1CiYUsWrNY7Y9wcpTy3K:fontSize:",
         {
           "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
@@ -76149,7 +76136,7 @@
           "instanceId": "-pTrlu1qfPfCotBTvE3vC",
           "name": "data-ws-show",
           "type": "expression",
-          "value": "+$ws$system.search.membersSearchLimit < $ws$dataSource$kzWvH7etMD9YVP3QUKLID.data.meta[\"total_count\"]"
+          "value": "(+$ws$system.search.searchLimit !== +$ws$system.search.searchLimit ? $ws$dataSource$5KOunIYCZIRCURQpeheFC : +$ws$system.search.searchLimit) < $ws$dataSource$kzWvH7etMD9YVP3QUKLID.data.meta[\"total_count\"]"
         }
       ],
       [
@@ -77103,23 +77090,13 @@
         }
       ],
       [
-        "HSyx8Heq5dSiOueiFtISX",
-        {
-          "id": "HSyx8Heq5dSiOueiFtISX",
-          "instanceId": "-meB-S__tEdvm0U5sZB_6",
-          "name": "data-ws-show",
-          "type": "expression",
-          "value": "CMS_Members.data.data.length < CMS_Members.data.meta[\"total_count\"]"
-        }
-      ],
-      [
         "oJiz251nLeb6Gh76pUDOI",
         {
           "id": "oJiz251nLeb6Gh76pUDOI",
           "instanceId": "RnaOMoX8AV3QUvJr_WwOg",
           "name": "data-ws-show",
           "type": "expression",
-          "value": "$ws$system.search < CMS_Members.data.meta[\"total_count\"]"
+          "value": "(+$ws$system.search.searchLimit !== +$ws$system.search.searchLimit ? $ws$dataSource$gVFNf3GXTA6SkiKc1Bvus : +$ws$system.search.searchLimit) < $ws$dataSource$SZsxP2GjTD_aTskYoPtZx.data.meta[\"total_count\"]"
         }
       ],
       [
@@ -78109,7 +78086,7 @@
           "instanceId": "5o3uK-vecIOBekjf3Kfuo",
           "name": "data-ws-show",
           "type": "expression",
-          "value": "+$ws$system.search.membersSearchLimit < $ws$dataSource$9J_8gFAANdiqufGre_W6v.data.meta[\"total_count\"]"
+          "value": "(+$ws$system.search.searchLimit !== +$ws$system.search.searchLimit ? $ws$dataSource$5wm7rE5yTGyV1dJUsjrn0 : +$ws$system.search.searchLimit) < $ws$dataSource$9J_8gFAANdiqufGre_W6v.data.meta[\"total_count\"]"
         }
       ],
       [
@@ -79876,6 +79853,10 @@
             {
               "name": "sort",
               "value": "`${$ws$system.search.blogsSearchOrder == \"on\" ? '-' : ''}${$ws$system.search.blogsSortType}`"
+            },
+            {
+              "name": "meta",
+              "value": "\"total_count\""
             }
           ],
           "headers": []
@@ -79916,6 +79897,10 @@
             {
               "name": "limit",
               "value": "$ws$system.search.searchLimit != null && $ws$system.search.searchLimit > 0 ? $ws$system.search.searchLimit : $ws$dataSource$5wm7rE5yTGyV1dJUsjrn0"
+            },
+            {
+              "name": "meta",
+              "value": "\"total_count\""
             }
           ],
           "headers": []

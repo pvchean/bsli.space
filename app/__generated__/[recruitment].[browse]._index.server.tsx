@@ -75,6 +75,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "filter", value: `{"_and":[{"${system?.search?.searchType}":{"${system?.search?.search == '' ? "_nnull" : "_icontains"}":"${system?.search?.search == '' ? true : system?.search?.search}"}}]}`
  },
       { name: "limit", value: system?.search?.searchLimit != null && system?.search?.searchLimit > 0 ? system?.search?.searchLimit : CMS_Default_Limit },
+      { name: "meta", value: "total_count" },
     ],
     method: "get",
     headers: [

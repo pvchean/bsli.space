@@ -4,6 +4,8 @@
   :root {
     display: grid;
     min-height: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
     font-family: Arial, Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.2;
@@ -2753,9 +2755,6 @@
   .c1s74duj img {
     max-height: 100cqw
   }
-  .cecahc4 {
-    font-size: 28px
-  }
   .cdj3arn {
     padding-top: 0px
   }
@@ -2842,6 +2841,9 @@
   }
   .c3svy07 {
     grid-template-rows: 1fr
+  }
+  .cecahc4 {
+    font-size: 28px
   }
   .c1ti5t9o {
     -webkit-line-clamp: 1

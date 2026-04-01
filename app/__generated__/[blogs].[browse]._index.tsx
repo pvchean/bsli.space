@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-03-22T14:43:07.466Z";
+      export const lastPublished = "2026-04-01T20:10:20.465Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -869,21 +869,19 @@ className={`w-element c3eev2k`}>
 </div>
 <div
 className={`w-element`}>
-{(system?.search < undefined?.data?.meta?.["total_count"]) &&
+{((+system?.search?.searchLimit !== +system?.search?.searchLimit ? CMS_Default_Limit : +system?.search?.searchLimit) < CMS_Blogs?.data?.meta?.["total_count"]) &&
 <div
 className={`w-element cj20esf`}>
-{(undefined?.data?.data?.length < undefined?.data?.meta?.["total_count"]) &&
 <Link_1
 href={`/blogs/browse?blogsSearch=${system?.search?.blogsSearch}&blogsSearchType=${system?.search?.blogsSearchType}&blogsSortType=${system?.search?.blogsSortType}&blogsSearchLimit=${+system?.search?.blogsSearchLimit + CMS_Default_Limit}#${CMS_Blogs?.data?.data?.length - 1}`}
 className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>
 {"Load More Results"}
 </Link_1>
-}
 </div>
 }
 <Link_1
 href={"#search-bar"}
-className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c12dl879 cecahc4 c1r92k6l cib2qxx chdqs4z c1qankp4`}>
+className={`w-element c1mderik cug58nh c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf c12dl879 c1r92k6l cib2qxx chdqs4z c1qankp4`}>
 {"Scroll to Top"}
 </Link_1>
 </div>

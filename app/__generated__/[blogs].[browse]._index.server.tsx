@@ -64,6 +64,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "filter", value: `{"_and":[{"status":{"_eq":"published"}},{"${system?.search?.blogsSearchType}":{"${system?.search?.blogsSearch == '' ? "_nnull" : "_icontains"}":"${system?.search?.blogsSearch == '' ? true : system?.search?.blogsSearch}"}}]}`
  },
       { name: "sort", value: `${system?.search?.blogsSearchOrder == "on" ? '-' : ''}${system?.search?.blogsSortType}` },
+      { name: "meta", value: "total_count" },
     ],
     method: "get",
     headers: [
