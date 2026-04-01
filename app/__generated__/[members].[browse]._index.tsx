@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-01T20:10:20.465Z";
+      export const lastPublished = "2026-04-01T20:16:49.859Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -914,7 +914,7 @@ className={`w-element`}>
 <div
 className={`w-element cj20esf`}>
 <Link_1
-href={`/members/browse?search=${system?.search?.membersSearch}&searchType=${system?.search?.membersSearchType}&searchScope=${system?.search?.membersSearchScope}&sortType=${system?.search?.membersSortType}&searchLimit=${+system?.search?.searchLimit + CMS_Default_Limit}#${+system?.search?.searchLimit - 1}`}
+href={`/members/browse?search=${system?.search?.search}&searchType=${system?.search?.searchType}&searchScope=${system?.search?.searchScope}&sortType=${system?.search?.sortType}&searchLimit=${+system?.search?.searchLimit + CMS_Default_Limit}#${+system?.search?.searchLimit - 1}`}
 className={`w-element cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq cj20esf ckmcig3 cib2qxx chdqs4z`}>
 {"Load More Results"}
 </Link_1>

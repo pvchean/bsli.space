@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "f7845b81-cfb8-4a2f-b584-adba77648e7e",
+    "id": "14118c11-b74b-475a-9914-f5f7bd1a43a3",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7598,
-    "createdAt": "2026-04-01T20:10:20.465+00:00",
-    "updatedAt": "2026-04-01T20:10:20.465+00:00",
+    "version": 7601,
+    "createdAt": "2026-04-01T20:16:49.859+00:00",
+    "updatedAt": "2026-04-01T20:16:49.859+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -76106,7 +76106,7 @@
           "instanceId": "bzNCTU3yJJXRFhgBu_Qj7",
           "name": "href",
           "type": "expression",
-          "value": "`/members/browse?search=${$ws$system.search.membersSearch}&searchType=${$ws$system.search.membersSearchType}&searchScope=${$ws$system.search.membersSearchScope}&sortType=${$ws$system.search.membersSortType}&searchLimit=${+$ws$system.search.searchLimit + $ws$dataSource$5KOunIYCZIRCURQpeheFC}#${+$ws$system.search.searchLimit - 1}`"
+          "value": "`/members/browse?search=${$ws$system.search.search}&searchType=${$ws$system.search.searchType}&searchScope=${$ws$system.search.searchScope}&sortType=${$ws$system.search.sortType}&searchLimit=${+$ws$system.search.searchLimit + $ws$dataSource$5KOunIYCZIRCURQpeheFC}#${+$ws$system.search.searchLimit - 1}`"
         }
       ],
       [
