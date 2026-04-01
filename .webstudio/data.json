@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "14118c11-b74b-475a-9914-f5f7bd1a43a3",
+    "id": "e42fbac5-f40f-43ce-9ede-54684f1ecf55",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7601,
-    "createdAt": "2026-04-01T20:16:49.859+00:00",
-    "updatedAt": "2026-04-01T20:16:49.859+00:00",
+    "version": 7602,
+    "createdAt": "2026-04-01T20:27:26.062+00:00",
+    "updatedAt": "2026-04-01T20:27:26.062+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -24610,7 +24610,7 @@
           "property": "fontSize",
           "value": {
             "type": "unparsed",
-            "value": "min(1.95lvw, 24px)"
+            "value": "min(1.95lvw, 22px)"
           }
         }
       ],
