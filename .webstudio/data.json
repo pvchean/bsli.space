@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "e42fbac5-f40f-43ce-9ede-54684f1ecf55",
+    "id": "60e4e470-7504-4817-8531-a37c6404ed89",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7602,
-    "createdAt": "2026-04-01T20:27:26.062+00:00",
-    "updatedAt": "2026-04-01T20:27:26.062+00:00",
+    "version": 7605,
+    "createdAt": "2026-04-08T00:29:29.496+00:00",
+    "updatedAt": "2026-04-08T00:29:29.496+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -111,8 +111,8 @@
           "name": "Teams",
           "title": "`BSLI | ${$ws$system.params.team} Team`",
           "history": [
-            "/teams/IREC",
             "/teams/NASA",
+            "/teams/IREC",
             "/teams/Liquids",
             "/teams/Nasa",
             "/teams/Irec",
@@ -79965,7 +79965,7 @@
             },
             {
               "name": "filter[Team_Name][_eq]",
-              "value": "\"IREC\""
+              "value": "$ws$system.params.team"
             }
           ],
           "headers": []
@@ -103303,8 +103303,8 @@
       "name": "Teams",
       "title": "`BSLI | ${$ws$system.params.team} Team`",
       "history": [
-        "/teams/IREC",
         "/teams/NASA",
+        "/teams/IREC",
         "/teams/Liquids",
         "/teams/Nasa",
         "/teams/Irec",

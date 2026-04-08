@@ -126,7 +126,7 @@ export const getResources = (_props: { system: System }) => {
     url: "https://cms.bsli.space/items/BSLI_Teams",
     searchParams: [
       { name: "fields", value: "display_name,purpose_paragraph,goals_paragraph,purpose_image.*,goals_image.*" },
-      { name: "filter[Team_Name][_eq]", value: "IREC" },
+      { name: "filter[Team_Name][_eq]", value: system?.params?.team },
     ],
     method: "get",
     headers: [
