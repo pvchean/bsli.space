@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "60e4e470-7504-4817-8531-a37c6404ed89",
+    "id": "907868fe-b7b6-4547-8193-69e1f3ad6170",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7605,
-    "createdAt": "2026-04-08T00:29:29.496+00:00",
-    "updatedAt": "2026-04-08T00:29:29.496+00:00",
+    "version": 7647,
+    "createdAt": "2026-04-28T21:51:25.061+00:00",
+    "updatedAt": "2026-04-28T21:51:25.061+00:00",
     "pages": {
       "meta": {
         "siteName": "Buckeye Space Launch Intiative",
@@ -24,23 +24,25 @@
           "status": "301"
         }
       ],
-      "homePage": {
-        "id": "HrVe4aYHhV_bPti5G88S7",
-        "name": "Home",
-        "title": "\"Buckeye Space Launch Initiative\"",
-        "history": [
-          ""
-        ],
-        "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
-        "meta": {
-          "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
-          "excludePageFromSearch": "false",
-          "language": "\"en-US\"",
-          "socialImageAssetId": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
-        },
-        "path": ""
-      },
+      "homePageId": "HrVe4aYHhV_bPti5G88S7",
+      "rootFolderId": "root",
       "pages": [
+        {
+          "id": "HrVe4aYHhV_bPti5G88S7",
+          "name": "Home",
+          "title": "\"Buckeye Space Launch Initiative\"",
+          "history": [
+            ""
+          ],
+          "rootInstanceId": "uiszO2CMyyVpTuAR-L4IA",
+          "meta": {
+            "description": "\"Is it a bird? or a plane? No! Its a rocket going Mach 3.5 to 30 thousand feet made by the best of the best at OSU.\"",
+            "excludePageFromSearch": "false",
+            "language": "\"en-US\"",
+            "socialImageAssetId": "90e0f5c965ecae7ec781b8bb872b9564fdc5c7d7caba4af33b67d3d9fa57f681"
+          },
+          "path": ""
+        },
         {
           "id": "ie9scObbJQd7wicrjcDzy",
           "name": "404",
@@ -345,6 +347,8 @@
           "name": "blog",
           "title": "\"BSLI | \" + $ws$dataSource$pJDqBJuaSZ7Owl__DASH__Xvfx4c.data.data[0].title",
           "history": [
+            "/irec-successfully-test-fires-6-inch-solid-rocket-motor",
+            "/irec-test-launches-nomad-26",
             "/example-blog-post",
             "/undefined",
             "/"
@@ -55209,6 +55213,92 @@
             "value": 90
           }
         }
+      ],
+      [
+        "fBoVs5EJTFisVoBQ6QzOu:tAFRweP7yGMMQI5CmE4yb:textAlign:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "fBoVs5EJTFisVoBQ6QzOu",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:borderTopLeftRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "borderTopLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-2"
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:borderTopRightRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "borderTopRightRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-2"
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:borderBottomLeftRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "borderBottomLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-2"
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:borderBottomRightRadius:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "borderBottomRightRadius",
+          "value": {
+            "type": "var",
+            "value": "radius-2"
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:paddingRight:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "paddingRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 2
+          }
+        }
+      ],
+      [
+        "yICKV6gST17KxlgbQa0TC:tAFRweP7yGMMQI5CmE4yb:paddingLeft:",
+        {
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "styleSourceId": "yICKV6gST17KxlgbQa0TC",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 2
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -60802,6 +60892,13 @@
         {
           "type": "local",
           "id": "hHepeGtiYE_eZvqEVHUqK"
+        }
+      ],
+      [
+        "fBoVs5EJTFisVoBQ6QzOu",
+        {
+          "type": "local",
+          "id": "fBoVs5EJTFisVoBQ6QzOu"
         }
       ]
     ],
@@ -67991,7 +68088,8 @@
         {
           "instanceId": "YvdV4_geCvV4M7TyqHupE",
           "values": [
-            "rTv7kMN-bk2D6u80jRJLp"
+            "rTv7kMN-bk2D6u80jRJLp",
+            "fBoVs5EJTFisVoBQ6QzOu"
           ]
         }
       ],
@@ -77256,17 +77354,7 @@
           "instanceId": "KUcgxETCtQxGI3EvG1cCc",
           "name": "src",
           "type": "expression",
-          "value": "`${$ws$dataSource$1PQfP5ft2WLL_68cGj4Th.headshot != null ? $ws$dataSource$oh9hAmtYpNGMYX1c99V8t + $ws$dataSource$1PQfP5ft2WLL_68cGj4Th.headshot : $ws$dataSource$__DASH__S8Wczy9x7a0jmJpgmgYV}`"
-        }
-      ],
-      [
-        "CiNekSz1hqoQQKiNT921_",
-        {
-          "id": "CiNekSz1hqoQQKiNT921_",
-          "instanceId": "KUcgxETCtQxGI3EvG1cCc",
-          "name": "optimize",
-          "type": "expression",
-          "value": "$ws$dataSource$1PQfP5ft2WLL_68cGj4Th.headshot != null"
+          "value": "`${$ws$dataSource$1PQfP5ft2WLL_68cGj4Th.thumbnail != null ? $ws$dataSource$oh9hAmtYpNGMYX1c99V8t + $ws$dataSource$1PQfP5ft2WLL_68cGj4Th.thumbnail : $ws$dataSource$__DASH__S8Wczy9x7a0jmJpgmgYV}`"
         }
       ],
       [
@@ -79392,7 +79480,7 @@
           "name": "URL_Blog_Browse",
           "value": {
             "type": "string",
-            "value": "/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9"
+            "value": "/blogs/browse?blogsSearch&blogsSearchType=title&blogsSortType=publish_date&blogsSearchOrder=on&blogsSearchLimit=9"
           }
         }
       ],
@@ -79915,8 +80003,8 @@
           "url": "\"https://cms.bsli.space/items/BSLI_Blogs\"",
           "searchParams": [
             {
-              "name": "filter[status][_eq]",
-              "value": "\"published\""
+              "name": "filter[url_slug][_eq]",
+              "value": "$ws$system.params.slug"
             }
           ],
           "headers": [
@@ -103537,6 +103625,8 @@
       "name": "blog",
       "title": "\"BSLI | \" + $ws$dataSource$pJDqBJuaSZ7Owl__DASH__Xvfx4c.data.data[0].title",
       "history": [
+        "/irec-successfully-test-fires-6-inch-solid-rocket-motor",
+        "/irec-test-launches-nomad-26",
         "/example-blog-post",
         "/undefined",
         "/"

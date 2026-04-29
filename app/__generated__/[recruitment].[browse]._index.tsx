@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-08T00:29:29.496Z";
+      export const lastPublished = "2026-04-28T21:51:25.061Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -34,7 +34,7 @@ const system = _props.system;
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch&blogsSearchType=title&blogsSortType=publish_date&blogsSearchOrder=on&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(25)
 let CMS_Recruitment = useResource("CMS_Recruitment_1")
@@ -810,7 +810,7 @@ className={`w-element cj20esf`}>
 {"Posted On: "}
 </p>
 <Time
-dateTime={collectionItem?.date}
+datetime={collectionItem?.date}
 format={"MMM DD"}
 className={`w-time`} />
 </div>
@@ -859,7 +859,7 @@ className={`w-element cj20esf`}>
 {"Posted On: "}
 </p>
 <Time
-dateTime={collectionItem?.date}
+datetime={collectionItem?.date}
 format={"MMM DD"}
 className={`w-time`} />
 </div>

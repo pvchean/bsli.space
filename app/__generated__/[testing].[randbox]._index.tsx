@@ -11,7 +11,7 @@ import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-a
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-08T00:29:29.496Z";
+      export const lastPublished = "2026-04-28T21:51:25.061Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

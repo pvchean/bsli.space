@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-08T00:29:29.496Z";
+      export const lastPublished = "2026-04-28T21:51:25.061Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -34,7 +34,7 @@ const system = _props.system;
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch&blogsSearchType=title&blogsSortType=publish_date&blogsSearchOrder=on&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let [CMS_Default_Limit, set$CMS_Default_Limit] = useVariableState<any>(9)
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
@@ -795,8 +795,7 @@ className={`w-element c1fsvg17 cp0jmbs c1412oo6 cgxl3bw cwn5zzf cdj3arn c1gv7k1f
 href={"/blogs/" + collectionItem?.["url_slug"]}
 className={`w-element cj20esf`}>
 <Image
-src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.headshot : Image_Not_Found}`}
-optimize={collectionItem?.headshot != null}
+src={`${collectionItem?.thumbnail != null ? CMS_Asset_URL + collectionItem?.thumbnail : Image_Not_Found}`}
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 </Link_1>
 <div
@@ -835,7 +834,7 @@ className={`w-element c1qdzuay c1lkbaaj cx8n37q ce5jf0f cuvhotc c1hzukz1 c11l2kp
 }
 </div>
 <Time
-dateTime={collectionItem?.["publish_date"]}
+datetime={collectionItem?.["publish_date"]}
 format={"MMM DD, YYYY"}
 className={`w-time c1jt1fo7 c1pwhxce`} />
 </div>

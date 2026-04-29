@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-08T00:29:29.496Z";
+      export const lastPublished = "2026-04-28T21:51:25.061Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -33,7 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch&blogsSearchType=title&blogsSortType=publish_date&blogsSearchOrder=on&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Blog_Post = useResource("CMS_Blog_Post_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
@@ -667,7 +667,7 @@ className={`w-element cugth94 c1lufqxe cnbmf4z cqzfy8o c1wozlyc`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
 <h1
-className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2`}>
+className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq c3eev2k ccq64u2`}>
 {CMS_Blog_Post?.data?.data?.[0]?.title}
 </h1>
 <div
@@ -677,7 +677,7 @@ code={"<style>\n  /* The parent paragraph identified by JS */\n.img-wrapper-p {\
 className={`w-html-embed`} />
 <MarkdownEmbed
 code={CMS_Blog_Post?.data?.data?.[0]?.content}
-className={`w-markdown-embed c1lynjaq c1gdhahs c1ny6974 coso6sz c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj c2e7vdu cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp c11zzlda`}>
+className={`w-markdown-embed c1lynjaq c1gdhahs c1ny6974 coso6sz c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj c2e7vdu cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj cdgfnlh c39o0xr cyjf650 c1ml3cvj c1ekfk2h c18hj7zs c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp c11zzlda`}>
 </MarkdownEmbed>
 </div>
 </div>

@@ -11,7 +11,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-08T00:29:29.496Z";
+      export const lastPublished = "2026-04-28T21:51:25.061Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -33,7 +33,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 let [URL_Active_Members, set$URL_Active_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Active&sortType=Joined&searchLimit=25")
 let [URL_Former_Members, set$URL_Former_Members] = useVariableState<any>("/members/browse?search=&searchType=Name&searchScope=Retired&sortType=Joined&searchLimit=25")
 let [URL_Recruitment_Browse, set$URL_Recruitment_Browse] = useVariableState<any>("/recruitment/browse?search&searchType=title&sortType=date&searchOrder=on&searchLimit=25")
-let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch=&blogsSearchType=title&blogsSortType=title&blogsSearchLimit=9")
+let [URL_Blog_Browse, set$URL_Blog_Browse] = useVariableState<any>("/blogs/browse?blogsSearch&blogsSearchType=title&blogsSortType=publish_date&blogsSearchOrder=on&blogsSearchLimit=9")
 let [Social_Link, set$Social_Link] = useVariableState<any>("https://linktr.ee/buckeye_sli")
 let CMS_Member = useResource("CMS_Member_1")
 let [CMS_Asset_URL, set$CMS_Asset_URL] = useVariableState<any>("https://cms.bsli.space/assets/")
@@ -786,7 +786,7 @@ className={`w-html-embed`} />
 <div
 className={`w-element c1fsvg17 c1jt1fo7 cdr374f`}>
 <Time
-dateTime={collectionItem?.start}
+datetime={collectionItem?.start}
 dateStyle={"medium"}
 format={"MMM, YYYY"}
 className={`w-time`} />
@@ -796,7 +796,7 @@ className={`w-element`}>
 </div>
 {(collectionItem?.end != null) &&
 <Time
-dateTime={collectionItem?.end}
+datetime={collectionItem?.end}
 dateStyle={"medium"}
 format={"MMM, YYYY"}
 className={`w-time`} />
