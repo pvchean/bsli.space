@@ -8,6 +8,7 @@ git pull --rebase
 
 # Run your build tools
 npm install -g webstudio@latest
+npm update -g webstudio
 webstudio sync
 rm -rf app/
 webstudio build --template docker
