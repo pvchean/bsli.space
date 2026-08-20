@@ -7,6 +7,7 @@
 export const getResources = (_props: { system: System }) => {
   const now: ResourceRequest = {
     name: "now",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -51,6 +52,7 @@ export const getResources = (_props: { system: System }) => {
     socialImageUrl: "",
     status: 200,
     redirect: "",
+    content: undefined,
     custom: [
     ],
   };

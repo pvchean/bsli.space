@@ -3,15 +3,19 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react/components";
 import { Link as Link, Link as Link_1, Body as Body, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -801,7 +805,7 @@ className={`w-element`}>
 className={`w-element c1fsvg17 c1flzvby c1412oo6 c1s491bc`}>
 <h1
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf cpomkwe c1jtrzlm cjywo3c c1jfa76v cyuy606 c1p3t04y cei00iu`}>
-{collectionItem?.title}
+{renderText(collectionItem?.title)}
 </h1>
 <div
 className={`w-element c16qquiv c1jt1fo7 c1p7y13d`}>
@@ -817,16 +821,16 @@ className={`w-time`} />
 </div>
 <p
 className={`w-element c32b0k6 calzjdr`}>
-{`${collectionItem?.["suggested_majors"]}, and all other majors!`}
+{renderText(`${collectionItem?.["suggested_majors"]}, and all other majors!`)}
 </p>
 <p
 className={`w-element c223jcu c32b0k6 calzjdr`}>
-{`${collectionItem?.commitment?.split?.(".")?.[0]} `}
+{renderText(`${collectionItem?.commitment?.split?.(".")?.[0]} `)}
 </p>
 </div>
 <p
 className={`w-element c1slz6ta c12yi2k3 c708twz c1a3c3x6 c1rivdr3 c19ubv75 c4g1j3m cmug2yo`}>
-{collectionItem?.responsibilities}
+{renderText(collectionItem?.responsibilities)}
 </p>
 <div
 className={`w-element c1fsvg17 cxkx6pe c1jggrh7 c13kj1ir`}>
@@ -845,7 +849,7 @@ className={`w-element cj20esf`}>
 <Fragment key={collectionItemKey}>
 <div
 className={`w-element cj20esf cbsp6a7`}>
-{collectionItem_1}
+{renderText(collectionItem_1)}
 </div>
 </Fragment>
 )
@@ -889,7 +893,7 @@ className={`w-element c3eev2k`}>
 </div>
 <div
 className={`w-element`}>
-{((+system?.search?.searchLimit !== +system?.search?.searchLimit ? CMS_Default_Limit : +system?.search?.searchLimit) < CMS_Recruitment?.data?.meta?.["total_count"]) &&
+{((+system?.search?.searchLimit !== +system?.search?.searchLimit ? CMS_Default_Limit : +system?.search?.searchLimit) < CMS_Recruitment?.data?.meta?.["filter_count"]) &&
 <div
 className={`w-element cj20esf`}>
 <Link_1
@@ -929,7 +933,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
-  [1,2,3] ?? {}
+  [1,2,3]
 ).map(([_key, collectionItem_3]: any) => {
   const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
@@ -1100,7 +1104,7 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{renderText(`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`)}
 </p>
 </div>
 </div>

@@ -3,15 +3,17 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body } from "@webstudio-is/sdk-components-react-router";
-import { Image as Image, Video as Video } from "@webstudio-is/sdk-components-react";
-import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-animation";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -31,25 +33,7 @@ import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-a
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element`}>
-<Image
-src={"/assets/unknown_t8djPfRa4bG2TBmbHFmpR.webp"}
-width={1536}
-height={1025}
-alt={""}
-className={`w-image`} />
-<VideoAnimation
-timeline={true}
-className={`w-video-animation`}>
-<Video
-preload={"auto"}
-autoPlay={true}
-muted={true}
-playsInline={true}
-crossOrigin={"anonymous"}
-className={`w-video`} />
-</VideoAnimation>
-</Body>
+className={`w-element`} />
 }
 
 

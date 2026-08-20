@@ -3,15 +3,19 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Select as Select, Input as Input, Input as Input_1 } from "@webstudio-is/sdk-components-react";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Select as Select, Input as Input, Input as Input_1 } from "@webstudio-is/sdk-components-react/components";
 import { Link as Link, Link as Link_1, Body as Body, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -673,7 +677,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17
 className={`w-element`}>
 <h1
 className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq ccq64u2 c1s8m1cs`}>
-{`BSLI ${system?.search?.membersSearchScope == "Retired" ? "Alumni" : "Members"}`}
+{renderText(`BSLI ${system?.search?.membersSearchScope == "Retired" ? "Alumni" : "Members"}`)}
 </h1>
 </div>
 </div>
@@ -835,16 +839,16 @@ src={`${collectionItem?.headshot != null ? CMS_Asset_URL + collectionItem?.heads
 className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1c491r3`} />
 <div
 className={`w-element c1lst088 cr340of cp1jzw6 c145f7eq`}>
-{collectionItem?.Name}
+{renderText(collectionItem?.Name)}
 </div>
 <div
 className={`w-element cr340of`}>
-{`${collectionItem?.["role_id"]?.[0]?.position?.rank <= 8 || collectionItem?.["role_id"]?.[0]?.position?.rank == 11 ? collectionItem?.["role_id"]?.[0]?.team?.["Team_Name"] + ' ' : ''}${collectionItem?.["role_id"]?.[0]?.position?.["name_short"] || ' '}`}
+{renderText(`${collectionItem?.["role_id"]?.[0]?.position?.rank <= 8 || collectionItem?.["role_id"]?.[0]?.position?.rank == 11 ? collectionItem?.["role_id"]?.[0]?.team?.["Team_Name"] + ' ' : ''}${collectionItem?.["role_id"]?.[0]?.position?.["name_short"] || ' '}`)}
 </div>
 </div>
 <p
 className={`w-element c1pfnraz cmug2yo c6zneyq`}>
-{`${collectionItem?.Major || ' '} ${collectionItem?.["osu_year"] || ' '}`}
+{renderText(`${collectionItem?.Major || ' '} ${collectionItem?.["osu_year"] || ' '}`)}
 </p>
 <div
 className={`w-element c1jt1fo7 cmug2yo`}>
@@ -862,7 +866,7 @@ className={`w-html-embed`} />
 </Slot>
 <p
 className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c15kg2z5 c13l961t`}>
-{collectionItem?.Email}
+{renderText(collectionItem?.Email)}
 </p>
 </div>
 {(collectionItem?.LinkedInURL != null && collectionItem?.LinkedInURL !== '') &&
@@ -910,7 +914,7 @@ className={`w-element c3eev2k`}>
 </div>
 <div
 className={`w-element`}>
-{((+system?.search?.searchLimit !== +system?.search?.searchLimit ? CMS_Default_Limit : +system?.search?.searchLimit) < CMS_Members?.data?.meta?.["total_count"]) &&
+{((+system?.search?.searchLimit !== +system?.search?.searchLimit ? CMS_Default_Limit : +system?.search?.searchLimit) < CMS_Members?.data?.meta?.["filter_count"]) &&
 <div
 className={`w-element cj20esf`}>
 <Link_1
@@ -950,7 +954,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
-  [1,2,3] ?? {}
+  [1,2,3]
 ).map(([_key, collectionItem_2]: any) => {
   const collectionItemKey_2 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
@@ -1121,7 +1125,7 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{renderText(`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`)}
 </p>
 </div>
 </div>

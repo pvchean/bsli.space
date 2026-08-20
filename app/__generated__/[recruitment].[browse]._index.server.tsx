@@ -30,6 +30,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -39,6 +40,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const now: ResourceRequest = {
     name: "now",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -59,6 +61,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_3: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -72,10 +75,11 @@ export const getResources = (_props: { system: System }) => {
     searchParams: [
       { name: "fields", value: "id,status,title,suggested_majors,responsibilities,contact_email,team.display_name,subteam.name,date,commitment,keywords,contact_member.Name,contact_member.Email,contact_member.Major,contact_member.role_id.*" },
       { name: "sort", value: `${system?.search?.searchOrder == "on" ? '-' : ''}${system?.search?.sortType}` },
-      { name: "filter", value: `{"_and":[{"${system?.search?.searchType}":{"${system?.search?.search == '' ? "_nnull" : "_icontains"}":"${system?.search?.search == '' ? true : system?.search?.search}"}}]}`
+      { name: "filter", value: `{"_and":[{"${system?.search?.searchType}":{"${system?.search?.search == '' ? "_nnull" : "_icontains"}":"${system?.search?.search == '' ? true : system?.search?.search}"}},{"status":{"_eq":"published"}}]}`
  },
       { name: "limit", value: system?.search?.searchLimit != null && system?.search?.searchLimit > 0 ? system?.search?.searchLimit : CMS_Default_Limit },
-      { name: "meta", value: "total_count" },
+      { name: "meta", value: "filter_count" },
+      { name: "deep", value: "{\"role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
     ],
     method: "get",
     headers: [
@@ -112,6 +116,7 @@ export const getResources = (_props: { system: System }) => {
     socialImageUrl: "",
     status: undefined,
     redirect: "",
+    content: undefined,
     custom: [
     ],
   };

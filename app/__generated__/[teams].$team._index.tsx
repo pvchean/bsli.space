@@ -3,15 +3,19 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react/components";
 import { Link as Link, Link as Link_1, Body as Body } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -675,7 +679,7 @@ className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u ca9k1ea 
 className={`w-element c1fsvg17 cp0jmbs cxkx6pe c1jggrh7`}>
 <h1
 className={`w-element c11qoxym cr340of c16tluoy c1iwa1os cbewb4j c4vnhzq ct44ftq c8kgf22 ccq64u2`}>
-{CMS_Team?.data?.data?.[0]?.["display_name"]}
+{renderText(CMS_Team?.data?.data?.[0]?.["display_name"])}
 </h1>
 <MarkdownEmbed
 code={CMS_Team?.data?.data?.[0]?.["purpose_paragraph"]}
@@ -789,7 +793,7 @@ className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6
 data-ws-index="1"
 value={`${collectionItem?.name}`}
 className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
-{collectionItem?.name}
+{renderText(collectionItem?.name)}
 </TabsTrigger>
 </Fragment>
 )
@@ -810,11 +814,11 @@ className={`w-element`}>
 className={`w-element`}>
 <h1
 className={`w-element c97u9uk cr340of c16tluoy c1iwa1os cbewb4j c145f7eq ct44ftq csbbxse ccq64u2`}>
-{CMS_Team_Project?.data?.data?.[0]?.name}
+{renderText(CMS_Team_Project?.data?.data?.[0]?.name)}
 </h1>
 <p
 className={`w-element c1jt1fo7 c6zneyq c1wi860h`}>
-{`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Present"}`}
+{renderText(`${system?.params?.team?.toUpperCase?.()} ${CMS_Team_Project?.data?.data?.[0]?.start?.split?.("-")?.[0]}-${CMS_Team_Project?.data?.data?.[0]?.end != null ? CMS_Team_Project?.data?.data?.[0]?.end?.split?.("-")?.[0] : "Present"}`)}
 </p>
 </div>
 <div
@@ -830,18 +834,18 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt c6zneyq c1iebxzq c106mfo
 className={`w-element c1fsvg17 c1412oo6`}>
 <h2
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf csbbxse`}>
-{collectionItem_1?.parameter}
+{renderText(collectionItem_1?.parameter)}
 </h2>
 <div
 className={`w-element`}>
 <p
 className={`w-element c1ni26wq`}>
-{collectionItem_1?.["primary_value"] == null ? "N/A" : collectionItem_1?.["primary_value"]}
+{renderText(collectionItem_1?.["primary_value"] == null ? "N/A" : collectionItem_1?.["primary_value"])}
 </p>
 {(collectionItem_1?.["secondary_value"] != null && collectionItem_1?.["secondary_value"] !== '') &&
 <p
 className={`w-element c1jt1fo7 c1ni26wq`}>
-{` / ${collectionItem_1?.["secondary_value"]}`}
+{renderText(` / ${collectionItem_1?.["secondary_value"]}`)}
 </p>
 }
 </div>
@@ -865,7 +869,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 className={`w-element c1fsvg17 c1412oo6 c1f38foq c1mncygw czcl0o2`}>
 <h2
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq c5azhl4 c1r0hodc c1785g20`}>
-{collectionItem_2?.position?.["name_short"]}
+{renderText(collectionItem_2?.position?.["name_short"])}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1mi6rnj`}>
@@ -875,13 +879,13 @@ prefetch={"intent"}
 className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <p
 className={`w-element c1iebxzq cjl8er8 c145f7eq cuvhotc cvm8xtw cpyozji c3air8l c1mq7p96 c5azhl4 c1r0hodc c1fg96d4 cah9upb c7oh6o3 c1h2ixpn`}>
-{collectionItem_2?.["member_id"]?.Name}
+{renderText(collectionItem_2?.["member_id"]?.Name)}
 </p>
 </Link>
 <Link_1
 href={`mailto:${collectionItem_2?.["member_id"]?.Email}`}
 className={`w-element cnm978k crr88tp c8kgf22 c1xkkw6h c1jt1fo7`}>
-{collectionItem_2?.["member_id"]?.Email}
+{renderText(collectionItem_2?.["member_id"]?.Email)}
 </Link_1>
 {(collectionItem_2?.["member_id"]?.LinkedInURL != null && collectionItem_2?.["member_id"]?.LinkedInURL !== '') &&
 <Link_1
@@ -928,12 +932,12 @@ className={`w-element`}>
 className={`w-element cakfvvb`}>
 <h1
 className={`w-element cbwi5wk cr340of c1iwa1os cbewb4j c145f7eq`}>
-{collectionItem_3?.name}
+{renderText(collectionItem_3?.name)}
 </h1>
 </div>
 <div
 className={`w-element cdr374f c1qankp4`}>
-{collectionItem_3?.["long_description"]}
+{renderText(collectionItem_3?.["long_description"])}
 </div>
 </div>
 <div
@@ -949,7 +953,7 @@ className={`w-element c1fsvg17 cp0jmbs c2jpees c1bctvrt cm1zr1v c1vw3iks ckeo1bw
 className={`w-element c1fsvg17 c1412oo6 cxu6jij c1povtqf`}>
 <h2
 className={`w-element c1iebxzq cr340of c1iwa1os cbewb4j cj20esf ct44ftq`}>
-{collectionItem_4?.position?.["name_short"]}
+{renderText(collectionItem_4?.position?.["name_short"])}
 </h2>
 <div
 className={`w-element c1fsvg17 cp0jmbs co6alii c1san6ol c1jt1fo7 c1mi6rnj`}>
@@ -959,13 +963,13 @@ prefetch={"intent"}
 className={`w-link ch72vge c956szp c1xkkw6h c9ffb6f`}>
 <p
 className={`w-element c1iebxzq cjl8er8 c145f7eq cuvhotc cvm8xtw cpyozji c3air8l c1mq7p96 c5azhl4 c1r0hodc c1fg96d4 cah9upb c7oh6o3 c1h2ixpn`}>
-{collectionItem_4?.["member_id"]?.Name}
+{renderText(collectionItem_4?.["member_id"]?.Name)}
 </p>
 </Link>
 <Link_1
 href={`mailto:${collectionItem_4?.["member_id"]?.Email}`}
 className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c1jt1fo7 c1xkkw6h czoybq c13l961t cjf4twe`}>
-{collectionItem_4?.["member_id"]?.Email}
+{renderText(collectionItem_4?.["member_id"]?.Email)}
 </Link_1>
 {(collectionItem_4?.["member_id"]?.LinkedInURL != null && collectionItem_4?.["member_id"]?.LinkedInURL !== '') &&
 <Link_1
@@ -1069,7 +1073,7 @@ className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6
 data-ws-index="3"
 value={`${collectionItem_6?.name}`}
 className={`w-tab-trigger c10pexzh c13hxy6u c1s90dhh cqv0j3o c1tkqwlq co0rnkz c6zneyq cfdf4op cuvhotc co9pqhk c1k1e95b c1mku3eu c1mq7p96 c102t640 cll4aq1 c13l961t cqxtdmj c1iu665 cdlucng cpus178 c1b4g2xu c12yxm2d cav9cgc ci928yn c1m16de3 cxyxs0i c1fsktpy ch4zp14 c1e65ek6 c14jbaej c1rk7irv c14mnua0 cr7vsni caxn57v cev8o73 c8kig2b c14h6wmf c1m0ls9k c137ezzo`}>
-{collectionItem_6?.name}
+{renderText(collectionItem_6?.name)}
 </TabsTrigger>
 </Fragment>
 )
@@ -1101,7 +1105,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
-  [1,2,3] ?? {}
+  [1,2,3]
 ).map(([_key, collectionItem_8]: any) => {
   const collectionItemKey_8 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
@@ -1272,7 +1276,7 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{renderText(`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`)}
 </p>
 </div>
 </div>

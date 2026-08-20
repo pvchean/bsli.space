@@ -3,16 +3,20 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Heading as Heading, Paragraph as Paragraph, Button as Button, Text as Text } from "@webstudio-is/sdk-components-react";
+import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Heading as Heading, Paragraph as Paragraph, Button as Button, Text as Text } from "@webstudio-is/sdk-components-react/components";
 import { AnimateChildren as AnimateChildren } from "@webstudio-is/sdk-components-animation";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      export const projectVersion = 7677;
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -1467,7 +1471,7 @@ className={`w-element c1fsvg17 c2jpees c1bctvrt`}>
 href={Social_Link}
 target={"_blank"}
 className={`w-element cl4qqj9 c1jmf9np c1i6hdg9 c1eartro c1jfo4di c15ziikq c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x cjl8er8 cj20esf cp1jzw6 c3eev2k ckmcig3 cib2qxx chdqs4z c1p3t04y c1s6wxtp`}>
-{"Join our Slack"}
+{"Join our Discord"}
 </Link_1>
 </div>
 </div>
@@ -1495,7 +1499,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
-  [1,2,3] ?? {}
+  [1,2,3]
 ).map(([_key, collectionItem_1]: any) => {
   const collectionItemKey_1 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
@@ -1666,7 +1670,7 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{renderText(`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`)}
 </p>
 </div>
 </div>

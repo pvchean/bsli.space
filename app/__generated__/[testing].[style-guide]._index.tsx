@@ -3,14 +3,18 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Text as Text, HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Heading as Heading, Slot as Slot, Paragraph as Paragraph, Span as Span, Blockquote as Blockquote, List as List, ListItem as ListItem, Separator as Separator, CodeText as CodeText, Bold as Bold } from "@webstudio-is/sdk-components-react";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { Fragment as Fragment_1, Text as Text, HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Heading as Heading, Slot as Slot, Paragraph as Paragraph, Span as Span, Blockquote as Blockquote, List as List, ListItem as ListItem, Separator as Separator, CodeText as CodeText, Bold as Bold } from "@webstudio-is/sdk-components-react/components";
 import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

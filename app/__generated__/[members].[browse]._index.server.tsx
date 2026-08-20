@@ -30,6 +30,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -47,7 +48,7 @@ export const getResources = (_props: { system: System }) => {
       { name: "sort", value: `${system?.search?.searchOrder == "on" ? '-' : ''}${system?.search?.sortType}` },
       { name: "deep", value: "{\"role_id\": {\"_filter\": {\"end\": { \"_null\": true}}}}" },
       { name: "limit", value: system?.search?.searchLimit != null && system?.search?.searchLimit > 0 ? system?.search?.searchLimit : CMS_Default_Limit },
-      { name: "meta", value: "total_count" },
+      { name: "meta", value: "filter_count" },
     ],
     method: "get",
     headers: [
@@ -56,6 +57,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const now: ResourceRequest = {
     name: "now",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -76,6 +78,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_3: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -114,6 +117,7 @@ export const getResources = (_props: { system: System }) => {
     socialImageUrl: "",
     status: undefined,
     redirect: "",
+    content: undefined,
     custom: [
     ],
   };

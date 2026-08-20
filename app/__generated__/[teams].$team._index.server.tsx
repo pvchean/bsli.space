@@ -73,6 +73,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_2: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -94,6 +95,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const now: ResourceRequest = {
     name: "now",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -114,6 +116,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const CurrentDate_3: ResourceRequest = {
     name: "Current Date",
+    control: "system",
     url: "/$resources/current-date",
     searchParams: [
     ],
@@ -170,6 +173,7 @@ export const getResources = (_props: { system: System }) => {
     socialImageUrl: CMS_Asset_URL + CMS_Team?.data?.data?.[0]?.["purpose_image"]?.id,
     status: undefined,
     redirect: "",
+    content: undefined,
     custom: [
     ],
   };

@@ -3,15 +3,19 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { Fragment as Fragment_1, Box as Box, Image as Image, HtmlEmbed as HtmlEmbed, Slot as Slot, Button as Button, Text as Text, Heading as Heading, Paragraph as Paragraph, Input as Input, Select as Select, Input as Input_1, Time as Time } from "@webstudio-is/sdk-components-react/components";
 import { Link as Link, Link as Link_1, Body as Body, RemixForm as RemixForm } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuViewport as NavigationMenuViewport, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const lastPublished = "2026-04-28T21:51:25.061Z";
+      
+
+      export const projectDomain = "buckeyesli";
+
+      export const lastPublished = "2026-08-20T18:12:37.345Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -802,11 +806,11 @@ className={`w-image c89byf c13v84m3 c159iha6 chr8ff9 ctcwxwa c17m8aj7 cbujl1o c1
 className={`w-element cnbemn c1017uqz`}>
 <div
 className={`w-element c1lst088 c145f7eq c1wu8pi6 c1l7036h cr340of`}>
-{collectionItem?.title}
+{renderText(collectionItem?.title)}
 </div>
 <p
 className={`w-element`}>
-{CMS_Blogs?.data?.data?.[0]?.["short_description"]}
+{renderText(CMS_Blogs?.data?.data?.[0]?.["short_description"])}
 </p>
 </div>
 <div
@@ -825,7 +829,7 @@ href={`/blogs/browse?blogsSearch=${collectionItem_1}&blogsSearchType=tags&blogsS
 className={`w-element cib2qxx chdqs4z cvr011x ch72vge c956szp cxh6ugy cj20esf`}>
 <div
 className={`w-element c1qdzuay c1lkbaaj cx8n37q ce5jf0f cuvhotc c1hzukz1 c11l2kpm c3air8l c1mq7p96 c1czb951 c1wi860h czsjn9t c17omac7 c1cgehif`}>
-{"#" + collectionItem_1}
+{renderText("#" + collectionItem_1)}
 </div>
 </Link_1>
 </Fragment>
@@ -908,7 +912,7 @@ className={`w-element ${"logo-slider"}`}>
 className={`w-element ${"logo-track"}`}>
 {Object.entries(
   // @ts-ignore
-  [1,2,3] ?? {}
+  [1,2,3]
 ).map(([_key, collectionItem_3]: any) => {
   const collectionItemKey_3 = Array.isArray([1,2,3]) ? Number(_key) : _key;
   return (
@@ -1079,7 +1083,7 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 </div>
 <p
 className={`w-element c89byf c3eev2k c1wi860h`}>
-{`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`}
+{renderText(`© ${CurrentDate?.data?.year} Buckeye Space Launch Initiative`)}
 </p>
 </div>
 </div>
