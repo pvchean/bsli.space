@@ -15,7 +15,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-20T18:12:37.345Z";
+      export const lastPublished = "2026-08-20T18:26:00.005Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -712,6 +712,24 @@ className={`w-html-embed`} />
 <p
 className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c13l961t`}>
 {renderText(CMS_Member?.data?.data?.[0]?.Email)}
+</p>
+</Link_1>
+<Link_1
+href={`mailto:${CMS_Member?.data?.data?.[0]?.personal_email}`}
+className={`w-element cib2qxx chdqs4z c1xkkw6h cac1h7s c1fsvg17 cwbv5p c1q9w5dq`}>
+<Slot>
+<Fragment_1>
+<div
+className={`w-element cw4wfcb c1mrxjnq`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1.4em\" height=\"1.4em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"></path>\n  <path d=\"M3 7l9 6l9 -6\"></path>\n</svg>"}
+className={`w-html-embed`} />
+</div>
+</Fragment_1>
+</Slot>
+<p
+className={`w-element crr88tp c19ubv75 c4g1j3m c1slz6ta c13l961t`}>
+{renderText(CMS_Member?.data?.data?.[0]?.personal_email)}
 </p>
 </Link_1>
 {(CMS_Member?.data?.data?.[0]?.LinkedInURL != null && CMS_Member?.data?.data?.[0]?.LinkedInURL !== '') &&

@@ -15,7 +15,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-20T18:12:37.345Z";
+      export const lastPublished = "2026-08-20T18:26:00.005Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
