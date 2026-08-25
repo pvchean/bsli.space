@@ -12,11 +12,11 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectId = "424b8b88-aeeb-4083-bade-6685af7363cb";
 
-      export const projectVersion = 7684;
+      export const projectVersion = 7711;
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-20T18:26:00.005Z";
+      export const lastPublished = "2026-08-25T17:22:53.396Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -872,7 +872,7 @@ className={`w-element`}>
 {""}
 <br />
 {""}
-{"Sundays: 3-5 pm"}
+{"Sundays: 5-7 pm"}
 </p>
 </div>
 <div
@@ -888,7 +888,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
 aria-label={"Google Maps link for Bolz Hall"}
-className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
+className={`w-element cp1e7em c1ubqwr9`}>
 <svg
 width={"800px"}
 height={"800px"}
@@ -928,11 +928,7 @@ className={`w-element`} />
 </div>
 <p
 className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
+{"Bolz Hall Makerspace (Ideation Room)"}
 </p>
 </div>
 </div>
@@ -1022,7 +1018,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
 aria-label={"Google Maps link for Bolz Hall"}
-className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
+className={`w-element cp1e7em c1ubqwr9`}>
 <svg
 width={"800px"}
 height={"800px"}
@@ -1062,11 +1058,7 @@ className={`w-element`} />
 </div>
 <p
 className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
+{"Bolz Hall Makerspace (Ideation Room)"}
 </p>
 </div>
 </div>
@@ -1116,7 +1108,7 @@ className={`w-html-embed`} />
 className={`w-element`}>
 <h3
 className={`w-element c1wu8pi6 cpomkwe cqdk6hy c956szp c1c2pt5o c1jtrzlm cjywo3c c1jfa76v c7jpbvn`}>
-{"Liquid Rocket Systems (Liquids)"}
+{"Liquid Rocket Systems (LRS)"}
 </h3>
 <p
 className={`w-element`}>
@@ -1156,7 +1148,7 @@ className={`w-element c1wi860h ca9pm0 crypqid`}>
 href={"https://maps.app.goo.gl/VG7fRfiHNSsVCBad7"}
 target={"_blank"}
 aria-label={"Google Maps link for Bolz Hall"}
-className={`w-element cp1e7em c1ubqwr9 c1w29cqu`}>
+className={`w-element cp1e7em c1ubqwr9`}>
 <svg
 width={"800px"}
 height={"800px"}
@@ -1196,11 +1188,7 @@ className={`w-element`} />
 </div>
 <p
 className={`w-element`}>
-{"College of Engineering Makerspace"}
-{""}
-<br />
-{""}
-{"Bolz Hall"}
+{"Bolz Hall Makerspace (Ideation Room)"}
 </p>
 </div>
 </div>
@@ -1210,7 +1198,7 @@ className={`w-element c123613w`}>
 href={"/teams/Liquids"}
 prefetch={"intent"}
 className={`w-link cl4qqj9 c1jmf9np c18rcc0p c1wj3e6m c1fzf5s c1ahzc86 c1w6jm9 c100axkl c1fedw3o cqarlqx c1xkkw6h c1fhcu5x c6zneyq ca3gbbg ckmcig3 cib2qxx chdqs4z c11ytquf c1c2cfj4`}>
-{"Learn more about Liquids"}
+{"Learn more about LRS"}
 </Link>
 </div>
 </div>
@@ -1441,6 +1429,8 @@ className={`w-image c13v84m3 cjxujza c1i7ltwx c19c37rj co52ume c1j4r0zr cjdezyc 
 className={`w-element cugth94 c1lufqxe cnbmf4z c1h9u4a1`}>
 <div
 className={`w-element cptfpme c16qquiv c1jfo4di c15ziikq c89byf cwiuw9u c1fsvg17 cp0jmbs c2jpees c1bctvrt c1flzvby c1fhcu5x`}>
+<AnimateChildren
+action={{"type":"view","animations":[{"name":"Fade In","description":"Fade in the element as it scrolls into view.","keyframes":[{"offset":0,"styles":{"opacity":{"type":"unit","unit":"number","value":0}}}],"timing":{"easing":"ease-out","fill":"backwards","duration":{"type":"unit","value":1,"unit":"s"},"rangeStart":["entry",{"type":"unit","value":0,"unit":"%"}],"rangeEnd":["entry",{"type":"unit","value":100,"unit":"%"}]}}]}}>
 <div
 className={`w-element c1fsvg17 cp0jmbs cafamdi cgxl3bw cwn5zzf c1qdzuay c1lkbaaj cx8n37q ce5jf0f cwo73pd ctkbqoa c9ffb6f c89byf c1flzvby cwsyufx czfw4y0`}>
 <div
@@ -1475,6 +1465,7 @@ className={`w-element cl4qqj9 c1jmf9np c1i6hdg9 c1eartro c1jfo4di c15ziikq c1w6j
 </Link_1>
 </div>
 </div>
+</AnimateChildren>
 </div>
 </div>
 <Slot>
@@ -1640,7 +1631,7 @@ className={`w-html-embed cwxng9o`} />
 </Slot>
 <Link_1
 href={"/contact"}
-className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7 c3eev2k`}>
+className={`w-element cib2qxx chdqs4z c1xkkw6h c1jt1fo7 c3eev2k c1hqx5et`}>
 {"Contact Us!"}
 </Link_1>
 </div>
@@ -1651,9 +1642,9 @@ className={`w-element c1fsvg17 c2jpees c1bctvrt c19e0j5a c1jt1fo7 c1412oo6 crr88
 className={`w-element`}>
 {"Website Styled By: Brian Jia ("}
 <Link_1
-href={"mailto:jia.659@buckeyemail.osu.edu"}
+href={"mailto:jia.659@osu.edu"}
 className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
-{"jia.659@buckeyemail.osu.edu"}
+{"jia.659@osu.edu"}
 </Link_1>
 {")"}
 </p>
@@ -1661,9 +1652,9 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 className={`w-element`}>
 {"Maintained By: Paul Chean ("}
 <Link_1
-href={"mailto:cheandominguez.1@buckeyemail.osu.edu"}
+href={"mailto:cheandominguez.1@osu.edu"}
 className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
-{"cheandominguez.1@buckeyemail.osu.edu"}
+{"cheandominguez.1@osu.edu"}
 </Link_1>
 {")"}
 </p>

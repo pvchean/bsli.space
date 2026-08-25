@@ -13,7 +13,7 @@
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-20T18:26:00.005Z";
+      export const lastPublished = "2026-08-25T17:22:53.396Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

@@ -15,7 +15,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-20T18:26:00.005Z";
+      export const lastPublished = "2026-08-25T17:22:53.396Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -833,7 +833,7 @@ className={`w-html-embed cwxng9o`} />
 </Slot>
 <Link_1
 href={"/contact"}
-className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7 c3eev2k`}>
+className={`w-element cib2qxx chdqs4z c1xkkw6h c1jt1fo7 c3eev2k c1hqx5et`}>
 {"Contact Us!"}
 </Link_1>
 </div>
@@ -844,9 +844,9 @@ className={`w-element c1fsvg17 c2jpees c1bctvrt c19e0j5a c1jt1fo7 c1412oo6 crr88
 className={`w-element`}>
 {"Website Styled By: Brian Jia ("}
 <Link_1
-href={"mailto:jia.659@buckeyemail.osu.edu"}
+href={"mailto:jia.659@osu.edu"}
 className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
-{"jia.659@buckeyemail.osu.edu"}
+{"jia.659@osu.edu"}
 </Link_1>
 {")"}
 </p>
@@ -854,9 +854,9 @@ className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
 className={`w-element`}>
 {"Maintained By: Paul Chean ("}
 <Link_1
-href={"mailto:cheandominguez.1@buckeyemail.osu.edu"}
+href={"mailto:cheandominguez.1@osu.edu"}
 className={`w-element cib2qxx chdqs4z cj6dqoz c1jt1fo7`}>
-{"cheandominguez.1@buckeyemail.osu.edu"}
+{"cheandominguez.1@osu.edu"}
 </Link_1>
 {")"}
 </p>

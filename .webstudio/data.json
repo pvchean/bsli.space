@@ -1,11 +1,11 @@
 {
   "bundleVersion": "bundle-kzb45v",
   "build": {
-    "id": "d9e8a74a-c179-4cc8-af8c-145efe8b1751",
+    "id": "6cc005e7-b33a-4912-bed4-f3249a4675bc",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7684,
-    "createdAt": "2026-08-20T18:26:00.005+00:00",
-    "updatedAt": "2026-08-20T18:26:00.005+00:00",
+    "version": 7711,
+    "createdAt": "2026-08-25T17:22:53.396+00:00",
+    "updatedAt": "2026-08-25T17:22:53.396+00:00",
     "pages": {
       "redirects": [
         {
@@ -24767,18 +24767,6 @@
           "value": {
             "type": "keyword",
             "value": "flex"
-          }
-        }
-      ],
-      [
-        "91FEDieBjnT8xPazPut8s:w1CiYUsWrNY7Y9wcpTy3K:display:",
-        {
-          "styleSourceId": "91FEDieBjnT8xPazPut8s",
-          "breakpointId": "w1CiYUsWrNY7Y9wcpTy3K",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "none"
           }
         }
       ],
@@ -55295,6 +55283,31 @@
             "value": "currentColor"
           }
         }
+      ],
+      [
+        "09IzxypatU4TiQBN5Nfn3:tAFRweP7yGMMQI5CmE4yb:textDecorationLine:",
+        {
+          "styleSourceId": "09IzxypatU4TiQBN5Nfn3",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "textDecorationLine",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "09IzxypatU4TiQBN5Nfn3:tAFRweP7yGMMQI5CmE4yb:textDecorationLine::hover",
+        {
+          "styleSourceId": "09IzxypatU4TiQBN5Nfn3",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "state": ":hover",
+          "property": "textDecorationLine",
+          "value": {
+            "type": "keyword",
+            "value": "underline"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -60910,6 +60923,13 @@
           "type": "local",
           "id": "bR5l3kOrpWYlYF1ZBGix1"
         }
+      ],
+      [
+        "tCUNxUkgdT2vonmaeYOIV",
+        {
+          "type": "local",
+          "id": "tCUNxUkgdT2vonmaeYOIV"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -64114,7 +64134,8 @@
         {
           "instanceId": "X6qbdD_THE6HbKCsi1FFH",
           "values": [
-            "5bHfH_ITLQ_eM6Ih-SzSp"
+            "5bHfH_ITLQ_eM6Ih-SzSp",
+            "tCUNxUkgdT2vonmaeYOIV"
           ]
         }
       ],
@@ -73858,7 +73879,7 @@
           "instanceId": "neEB050pH4asVdZPr2Dym",
           "name": "href",
           "type": "string",
-          "value": "mailto:jia.659@buckeyemail.osu.edu"
+          "value": "mailto:jia.659@osu.edu"
         }
       ],
       [
@@ -73868,7 +73889,7 @@
           "instanceId": "IsfDvoTQJQOzwN_A0OkVq",
           "name": "href",
           "type": "string",
-          "value": "mailto:cheandominguez.1@buckeyemail.osu.edu"
+          "value": "mailto:cheandominguez.1@osu.edu"
         }
       ],
       [
@@ -78808,6 +78829,61 @@
           "type": "boolean",
           "value": true
         }
+      ],
+      [
+        "NmbdjbjBKuva4cJGTvPht",
+        {
+          "id": "NmbdjbjBKuva4cJGTvPht",
+          "instanceId": "8WCkldB2w3L0SlgXvAGcA",
+          "name": "action",
+          "type": "animationAction",
+          "value": {
+            "type": "view",
+            "animations": [
+              {
+                "name": "Fade In",
+                "description": "Fade in the element as it scrolls into view.",
+                "keyframes": [
+                  {
+                    "offset": 0,
+                    "styles": {
+                      "opacity": {
+                        "type": "unit",
+                        "unit": "number",
+                        "value": 0
+                      }
+                    }
+                  }
+                ],
+                "timing": {
+                  "easing": "ease-out",
+                  "fill": "backwards",
+                  "duration": {
+                    "type": "unit",
+                    "value": 1,
+                    "unit": "s"
+                  },
+                  "rangeStart": [
+                    "entry",
+                    {
+                      "type": "unit",
+                      "value": 0,
+                      "unit": "%"
+                    }
+                  ],
+                  "rangeEnd": [
+                    "entry",
+                    {
+                      "type": "unit",
+                      "value": 100,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
       ]
     ],
     "instances": [
@@ -82883,7 +82959,7 @@
             },
             {
               "type": "text",
-              "value": "Sundays: 3-5 pm"
+              "value": "Sundays: 5-7 pm"
             }
           ]
         }
@@ -88057,15 +88133,7 @@
           "children": [
             {
               "type": "text",
-              "value": "College of Engineering Makerspace"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "Bolz Hall"
+              "value": "Bolz Hall Makerspace (Ideation Room)"
             }
           ]
         }
@@ -88339,15 +88407,7 @@
           "children": [
             {
               "type": "text",
-              "value": "College of Engineering Makerspace"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "Bolz Hall"
+              "value": "Bolz Hall Makerspace (Ideation Room)"
             }
           ]
         }
@@ -88452,7 +88512,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Liquid Rocket Systems (Liquids)"
+              "value": "Liquid Rocket Systems (LRS)"
             }
           ]
         }
@@ -88636,15 +88696,7 @@
           "children": [
             {
               "type": "text",
-              "value": "College of Engineering Makerspace"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "Bolz Hall"
+              "value": "Bolz Hall Makerspace (Ideation Room)"
             }
           ]
         }
@@ -88675,7 +88727,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Learn more about Liquids"
+              "value": "Learn more about LRS"
             }
           ]
         }
@@ -91379,7 +91431,7 @@
           "children": [
             {
               "type": "text",
-              "value": "jia.659@buckeyemail.osu.edu"
+              "value": "jia.659@osu.edu"
             }
           ]
         }
@@ -91394,7 +91446,7 @@
           "children": [
             {
               "type": "text",
-              "value": "cheandominguez.1@buckeyemail.osu.edu"
+              "value": "cheandominguez.1@osu.edu"
             }
           ]
         }
@@ -94391,7 +94443,7 @@
           "children": [
             {
               "type": "id",
-              "value": "rveJk6X0XEtyTxxuQdZml"
+              "value": "8WCkldB2w3L0SlgXvAGcA"
             }
           ]
         }
@@ -101996,6 +102048,20 @@
             {
               "type": "expression",
               "value": "$ws$dataSource$7j2tVyPUNnf11__DASH__zhg8L9I?.data?.data?.[0].personal_email"
+            }
+          ]
+        }
+      ],
+      [
+        "8WCkldB2w3L0SlgXvAGcA",
+        {
+          "type": "instance",
+          "id": "8WCkldB2w3L0SlgXvAGcA",
+          "component": "@webstudio-is/sdk-components-animation:AnimateChildren",
+          "children": [
+            {
+              "type": "id",
+              "value": "rveJk6X0XEtyTxxuQdZml"
             }
           ]
         }
