@@ -1,11 +1,11 @@
 {
   "bundleVersion": "bundle-kzb45v",
   "build": {
-    "id": "6cc005e7-b33a-4912-bed4-f3249a4675bc",
+    "id": "5e800707-a4c6-492c-a56c-e78a1565ffcb",
     "projectId": "424b8b88-aeeb-4083-bade-6685af7363cb",
-    "version": 7711,
-    "createdAt": "2026-08-25T17:22:53.396+00:00",
-    "updatedAt": "2026-08-25T17:22:53.396+00:00",
+    "version": 7748,
+    "createdAt": "2026-08-26T16:58:34.71+00:00",
+    "updatedAt": "2026-08-26T16:58:34.71+00:00",
     "pages": {
       "redirects": [
         {
@@ -343,6 +343,7 @@
           "name": "blog",
           "title": "\"BSLI | \" + $ws$dataSource$pJDqBJuaSZ7Owl__DASH__Xvfx4c.data.data[0].title",
           "history": [
+            "/blogs/totalboat-sponsorship-2026-27",
             "/example-blog-post",
             "/irec-successfully-test-fires-6-inch-solid-rocket-motor",
             "/irec-test-launches-nomad-26",
@@ -374,6 +375,7 @@
           "name": "browse",
           "title": "\"BSLI | Blogs!\"",
           "history": [
+            "/blogs/browse",
             "/browse"
           ],
           "rootInstanceId": "1iJHBkHli2oaDsVAIZiW9",
@@ -55308,6 +55310,56 @@
             "value": "underline"
           }
         }
+      ],
+      [
+        "xk17pw2rjMnZPIbIH6bT8:tAFRweP7yGMMQI5CmE4yb:display:",
+        {
+          "styleSourceId": "xk17pw2rjMnZPIbIH6bT8",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "xk17pw2rjMnZPIbIH6bT8:tAFRweP7yGMMQI5CmE4yb:flexDirection:",
+        {
+          "styleSourceId": "xk17pw2rjMnZPIbIH6bT8",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "xk17pw2rjMnZPIbIH6bT8:tAFRweP7yGMMQI5CmE4yb:marginTop:",
+        {
+          "styleSourceId": "xk17pw2rjMnZPIbIH6bT8",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0
+          }
+        }
+      ],
+      [
+        "xk17pw2rjMnZPIbIH6bT8:tAFRweP7yGMMQI5CmE4yb:marginBottom:",
+        {
+          "styleSourceId": "xk17pw2rjMnZPIbIH6bT8",
+          "breakpointId": "tAFRweP7yGMMQI5CmE4yb",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -60929,6 +60981,13 @@
         {
           "type": "local",
           "id": "tCUNxUkgdT2vonmaeYOIV"
+        }
+      ],
+      [
+        "xk17pw2rjMnZPIbIH6bT8",
+        {
+          "type": "local",
+          "id": "xk17pw2rjMnZPIbIH6bT8"
         }
       ]
     ],
@@ -70153,6 +70212,15 @@
             "bR5l3kOrpWYlYF1ZBGix1"
           ]
         }
+      ],
+      [
+        "wtm4gHgKS2n6HdOWetzuM",
+        {
+          "instanceId": "wtm4gHgKS2n6HdOWetzuM",
+          "values": [
+            "xk17pw2rjMnZPIbIH6bT8"
+          ]
+        }
       ]
     ],
     "props": [
@@ -78883,6 +78951,26 @@
               }
             ]
           }
+        }
+      ],
+      [
+        "vrRUvvwT-u9zJqonG2NkS",
+        {
+          "id": "vrRUvvwT-u9zJqonG2NkS",
+          "instanceId": "JTTRFACC4YoRFFTsk52Gq",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "Gjr_5eMryeUHrzDkyGlwp",
+        {
+          "id": "Gjr_5eMryeUHrzDkyGlwp",
+          "instanceId": "JTTRFACC4YoRFFTsk52Gq",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
         }
       ]
     ],
@@ -103679,6 +103767,7 @@
       "name": "blog",
       "title": "\"BSLI | \" + $ws$dataSource$pJDqBJuaSZ7Owl__DASH__Xvfx4c.data.data[0].title",
       "history": [
+        "/blogs/totalboat-sponsorship-2026-27",
         "/example-blog-post",
         "/irec-successfully-test-fires-6-inch-solid-rocket-motor",
         "/irec-test-launches-nomad-26",
@@ -103710,6 +103799,7 @@
       "name": "browse",
       "title": "\"BSLI | Blogs!\"",
       "history": [
+        "/blogs/browse",
         "/browse"
       ],
       "rootInstanceId": "1iJHBkHli2oaDsVAIZiW9",

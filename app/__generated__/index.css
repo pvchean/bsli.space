@@ -2864,6 +2864,18 @@
   .c18oa85n {
     max-width: var(--size-12)
   }
+  .ckgapth :where(ul, ol) {
+    display: flex
+  }
+  .c1suzpwv :where(ul, ol) {
+    flex-direction: column
+  }
+  .cvd9neq :where(ul, ol) {
+    margin-top: 0
+  }
+  .ci3w044 :where(ul, ol) {
+    margin-bottom: 0
+  }
 }
 @media all and (max-width: 991px) {
   .c66ad5w {

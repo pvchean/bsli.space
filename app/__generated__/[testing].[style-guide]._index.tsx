@@ -14,7 +14,7 @@ import { Link as Link, Body as Body, RichTextLink as RichTextLink, Link as Link_
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-25T17:22:53.396Z";
+      export const lastPublished = "2026-08-26T16:58:34.710Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 

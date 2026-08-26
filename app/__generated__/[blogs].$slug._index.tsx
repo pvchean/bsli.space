@@ -15,7 +15,7 @@ import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuL
 
       export const projectDomain = "buckeyesli";
 
-      export const lastPublished = "2026-08-25T17:22:53.396Z";
+      export const lastPublished = "2026-08-26T16:58:34.710Z";
 
       export const siteName = "Buckeye Space Launch Intiative";
 
@@ -679,10 +679,11 @@ className={`w-element c1lynjaq c1gdhahs`}>
 <HtmlEmbed
 code={"<style>\n  /* The parent paragraph identified by JS */\n.img-wrapper-p {\n  display: block;\n  clear: both;\n  margin-bottom: 0.2em;\n}\n\n/* Float logic for desktop */\n@media (min-width: 768px) {\n  .img-left img {\n    float: left;\n    margin-right: var(--gap-xs);\n  }\n\n  .img-right img {\n    float: right;\n    margin-left: var(--gap-xs);\n  }\n}\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n  // Select all images inside your specific markdown class\n  const images = document.querySelectorAll('.w-markdown-embed img');\n\n  images.forEach((img, index) => {\n    const parent = img.parentElement;\n\n    if (parent && parent.tagName === 'P') {\n      // Alternating Logic\n      if (index % 2 === 0) {\n        parent.classList.add('img-left');\n      } else {\n        parent.classList.add('img-right');\n      }\n    }\n  });\n});\n</script>"}
 clientOnly={true}
+executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <MarkdownEmbed
 code={CMS_Blog_Post?.data?.data?.[0]?.content}
-className={`w-markdown-embed c1lynjaq c1gdhahs c1ny6974 coso6sz c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj c2e7vdu cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj cdgfnlh c39o0xr cyjf650 c1ml3cvj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp c11zzlda`}>
+className={`w-markdown-embed c1lynjaq c1gdhahs c1ny6974 coso6sz c4727fl c6ym8gw cwbknsa cm8x649 c1t4cb3n cqsew0p c6nps48 c1iun1ht c15jddyg c1j0hiuo c1sivbkd cr1vs3f c1djl40e c9qydm7 cge6c0e cec0soj c2e7vdu cgfpse5 c1ncdura c4xl2az c1tdp6be c1yn2i7a c1wnxvnu c1upo3qt c1np6vsq c12z6wpi cg3e478 c13qtrb0 c187j8rr ckigdqa c1855rma cdeo68s c6hg9jg cec93mw cjospxg c1s74duj cdgfnlh c39o0xr cyjf650 c1ml3cvj c1pka01a c1fcslry c1s909k0 c8724tp c1qk0rf8 cwgn4pp c11zzlda ckgapth c1suzpwv cvd9neq ci3w044`}>
 </MarkdownEmbed>
 </div>
 </div>
